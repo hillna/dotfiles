@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# findline script
+
+find . -type f -print0 | xargs -0 grep -nH --color=always "$1"
+

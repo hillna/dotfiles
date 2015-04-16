@@ -1,0 +1,4 @@
+#!/bin/bash
+
+for k in `git branch -a|sed "s/..//"|sed "s/\s*->.*//"`;do echo -e `git log -1 --pretty=format:"%ct %Cblue%cr%Creset" "$k" --`\\t"$k";done|sort| cut -d' ' -f2-
+

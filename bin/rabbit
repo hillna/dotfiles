@@ -1,0 +1,5 @@
+#!/bin/bash
+tmux rename-window 'rabbit queues'
+tmux split-window -h 'ssh rabbit3 -t "sudo -i olark-rabbittop"'
+tmux select-pane -t :.+
+ssh rabbit1 -t "sudo -i olark-rabbittop"
