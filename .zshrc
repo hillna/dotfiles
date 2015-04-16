@@ -42,3 +42,5 @@ fi
 export EDITOR=vim
 
 source ~/.zshconfig
+
+. $HOME/.shellrc.load
