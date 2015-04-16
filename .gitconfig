@@ -1,0 +1,22 @@
+[user]
+	name = Nick Hill
+	email = nickh@olark.com
+	signingkey = C3B90971
+[push]
+	default = matching
+[core]
+	excludesfile = /Users/hilln/.gitignore_global
+
+[alias] 
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[commit]
+	gpgsign = false

@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/hilln'
+let g:netrw_dirhist_2='/Users/hilln/Library/Application Support/Sublime Text 2/Packages'
+let g:netrw_dirhist_3='/Users/hilln/Dev/Olark/crm/upstart'
+let g:netrw_dirhist_4='/Users/hilln/.oh-my-zsh'
+let g:netrw_dirhist_5='/Users/hilln/dev/Olark/puppet/modules/olark/files/bin'
+let g:netrw_dirhist_6='/Users/hilln/dev/Olark/puppet/modules/olark/files/sudo_bin'
+let g:netrw_dirhist_7='/Users/hilln/dev/Olark/marketing/bin'
+let g:netrw_dirhist_8='/Users/hilln/.config'
