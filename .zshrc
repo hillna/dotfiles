@@ -30,7 +30,6 @@ fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 export PATH=/opt/ec2-api-tools/bin:$PATH
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Olark
 if [ -f $HOME/.olark_rc ]; then
