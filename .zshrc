@@ -31,6 +31,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 export PATH=/opt/ec2-api-tools/bin:$PATH
 
+
 # Olark
 if [ -f $HOME/.olark_rc ]; then
   source $HOME/.olark_rc
@@ -43,3 +44,4 @@ export EDITOR=vim
 source ~/.zshconfig
 
 . $HOME/.shellrc.load
+
