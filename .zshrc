@@ -30,7 +30,7 @@ fi
 # Paths
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-export PATH=/opt/ec2-api-tools/bin:$PATH
+export PATH=$PATH:/opt/ec2-api-tools/bin
 
 
 # Olark
@@ -41,6 +41,9 @@ fi
 
 # Config
 export EDITOR=vim
+
+# ssh-agent config
+eval $(keychain --eval -Q --quiet)
 
 source ~/.zshconfig
 
