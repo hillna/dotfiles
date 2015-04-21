@@ -1,0 +1,21 @@
+panel_volume()
+{
+    volStatus=$(amixer get Master | tail -n 1 | cut -d '[' -f 3 | sed 's/].*//g')
+    volLevel=$(amixer get Master | tail -n 1 | cut -d '[' -f 2 | sed 's/%.*//g')
+    # is alsa muted or not muted?
+    if [ "$volStatus" == "on" ]
+    then
+        echo "%{Fyellowgreen} $volLevel %{F-}"
+    else
+        # If it is muted, make the font red
+        echo "%{Findianred} $volLevel %{F-}"
+    fi
+}
+
+while true; do
+    echo "S" "$(panel_volume) \
+	$(panel_clock) \
+	> "$PANEL_FIFO"
+    sleep 1s
+done &
+
