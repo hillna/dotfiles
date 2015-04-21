@@ -1,2 +1,4 @@
+.config recurse
+.ssh recurse
 README.md skip
 .gitmodules skip
