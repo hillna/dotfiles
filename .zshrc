@@ -39,9 +39,6 @@ if [ -f $HOME/.olark_rc ]; then
   export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
 fi
 
-# Config
-export EDITOR=vim
-
 # ssh-agent config
 eval $(keychain --eval -Q --quiet)
 
