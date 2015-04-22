@@ -47,7 +47,9 @@ if [ -f $HOME/.olark_rc ]; then
 fi
 
 # ssh-agent config
-eval $(keychain --eval -Q --quiet)
+if [[ $(uname |grep Linux) ]]; then
+    eval $(keychain --eval -Q --quiet)
+fi
 
 source ~/.zshconfig
 
