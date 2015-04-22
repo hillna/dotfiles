@@ -1,21 +1,20 @@
 #! /bin/sh
 
-if [ $(pgrep -cx sxhkd) -gt 0 ]; then
+if [[ -z "$(pgrep sxhkd)" ]]; then
     sxhkd &
 fi
 
-bspc config border_width        2
+bspc config border_width        1
 bspc config window_gap         	8
-bspc config top_padding 	14
 
 bspc config split_ratio         0.52
 bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-bspc monitor DVI-I-1 -d I II III IV 
-bspc monitor HDMI-0 -d V VI VII 
-bspc monitor DP-5 -d VIII IX X
+bspc monitor DVI-I-1 -d I II  
+bspc monitor HDMI-0 -d III IV 
+bspc monitor DP-5 -d V VI
 
 bspc rule -a Gimp desktop=^8 follow=on floating=on
 bspc rule -a Chromium desktop=^2
@@ -25,5 +24,5 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a scratchpad sticky=on floating=on
 
-panel/panel &
+$HOME/.config/bspwm/panel/panel &
 

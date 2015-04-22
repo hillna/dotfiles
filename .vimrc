@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 set number			" line numbers
+set paste
 
 " Vundle Settings
 " set the runtime path to include Vundle and initialize

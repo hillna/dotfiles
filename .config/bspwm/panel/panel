@@ -1,7 +1,6 @@
 #!/bin/sh
 
-cd $(dirname $0)
-source $(dirname $0)/config
+source $HOME/.config/bspwm/panel/config
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
     printf "%s\n" "The panel is already running." >&2
@@ -9,6 +8,9 @@ if [ $(pgrep -cx panel) -gt 1 ] ; then
 fi
 
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
 
 panel_volume()
 {
@@ -24,10 +26,16 @@ panel_volume()
     fi
 }
 
+
+bspc config top_padding 14
+bspc control --subscribe > "$PANEL_FIFO" &
+#xtitle -sf 'T%s' > "$PANEL_FIFO" &
+#clock -sf 'S%a %H:%M' > "$PANEL_FIFO" &
+echo "S" "$(panel_volume)" > "$PANEL_FIFO" &
+
 cat "$PANEL_FIFO" \
-    | ./panel_bar \
     | lemonbar \
-        -u 14
+        -u 14 &
 
 wait
 

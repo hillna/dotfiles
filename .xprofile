@@ -1,3 +1,6 @@
-#sxhkd &
+export PANEL_FIFO="/tmp/panel-fifo"
+
+urxvtd -q -f -o &
+
 #urxvt &
 
