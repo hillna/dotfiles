@@ -5,6 +5,11 @@ alias p="py"
 alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
 
+if [[ $(uname |grep Linux) ]]; then
+    alias python="python2"
+    alias python-config="python2-config"
+fi
+
 # Git Aliases
 alias gpullr="git pull --rebase origin master"
 alias gpush="gpullr && git push origin master"
