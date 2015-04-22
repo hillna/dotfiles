@@ -5,9 +5,11 @@ alias p="py"
 alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
 
+# python2 aliases
 if [[ $(uname |grep Linux) ]]; then
     alias python="python2"
     alias python-config="python2-config"
+    alias virtualenv="virtualenv2"
 fi
 
 # Git Aliases
