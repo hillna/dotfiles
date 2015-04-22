@@ -1,0 +1,10 @@
+# Olark
+export PATH="./.node-virtualenv/bin:/usr/local/sbin:$PATH";
+export OLARK_HOME=~/dev/Olark/puppet/modules/olark/files
+export OLARK_STATE=/tmp/olark/state
+export OLARK_APPS=~/dev/Olark
+export OLARK_ENV=jz
+source $OLARK_HOME/env/bootstrap
+
+# Olark AWS
+source $HOME/.awskey

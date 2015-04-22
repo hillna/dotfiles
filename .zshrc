@@ -36,7 +36,7 @@ export PATH=$PATH:/opt/ec2-api-tools/bin
 # Olark
 if [ -f $HOME/.olark_rc ]; then
   source $HOME/.olark_rc
-  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
+#  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
 fi
 
 # ssh-agent config
