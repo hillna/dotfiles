@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ $(pgrep -cx panel) -eq 1 ] ; then
+    pkill panel &
+    bspc config top_padding 0
+else
+    $HOME/.config/bspwm/panel/panel &
+fi
+
