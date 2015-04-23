@@ -1,9 +1,55 @@
-# include what you want
-
-export PATH=$PATH:$HOME/bin
-
-# add this to the .bashrc or .zshrc (done automatically by dfm):
 # . $HOME/.shellrc.load
 
-####
-# put any bash/zsh customizations in here
+# Alises
+alias ll="ls -l"
+alias py="python"
+alias p="py"
+alias sleepnow="pmset sleepnow"
+alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
+
+# python2 aliases
+if [[ $(uname |grep Linux) ]]; then
+    alias python="python2"
+    alias python-config="python2-config"
+    alias virtualenv="virtualenv2"
+fi
+
+# Git Aliases
+alias gpullr="git pull --rebase origin master"
+alias gpush="gpullr && git push origin master"
+alias gstatus="git status"
+alias gcommit="git commit -a"
+alias gref="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
+alias tmuxs="tmux list-sessions"
+alias tmuxa="tmux attach-session -t"
+
+# Homebrew coreutils aliases
+if [ -f /usr/local/bin/gsleep ]; then
+  alias sleep="gsleep"
+fi
+
+# ENV Variables
+export AWS_CONFIG_FILE=~/.awsconfig
+export EC2_HOME=/opt/ec2-api-tools
+
+if [ -f /usr/libexec/java_home ]; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
+fi
+
+# Paths
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+export PATH=$PATH:/opt/ec2-api-tools/bin
+export PATH=$PATH:$HOME/bin
+
+# Olark
+if [ -f $HOME/.olark_rc ]; then
+  source $HOME/.olark_rc
+#  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
+fi
+
+# ssh-agent config
+if [[ $(uname |grep Linux) ]]; then
+    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+fi
+

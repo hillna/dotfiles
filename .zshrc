@@ -1,57 +1,48 @@
-# Alises
-alias ll="ls -l"
-alias py="python"
-alias p="py"
-alias sleepnow="pmset sleepnow"
-alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
+ZSH=$HOME/.oh-my-zsh
+#ZSH_THEME='bureau'
+ZSH_THEME='bira'
 
-# python2 aliases
-if [[ $(uname |grep Linux) ]]; then
-    alias python="python2"
-    alias python-config="python2-config"
-    alias virtualenv="virtualenv2"
-fi
+DEFAULT_USER='hilln'
 
-# Git Aliases
-alias gpullr="git pull --rebase origin master"
-alias gpush="gpullr && git push origin master"
-alias gstatus="git status"
-alias gcommit="git commit -a"
-alias gref="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
-alias tmuxs="tmux list-sessions"
-alias tmuxa="tmux attach-session -t"
+setopt AUTO_CD
 
-# Homebrew coreutils aliases
-if [ -f /usr/local/bin/gsleep ]; then
-  alias sleep="gsleep"
-fi
+# Set to this to use case-sensitive completion
+CASE_SENSITIVE="true"
 
-# ENV Variables
-export AWS_CONFIG_FILE=~/.awsconfig
-export EC2_HOME=/opt/ec2-api-tools
+# Uncomment this to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
 
-if [ -f /usr/libexec/java_home ]; then
-  export JAVA_HOME=$(/usr/libexec/java_home)
-fi
+# Uncomment to change how often before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
-# Paths
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
-export PATH=$PATH:/opt/ec2-api-tools/bin
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
 
-# Olark
-if [ -f $HOME/.olark_rc ]; then
-  source $HOME/.olark_rc
-#  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
-fi
+# Uncomment following line if you want to disable command autocorrection
+# DISABLE_CORRECTION="true"
 
-# ssh-agent config
-if [[ $(uname |grep Linux) ]]; then
-    eval $(keychain --eval -Q --quiet)
-fi
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+ COMPLETION_WAITING_DOTS="true"
 
-source ~/.zshconfig
+# Uncomment following line if you want to disable marking untracked files under
+# VCS as dirty. This makes repository status check for large repositories much,
+# much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment following line if you want to  shown in the command execution time stamp 
+# in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
+# yyyy-mm-dd
+HIST_STAMPS="yyy-mm-dd"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 . $HOME/.shellrc.load
 
