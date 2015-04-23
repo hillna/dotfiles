@@ -1,6 +1,7 @@
-#!/bin/sh
+#! /bin/sh
 
-source $HOME/.config/bspwm/panel/config
+cd $(dirname $0)
+source $(dirname $0)/config
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
     printf "%s\n" "The panel is already running." >&2
@@ -12,30 +13,20 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-panel_volume()
-{
-    volStatus=$(amixer get Master | tail -n 1 | cut -d '[' -f 3 | sed 's/].*//g')
-    volLevel=$(amixer get Master | tail -n 1 | cut -d '[' -f 2 | sed 's/%.*//g')
-    # is alsa muted or not muted?
-    if [ "$volStatus" == "on" ]
-    then
-        echo "%{Fyellowgreen} $volLevel %{F-}"
-    else
-        # If it is muted, make the font red
-        echo "%{Findianred} $volLevel %{F-}"
-    fi
-}
-
-
 bspc config top_padding 14
+
 bspc control --subscribe > "$PANEL_FIFO" &
-#xtitle -sf 'T%s' > "$PANEL_FIFO" &
-#clock -sf 'S%a %H:%M' > "$PANEL_FIFO" &
-echo "S" "$(panel_volume)" > "$PANEL_FIFO" &
+echo "T" >  "$PANEL_FIFO" &
+#conky -c ./panel_conky > "$PANEL_FIFO" &
+./notify_mpd -d &
 
 cat "$PANEL_FIFO" \
-    | lemonbar \
-        -u 14 &
-
+	| ./panel_bar \
+	| lemonbar \
+		-f "$FONT1","$FONT2"\
+		-F "$COLOR_FOREGROUND"\
+		-B "$COLOR_BACKGROUND"\
+		-g "$PANEL_GEOMETRY"\
+		-u $LINEHEIGHT &
 wait
 
