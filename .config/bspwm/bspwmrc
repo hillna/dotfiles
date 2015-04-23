@@ -1,9 +1,5 @@
 #! /bin/sh
 
-#if [[ -z "$(pgrep sxhkd)" ]]; then
-#    sxhkd &
-#fi
-
 bspc config border_width        1
 bspc config window_gap         	8
 
@@ -12,9 +8,9 @@ bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-bspc monitor DVI-I-1 -d I II  
+bspc monitor DVI-I-1 -d IV V  
 bspc monitor HDMI-0 -d III IV 
-bspc monitor DP-5 -d V VI
+bspc monitor DP-5 -d I II
 
 bspc rule -a Gimp desktop=^8 follow=on floating=on
 bspc rule -a Chromium desktop=^2
