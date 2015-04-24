@@ -64,3 +64,4 @@ case $1 in
 esac
 
 notify  $icon $(mpc current)
+

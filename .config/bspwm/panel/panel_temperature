@@ -1,5 +1,5 @@
 #!/bin/bash
-source $HOME/.config/bspwm/panel/config
+source $(dirname $0)/config
 
 cputemp=$((`sensors | grep "CPU Temperature" | cut -d'+' -f2 | head -c2`))
 
