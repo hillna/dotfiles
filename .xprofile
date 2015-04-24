@@ -1,5 +1,5 @@
 # env
-export TERM="screen-256color"
+export TERM="xterm-256color"
 export EDITOR="vim"
 export PANEL_FIFO="/tmp/panel-fifo"
 
