@@ -1,9 +1,8 @@
 #!/bin/bash
 source $HOME/.config/bspwm/panel/config
 
-temp=$((`sensors | grep "CPU Temperature" | cut -d'+' -f2 | head -c2`))
+cputemp=$((`sensors | grep "CPU Temperature" | cut -d'+' -f2 | head -c2`))
 
-output="%{F$COLOR_ICON} CPU:%{F-}$temp°"
+output="%{F$COLOR_ICON} CPU:%{F-}$cputemp°"
 
-echo $output;
-
+echo $output

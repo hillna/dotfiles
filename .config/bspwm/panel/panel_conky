@@ -3,9 +3,9 @@ background yes
 out_to_console yes
 out_to_x no
 # Update interval in seconds
-update_interval 3
-update_interval_on_battery 5
+update_interval 10
+update_interval_on_battery 30
 
 TEXT
-S${execi 1 ./panel_temperature}     ${time %H:%M} %{-u}
+S${execi 30 ./panel_temperature}    ${time %a %H:%M}  %{-u}
 
