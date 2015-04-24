@@ -27,7 +27,7 @@ NOTIFY_GEOMETRY="${NOTIFY_WIDTH}x${NOTIFY_HEIGHT}+0+0"
 DURATION=2
 
 # Monitor to display panel on
-MONITOR="$(bspc query -M | tail -n1)"
+MONITOR="$(bspc query -M | head -n1)"
 
 # Volume change clip
 CLIP="/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"

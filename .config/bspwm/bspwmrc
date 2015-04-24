@@ -10,7 +10,7 @@ bspc config focus_by_distance   true
 
 bspc monitor DVI-I-1 -d IV V  
 bspc monitor HDMI-0 -d III IV 
-bspc monitor DP-5 -d I II
+bspc monitor DP-1 -d I II
 
 bspc rule -a Gimp desktop=^8 follow=on floating=on
 bspc rule -a Chromium desktop=^2
@@ -21,4 +21,7 @@ bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a scratchpad sticky=on floating=on
 
 ##$HOME/.config/bspwm/panel/panel &
+
+WALLPAPER=$HOME/.config/bspwm/wallpaper
+feh --bg-max --no-xinerama $(find $WALLPAPER |shuf -n1)
 

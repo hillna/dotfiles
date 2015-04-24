@@ -17,7 +17,7 @@ bspc config top_padding 14
 
 bspc control --subscribe > "$PANEL_FIFO" &
 echo "T" >  "$PANEL_FIFO" &
-#conky -c ./panel_conky > "$PANEL_FIFO" &
+conky -c ./panel_conky > "$PANEL_FIFO" &
 ./notify_mpd -d &
 
 cat "$PANEL_FIFO" \

@@ -88,6 +88,9 @@ super + @button{1-3}
 # wm independent hotkeys
 #
 
+Print
+        scrot -q 100
+
 super + Return
 #	urxvtc -e tmux
         urxvtc
