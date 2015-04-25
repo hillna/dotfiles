@@ -15,10 +15,10 @@ mkfifo "$PANEL_FIFO"
 
 bspc config top_padding 14
 
-#bspc control --subscribe > "$PANEL_FIFO" &
+bspc control --subscribe > "$PANEL_FIFO" &
 echo "T" >  "$PANEL_FIFO" &
 conky -c ./panel_conky > "$PANEL_FIFO" &
-./notify_mpd -d &
+./panel_temperature &
 
 cat "$PANEL_FIFO" \
 	| ./panel_bar \

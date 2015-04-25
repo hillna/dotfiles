@@ -3,11 +3,11 @@ background yes
 out_to_console yes
 out_to_x no
 # Update interval in seconds
-update_interval 10
-update_interval_on_battery 30
+update_interval 3
+update_interval_on_battery 10
 
 TEXT
-S${execi 10 mpc current}    \
-${execi 30 ./panel_temperature}    \
+S${execi 3 mpc current}    \
+${execi 3 cat /tmp/temp_sensors}    \
 ${time %a %H:%M}  %{-u}
 
