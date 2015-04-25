@@ -7,5 +7,7 @@ update_interval 10
 update_interval_on_battery 30
 
 TEXT
-S${execi 30 ./panel_temperature}    ${time %a %H:%M}  %{-u}
+S${execi 10 mpc current}    \
+${execi 30 ./panel_temperature}    \
+${time %a %H:%M}  %{-u}
 
