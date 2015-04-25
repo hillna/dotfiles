@@ -8,6 +8,7 @@ update_interval_on_battery 10
 
 TEXT
 S${execi 3 mpc current}    \
+MEM:${membar} CPU:${cpubar}    \
 ${execi 3 cat /tmp/temp_sensors}    \
-${time %a %H:%M}  %{-u}
+${time %a %H:%M}  
 
