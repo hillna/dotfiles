@@ -92,8 +92,7 @@ Print
         scrot -q 100
 
 super + Return
-#	urxvtc -e tmux
-        urxvtc
+	urxvtc -e tmux
 
 super + e
         google-chrome-stable
