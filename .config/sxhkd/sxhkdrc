@@ -103,3 +103,7 @@ super + r
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# reload bspwmrc
+super + ctrl + Escape
+        $HOME/.config/bspwm/bspwmrc

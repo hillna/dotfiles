@@ -8,17 +8,17 @@ bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-bspc monitor DVI-I-1 -d IV V  
-bspc monitor HDMI-0 -d III IV 
-bspc monitor DP-1 -d I II
+bspc monitor DP-1 -d I II  
+bspc monitor DP-3 -d III IV
+bspc monitor DP-5 -d V VI
 
 bspc rule -a Gimp desktop=^8 follow=on floating=on
 bspc rule -a steam follow=off private=on
 bspc rule -a mplayer2 floating=on
-bspc rule -a Kupfer.py focus=on
+bspc rule -a vlc floating=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Conky sticky=on manage=off lower=on
-bspc rule -a scratchpad sticky=on floating=on
+bspc rule -a feh floating=on
 
 ##$HOME/.config/bspwm/panel/panel &
 
