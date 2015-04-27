@@ -8,7 +8,7 @@ super + alt + Escape
 super + ctrl + Tab 
         $HOME/bin/toggle_panel
 
-super + w
+super + ctrl + w
 	bspc window -c
 
 super + t
