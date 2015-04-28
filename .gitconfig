@@ -6,6 +6,7 @@
 	default = matching
 [core]
 	excludesfile = /Users/hilln/.gitignore_global
+	editor = /usr/bin/vim
 
 [alias] 
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
