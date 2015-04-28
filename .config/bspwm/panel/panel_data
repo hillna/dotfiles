@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Panel data aggregation and formatting 
+##
+
+cd $(dirname $0)
+source $(dirname $0)/config
+
+clock() {
+    date '+%a %H:%M'
+}
+
+nowplaying() {
+    cur=$(mpc current)
+    echo $cur
+}
+
+# todo
+
+wifi() {
+    echo wifi
+}
+
+bspwm() {
+    echo bspwm
+}
+
+# This loop will fill a buffer with our infos, and output it to stdout.
+while :; do
+    buf=""
+    buf="${buf} %{S+}" # bar display on primary
+    buf="${buf} %{l}" # bar align left
+    buf="${buf} %{c}" #bar align center
+    buf="${buf} $(nowplaying)"
+    buf="${buf} %{r}" # bar alignt right
+    buf="${buf} $(clock) -"
+
+    echo $buf
+    sleep 1 # update every second
+done
+
