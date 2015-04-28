@@ -25,11 +25,16 @@ bspwm() {
     echo bspwm
 }
 
+title() {
+    echo $(hostname)
+    #echo $(xtitle)
+}
+
 # This loop will fill a buffer with our infos, and output it to stdout.
 while :; do
     buf=""
     buf="${buf} %{S+}" # bar display on primary
-    buf="${buf} %{l}" # bar align left
+    buf="${buf} $(title)"
     buf="${buf} %{c}" #bar align center
     buf="${buf} $(nowplaying)"
     buf="${buf} %{r}" # bar alignt right
