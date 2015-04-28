@@ -59,6 +59,9 @@ URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
 
+! Copypasta
+URxvt.keysym.C-v:   perl:clipboard:paste
+
 ! Transparency
 URxvt.depth: 32
 URxvt.background: [85]#002b36
