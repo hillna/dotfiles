@@ -1,4 +1,7 @@
 #! /bin/sh
+#
+# Panel for bspwm using lemonbar
+##
 
 cd $(dirname $0)
 source $(dirname $0)/config
@@ -15,13 +18,9 @@ mkfifo "$PANEL_FIFO"
 
 bspc config top_padding 14
 
-bspc control --subscribe > "$PANEL_FIFO" &
-echo "T" >  "$PANEL_FIFO" &
-conky -c ./panel_conky > "$PANEL_FIFO" &
-./panel_temperature &
+./panel_data > "$PANEL_FIFO" &
 
 cat "$PANEL_FIFO" \
-	| ./panel_bar \
 	| lemonbar \
 		-f "$FONT1","$FONT2"\
 		-F "$COLOR_FOREGROUND"\

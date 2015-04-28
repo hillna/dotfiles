@@ -3,7 +3,7 @@ filetype off                  " required
 
 set number			" line numbers
 " set paste
-set mouse=a
+" set mouse=a
 
 " Vundle Settings
 " set the runtime path to include Vundle and initialize

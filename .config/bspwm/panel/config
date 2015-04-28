@@ -29,8 +29,3 @@ DURATION=2
 # Monitor to display panel on
 MONITOR="$(bspc query -M | head -n1)"
 
-# Volume change clip
-CLIP="/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
-# Length of volume bar
-BAR_LENGTH=20
-BAR_CHAR='='
