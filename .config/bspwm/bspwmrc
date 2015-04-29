@@ -8,9 +8,9 @@ bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-bspc monitor DP-1 -d I II  
-bspc monitor DP-3 -d III IV
-bspc monitor DP-5 -d V VI
+bspc monitor DP-1 -d I IV  
+bspc monitor DP-3 -d II V
+bspc monitor DP-5 -d III VI
 
 bspc rule -a Gimp desktop=^8 follow=on floating=on
 bspc rule -a steam follow=off private=on

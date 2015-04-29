@@ -3,8 +3,11 @@
 export EDITOR="vim"
 export PANEL_FIFO="/tmp/panel-fifo"
 
+# screensaver & lock
+xss-lock -- xscreensaver-command -lock &
+xscreensaver -no-splash &
+
 # autorun
 urxvtd -q -f -o &
 sxhkd &
-xscreensaver -no-splash &
 
