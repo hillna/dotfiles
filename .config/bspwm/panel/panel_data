@@ -15,6 +15,11 @@ nowplaying() {
     echo $cur
 }
 
+title() {
+    echo $(hostname)
+    #echo $(xtitle)
+}
+
 # todo
 
 wifi() {
@@ -23,11 +28,6 @@ wifi() {
 
 bspwm() {
     echo bspwm
-}
-
-title() {
-    echo $(hostname)
-    #echo $(xtitle)
 }
 
 # This loop will fill a buffer with our infos, and output it to stdout.

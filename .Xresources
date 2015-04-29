@@ -60,7 +60,7 @@ URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
 
 ! Copypasta
-URxvt.keysym.C-v:   perl:clipboard:paste
+!URxvt.keysym.C-v:   perl:clipboard:paste
 
 ! Transparency
 URxvt.depth: 32
