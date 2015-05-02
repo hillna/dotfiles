@@ -18,9 +18,11 @@ mkfifo "$PANEL_FIFO"
 
 bspc config top_padding 14
 
+bspc control --subscribe > "$PANEL_FIFO" &
 ./panel_data > "$PANEL_FIFO" &
 
 cat "$PANEL_FIFO" \
+        | ./panel_bspwm \
 	| lemonbar \
 		-f "$FONT1","$FONT2"\
 		-F "$COLOR_FOREGROUND"\
