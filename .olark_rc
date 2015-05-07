@@ -8,4 +8,5 @@ source $OLARK_HOME/env/bootstrap
 
 # Olark AWS
 source $HOME/.awskey
+source $HOME/.rskey
 
