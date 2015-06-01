@@ -10,4 +10,5 @@ export PANEL_FIFO="/tmp/panel-fifo"
 # autorun
 urxvtd -q -f -o &
 sxhkd &
+dropbox &
 
