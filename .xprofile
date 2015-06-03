@@ -5,7 +5,7 @@ export PANEL_FIFO="/tmp/panel-fifo"
 
 # screensaver & lock
 #xss-lock -- xscreensaver-command -lock &
-#xscreensaver -no-splash &
+xscreensaver -no-splash &
 
 # autorun
 urxvtd -q -f -o &

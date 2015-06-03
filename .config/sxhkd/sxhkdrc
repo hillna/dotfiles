@@ -101,8 +101,8 @@ super + r
 	dmenu_run
 
 super + Escape
-        #xscreensaver-command --lock
-        light-locker-command -l
+        xscreensaver-command --lock
+        #light-locker-command -l
 
 # reload bspwmrc & sxhkd
 super + alt + Escape
