@@ -1,0 +1,36 @@
+Conversation with guest42@gmail.com at Tue 09 Jun 2015 04:31:13 PM EDT on jedireign@gmail.com/Adium (jabber)
+(04:31:15 PM) jedireign: mr finger
+(04:31:18 PM) jedireign: put your balls in his top
+(04:31:41 PM) Alex Finger: Nigga do I look like a perverse clown bucket?
+(04:31:48 PM) jedireign: YUUUUUP
+(04:31:52 PM) Alex Finger: Well shit
+(04:31:53 PM) jedireign: what is up dude?
+(04:31:57 PM) Alex Finger: Maybe that's why women don't like me
+(04:32:02 PM) jedireign: might be
+(04:32:07 PM) jedireign: balls pop out of your mouth
+(04:32:08 PM) jedireign: not vaginas
+(04:32:30 PM) Alex Finger: Hah
+(04:32:37 PM) jedireign: lol
+(04:32:40 PM) jedireign: what is up in Alex town?
+(04:32:46 PM) Alex Finger: Anyway, just doing some Coursera stuff on Computational Neuroscience
+(04:32:55 PM) Alex Finger: And then I gotta get back to the computational genetics stuff
+(04:32:57 PM) jedireign: ohhh nice
+(04:33:01 PM) jedireign: I need to fuck around on coursera
+(04:33:07 PM) jedireign: my compsci skills are severely lacking
+(04:33:21 PM) Alex Finger: Lots of cool stuff on there
+(04:33:28 PM) jedireign: peple talk about these concepts that are like
+(04:33:34 PM) jedireign: comp sci 101 I'm sure
+(04:33:34 PM) jedireign: like
+(04:33:37 PM) jedireign: "wtf a class is"
+(04:33:40 PM) jedireign: and I'm all =B
+(04:33:45 PM) jedireign: Google told me what to copy and paste.
+(04:33:53 PM) jedireign: meanwhile one of our dudes is about to publish a book on nodejs
+(04:33:57 PM) Alex Finger: There are some pretty fuckin' advanced things on here, it looks like
+(04:34:06 PM) Alex Finger: nodejs?
+(04:34:08 PM) Alex Finger: I dunno what that is
+(04:34:18 PM) jedireign: javascript framework
+(04:34:25 PM) jedireign: https://nodejs.org/
+(04:34:29 PM) jedireign: it's what all of our frontend is done i
+(04:34:30 PM) jedireign: n
+(04:34:37 PM) Alex Finger: Nuh brain is already too full v.v
+(04:34:47 PM) jedireign: Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.

@@ -1,0 +1,43 @@
+Conversation with reconor@gmail.com at Wed 20 May 2015 05:09:24 PM EDT on jedireign@gmail.com/Adium (jabber)
+(05:09:24 PM) John Mick: oh sweet lordie lordie
+(05:09:43 PM) John Mick: configured literally 30 Kibana dashboards banging onto my Elasticsearch
+(05:09:49 PM) John Mick: in this 300 degree around your head room
+(05:10:00 PM) John Mick: + dashboards designed for interactions
+(05:10:21 PM) John Mick: + HTML5 air traffic control applications which are using Elasticsearch to query for historical data AND socket.io pushing events to it
+(05:10:25 PM) John Mick: holy sexy yums
+(05:10:25 PM) John Mick: hahaha
+(05:10:32 PM) John Mick: CPU utilization?
+(05:10:32 PM) John Mick: 10%
+(05:10:36 PM) jedireign: :D
+(05:10:36 PM) John Mick: on the elastic search node
+(05:11:04 PM) John Mick: it's actually running elastic search, node, and a custom Python "multiplexer" software for moving the data between our simulators at work and this new shit
+(05:11:05 PM) John Mick: <3 <3 <3 <3
+(05:11:12 PM) John Mick: been working this since I heard about Elasticsearch
+(05:11:12 PM) John Mick: hahaha
+(05:11:17 PM) John Mick: finally got a test I am happy with
+(05:11:25 PM) John Mick: took awhile to scale up and integrate with simulators in between all the regular work tasks
+(05:11:40 PM) John Mick: and now the customer is ready to see it - they have a meeting scheduled for tomorrow to see only....only the ATC piece
+(05:11:42 PM) John Mick: they know nothing of the rest
+(05:11:51 PM) John Mick: gonna be a big surprise like - oh we did this for you too!  *hugs**
+(05:11:52 PM) John Mick: haha
+(05:12:01 PM) John Mick: //rant
+(05:12:12 PM) jedireign: haha that's pretty exciting stuff
+(05:15:00 PM) John Mick: yah I'm pretty excited for tomorrow's meeting
+(05:15:19 PM) John Mick: I've been brewing up "HTML5" is the buzz word they like to use here - backend and frontend code since they hired me here
+(05:15:26 PM) jedireign: lmao
+(05:15:26 PM) John Mick: but only last month were we asked to officially explore it
+(05:15:31 PM) John Mick: so I'm like
+(05:15:32 PM) John Mick: SHIT
+(05:15:36 PM) John Mick: I've got so much stuff
+(05:15:44 PM) John Mick: and it's all version controlled so for accountability and all that with managers
+(05:15:46 PM) John Mick: they are happy to see that
+(05:15:54 PM) John Mick: records of development all along the normal tasks customers asked
+(05:15:58 PM) John Mick: so it was like...okay shit
+(05:16:00 PM) John Mick: plug it together
+(05:16:06 PM) John Mick: and make a few new things to really hit on their problem domain
+(05:16:08 PM) John Mick: and phew yeah
+(05:16:19 PM) John Mick: no idea what the reception will really be like tomorrow
+(05:16:23 PM) John Mick: but it will be an interesting one
+(05:16:27 PM) John Mick: I plan to present the architecture and all that too
+(05:16:45 PM) John Mick: if I can pause long enough to do some slides on it; instead of adding new displays/features
+(05:16:45 PM) John Mick: :P

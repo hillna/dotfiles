@@ -1,0 +1,16 @@
+Conversation with -100000168966827@chat.facebook.com at Tue 09 Jun 2015 05:19:37 PM EDT on nicholas.hill.71@chat.facebook.com/ (jabber)
+(05:19:37 PM) Reuben Negron: this is the one i used
+(05:19:38 PM) Reuben Negron: https://github.com/sselph/scraper/
+(05:20:05 PM) Nick Hill: sweet
+(05:20:43 PM) Reuben Negron: retropiesetup.sh
+(05:20:48 PM) Reuben Negron: then update scripts
+(05:20:50 PM) Reuben Negron: then reboot
+(05:20:55 PM) Reuben Negron: and go back into it
+(05:21:00 PM) Reuben Negron: and update binaries
+(05:21:03 PM) Reuben Negron: it takes like an hour
+(05:24:20 PM) Nick Hill: word
+(05:25:47 PM) Nick Hill: raspis are such fantastic little gadgets. lol
+(05:47:34 PM) Nick Hill: hm it only updated to 2.0.1A for some reason
+(05:47:39 PM) Nick Hill: this installation is like a year old though
+(05:47:49 PM) Nick Hill: I think I'm going to order a 2 and reinstall on that
+(06:11:29 PM) Reuben Negron: ok

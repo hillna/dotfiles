@@ -1,0 +1,15 @@
+Conversation with jeff.zellner@gmail.com at Wed 10 Jun 2015 11:57:09 AM EDT on jedireign@gmail.com/Adium (jabber)
+(11:57:09 AM) Jeff Zellner: im mostly burnt out from trying to get consensus or momentum behind anything that isnt a feature                                
+(11:57:15 AM) Jeff Zellner: so i say we just start breaking stuff                                
+(11:58:01 AM) Jeff Zellner: maybe thats fucked up? lol idk, i think it will work if we just do stuff, let it break, and help pick up the pieces                                
+(11:58:11 AM) jedireign: olark civil disobedience.
+(11:58:16 AM) Jeff Zellner: instead of waiting for us to be granted a glorious project of resources
+(11:58:17 AM) Jeff Zellner: yeah
+(11:59:00 AM) jedireign: lol yeah
+(12:05:47 PM) Jeff Zellner: https://gist.github.com/sofuture/9cf5aa71cbff4722516e
+(12:06:03 PM) Jeff Zellner: husshhhhhhhhhhhhhhh its top secrettttttttt
+(12:06:13 PM) jedireign: :)
+(12:08:22 PM) jedireign: oh nice
+(12:09:03 PM) Jeff Zellner: you could use something similar for like ssl certs
+(12:09:07 PM) Jeff Zellner: suppose it wouldnt generate them
+(01:38:25 PM) jeff.zellner@gmail.com is now known as Jeff Zellner. 

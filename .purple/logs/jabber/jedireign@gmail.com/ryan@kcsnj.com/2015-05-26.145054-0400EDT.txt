@@ -1,0 +1,220 @@
+Conversation with ryan@kcsnj.com at Tue 26 May 2015 02:50:54 PM EDT on jedireign@gmail.com/Adium (jabber)
+(02:50:56 PM) jedireign: "Every supercharger shown in the film was real and functioning—for at least one take. "We did lose some cars to the desert," says designer Gibson."
+(02:51:02 PM) jedireign: Fucking mad max dude.
+(02:51:12 PM) jedireign: fuck your home theater, you have to see it in the theaters
+(03:05:29 PM) Ryan Nealy: I bought geforce 750 TI for my work computer
+(03:05:35 PM) Ryan Nealy: so done with it struggling with 3 screens extra rdiciulous
+(03:07:45 PM) jedireign: lol
+(03:08:01 PM) Ryan Nealy: said itw as the best card that didn't require extra power
+(03:08:05 PM) Ryan Nealy: so hopefully it works in this stupid dell
+(03:08:29 PM) Ryan Nealy: moving the gow shit tonight btw also
+(03:09:23 PM) jedireign: I saw the email :)
+(03:09:33 PM) Ryan Nealy: oh so I need to send read receipts now?
+(03:09:36 PM) Ryan Nealy: weenis
+(03:14:40 PM) Ryan Nealy: I might also put a pair of ssd's while I'm there
+(03:14:43 PM) Ryan Nealy: I've been putting it off forever 
+(03:15:04 PM) jedireign: wat?
+(03:15:04 PM) jedireign: no
+(03:15:09 PM) jedireign: who the fuck replies to every email like
+(03:15:10 PM) jedireign: "I saw this!"
+(03:15:16 PM) jedireign: lmao
+(03:15:17 PM) Ryan Nealy: joe replied
+(03:15:24 PM) jedireign: well joe is a silly man
+(03:15:44 PM) jedireign: only replied to you apparently lol
+(03:15:44 PM) Ryan Nealy: did he knock on your door?
+(03:15:49 PM) Ryan Nealy: cause the silly man knocked on my door
+(03:15:52 PM) Ryan Nealy: and then he fell on the floor
+(03:15:56 PM) jedireign: wtf?
+(03:16:00 PM) jedireign: everyone walk the dinosaur?
+(03:16:05 PM) Ryan Nealy: fell on the floor
+(03:16:11 PM) Ryan Nealy: fell on the floor
+(03:16:13 PM) Ryan Nealy: fell on the floor
+(03:16:18 PM) Ryan Nealy: oh come on you don't know that stupid song?
+(03:16:31 PM) Ryan Nealy: I opened teh door and he fell on the floor
+(03:16:38 PM) Ryan Nealy: fe fi fo fum
+(03:17:33 PM) Ryan Nealy: SSD
+(03:17:35 PM) Ryan Nealy: nigga
+(03:17:45 PM) Ryan Nealy: really we need to figure out a way to backup the server and shit
+(03:17:49 PM) Ryan Nealy: it's just not good the way it is
+(03:17:50 PM) jedireign: I do not. lol
+(03:17:52 PM) jedireign: crashplan
+(03:17:59 PM) Ryan Nealy: well we have problems
+(03:18:01 PM) Ryan Nealy: one the case is shit
+(03:18:06 PM) Ryan Nealy: it has the worst drive mountings possible
+(03:18:09 PM) jedireign: what does that have to do with backing up?
+(03:18:11 PM) Ryan Nealy: the only plus is it's dual psu that's why I used it
+(03:18:13 PM) jedireign: also crashplan backs up remote
+(03:18:24 PM) Ryan Nealy: there are 2 dirves just like sitting in there
+(03:18:27 PM) Ryan Nealy: cause there's no way to mount them
+(03:18:33 PM) Ryan Nealy: and I'm about to add 2 more ssd'
+(03:18:37 PM) Ryan Nealy: which will also just be sitting in there randomly
+(03:18:41 PM) jedireign: lolol
+(03:18:46 PM) jedireign: any spare bays?
+(03:18:47 PM) jedireign: I guess not.
+(03:18:48 PM) Ryan Nealy: only the ssd are loose
+(03:18:50 PM) jedireign: is there a cdrom?
+(03:18:51 PM) jedireign: take that shit out
+(03:18:53 PM) Ryan Nealy: all the regular drives are mounted
+(03:18:58 PM) Ryan Nealy: yah did that before I even installed
+(03:19:05 PM) Ryan Nealy: there's only mountings for 6 drives
+(03:19:13 PM) Ryan Nealy: and I have 7 in there now
+(03:19:30 PM) Ryan Nealy: the whole storage is bad
+(03:19:32 PM) jedireign: eSATA ports?
+(03:19:36 PM) Ryan Nealy: I spent zero dollars on it
+(03:19:41 PM) jedireign: yeah lol
+(03:19:51 PM) Ryan Nealy: but I have 2 samsung 850's
+(03:19:53 PM) Ryan Nealy: 240gb
+(03:19:56 PM) Ryan Nealy: that I'm going to put in
+(03:20:13 PM) jedireign: are there esata ports or an extra PCI slot?
+(03:20:16 PM) Ryan Nealy: yes
+(03:20:24 PM) jedireign: to which?
+(03:20:26 PM) jedireign: YOOOO
+(03:20:26 PM) Ryan Nealy: I am installing a 4 port sata controller as well
+(03:20:34 PM) jedireign: http://www.tigerdirect.com/applications/searchtools/item-details.asp?EdpNo=9503001&SRCCODE=WEBGOOPA&scid=scplp1929843&gclid=CjwKEAjws5CrBRD8ze702_2dyjYSJAAAJK9yDC-_8_kuzywoz7gS7UKjGlPnds_BIf2b3QFmhlshWBoCYD_w_wcB
+(03:20:35 PM) jedireign: what the fuck
+(03:20:38 PM) jedireign: hahahahahahahahaha
+(03:20:41 PM) Ryan Nealy: it has 6 on the board and currently a pci (non express) 2 port sata raid controller
+(03:20:53 PM) jedireign: so no Esata?
+(03:20:54 PM) Ryan Nealy: the only thing plugged into the secondary shitty ass controller is the backup drive
+(03:21:07 PM) Ryan Nealy: I will be replacing that controller with a pci E 6gbps compatible controller
+(03:21:13 PM) Ryan Nealy: 4 ports
+(03:21:16 PM) Ryan Nealy: which leaves only one port availabhle
+(03:21:30 PM) Ryan Nealy: hmm
+(03:21:32 PM) Ryan Nealy: it's low profile
+(03:21:34 PM) jedireign: I was going to recommend esata enclosure if we have the ports
+(03:21:35 PM) Ryan Nealy: so that prob won't work
+(03:21:42 PM) jedireign: what do you mean?
+(03:21:44 PM) Ryan Nealy: I looked at these
+(03:21:47 PM) Ryan Nealy: the form factor
+(03:22:14 PM) Ryan Nealy: it's a 2U server it has standard slots but they are the short ones
+(03:22:19 PM) jedireign: Ohhhh gotcha
+(03:22:25 PM) jedireign: does it habve esata?
+(03:22:26 PM) jedireign: Lol
+(03:22:27 PM) Ryan Nealy: like in a mini dell or w/e
+(03:22:30 PM) Ryan Nealy: i dont know
+(03:22:30 PM) jedireign: I haven't gotten a clear answer there yet
+(03:22:31 PM) jedireign: Ok
+(03:22:41 PM) Ryan Nealy: I dun really want to put other stuff in the rack
+(03:22:43 PM) jedireign: because yeah we could use external esata drive enclosures
+(03:22:44 PM) Ryan Nealy: i'm already putting a sonic and 2u server
+(03:23:02 PM) Ryan Nealy: really just need new case bad
+(03:23:05 PM) jedireign: they could probably fit on top of the 2U behind the sonicwall (depending on size of sonicwall) but I get that
+(03:23:06 PM) jedireign: yeah lol
+(03:23:15 PM) jedireign: but that option is way cheaper than $500 case
+(03:23:21 PM) Ryan Nealy: if dual psu can be ruled out to be not needed
+(03:23:23 PM) Ryan Nealy: then it's not that bad
+(03:23:31 PM) Ryan Nealy: could get one like 200 or less 
+(03:23:34 PM) jedireign: yeah
+(03:23:39 PM) jedireign: I'd say dual PSU for our needs is overkill
+(03:23:43 PM) jedireign: especially for $300
+(03:23:45 PM) Ryan Nealy: I mean we already have datacenter power
+(03:23:46 PM) jedireign: totally not worth it
+(03:24:01 PM) jedireign: one leg of datacenter power is just as much of a single point of failure as 1 PSU
+(03:24:18 PM) Ryan Nealy: yah I just meant like it's good power coming in
+(03:24:21 PM) jedireign: ultimately you'd have two PSUs on two separate circuits
+(03:24:21 PM) Ryan Nealy: less chance of shananigans
+(03:24:22 PM) jedireign: Oh yeah totally
+(03:24:29 PM) jedireign: hell
+(03:24:32 PM) jedireign: if we only have one rack circuit
+(03:24:36 PM) jedireign: dual PSU is extra waste of money
+(03:24:44 PM) Ryan Nealy: but it's so cool
+(03:24:45 PM) Ryan Nealy: :)
+(03:24:58 PM) jedireign: LOL
+(03:25:02 PM) jedireign: function over form, broski
+(03:25:15 PM) jedireign: we have clean UPSed power
+(03:25:20 PM) jedireign: so a failed PSU is unlikely
+(03:25:21 PM) Ryan Nealy: ok then find a 2 or 3u server case
+(03:25:27 PM) Ryan Nealy: that has as many front hdd bays as possible
+(03:25:28 PM) jedireign: possible, but forf $300, w could definitely shoot for better
+(03:26:40 PM) Ryan Nealy: http://www.newegg.com/Product/Product.aspx?Item=N82E16811219024
+(03:26:44 PM) Ryan Nealy: that's not bad
+(03:26:55 PM) jedireign: not bgad at all
+(03:26:57 PM) jedireign: how many intrnals?
+(03:27:15 PM) jedireign: and how many current drives?
+(03:27:22 PM) jedireign: Hm uses proprietary PSU it looks like
+(03:27:26 PM) jedireign: or at least non-ATX
+(03:28:00 PM) jedireign: Power Supply Options: Standard 2U ATX power supply, 2U redundant power supply (W x H: 3.98 x 3.31 inches)
+(03:28:17 PM) jedireign: I guess it is standard atx
+(03:28:18 PM) jedireign: word
+(03:28:30 PM) jedireign: 2 x 2.5" drive slots internals
+(03:28:31 PM) jedireign: nice
+(03:29:55 PM) Ryan Nealy: oh nice
+(03:30:06 PM) Ryan Nealy: I mean I don't really need any internal bays
+(03:30:07 PM) jedireign: so yeah
+(03:30:09 PM) jedireign: if we go over 10 drives
+(03:30:11 PM) Ryan Nealy: or want to use them if possible
+(03:30:13 PM) jedireign: we're in trouble
+(03:30:15 PM) Ryan Nealy: hahaha
+(03:30:18 PM) Ryan Nealy: yeah I mean
+(03:30:20 PM) Ryan Nealy: even 8
+(03:30:22 PM) jedireign: lol yeah
+(03:31:31 PM) Ryan Nealy: it would just be
+(03:31:34 PM) Ryan Nealy: replacing drievs with bigger ones anyway
+(03:31:45 PM) Ryan Nealy: no real need to go any furhter have our servers don't even get used atm
+(03:31:47 PM) Ryan Nealy: which is dpressing
+(03:31:54 PM) Ryan Nealy: *half
+(03:32:08 PM) Ryan Nealy: but yah tonight I'm just going to move them
+(03:33:58 PM) Ryan Nealy: it would be nice to have front video
+(03:34:03 PM) Ryan Nealy: but I guess that's not so easy with custom case
+(03:34:14 PM) jedireign: yeah, really not that big of a deal if you have a crash cart
+(03:34:16 PM) Ryan Nealy: it would need like a random vga header I dun even know
+(03:34:27 PM) jedireign: you'd need a graphics card (or onboard) that has a header, yeah
+(03:34:30 PM) jedireign: can't say I've seen them in the wild.
+(03:34:39 PM) jedireign: or some kind of loop back taking up an extra PCi slot
+(03:34:41 PM) jedireign: garbage
+(03:34:47 PM) Ryan Nealy: I like that case though it seems decent
+(03:34:54 PM) Ryan Nealy: but it doesn't look like standard psu you are right
+(03:35:16 PM) Ryan Nealy: big jump in price to the next stuff though
+(03:35:27 PM) Ryan Nealy: and I really dun want supermicro anything they are so shitty
+(03:43:13 PM) jedireign: according to the specs, it should take a standard
+(03:43:18 PM) jedireign: I was just judging by the thumbnail ;)
+(03:43:49 PM) jedireign: buuuut
+(03:43:52 PM) jedireign: I could be misreading that
+(03:43:59 PM) jedireign: it looks like the plate is replacable 
+(03:44:07 PM) jedireign: Ah yeah
+(03:44:10 PM) jedireign: we'd need one like this
+(03:44:17 PM) jedireign: http://www.newegg.com/Product/Product.aspx?Item=N82E16817151090&nm_mc=KNC-GoogleAdwords-PC&cm_mmc=KNC-GoogleAdwords-PC-_-pla-_-Power+Supplies-_-N82E16817151090&gclid=CjwKEAjws5CrBRD8ze702_2dyjYSJAAAJK9yHrdz60wIUOshRFXQyam6ToHGnkYRg7CnEUp_Y3HSQRoCcdrw_wcB&gclsrc=aw.ds
+(03:53:20 PM) jedireign: LOL email to me from a vendor
+(03:53:23 PM) jedireign: "Dear << Test First Name >>, "
+(03:53:25 PM) jedireign: Thanks buddy!
+(04:46:45 PM) jedireign: Dude
+(04:46:46 PM) jedireign: lockpicking
+(04:46:51 PM) jedireign: is the easiest fucking thing in the world.
+(04:47:15 PM) jedireign: Just got my first set of picks, had two master padlocks opened in a minute.
+(04:47:22 PM) jedireign: one of them a "high end' one
+(08:01:24 PM) Ryan Nealy: Call me asap
+(08:59:05 PM) Ryan Nealy: awwww fuck
+(08:59:13 PM) Ryan Nealy: one of the nic's not working that's why none of the vm's connected
+(08:59:16 PM) Ryan Nealy: I fixed it but down a nic
+(08:59:21 PM) Ryan Nealy: wompety wompersons
+(11:18:31 PM) Ryan Nealy: ugh
+(11:18:33 PM) Ryan Nealy: w/e
+(11:18:36 PM) Ryan Nealy: I'll go add another one later
+(11:18:40 PM) Ryan Nealy: prob never but ya know
+(11:19:07 PM) Ryan Nealy: pci e
+(11:19:14 PM) Ryan Nealy: I had 2 in there one for virtual switch one for management
+(11:19:22 PM) Ryan Nealy: virtual switch one just not working now dunno why
+(11:19:40 PM) Ryan Nealy: I didn't know till I got home
+(11:19:44 PM) Ryan Nealy: it had link lights
+(11:20:03 PM) Ryan Nealy: my old boss was there overseeing and I kind of had to run out I didn't want to make him stay
+(11:20:37 PM) Ryan Nealy: cause he had to let me into our old rack
+(11:21:37 PM) Ryan Nealy: I didn't put in the ssd's or anyting either
+(11:22:55 PM) Ryan Nealy: w/e it works
+(11:22:56 PM) Ryan Nealy: good enough
+(11:23:06 PM) Ryan Nealy: also I forgot to hit save on the dns zone editor that's why it didn't work for you lol
+(11:23:29 PM) Ryan Nealy: was trying to use it from my phone so
+(11:23:32 PM) Ryan Nealy: yeah that didn't work out very well
+(11:23:42 PM) Ryan Nealy: I just won another comp
+(11:23:46 PM) Ryan Nealy: there's a csgo operation out
+(11:23:47 PM) Ryan Nealy: a new one
+(11:23:49 PM) Ryan Nealy: with missions
+(11:23:59 PM) Ryan Nealy: it was like the least fun comp I've ever had though
+(11:24:05 PM) Ryan Nealy: with stupid mud
+(11:25:26 PM) Ryan Nealy: yah the missions are cool though
+(11:25:33 PM) Ryan Nealy: it made it even worse cause somehow he was laying really good
+(11:25:35 PM) Ryan Nealy: and I just like
+(11:25:48 PM) Ryan Nealy: did really bad but actually didn't get killed that much I just like. never saw enemies
+(11:26:03 PM) Ryan Nealy: so I hadl ike 10 kills at the end of the match
+(11:26:05 PM) Ryan Nealy: lol which is ridiculous
+(11:27:55 PM) Ryan Nealy: lolz
+(11:27:56 PM) Ryan Nealy: http://www.outdoorhub.com/news/2015/05/26/video-jerry-miculek-rapid-fires-double-barreled-1911s/

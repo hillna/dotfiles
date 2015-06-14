@@ -1,0 +1,44 @@
+Conversation with 0lzr6jjvwhsu12ydtro6dl28bm@public.talk.google.com at Tue 09 Jun 2015 04:46:04 PM EDT on jedireign@gmail.com/Adium (jabber)
+(04:46:12 PM) jedireign: Hey what raspberry pi do you have retropie on?
+(04:46:25 PM) jedireign: and did you overclock it or anything? does SNES performance suck for you? lol
+(04:46:44 PM) jedireign: almost done scraping 4500 roms worth of metadata
+(05:07:38 PM) Reuben Negron: Yea rasp pie 2
+(05:07:48 PM) Reuben Negron: Over clocked to 1000mhz
+(05:08:04 PM) jedireign: aren;t they default 1000MHz?
+(05:08:10 PM) Reuben Negron: I bought a 50 heat sink for it and it's fine
+(05:08:11 PM) jedireign: or is it a B+ overclocked?
+(05:08:18 PM) jedireign: I did a "medium" overclock
+(05:08:24 PM) jedireign: and it runs kinda bad
+(05:08:27 PM) jedireign: I don't have a heatsink though
+(05:08:29 PM) jedireign: I should get one.
+(05:08:37 PM) Reuben Negron: Dunno I think a pie 2 is 900hz
+(05:08:40 PM) jedireign: oh ok
+(05:08:44 PM) Reuben Negron: It's stupid cheap
+(05:08:45 PM) jedireign: yeah I'm on a B+
+(05:08:49 PM) jedireign: I need to upgrade to a 2.
+(05:08:56 PM) jedireign: I hae like 3 Bs a B+ laying around.
+(05:08:56 PM) jedireign: lol
+(05:09:27 PM) Reuben Negron: What version of emulation station are tou using
+(05:09:30 PM) jedireign: but it's going in the car, but if I need to upgrade, I need to redo the software womp womp
+(05:09:34 PM) jedireign: 2.something?
+(05:09:41 PM) jedireign: whatever's installed by retropie
+(05:09:54 PM) Reuben Negron: Upgrade to 3.0 through the setup
+(05:10:01 PM) Reuben Negron: Is beta but it's good
+(05:10:05 PM) jedireign: word I will do that 
+(05:10:09 PM) jedireign: once my scraping finishes
+(05:10:12 PM) Reuben Negron: Takes like an hour I'd you upgrade via binaries
+(05:10:19 PM) jedireign: (and I find out where the fuck that lives and move it to the USB drive)
+(05:10:40 PM) Reuben Negron: Scraping via emulation station or commanf line
+(05:10:51 PM) jedireign: emulation station lol and it's taking FOREVER
+(05:11:01 PM) jedireign: I just found the option in the menu like "yeah I'll do that when I go to PA!"
+(05:11:07 PM) jedireign: it was _not_ done when I got back >_>
+(05:11:14 PM) Reuben Negron: Dude command line takes 10 min via command line
+(05:11:16 PM) jedireign: but it has like 150 left to go
+(05:11:17 PM) jedireign: LOL
+(05:11:18 PM) jedireign: nice
+(05:11:25 PM) jedireign: emulation station is not well optimized, apparently ;)
+(05:11:32 PM) jedireign: I am going to cancel that now.
+(05:11:43 PM) jedireign: and upgrade emulation station
+(05:12:45 PM) Reuben Negron: Yea command line is so much faster it's not 3ven funny
+(05:13:16 PM) jedireign: do I need to grab a different branch of retropie-setup? or is the 3.0 upgrade in master?
+(08:57:31 PM) 0lzr6jjvwhsu12ydtro6dl28bm@public.talk.google.com is now known as Reuben Negron. 

@@ -1,0 +1,98 @@
+Conversation with -584858711@chat.facebook.com at Tue 26 May 2015 10:07:57 AM EDT on nicholas.hill.71@chat.facebook.com/ (jabber)
+(10:08:01 AM) Nick Hill: how was larpin NPCin?
+(10:09:45 AM) Dom DeStefano: It was kinda fun actually. I did two "scenes". I was one of two prisoners being dragged along by an ogre in one, and some PCs rescued us. And then in the other, like 10 people were an orc, ogre, and goblin army that slaughtered four players.
+(10:13:04 AM) Nick Hill: nice
+(10:13:15 AM) Nick Hill: I'm going to a WWII reenactment in August
+(10:13:23 AM) Nick Hill: along with an air show :D
+(10:13:26 AM) Dom DeStefano: Only certain NPCs are given uhh, what was the term...
+(10:13:31 AM) Nick Hill: dignity?
+(10:13:48 AM) Dom DeStefano: GPA or something, it meant they had the authority to kill a player permanently instead of just knocking them out.
+(10:14:09 AM) Nick Hill: hm interesting
+(10:14:24 AM) Dom DeStefano: In this case it was the two boss monsters, I was just a lowly orc.
+(10:14:38 AM) Nick Hill: so players only need to fear bosses, then
+(10:14:42 AM) Nick Hill: that feels kind of nerfed
+(10:14:43 AM) Dom DeStefano: But man, it was actually not that bad. The players really got into it.
+(10:14:46 AM) Nick Hill: though I hae no idea what the game was like
+(10:14:54 AM) Nick Hill: Yeah that's the thing that I can see redeeming larps
+(10:15:00 AM) Nick Hill: is everyone staying in character and whanot
+(10:15:07 AM) Dom DeStefano: Honestly if it's just a boss by themselves, they don't even need to fear the boss.
+(10:15:35 AM) Dom DeStefano: In this scenario, it was four players who accidentally grabbed this lady as she teleported herself...right into the middle of an orc stronghold.
+(10:15:49 AM) Dom DeStefano: They knew they were fucked before the scenario even started.
+(10:16:38 AM) Nick Hill: lol
+(10:17:07 AM) Dom DeStefano: But yeah, in a normal battle you'd take out the big guys first, and then clean up the little guys. So it makes sense. But aaallll of us little guys were whittling away at their HP the whole time.
+(10:19:22 AM) Nick Hill: I always do normal battles the oppposite of that
+(10:19:35 AM) Nick Hill: clean up the little guys to lower the total DPS and then focus on the big guy
+(10:19:52 AM) Nick Hill: at least in RPGs and shit
+(10:20:31 AM) Dom DeStefano: In a straight up numbers game, there's benefit to that. But in terms of more real, brain-driven combat, you want to take down the officers first. They rally the troops, give group buffs, improve morale...
+(10:21:11 AM) Dom DeStefano: Think more Halo than Final Fantasy (though even in Final Fantasy, some boss fights end when you kill the boss)
+(10:21:41 AM) Nick Hill: I suppose, but it's also all situational
+(10:23:16 AM) Dom DeStefano: :D In this situation, they only had one way to survive the encounter anyway, and they didn't do that. Probably because LARPers are special snowflakes who aren't used to functioning as a group.
+(10:24:02 AM) Dom DeStefano: The way one of the veterans put it, the only way they could survive was if the three fighters surrounded the spellcaster and defended him while he opened a portal out of the stronghold.
+(10:24:08 AM) Nick Hill: lmfao
+(10:24:27 AM) Dom DeStefano: But the group fragmented almost *instantly*
+(10:24:35 AM) Nick Hill: yeah I think that's like the biggest
+(10:24:36 AM) Nick Hill: uhh
+(10:24:41 AM) Nick Hill: word I can't think of
+(10:24:47 AM) Nick Hill: that kills my interst in larps
+(10:24:55 AM) Nick Hill: is all the socially inepet fucktards
+(10:25:02 AM) Nick Hill: like, went to comiccon
+(10:25:04 AM) Nick Hill: and man
+(10:25:09 AM) Nick Hill: am I embarassed to be a geek half hte time
+(10:25:14 AM) Dom DeStefano: The spellcaster's very first action, at all, was to teleport away from the group. He started casting "Blink" spells and popping all over the place, just delaying the inevitable.
+(10:25:50 AM) Dom DeStefano: It's not that they were socially inept. Actually the majority of the people I met there were fairly charismatic and good-looking.
+(10:26:13 AM) Dom DeStefano: It's just that most of them were special snowflakes.
+(10:26:20 AM) Nick Hill: lol
+(10:26:34 AM) Nick Hill: LEEEROYYY
+(10:26:38 AM) Nick Hill: JEEENNKIIIINNNSSSS
+(10:26:38 AM) Dom DeStefano: "I'm special, I'm the most uniquest, I made a character who was cool and super and I am the hero."
+(10:26:45 AM) Nick Hill: haha oh god
+(10:26:46 AM) Nick Hill: yeah
+(10:26:54 AM) Nick Hill: I'm the most uniqeust
+(10:26:56 AM) Nick Hill: hahahahahahahahahahaha
+(10:26:58 AM) Nick Hill: <3
+(10:26:58 AM) Dom DeStefano: Not "I'm part of this unit. We all function. I'm not special. I'm playing my part."
+(10:27:09 AM) Nick Hill: nigga you fodder
+(10:27:15 AM) Nick Hill: SHINY AND CHROME
+(10:27:33 AM) Dom DeStefano: But at the end of the day, all of the players had fun. When their characters died they were excited, not whiny.
+(10:27:40 AM) Dom DeStefano: They all thanked us for an awesome encounter.
+(10:27:46 AM) Nick Hill: nice
+(10:28:02 AM) Nick Hill: YO
+(10:28:03 AM) Nick Hill: btw
+(10:28:06 AM) Nick Hill: when migrating a git repo
+(10:28:07 AM) Nick Hill: between hosts
+(10:28:10 AM) Nick Hill: while active development
+(10:28:18 AM) Nick Hill: is the most spaghetti split brain confusing.
+(10:28:22 AM) Nick Hill: I have ever experienced.
+(10:28:33 AM) Nick Hill: lmao
+(10:28:37 AM) Nick Hill: HAVING TGO BE SO CAREFUL
+(10:30:03 AM) Dom DeStefano: lol haaave fun with that.
+(10:30:12 AM) Dom DeStefano: Richard Stallman did an op-ed piece about bloatware :D
+(10:30:18 AM) Nick Hill: lmao oh man
+(10:30:23 AM) Nick Hill: yeah I've got it organized
+(10:30:25 AM) Nick Hill: and cutting over today
+(10:30:28 AM) Nick Hill: gitlab is fucking pimp, btw
+(10:30:39 AM) Nick Hill: 1308997
+(10:30:43 AM) Nick Hill: WElL THAT WASN"T THE RIGHT WINDOW
+(10:30:53 AM) Nick Hill: glad that was a 2-factor
+(10:30:54 AM) Nick Hill: x_x
+(10:31:02 AM) Nick Hill: hahaha still learning bspwm and I get window focus confused sometimes -B
+(10:31:08 AM) Nick Hill: borderless/titleless windows can do that.
+(10:31:41 AM) Nick Hill: Ok
+(10:31:45 AM) Nick Hill: can we please talk about mad max now
+(10:31:50 AM) Nick Hill: I"VE BEEN DYING TO TALK TO YOU ABOUT THE MAIL
+(10:33:33 AM) Dom DeStefano: Hahahaha yes let's talk Mad Max.
+(10:34:19 AM) Nick Hill: Nux is my favorite part about that movie.
+(10:34:26 AM) Nick Hill: lost little puppy looking for a pack.
+(10:34:26 AM) Nick Hill: :(
+(10:34:41 AM) Nick Hill: lmfao and his friends larry and barry
+(10:34:53 AM) Nick Hill: but the universe man
+(10:34:55 AM) Nick Hill: so fucking _rich_
+(10:35:35 AM) Nick Hill: ‏‎Brandon Dimcheff10:26 AMwe don't get our mail if there's some snow by the mailboxinstead we get a passive aggressive note in our mailbox about shoveling it outBen Schultz10:28 AMprivatize the mail!Joe Westhead10:28 AMi think the mail person is probably the one person who can get away with leaving a note and it not being passive aggressiveNick Hill ☢10:29 AMha wait so they can put a note in the mailbox, but not the mail?Brandon Dimcheff10:31 AMyeswe got a new mail carrier a couple years ago that's not as angry thoso that hasn't happened as much
+(10:35:38 AM) Nick Hill: ahh hformatting faillll
+(10:35:49 AM) Dom DeStefano: I knew Nux was gonna die. I wondered if they were gonna like, have Nux have sex with the redhead chick, and she was pregnant, and they would do a whole
+(10:35:56 AM) Dom DeStefano: "You have a legacy, so you'll never die"
+(10:36:05 AM) Nick Hill: lol yeah
+(10:36:09 AM) Dom DeStefano: But Mad Max is definitely not a movie about heavy-handed morality.
+(10:36:12 AM) Nick Hill: I mean, he got his redemption, and his valhalla
+(10:36:19 AM) Nick Hill: oh no not at all.
+(10:36:23 AM) Dom DeStefano: Its morality is more subtle.
