@@ -2283,7 +2283,7 @@
 				<buddy account='nicholas.hill.71@chat.facebook.com/' proto='prpl-jabber'>
 					<name>-108500299@chat.facebook.com</name>
 					<alias>Emily Johnson</alias>
-					<setting name='last_seen' type='int'>1434233001</setting>
+					<setting name='last_seen' type='int'>1434248046</setting>
 					<setting name='buddy_icon' type='string'>ff02b466d704c0b61a366cbb3c3d6ed146753dde.jpg</setting>
 					<setting name='icon_checksum' type='string'>ff02b466d704c0b61a366cbb3c3d6ed146753dde</setting>
 				</buddy>
@@ -2449,7 +2449,7 @@
 				<buddy account='nicholas.hill.71@chat.facebook.com/' proto='prpl-jabber'>
 					<name>-594410845@chat.facebook.com</name>
 					<alias>Kevin Mayo</alias>
-					<setting name='last_seen' type='int'>1434247767</setting>
+					<setting name='last_seen' type='int'>1434248009</setting>
 					<setting name='buddy_icon' type='string'>97724d09810658d4b0adbf1e066c21d87bf2bcc6.jpg</setting>
 					<setting name='icon_checksum' type='string'>97724d09810658d4b0adbf1e066c21d87bf2bcc6</setting>
 				</buddy>
