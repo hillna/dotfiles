@@ -2,3 +2,4 @@
 .vim/.netrwhist
 *.bak
 .config/bspwm/wallpaper/*
+.keys
