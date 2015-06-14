@@ -1,0 +1,70 @@
+Conversation with -590397269@chat.facebook.com at Fri 12 Jun 2015 12:46:49 PM EDT on nicholas.hill.71@chat.facebook.com/ (jabber)
+(12:46:49 PM) Shelby Reyes: Haha yeah, sheshechan
+(12:47:10 PM) Shelby Reyes: I haven't had time to do too much with my computer recently, I've been busy
+(12:47:58 PM) Shelby Reyes: I'm actually a little concerned after running Prime95 over night my processor is running about 98 degrees celcius
+(12:48:27 PM) Shelby Reyes: I used the fan that came with the CPU so I might just get a better one
+(12:49:03 PM) Shelby Reyes: Also I got a hand-me-down hard drive that isn't working so I need to get a new one
+(12:49:35 PM) Shelby Reyes: Also.... I'm having a strange issue where when I install the video card driver it cuts off either side of the screen into black bars
+(12:49:48 PM) Shelby Reyes: but when I uninstall it it works fine
+(12:49:56 PM) Shelby Reyes: so I've got a bit of work to do still :P
+(12:54:48 PM) Nick Hill: yikes 98 C is _really high_
+(12:54:56 PM) Nick Hill: it might not be a fan issue if it's running that hot
+(12:55:40 PM) Nick Hill: make sure that the thermal paste layer is _thin as hair_, has no stickers or anything on the surfaces of CPU/Cooler (sorry to be so "obvious" but I've seen that mistake so many imtes), and that the cooler is fully mounted and secure
+(12:55:46 PM) Nick Hill: you should be seeing temps in the 60s
+(12:56:24 PM) Nick Hill: the CPU will actually shut itself off at 105C as that's over temp
+(12:56:54 PM) Nick Hill: it sounds more like a problem than an underperforming stock fan
+(12:57:02 PM) Nick Hill: and I'm not sure upgrading will fix it (and will cost money)
+(12:57:20 PM) Shelby Reyes: mhm
+(12:57:26 PM) Nick Hill: too much thermal paste actually acts as an insulator, since it's silicon based
+(12:57:35 PM) Shelby Reyes: I'll clean off the thermal paste and try again
+(12:57:43 PM) Shelby Reyes: thanks for the tip!
+(12:58:26 PM) Nick Hill: to apply the paste, you want to "wax" it into the heat sink surface, then wipe off excess - you want it to look like "foggy copper"
+(12:58:36 PM) Nick Hill: the paste sehould only fill the imperfections there, to make a perfect smooth surface
+(12:58:51 PM) Nick Hill: then on the CPU you want to put a glob down, then use a credit card to spread it around
+(12:58:59 PM) Nick Hill: you want  it as thin as possible while remaining opaque
+(12:59:11 PM) Nick Hill: smooth is a bonus, but not 100% necessary
+(12:59:28 PM) Nick Hill: it'st one of those less is more things - it's only really meant to fill in microscopic imperfections in the metalic surfaces
+(01:00:10 PM) Nick Hill: if I were to guess, though, not actually being there, it sounds like the heatsink isn't fully clamped down
+(01:00:14 PM) Nick Hill: to get that high of a temp
+(01:00:29 PM) Nick Hill: You don't have the computer in a cubby hole or anything, do you? It has air flow?
+(01:00:41 PM) Nick Hill: (let mek now if I'm jabbering your ear off, too. I just like computers -_-(
+(01:01:26 PM) Shelby Reyes: no no it's really helpful to figure out what's wrong
+(01:01:33 PM) Shelby Reyes: It's sitting beside my desk so yeah, it has airflow
+(01:01:38 PM) Nick Hill: ok cool
+(01:01:49 PM) Nick Hill: yeah you should see much lower temps than that.
+(01:12:46 PM) Shelby Reyes: I'll probably take care of it tomorrow
+(01:13:03 PM) Shelby Reyes: my new hard drive is coming tomorrow plus I need to install my card reader
+(01:13:12 PM) Nick Hill: sweet :)
+(01:13:46 PM) Shelby Reyes: any idea of what could be wrong with the video card driver?
+(01:14:06 PM) Shelby Reyes: tried googling the problem and I couldn't find anyone else that had the same problem
+(01:14:19 PM) Nick Hill: hmm I missed that part, what's the problem?
+(01:15:48 PM) Shelby Reyes: when I install the driver, the edges of the screen get cut off and there are black bars on either side
+(01:16:05 PM) Shelby Reyes: also it's cut off on the left side of the screen only, but still centered
+(01:16:14 PM) Shelby Reyes: like I can see the date and time on the bottom right
+(01:16:24 PM) Shelby Reyes: but most of my task bar icons get cut off
+(01:16:35 PM) Shelby Reyes: I can take a photo later to show you
+(01:16:47 PM) Shelby Reyes: I uninstalled the driver for now
+(01:18:43 PM) Nick Hill: oh hm sounds like the monitor might need adjusting
+(01:18:48 PM) Nick Hill: what kind of cable are you hooking it up with?
+(01:19:10 PM) Nick Hill: Also in windows display properties, or maybe in the nvidia properties (I forget which) you can adjust the screen placement, scaling, etc.
+(01:21:13 PM) Nick Hill: also what kind of monitor?
+(01:24:56 PM) Shelby Reyes: 24" LG Flatron L246WP
+(01:25:13 PM) Shelby Reyes: and VGA
+(01:26:28 PM) Shelby Reyes: I mean, I tried it with HDMI too
+(01:27:00 PM) Shelby Reyes: Like right now I have a VGA > HDMI
+(01:27:08 PM) Shelby Reyes: but I also tried HDMI > HDMI with the same results
+(01:27:26 PM) Shelby Reyes: yeah, I know
+(01:27:34 PM) Shelby Reyes: oh god sorry I meant DVI
+(01:27:58 PM) Shelby Reyes: mk
+(01:28:11 PM) Shelby Reyes: right
+(01:28:46 PM) Shelby Reyes: don't think so, this is the exact same monitor and video card Sam handed down to me
+(01:28:49 PM) Shelby Reyes: he used the same combo
+(01:29:14 PM) Nick Hill: Right but you have to initially set the resolution
+(01:29:23 PM) Nick Hill: it defaults to a "safe' resolution
+(01:29:36 PM) Nick Hill: which might be a different aspect ratio than your monitor, hence the bars
+(01:29:58 PM) Nick Hill: (If I'm imagining what you're describing properly)
+(01:30:31 PM) Shelby Reyes: I tried all different resolutions
+(01:32:43 PM) Shelby Reyes: Mmkays
+(01:35:05 PM) Shelby Reyes: I don't think I'm ready for that, haha
+(01:35:17 PM) Nick Hill: hahaha it's cool, I'm mostly joking 
+(01:35:23 PM) Nick Hill: but that's how you really learn how a computer works

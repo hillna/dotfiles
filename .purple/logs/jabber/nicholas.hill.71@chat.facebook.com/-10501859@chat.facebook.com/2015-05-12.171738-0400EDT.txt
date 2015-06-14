@@ -1,0 +1,35 @@
+Conversation with -10501859@chat.facebook.com at Tue 12 May 2015 05:17:38 PM EDT on nicholas.hill.71@chat.facebook.com/ (jabber)
+(05:17:38 PM) Kit Rowland: hey - so for our RasPi miners, do you know what the root PW was? I'm booting mine up for the first time since 2014
+(05:17:50 PM) Nick Hill: ahhhhhhhhhhhhhhh
+(05:17:51 PM) Nick Hill: maybe
+(05:17:53 PM) Nick Hill: g68pov20
+(05:17:54 PM) Nick Hill: or
+(05:17:55 PM) Nick Hill: Je;nks45hs
+(05:18:01 PM) Kit Rowland: word! ty I'll try em
+(05:18:06 PM) Nick Hill: if neither fo those, just fucking new raspian on the SD card
+(05:18:12 PM) Nick Hill: or single user that shiz
+(05:18:20 PM) Nick Hill: but I bet newer version of the software will run a ton better
+(05:18:25 PM) Nick Hill: what with constant optimization and all
+(05:19:51 PM) Kit Rowland: word
+(05:19:51 PM) Kit Rowland: yeah
+(05:19:59 PM) Nick Hill: yoo
+(05:20:02 PM) Nick Hill: dual sim in the s5
+(05:20:07 PM) Nick Hill: http://imgur.com/gHkVmRi
+(05:20:13 PM) Nick Hill: I can do quad, too....
+(05:20:14 PM) Nick Hill: LOL
+(05:20:46 PM) Nick Hill: dual sim, wireless Qi, 128GB storage....
+(05:20:50 PM) Nick Hill: all I need is a USB OTG keyboard 
+(05:20:53 PM) Nick Hill: and who need a computer?
+(05:21:39 PM) Nick Hill: http://todayinawesome.com/blog/2015/5/11/gamer-miraculously-beats-both-mega-man-x-and-mega-man-x2-using-the-same-controller
+(05:22:28 PM) Kit Rowland: hah nice
+(05:22:38 PM) Kit Rowland: aww.. my screen/button shield may be dead...
+(05:22:49 PM) Nick Hill: :( why's that?
+(05:22:51 PM) Nick Hill: it needs software to do
+(05:23:05 PM) Kit Rowland: I need to look at this stuffs
+(05:23:08 PM) Nick Hill: otherwise it's completely passive and do nothing
+(05:23:19 PM) Kit Rowland: yeah the script that runs the interface/screen thing
+(05:23:23 PM) Nick Hill: yeah
+(05:23:24 PM) Nick Hill: get uhhh
+(05:23:28 PM) Nick Hill: adafruit search for the module
+(05:23:31 PM) Nick Hill: and find the sample test code
+(05:23:35 PM) Nick Hill: python script to run

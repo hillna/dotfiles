@@ -1,0 +1,789 @@
+Conversation with ryan@kcsnj.com at Mon 04 May 2015 10:47:31 AM EDT on jedireign@gmail.com/Adium (jabber)
+(10:47:31 AM) Ryan Nealy: hassle
+(10:47:33 AM) Ryan Nealy: I hate my life sometimes
+(10:47:35 AM) jedireign: ?
+(10:47:55 AM) Ryan Nealy: got electrical contractors in to run all this wire
+(10:48:02 AM) Ryan Nealy: now my marketing manager is changing everything
+(10:48:18 AM) Ryan Nealy: I'm not sure why he is even involved but he's like the bosses best friend
+(10:48:36 AM) jedireign: oh jesus fucking chrsist
+(10:48:38 AM) jedireign: MARKETING M ANAGER?
+(10:48:43 AM) Ryan Nealy: he is garbage
+(10:48:44 AM) jedireign: why are they having anything to do with the datacenter?
+(10:48:46 AM) jedireign: yo go tallk to your  boss
+(10:48:49 AM) jedireign: and let himk now that's bullshti
+(10:48:50 AM) jedireign: lol
+(10:48:54 AM) Ryan Nealy: he's not here he's randomly out for the week
+(10:48:58 AM) jedireign: OH MAN
+(10:49:05 AM) Ryan Nealy: I basically planned 4 outlets pretty straight forward
+(10:49:08 AM) jedireign: :| sorry to hear that that's ridiculous
+(10:49:13 AM) jedireign: WHY DOES MARKETING CARE ABOUTOUTLETS
+(10:49:15 AM) Ryan Nealy: but since I did this he is planng cubicle installs behind my back or something
+(10:49:22 AM) jedireign: OH cubicle installs
+(10:49:24 AM) Ryan Nealy: idk but it's ridiculous
+(10:49:27 AM) jedireign: (still wtf why is he doing that)
+(10:49:30 AM) jedireign: I was thinking this was like
+(10:49:33 AM) jedireign: Rack circuits.
+(10:49:35 AM) Ryan Nealy: I just told him it's now completely his job
+(10:49:38 AM) jedireign: LOL
+(10:49:39 AM) jedireign: nice
+(10:49:40 AM) jedireign: yeah
+(10:49:41 AM) jedireign: seriously
+(10:49:46 AM) Ryan Nealy: like literally the contractors show up
+(10:49:52 AM) Ryan Nealy: and he tells them completely different then what I just told them
+(10:50:04 AM) Ryan Nealy: like an hour after they start
+(10:50:16 AM) Ryan Nealy: it's dumb also its' a dick move to change quotes to people like that
+(10:50:19 AM) jedireign: what did he change?
+(10:50:22 AM) jedireign: Um
+(10:50:22 AM) jedireign: yeah
+(10:50:26 AM) Ryan Nealy: different walls
+(10:50:26 AM) jedireign: it's actually sometimes illegal
+(10:50:26 AM) jedireign: LOL
+(10:50:28 AM) Ryan Nealy: different placements
+(10:50:30 AM) jedireign: like
+(10:50:33 AM) jedireign: contracts are contracts
+(10:50:35 AM) Ryan Nealy: different receptable types
+(10:50:39 AM) jedireign: you can't just be like "Oh and btw last moment!"
+(10:50:40 AM) jedireign: a
+(10:50:41 AM) jedireign: and then
+(10:50:47 AM) jedireign: WHAT THE FUCK DO YOU MENA IT"S NOT HTE PRICE WE AGREED ON
+(10:50:49 AM) jedireign: LOL LOL LOL
+(10:50:58 AM) Ryan Nealy: if someone told that to me I would be mad so why would I do it to someone else
+(10:51:04 AM) jedireign: yuuuup
+(10:51:12 AM) jedireign: rachael deals iwth this shit every single fucking day
+(10:51:13 AM) jedireign: like
+(10:51:15 AM) jedireign: she'll go to work
+(10:51:16 AM) jedireign: with a plan
+(10:51:20 AM) jedireign: and then the customer will DEMAND
+(10:51:21 AM) jedireign: last minute
+(10:51:22 AM) jedireign: for free
+(10:51:24 AM) jedireign: like 10 other things
+(10:51:35 AM) jedireign: and their pussy sales boss people are like "suck the customers dick if they ask!that's what you're there for"
+(10:52:46 AM) Ryan Nealy: I have to share my office with this guy
+(10:52:50 AM) Ryan Nealy: I hate it
+(10:52:58 AM) Ryan Nealy: he is the only person in my office that I hate working with
+(10:53:30 AM) jedireign: yo
+(10:53:33 AM) jedireign: poop in his desktop
+(10:53:37 AM) jedireign: or put a fish in it
+(10:53:50 AM) jedireign: yo
+(10:53:51 AM) jedireign: hahahaha
+(10:53:55 AM) jedireign: hiding a dead fish in someones car
+(10:53:58 AM) jedireign: best/worst payback ever.
+(10:57:14 AM) Ryan Nealy: lol
+(10:57:18 AM) Ryan Nealy: meh fuck it
+(10:57:23 AM) Ryan Nealy: I need to find new antivirus for us
+(11:05:40 AM) jedireign: in corp windows envs I've had a lot of success with the symantec enterprise shit
+(11:05:44 AM) jedireign: but no idea the costs involved
+(11:12:40 AM) Ryan Nealy: oh god
+(11:12:46 AM) Ryan Nealy: I"ll pretend you didn't say that
+(11:13:05 AM) jedireign: hahaha
+(11:13:12 AM) jedireign: you gotta remember I haven't touched corp windows in
+(11:13:12 AM) jedireign: oh
+(11:13:14 AM) jedireign: 10 years almost?
+(11:13:19 AM) jedireign: in any kind of real scale that is
+(11:13:31 AM) jedireign: nah not ten
+(11:13:33 AM) jedireign: like 6-8
+(11:13:36 AM) jedireign: but anyway yeah it's been a while LOL
+(11:13:44 AM) jedireign: I haven't had to think about anti virus in FOREVER
+(11:13:59 AM) Ryan Nealy: symantec is like
+(11:14:04 AM) Ryan Nealy: I mean it's an OK product
+(11:14:05 AM) jedireign: if my computer got infected, I wouldn't even know what to do :D
+(11:14:07 AM) Ryan Nealy: but if you ever have to remove it
+(11:14:12 AM) jedireign: HAHA dude
+(11:14:14 AM) Ryan Nealy: I have literally spent countless hours
+(11:14:17 AM) jedireign: that shit is like some kind of scifi tick
+(11:14:19 AM) Ryan Nealy: trying to remove symantec from network
+(11:14:21 AM) jedireign: that digs into your brain stem
+(11:14:23 AM) jedireign: and removing it kills the patietn
+(11:14:33 AM) Ryan Nealy: it's really bad dude
+(11:21:10 AM) jedireign: haha yooo
+(11:21:14 AM) jedireign: my little cousins' having a baby
+(11:21:14 AM) jedireign: wtf
+(11:21:39 AM) Ryan Nealy: nice
+(11:21:40 AM) jedireign: he's probably older than I think he is.
+(11:21:40 AM) jedireign: hahaha
+(11:21:45 AM) jedireign: it's just like super out of left field nowhere
+(11:21:49 AM) jedireign: I didn't even know he had a girlfriend
+(11:21:53 AM) jedireign: let alone one serious enough to baby with
+(11:22:15 AM) Ryan Nealy: maybe he doesn't
+(11:22:16 AM) Ryan Nealy: LOL
+(11:22:20 AM) jedireign: OHHHH zing
+(11:22:20 AM) jedireign: hahaha
+(11:22:26 AM) jedireign: nah it would be one thing if he like knocked some girl up whateve
+(11:22:32 AM) jedireign: that wouldn't surprise me
+(11:22:33 AM) jedireign: LOL
+(11:22:37 AM) jedireign: but they've got like
+(11:22:42 AM) jedireign: cute photo announcements and all that shit going on
+(11:23:08 AM) jedireign: https://scontent-ord.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11203231_967162063329480_3714279602179748216_n.jpg?oh=0d34e0f3338ac5cbfdda8f428400de8b&oe=55DFDC78
+(11:23:09 AM) jedireign: I mean come on
+(11:23:11 AM) jedireign: that shit's adorable
+(11:23:31 AM) Ryan Nealy: that's weird
+(11:23:32 AM) Ryan Nealy: lol
+(11:23:37 AM) jedireign: ahahaha yeah it's a little weird too
+(11:23:44 AM) jedireign: he's a weird dude
+(11:23:54 AM) jedireign: he chased me with  a knife when he was like 8 years old and stabbed it through a door
+(11:24:02 AM) jedireign: Fucking nutbag kid
+(11:24:21 AM) Ryan Nealy: hahahahaha
+(11:24:23 AM) Ryan Nealy: one of those
+(11:24:25 AM) jedireign: hahahahaha yeah
+(11:28:45 AM) jedireign: yup
+(11:28:47 AM) jedireign: welcome to anything
+(11:28:51 AM) jedireign: doing it right isn't cheap
+(11:28:59 AM) Ryan Nealy: it's just like
+(11:29:05 AM) Ryan Nealy: annoying cause I always end up missing something
+(11:29:13 AM) Ryan Nealy: and I don't enjoy doing these tv installs at alll so
+(11:29:18 AM) Ryan Nealy: lol
+(11:29:24 AM) Ryan Nealy: just like yay more wire fishing through walls all day
+(11:29:25 AM) jedireign: lol
+(11:29:26 AM) Ryan Nealy: so fucking awesome
+(11:29:32 AM) jedireign: I love running wire.
+(11:29:34 AM) jedireign: if like
+(11:29:35 AM) Ryan Nealy: yeah for like
+(11:29:36 AM) Ryan Nealy: my house
+(11:29:38 AM) jedireign: datacenter wiring installer
+(11:29:39 AM) Ryan Nealy: not for work all day
+(11:29:41 AM) jedireign: didn't pay BULLSHIT
+(11:29:44 AM) jedireign: I would do that all day erry day
+(11:29:51 AM) Ryan Nealy: fuck dat
+(11:29:58 AM) jedireign: omfg I love terminating cables and shit
+(11:30:04 AM) jedireign: I almost went ot a fiber tech class
+(11:30:07 AM) jedireign: then I realized these dudes get paid shit
+(11:30:20 AM) jedireign: like fiber installer BOOM SUPER ELITE
+(11:30:21 AM) jedireign: biin
+(11:30:22 AM) jedireign: boomh
+(11:30:24 AM) jedireign: half my salary
+(11:30:31 AM) Ryan Nealy: yah well
+(11:31:05 AM) jedireign: Wawa opened three stores (http://www.news-press.com/story/news/2015/04/22/wawa-gets-gaga-reception-in-fort-myers/26212715/) on April 23rd in Fort Myers, Florida. The convenience store chain, which began an expansion into Florida in July 2012, has 65 stores in the state. It plans to have 100 locations by the end of 2016.
+(11:31:08 AM) jedireign: WTF
+(11:31:13 AM) jedireign: THERES WAWA I NFLORIDA
+(11:32:19 AM) Ryan Nealy: wow it has 65
+(11:32:22 AM) Ryan Nealy: that's hard to believe 
+(11:32:26 AM) Ryan Nealy: because I only know of 2
+(11:32:30 AM) Ryan Nealy: and they are 3+ hours away
+(11:32:35 AM) jedireign: haha
+(11:32:40 AM) jedireign: florida is a pretty big place.
+(11:32:56 AM) Ryan Nealy: fort myers is way closer
+(11:32:59 AM) Ryan Nealy: like 2 hours I think
+(11:33:05 AM) Ryan Nealy: I've been to one in kissimee
+(11:33:08 AM) Ryan Nealy: basically orlando
+(11:33:28 AM) Ryan Nealy: oooh monoprice has free shipping over 75 dollars
+(11:33:37 AM) Ryan Nealy: just ordered like 100 dollars worth of keystone jacks/cables/wall plates/random shit
+(11:35:08 AM) Ryan Nealy: https://www.yahoo.com/tech/a-florida-resident-drove-around-with-a-cellphone-jammer-84369099229.html
+(11:35:50 AM) jedireign: YOOO haha
+(11:35:53 AM) jedireign: that's fucking hilariou
+(11:35:53 AM) jedireign: s
+(11:35:59 AM) jedireign: until someone's trying to call 911 and fucking can't
+(11:36:00 AM) jedireign: waht an asshole
+(11:36:01 AM) jedireign: LOL
+(11:36:38 AM) jedireign: Until two local sheriff’s deputies caught him in the act and slapped him with $48,000 worth of fines, which he must pay or otherwise respond to within a month.
+(11:36:38 AM) jedireign: dude
+(11:36:40 AM) jedireign: double that shit.
+(11:36:41 AM) jedireign: fuck that guy
+(11:36:53 AM) jedireign: if a HAM can get 60k in fines and jail time
+(11:36:58 AM) Ryan Nealy: haha
+(11:37:04 AM) jedireign: for willful interfereance
+(11:37:04 AM) Ryan Nealy: I want one that has like
+(11:37:07 AM) Ryan Nealy: a 20 foot range
+(11:37:07 AM) jedireign: this guy should definitely be in jail
+(11:37:07 AM) jedireign: lol
+(11:37:19 AM) jedireign: or just shot
+(11:37:26 AM) Ryan Nealy: ah I mean it's bad but
+(11:37:30 AM) Ryan Nealy: I can't completely disagree with him
+(11:37:37 AM) Ryan Nealy: he just went to the extreme
+(11:37:37 AM) jedireign: no neither can I
+(11:37:39 AM) jedireign: but yeah
+(11:37:45 AM) jedireign: Like fuck people driving on cell phones
+(11:37:46 AM) jedireign: but
+(11:37:53 AM) jedireign: FUCK PEOPLE INTERRUPTING EMERGENCY COMMUNIICATIONS
+(11:37:58 AM) Ryan Nealy: yeah basically
+(11:38:05 AM) Ryan Nealy: I'm telling you
+(11:38:09 AM) jedireign: I bet more people were hurt from that guys jammer for 2 yeras than people were hurt from the cellphones he otherwise wouldn't have jammed
+(11:38:22 AM) Ryan Nealy: I don't know about that
+(11:38:40 AM) jedireign: Also if someone's in their car on their phone talking and shit
+(11:38:44 AM) jedireign: and it suddenly stops working
+(11:38:46 AM) jedireign: what are they going to do?
+(11:38:51 AM) jedireign: Pya more attention to it trying to get it to work again.
+(11:38:51 AM) Ryan Nealy: look at it
+(11:38:53 AM) Ryan Nealy: hahahahahahah
+(11:38:56 AM) jedireign: LOL
+(11:39:08 AM) Ryan Nealy: so true
+(11:39:11 AM) jedireign: yeah
+(11:39:15 AM) Ryan Nealy: the funny thing is like
+(11:39:15 AM) jedireign: you DO NOT FUCK with communications.
+(11:39:19 AM) Ryan Nealy: the whole elevator
+(11:39:24 AM) Ryan Nealy: people talking is awful
+(11:39:28 AM) Ryan Nealy: but I just laught now because
+(11:39:34 AM) Ryan Nealy: as the door closes I know it will stop working
+(11:39:37 AM) Ryan Nealy: in our building
+(11:39:46 AM) Ryan Nealy: and it always does 100 percent of the time with any carrier
+(11:39:50 AM) jedireign: lmao
+(11:39:56 AM) jedireign: Dud
+(11:39:59 AM) jedireign: efucking university
+(11:40:02 AM) jedireign: I was in elevators all the time
+(11:40:02 AM) Ryan Nealy: so I jsut ell them yeah you are going to lose that call
+(11:40:04 AM) jedireign: EVERY FUCKING DAY
+(11:40:05 AM) jedireign: some doctor
+(11:40:06 AM) jedireign: "HOLD ON
+(11:40:08 AM) jedireign: I"M IN AN ELEVATOr
+(11:40:10 AM) jedireign: I CAN"T HEAR YOU
+(11:40:12 AM) jedireign: CAN YOU HEAR ME?
+(11:40:15 AM) Ryan Nealy: hahahahahahha
+(11:40:19 AM) jedireign: NO I STIL LCAN"T HEAR YOu
+HOLD ON
+(11:40:22 AM) jedireign: CAN YOU HEAR ME NOW
+(11:40:24 AM) Ryan Nealy: I just want a fucking jammer for that
+(11:40:25 AM) jedireign: NO STILL IN THE ELEVATOR
+(11:40:27 AM) jedireign: mother god damn fucker
+(11:40:30 AM) Ryan Nealy: like bluetooth range
+(11:40:30 AM) jedireign: you're a DOCTOR
+(11:40:32 AM) jedireign: you'd think you'd fucking learn
+(11:40:48 AM) Ryan Nealy: not enough to affect anything serious
+(11:40:57 AM) jedireign: lol yeah unfortunately just as illegal
+(11:41:00 AM) Ryan Nealy: just enough to fuck the person next to me
+(11:41:30 AM) Ryan Nealy: hey speaking of that
+(11:41:35 AM) Ryan Nealy: do you know of any type of cell phone booster type thing
+(11:41:41 AM) Ryan Nealy: that would be designed for an office
+(11:41:45 AM) jedireign: just tell them this: https://www.youtube.com/watch?v=gcc4QuZymGc
+(11:41:47 AM) Ryan Nealy: aka boosts all mainstream signals
+(11:41:53 AM) jedireign: hm
+(11:41:57 AM) jedireign: not anything gneeric like that
+(11:41:57 AM) Ryan Nealy: or maybe you select the carriers you wanted
+(11:42:00 AM) jedireign: I have a tmobile booster in my home
+(11:42:02 AM) Ryan Nealy: something like that
+(11:42:05 AM) jedireign: that was free from tmobile
+(11:42:09 AM) jedireign: just $20 deposit
+(11:42:46 AM) Ryan Nealy: hahahahah
+(11:43:14 AM) Ryan Nealy: oh man this scene
+(11:43:17 AM) jedireign: hahahaha dude that movie is so fucking good
+(11:43:17 AM) Ryan Nealy: watching it 
+(11:43:19 AM) Ryan Nealy: the first time
+(11:43:28 AM) jedireign: hahahaha donny's all
+(11:43:29 AM) jedireign:  like
+(11:43:30 AM) jedireign: getting beat
+(11:43:30 AM) Ryan Nealy: like DEAR GOD
+(11:43:32 AM) Ryan Nealy: HANG UP
+(11:43:35 AM) jedireign: and goes to the table and starts eating lunch emat
+(11:43:37 AM) jedireign: LOL LOL
+(11:44:06 AM) jedireign: omfg what a great movie
+(11:44:12 AM) jedireign: I have probably watched it 15 times at this point
+(11:44:17 AM) Ryan Nealy: I mean it's alright
+(11:44:19 AM) jedireign: hahaha I love the like
+(11:44:19 AM) Ryan Nealy: I liked it but
+(11:44:22 AM) jedireign: SPINACH
+(11:44:25 AM) Ryan Nealy: it wasn't that epic for me
+(11:44:25 AM) jedireign: and he goes for his emergency coke
+(11:44:30 AM) jedireign: (or what I' massuming that is)
+(11:44:34 AM) Ryan Nealy: yah for sure
+(11:44:37 AM) jedireign: hahahahahaha
+(11:44:44 AM) jedireign: COCAIN IN THE MED KIT
+(11:44:45 AM) jedireign: LOL
+(11:44:49 AM) Ryan Nealy: I forget what movie
+(11:44:51 AM) Ryan Nealy: the guy gets shot
+(11:44:59 AM) Ryan Nealy: and just grabs a handful of coke and rubs it in the wound
+(11:45:02 AM) Ryan Nealy: and goes rambo
+(11:45:10 AM) Ryan Nealy: so fucking hardcore
+(11:45:11 AM) jedireign: HAHAHAHAHA WTF
+(11:45:20 AM) Ryan Nealy: some like bad chuck norris movie type of thing
+(11:45:24 AM) Ryan Nealy: I forget what movie
+(11:45:32 AM) jedireign: hahahahahahaha
+(11:45:33 AM) jedireign: dude
+(11:45:34 AM) jedireign:  god damn it
+(11:45:37 AM) jedireign: I loved that movie
+(11:45:44 AM) jedireign: but leonardo dicaprio is also my favorite actor
+(11:45:49 AM) jedireign: and scorsase my favorite director
+(11:45:52 AM) jedireign: so that has a lot to do with it.
+(11:45:59 AM) Ryan Nealy: yeah I mean I liked it but
+(11:46:08 AM) Ryan Nealy: in the end he was just stealing mad dmoney lol
+(11:46:13 AM) jedireign: hahaha dude
+(11:46:17 AM) jedireign: what do you thin kwall street is all about?
+(11:46:22 AM) Ryan Nealy: yah exactly
+(11:46:27 AM) Ryan Nealy: fucking
+(11:46:30 AM) jedireign: nuke that shit
+(11:46:37 AM) Ryan Nealy: trading spaces/places
+(11:46:39 AM) Ryan Nealy: trading places
+(11:46:46 AM) Ryan Nealy: w/e that movie is with eddie murphy
+(11:46:48 AM) jedireign: dude
+(11:46:49 AM) jedireign: lol
+(11:46:52 AM) jedireign: I haven't seen that one in FOREVER
+(11:46:57 AM) Ryan Nealy: it's so fucking good
+(11:47:27 AM) jedireign: ho.ly shti
+(11:47:28 AM) jedireign: it's noon
+(11:47:29 AM) jedireign: hahaha
+(11:47:31 AM) jedireign: I didn't have coffee yet
+(11:47:34 AM) jedireign: I'm so useless right now
+(11:47:37 AM) jedireign: brb going to go to timmy ohs
+(11:47:38 AM) jedireign: hos8
+(11:48:07 AM) Ryan Nealy: was that jimmy johns
+(11:48:34 AM) jedireign: no
+(11:48:36 AM) jedireign: tim horton's
+(11:48:37 AM) jedireign: timmy hos
+(11:48:43 AM) jedireign: it's like a canadian dunkin donuts
+(11:48:53 AM) Ryan Nealy: yeah been there
+(11:49:05 AM) Ryan Nealy: now that job is secure
+(11:49:08 AM) jedireign: yeah we have like 200 of them and one DD
+(11:49:08 AM) Ryan Nealy: buying tickets tonight
+(11:49:12 AM) jedireign: <3
+(11:49:14 AM) jedireign: going to be fun.
+(11:49:23 AM) jedireign: ok brb fo reals
+(12:11:43 PM) jedireign: baack
+(12:12:08 PM) Ryan Nealy: word
+(12:12:14 PM) Ryan Nealy: I'm going to try spiceworks
+(12:34:15 PM) jedireign: Hey, I have exactly the same issue. I launch the launcher and after a bit of loading it just closes without saying, that the program crashed or anything. I found a solution for me. Well... Not a solution as such but a workaround. I have to delete the social club folder every time I want to start the game. When I delete it, I simply start the launcher, it downloads 53.79 MB (the size of social club), installs it and the game launches perfectly. It still kinda pisses mě off, that I have to wait about two minutes for the game to start but at least it works. I hope this will help you.
+(12:34:16 PM) jedireign: LOL
+(12:34:39 PM) Ryan Nealy: I tried that already pretty sure
+(12:34:44 PM) jedireign: hm
+(12:34:49 PM) jedireign: I remember we tried deleting & reinstalling
+(12:34:54 PM) jedireign: and deleting from x86 or something
+(12:34:57 PM) jedireign: I don't remember fully
+(12:35:00 PM) jedireign: such as tupid problem
+(12:35:18 PM) jedireign: "No, it mysteriously solved itself.
+Just clicked the shortcut one day and it worked."
+(12:35:19 PM) jedireign: hahaha
+(12:35:21 PM) jedireign: god damn ti computers
+(12:36:48 PM) jedireign: You did the disable video card thing, then launch, yeah?
+(12:37:08 PM) Ryan Nealy: yeah
+(12:37:20 PM) jedireign: uuugh
+(12:37:25 PM) jedireign: I think I'm literally more upset about this than you are
+(12:37:26 PM) jedireign: LOL
+(12:37:37 PM) jedireign: like the whole time Joe and I were playing like "omfg what if ryan was here OMFG"
+(12:37:45 PM) jedireign: we stole a chopper and I was giong to have him snipe player sfrom the door
+(12:37:50 PM) jedireign:  (until we crashed)
+(12:38:31 PM) jedireign: joe said something about issues with the Trials launcher?
+(12:38:41 PM) jedireign: Yo is your home dir and %appdata% and shit a network share!?
+(12:39:13 PM) jedireign: and if so is there AV and shit on that sidE?
+(12:39:15 PM) Ryan Nealy: yes
+(12:39:17 PM) Ryan Nealy: and no
+(12:39:17 PM) jedireign: yoooo I think I'm on to something.
+(12:39:26 PM) Ryan Nealy: yeah it's prob that I"m sure
+(12:39:29 PM) Ryan Nealy: soo
+(12:39:32 PM) jedireign: is there an easy way to like
+(12:39:34 PM) jedireign: temp disable it to play?
+(12:39:35 PM) Ryan Nealy: no
+(12:39:42 PM) Ryan Nealy: soo here's the thing
+(12:39:44 PM) jedireign: or to jsut have the game use local storagbe?
+(12:39:45 PM) jedireign: hmmm
+(12:39:47 PM) Ryan Nealy: I tested that first to get out of the way
+(12:39:58 PM) jedireign: oh how so?
+(12:40:02 PM) Ryan Nealy: 1. only documents, desktop, pictures, etc are redirected to \\server-uncpath
+(12:40:11 PM) Ryan Nealy: appdata, both roaming and locak, are still local
+(12:40:16 PM) jedireign: oh ok so it's redirected, not /users/ryan is a mounted SMB share
+(12:40:29 PM) jedireign: ahaha
+(12:40:35 PM) jedireign: look at me unix pathing windows like a fag
+(12:41:13 PM) jedireign: joe mentions trials fusion - did you ever get that working?
+(12:41:39 PM) Ryan Nealy: it's folder redirection via gpo
+(12:41:45 PM) Ryan Nealy: but not roaming profiles
+(12:41:56 PM) Ryan Nealy: it has caused problems in 2 games but there is a pretty easy way to test it
+(12:41:56 PM) jedireign: right right
+(12:42:09 PM) Ryan Nealy: 1. trials fusion would store it's config file in my documents, obviously the problem
+(12:42:13 PM) Ryan Nealy: but it couldn't read it via UNC path
+(12:42:15 PM) Ryan Nealy: so it would break
+(12:42:18 PM) jedireign: aha
+(12:42:19 PM) jedireign: gotcha
+(12:42:23 PM) Ryan Nealy: they patched it pretty quickly
+(12:42:30 PM) Ryan Nealy: after I told them what was wrong LOl in a forum post
+(12:42:32 PM) jedireign: hmmm I wonder if something similar is going on here wit h some fucking weird dir or some bullshit?
+(12:42:34 PM) jedireign: hahaha
+(12:42:37 PM) jedireign: Nice!
+(12:42:39 PM) Ryan Nealy: alright so next
+(12:42:41 PM) Ryan Nealy: dayz did the same thing
+(12:42:46 PM) jedireign: oh yeah I remember that
+(12:42:47 PM) Ryan Nealy: but instead of not working it would just not save any settings
+(12:42:58 PM) Ryan Nealy: so I used a launch parameter in the game to redirect it to a local folder
+(12:42:59 PM) Ryan Nealy: easy fix
+(12:43:07 PM) Ryan Nealy: but most games work fine with it
+(12:43:15 PM) Ryan Nealy: and you can tell my checking the date modified/created on the folder
+(12:43:25 PM) jedireign: yeah
+(12:43:26 PM) Ryan Nealy: if it's actively reading/modifying the folder it usually works
+(12:43:30 PM) jedireign: so sounds like you've got that base covered lol
+(12:43:31 PM) Ryan Nealy: is my reasoning
+(12:43:36 PM) Ryan Nealy: but it could still be the problem
+(12:43:43 PM) Ryan Nealy: but I'm not going to turn it off either heh
+(12:43:47 PM) jedireign: hmmmm
+(12:43:48 PM) jedireign: oh yeah
+(12:43:49 PM) jedireign: not saying that
+(12:43:53 PM) jedireign: trying to figure out workaround if that's the issue
+(12:43:54 PM) jedireign: not saying
+(12:43:58 PM) Ryan Nealy: I was trying to find some way to tell it where to store that folder
+(12:44:02 PM) Ryan Nealy: but couldn't find it
+(12:44:03 PM) jedireign: OMFFG RYAN REDO YOUR WHOLE HOME NETWORK FOR A GAME STOP BEING A LOOOSER
+(12:45:35 PM) jedireign: Launching it creates a file named "Local剜捯獫慴⁲慇敭屳呇⁁屖湥楴汴" in my users\username\AppData folder.Anyone know what that is all about ?
+(12:45:36 PM) jedireign: yooo
+(12:45:38 PM) jedireign: hahahahaha
+(12:45:40 PM) jedireign: this guy
+(12:45:44 PM) jedireign: is having some serious issues
+(12:46:05 PM) jedireign: "Nope, but AFAIK if you're having this issue then try running the game from a separate local Admin account. I have this problem too. It seems to me that whatever that issue is related to people having weird characters in their usernames is affecting us too. As we speak I'm trying to switch my main account to a local account to see if this helps. EDIT: This worked. I can run the game fine now."
+(12:46:06 PM) Ryan Nealy: some people saying to fix it with symlinks
+(12:46:09 PM) jedireign: hmm
+(12:46:14 PM) jedireign: yo can you symlink in windows?
+(12:46:15 PM) jedireign: wtf?
+(12:46:16 PM) jedireign: since when?
+(12:46:19 PM) jedireign: LOL
+(12:46:33 PM) jedireign: but uhh yeah seeing a lot of stuff like "Make a new admin user and it works!"
+(12:46:35 PM) jedireign: all over the place
+(12:46:39 PM) jedireign: not sure if you tried a secondary user or not
+(12:46:42 PM) Ryan Nealy: yeah but that's only for special characters
+(12:46:43 PM) Ryan Nealy: however
+(12:46:44 PM) Ryan Nealy: however
+(12:46:45 PM) Ryan Nealy: however
+(12:46:47 PM) jedireign: HOWEVERRR
+(12:46:48 PM) Ryan Nealy: my username is technically
+(12:46:53 PM) Ryan Nealy: kcs\Ryan
+(12:46:59 PM) Ryan Nealy: I don't know if it would treat it that way
+(12:47:11 PM) jedireign: YES
+(12:47:17 PM) jedireign: that's probably the problem
+(12:47:22 PM) Ryan Nealy: ugh
+(12:47:24 PM) jedireign: especially with \
+(12:47:25 PM) jedireign: being a path
+(12:47:26 PM) Ryan Nealy: fucking game
+(12:47:26 PM) jedireign: thing
+(12:47:28 PM) Ryan Nealy: it's not
+(12:47:29 PM) jedireign: so it's trying to write to like
+(12:47:32 PM) Ryan Nealy: it's just a domain user account
+(12:47:33 PM) jedireign: right
+(12:47:37 PM) jedireign: but if the game is seing that
+(12:47:44 PM) jedireign: and trying to write to C:/users/kcs\ryan/blah
+(12:47:48 PM) Ryan Nealy: I'm not sure if it is I guess
+(12:47:52 PM) jedireign: like an idiot
+(12:47:53 PM) jedireign: yeah hm
+(12:47:55 PM) Ryan Nealy: I can try a local account
+(12:47:57 PM) jedireign: try making a local non-domain account
+(12:47:59 PM) jedireign: I bet it will work
+(12:47:59 PM) jedireign:  :D
+(12:48:01 PM) Ryan Nealy: just for fucking this shit ass fuck tard game
+(12:48:05 PM) Ryan Nealy: fuck you
+(12:48:05 PM) jedireign: hahahahaha
+(12:48:06 PM) Ryan Nealy: fuck you
+(12:48:08 PM) Ryan Nealy: fuck you gta 5
+(12:48:18 PM) Ryan Nealy: i"ll have to re setup teamspeak and all that garbage
+(12:48:21 PM) Ryan Nealy: and my sweet background
+(12:49:04 PM) jedireign: LOL
+(12:49:10 PM) jedireign: you can probably jsut copy the files
+(12:49:17 PM) jedireign: have you played console gta V?
+(12:49:23 PM) jedireign: it will be so worth it dude you don't even know how good that game is.
+(12:51:52 PM) jedireign: LOL
+ DUDE
+(12:51:54 PM) jedireign: wine HQ's rating of 
+(12:51:55 PM) jedireign: GTA V
+(12:51:56 PM) jedireign: is
+(12:51:58 PM) jedireign: "Garbage"
+(12:52:04 PM) jedireign: as far as compatibility LOL
+(12:52:08 PM) jedireign: https://appdb.winehq.org/objectManager.php?sClass=application&iId=16807
+(12:52:15 PM) jedireign: give it a few months though they'll probably patch the fuck out of wine for gta
+(12:52:22 PM) Ryan Nealy: nah I havent played it
+(12:53:27 PM) jedireign: you've played other GTAs I'm sure?
+(12:53:27 PM) jedireign: So
+(12:53:31 PM) jedireign: GTA to me has al ways been
+(12:53:32 PM) jedireign: run the game
+(12:53:34 PM) jedireign: put in the cheats
+(12:53:36 PM) jedireign: RAMPAGE
+(12:53:46 PM) jedireign: but like V is so fucking good I dont' even know how to enable cheats. I just wnat to play it.
+(12:53:51 PM) Ryan Nealy: yeah idk
+(12:53:54 PM) jedireign: it's like an interactive GOOD ASS movie
+(12:53:55 PM) Ryan Nealy: I played through vice city
+(12:53:58 PM) Ryan Nealy: that's the last one i played really
+(12:54:02 PM) jedireign: yeah vice city wasn't even that great
+(12:54:05 PM) Ryan Nealy: I started gta 4 and just lost interest prety quick
+(12:54:05 PM) jedireign: GTA IV was when they were like
+(12:54:08 PM) jedireign: "Oh shit stories matter."
+(12:54:13 PM) jedireign: but still was clunky about it
+(12:54:17 PM) jedireign: I never beat IV not very interesting
+(12:54:19 PM) jedireign: this is like
+(12:54:28 PM) jedireign: the perfection culmination of everything rockstar has done to date
+(12:54:32 PM) jedireign: like it was all practice
+(12:54:37 PM) jedireign: hahaha I couldn't put the game down when it was on 360
+(12:54:42 PM) jedireign: and now that I have PC MULTIPLAYER
+:O
+(12:54:46 PM) jedireign: I might not play counter strike for a while.
+(12:55:01 PM) jedireign: like joe and I didn't even do shit
+(12:55:04 PM) jedireign: and we were having a blst
+(12:55:15 PM) jedireign: also robbing convenience stores is hilarious because if you yell in the mic they empty the register faster
+(12:55:24 PM) Ryan Nealy: haha
+(12:55:25 PM) Ryan Nealy: nice
+(12:56:10 PM) jedireign: ok time for monday meeting bru
+(12:56:12 PM) jedireign: catch you later
+(12:57:46 PM) jedireign: real quick
+(12:57:56 PM) jedireign: do you know of an yweb based video conferencing with screen share that can handle 30+ people?
+(12:57:58 PM) jedireign: that isn't garbage?
+(12:58:08 PM) jedireign: I'm about to make a fucking company to do that because they're all garbage.
+(01:05:12 PM) Ryan Nealy: there isn't one
+(01:05:18 PM) jedireign: exactly
+(01:05:19 PM) jedireign: LOL
+(01:05:32 PM) Ryan Nealy: I reserached it the only ones that support decent particpantl evels is like
+(01:05:36 PM) jedireign: it's our biggest problem as a remote team, and we're definitely not the only ones who need it.
+(01:05:37 PM) Ryan Nealy: microsoft lync
+(01:05:40 PM) Ryan Nealy: and the adobe one
+(01:05:41 PM) jedireign: yeah no
+(01:05:43 PM) jedireign: not happening
+(01:05:47 PM) Ryan Nealy: literally lync just
+(01:05:49 PM) jedireign: has to support every platofrm, as well
+(01:05:52 PM) Ryan Nealy: wreks the competition
+(01:05:56 PM) Ryan Nealy: it has a web add in
+(01:05:58 PM) jedireign: we use Fuze right now.
+(01:06:02 PM) Ryan Nealy: but I don't know if it works on linux it does work on mac
+(01:06:05 PM) jedireign: does it work chrome limnux blah?
+(01:06:06 PM) jedireign: yeah ok
+(01:06:07 PM) jedireign: hmmm
+(01:06:12 PM) Ryan Nealy: it's really expensive
+(01:06:19 PM) jedireign: yeah that's anotehr issue
+(01:06:23 PM) Ryan Nealy: but not like pro video level expensive
+(01:06:37 PM) Ryan Nealy: it would be about 10k for and a ton of bandwidth or w/e
+(01:06:43 PM) jedireign: there are a billion live cam porn sites
+(01:06:53 PM) jedireign: I be tI oculd repurpose that software and get an amazing video conferencing site
+(01:06:54 PM) Ryan Nealy: one way is different then 2 way
+(01:06:55 PM) Ryan Nealy: multi party
+(01:07:00 PM) Ryan Nealy: multi party video is like
+(01:07:01 PM) jedireign: it would just be
+(01:07:03 PM) Ryan Nealy: so hard to achieve
+(01:07:05 PM) jedireign: multiple oine way video sterams
+(01:08:01 PM) jedireign: it's a totally solvable problem
+(01:08:03 PM) jedireign: just no one has done so.
+(01:08:04 PM) jedireign: lol
+(01:08:23 PM) jedireign: it doesn't need to be incredible low latency real time high quality or anything, either
+(01:08:52 PM) Ryan Nealy: lync is really the only one that supprts unlimited multi party video
+(01:08:57 PM) Ryan Nealy: we do
+(01:08:59 PM) Ryan Nealy: 10 person calls
+(01:09:02 PM) jedireign: I'll look into it
+(01:09:06 PM) Ryan Nealy: the so called "brady bunch" view
+(01:09:07 PM) jedireign: yeah we do like 30-40 peole right now
+(01:09:09 PM) jedireign: but are growing
+(01:09:09 PM) Ryan Nealy: quit hard to achieve
+(01:09:12 PM) jedireign: LOL YEP fuze does that
+(01:09:23 PM) Ryan Nealy: you could do 100 participants supposedly
+(01:09:25 PM) Ryan Nealy: hahahahaha
+(01:09:25 PM) jedireign: but there's no fuze on linux is the problem
+(01:09:28 PM) jedireign: yeah
+(01:09:45 PM) jedireign: probably 1/4-1/3 of the company is all linux
+(01:13:12 PM) Ryan Nealy: I've come to realize
+(01:13:15 PM) Ryan Nealy: it's just too demanding
+(01:13:18 PM) Ryan Nealy: even for client side
+(01:13:23 PM) jedireign: it's essential for us
+(01:13:24 PM) Ryan Nealy: try running fucking 30 video streams
+(01:13:29 PM) jedireign: considering half our company is out of the country LOL
+(01:13:33 PM) Ryan Nealy: I'm not saying that
+(01:13:39 PM) Ryan Nealy: I'm just saying the technology is not there heh
+(01:13:42 PM) Ryan Nealy: unless you go like
+(01:13:45 PM) Ryan Nealy: crazy proprietary
+(01:13:46 PM) jedireign: it is though
+(01:13:54 PM) jedireign: I hvae 20+ video streams right now with no issue.
+(01:14:04 PM) jedireign: beautiful HD stremas
+(01:14:11 PM) Ryan Nealy: must use some crazy shit on server side
+(01:14:19 PM) Ryan Nealy: think about how much processing is required for 20 1080p streams
+(01:14:33 PM) jedireign: yeah but it's not like it's 3d video
+(01:14:34 PM) Ryan Nealy: it's hardcore downscaled
+(01:14:43 PM) jedireign: and generating it on the fly
+(01:14:44 PM) Ryan Nealy: you should see
+(01:14:44 PM) jedireign: but anyway
+(01:14:52 PM) jedireign: gotta get back to this meeting.
+(01:14:53 PM) Ryan Nealy: google "lync bandiwdth calculator"
+(01:14:55 PM) Ryan Nealy: and you'll be like
+(01:14:57 PM) Ryan Nealy: WTF
+(01:15:01 PM) jedireign: lol yeah
+(01:15:03 PM) jedireign: not sure how fuze does it
+(01:15:09 PM) jedireign: but it barely affectins my internet
+(01:15:10 PM) Ryan Nealy: no not the sum or outcome
+(01:15:13 PM) Ryan Nealy: the complexity of the damn spreadsheet
+(01:15:21 PM) jedireign: I think it compiles them all and is coming in a single stream?
+(01:15:23 PM) jedireign: No idea.
+(01:15:32 PM) jedireign: butit works
+(01:15:37 PM) jedireign: just no linux version. LOL
+(01:15:40 PM) jedireign: not web based either.
+(01:15:44 PM) jedireign: and no screen share.
+(01:15:46 PM) jedireign: we use gotomeeting for that
+(01:16:04 PM) jedireign: they had a linux version
+(01:16:06 PM) jedireign: it was garbage
+(01:16:08 PM) jedireign: they gave up on it
+(02:11:35 PM) jedireign: baaaaack
+(02:11:38 PM) jedireign: long ass meeting jesus
+(03:00:03 PM) Ryan Nealy: ur bad
+(03:00:20 PM) jedireign: wat
+(03:00:31 PM) jedireign: at least I can get GTA to run on my windows PC
+(03:00:32 PM) jedireign: OHHHHHH
+(03:00:44 PM) Ryan Nealy: fuck
+(03:00:52 PM) Ryan Nealy: my windows just too badass for it
+(03:00:54 PM) Ryan Nealy: it's like omg 
+(03:00:55 PM) jedireign: lol
+(03:00:58 PM) jedireign: nah it's morel ike
+(03:01:16 PM) jedireign: My windows is fucking retarded and can't handle its own remote user file storage schennanegans 
+(03:02:22 PM) Ryan Nealy: haha
+(03:02:29 PM) Ryan Nealy: it's honestly only a problem wit hgames
+(03:02:32 PM) jedireign: lol such a stupid problem
+(03:02:33 PM) Ryan Nealy: and I"m not even using roaming appdata folder
+(03:02:34 PM) jedireign: yeah
+(03:02:36 PM) jedireign: but like
+(03:02:37 PM) Ryan Nealy: that is where the problem usually resides
+(03:02:39 PM) jedireign: WHY
+(03:02:39 PM) jedireign: lol
+(03:02:44 PM) jedireign: it's such a stupid problem
+(03:02:49 PM) Ryan Nealy: games can't read unc paths
+(03:02:53 PM) Ryan Nealy: is what it usually comes down to
+(03:02:54 PM) jedireign: if directory is available it should just work
+(03:02:54 PM) jedireign: like
+(03:02:58 PM) jedireign: WUT why not though
+(03:02:58 PM) jedireign: haha
+(03:02:59 PM) jedireign: that's the thing
+(03:03:06 PM) jedireign: that should just be intrinsically handled by the OS/filesystem
+(03:03:12 PM) Ryan Nealy: well
+(03:03:20 PM) Ryan Nealy: idk I honestly don't think that's the problem this time
+(03:03:24 PM) Ryan Nealy: but I'm still gonna try it
+(03:03:24 PM) jedireign: should be completely abstracted and invisible to any guest application
+(03:03:25 PM) jedireign: but yeah
+(03:03:31 PM) jedireign: yeah local non domain user blah blah blah
+(03:03:35 PM) jedireign: fucking stupid
+(03:03:37 PM) jedireign: but hopefully it works
+(03:03:48 PM) jedireign: any response from steam?
+(03:03:53 PM) jedireign: or rockstar?
+(03:04:00 PM) jedireign: watch rockstar be like
+(03:04:02 PM) jedireign: "Just do dis"
+(03:04:03 PM) jedireign: and it works
+(03:04:10 PM) jedireign: and the answer is just burried under a thousand bitches whining in forums
+(03:05:31 PM) Ryan Nealy: no response yet on either
+(03:05:37 PM) jedireign: word
+(03:11:07 PM) Ryan Nealy: whoa
+(03:11:12 PM) Ryan Nealy: so I'm testing out spiceworks
+(03:11:19 PM) Ryan Nealy: literally the stupidest yet simplest thing I have seen
+(03:11:21 PM) Ryan Nealy: and it's so useful
+(03:11:38 PM) jedireign: nice
+(03:11:50 PM) Ryan Nealy: I just emailed you a screenshot
+(03:11:53 PM) Ryan Nealy: it's like a graph of used IP"s
+(03:12:35 PM) jedireign: oh that's pretty cool
+(03:12:37 PM) jedireign: super confusing layout
+(03:12:37 PM) jedireign: lol
+(03:12:39 PM) jedireign: but really cool
+(03:12:42 PM) Ryan Nealy: to me it's honestly great
+(03:12:50 PM) jedireign: yeah it's a good
+(03:12:53 PM) Ryan Nealy: it has a bunch of way more useful features but
+(03:12:54 PM) jedireign: visual
+(03:13:01 PM) Ryan Nealy: yah exactly
+(03:13:23 PM) jedireign: I guess if you roll over a block it shows more info ors omething?
+(03:14:55 PM) Ryan Nealy: yeah there's all types of stuff
+(04:07:50 PM) Ryan Nealy: uhhh
+(04:07:55 PM) Ryan Nealy: do I buy the vented shelf
+(04:07:58 PM) Ryan Nealy: or the not vented shelf
+(04:08:02 PM) Ryan Nealy: hmmmm
+(04:08:16 PM) jedireign: ?
+(04:08:17 PM) jedireign: for?
+(04:08:22 PM) Ryan Nealy: my battery backups
+(04:08:30 PM) jedireign: vented shelf?
+(04:08:30 PM) Ryan Nealy: aka it doesn't matter at all but now that I have a choice
+(04:08:42 PM) Ryan Nealy: it's just for my main office rack
+(04:08:47 PM) jedireign: Oh gotcha, a rack shelf
+(04:08:49 PM) Ryan Nealy: not even dc
+(04:08:50 PM) jedireign: LOL
+(04:08:52 PM) jedireign: go vented.
+(04:08:55 PM) jedireign: better air flow on UPS surfaces
+(04:09:00 PM) Ryan Nealy: yah my ups have fans
+(04:09:03 PM) Ryan Nealy: so I suppose that makes sense
+(04:09:07 PM) jedireign: better airflow to the fans
+(04:09:08 PM) jedireign: yeah
+(04:09:11 PM) jedireign: unless vented is like
+(04:09:13 PM) jedireign: way more expensive
+(04:09:15 PM) jedireign: no reason why not
+(04:09:58 PM) Ryan Nealy: meh
+(04:10:02 PM) Ryan Nealy: fuck it it's done
+(04:20:46 PM) Ryan Nealy: when in doubt
+(04:20:48 PM) Ryan Nealy: go all out
+(04:21:56 PM) jedireign: lol
+(04:21:58 PM) jedireign: you consider a vented shelf
+(04:22:01 PM) jedireign: "going all out"?
+(04:22:04 PM) Ryan Nealy: oh nah
+(04:22:07 PM) jedireign: hahahaha
+(04:22:14 PM) Ryan Nealy: that is my "about to fall on motorcycle" ideology
+(04:22:20 PM) Ryan Nealy: and it works so well
+(04:22:21 PM) jedireign: hahaha
+(04:22:26 PM) Ryan Nealy: ur about to fall
+(04:22:30 PM) Ryan Nealy: (this is on dirt generally)
+(04:22:38 PM) Ryan Nealy: you just fucking pin the throttle
+(04:22:41 PM) Ryan Nealy: and hope you can hang on
+(04:22:44 PM) jedireign: LOL
+(04:22:47 PM) jedireign: that sounds like a bad idea
+(04:22:51 PM) Ryan Nealy: it honestly works most of the time
+(04:22:52 PM) jedireign: but I guess abike going fast wants to be upright
+(04:22:57 PM) Ryan Nealy: yeah exactly
+(04:22:59 PM) jedireign: and just naturally goes there
+(04:22:59 PM) jedireign: yeah
+(04:23:00 PM) jedireign: lol
+(04:23:02 PM) Ryan Nealy: when you have like
+(04:23:05 PM) Ryan Nealy: 250cc's
+(04:23:11 PM) Ryan Nealy: well when you think 250 now ur like
+(04:23:13 PM) Ryan Nealy: that's tiny
+(04:23:22 PM) Ryan Nealy: but the new 4 stroke mx bikes that are 250cc and 450
+(04:23:24 PM) Ryan Nealy: are so fucking sick
+(04:23:39 PM) Ryan Nealy: my 250 could do a wheelie in 5th gear
+(04:23:41 PM) Ryan Nealy: no problem
+(04:23:48 PM) jedireign: hahahaha
+(04:23:54 PM) Ryan Nealy: that bike was like
+(04:23:57 PM) Ryan Nealy: my favorite ever
+(04:24:00 PM) Ryan Nealy: it was so fucking nasty
+(04:24:24 PM) Ryan Nealy: but yeah ur about to lose it on the whoops or the sand
+(04:24:29 PM) Ryan Nealy: you just hammer that bitch
+(04:24:35 PM) Ryan Nealy: shit stands straight up
+(04:24:55 PM) Ryan Nealy: I need dirt bikes in my life again
+(04:25:25 PM) jedireign: haha
+(04:25:29 PM) jedireign: I want to get my endorsement
+(04:25:43 PM) Ryan Nealy: if I had somehwere to ride it
+(04:25:47 PM) Ryan Nealy: I would go buy an crf50 right now
+(04:25:51 PM) Ryan Nealy: dude so fun to race those around the yard
+(04:25:57 PM) Ryan Nealy: did you ever see either of the 2 I had?
+(04:26:38 PM) jedireign: not sure
+(04:27:05 PM) Ryan Nealy: tiny little things
+(04:27:10 PM) Ryan Nealy: flying around the yard
+(04:28:56 PM) Ryan Nealy: https://www.youtube.com/watch?v=orxpMhz7eiQ
+(04:29:12 PM) Ryan Nealy: they are so easy to do tricks on
+(04:29:22 PM) jedireign: oh is that one of the ones I wiped out on at the end of your driveway?
+(04:29:28 PM) Ryan Nealy: nah even smaller
+(04:29:31 PM) jedireign: hahahahahahahaha
+(04:29:33 PM) Ryan Nealy: these are like meant to fall over
+(04:29:36 PM) jedireign: these dudes
+(04:29:39 PM) jedireign: they're like those pocket bikes
+(04:29:40 PM) jedireign: LOL
+(04:29:40 PM) Ryan Nealy: they are like indestructible
+(04:29:45 PM) Ryan Nealy: yeah except
+(04:29:48 PM) Ryan Nealy: they aren't garbage chinese crap
+(04:29:51 PM) jedireign: hahahaha yeah
+(04:29:53 PM) Ryan Nealy: and they have manual 3 speed transmissions
+(04:30:02 PM) jedireign: hahahahaha dude they're so funny
+(04:30:09 PM) Ryan Nealy: we mostly
+(04:30:14 PM) Ryan Nealy: raced them around my yard
+(04:30:17 PM) jedireign: hahahahaha
+(04:30:20 PM) jedireign: how mcuh are they?
+(04:30:48 PM) Ryan Nealy: https://www.youtube.com/watch?v=EnoD02Ko840
+(04:30:53 PM) Ryan Nealy: that was more like what we did all the time
+(04:30:55 PM) Ryan Nealy: just dicking around
+(04:31:09 PM) Ryan Nealy: they are like 1500 brand new
+(04:31:16 PM) Ryan Nealy: you can get it less then 1k no problem
+(04:31:21 PM) Ryan Nealy: with like 30 hours on it
+(04:31:23 PM) jedireign: lol
+(04:31:24 PM) Ryan Nealy: of some kid who couldn't learn how to ride
+(04:31:29 PM) Ryan Nealy: so basically new
+(04:31:34 PM) jedireign: yoo wut are motorcycle engine smeasured in hours?
+(04:31:36 PM) Ryan Nealy: there is like a massive aftermarket for them though
+(04:31:51 PM) Ryan Nealy: like my friend had a 70cc bore kit and valves and all this shit on his
+(04:31:56 PM) jedireign: hahahahaha
+(04:31:56 PM) Ryan Nealy: it was so fast it was like impossible to ride
+(04:32:14 PM) Ryan Nealy: even in third gear if you full throttle you just flipped over right away
+(04:32:19 PM) Ryan Nealy: and NO ONE weould listen
+(04:32:20 PM) Ryan Nealy: not even me
+(04:32:29 PM) Ryan Nealy: he rides up and is like "dude you can't full throttle it'll flip"
+(04:32:35 PM) jedireign: WATCH ME
+(04:32:38 PM) Ryan Nealy: and every badass red neck like YO I KNOW HOW TO RIDE FUCK YOU
+(04:32:42 PM) Ryan Nealy: insta flipped
+(04:32:47 PM) Ryan Nealy: I did the same shit too
+(04:32:50 PM) Ryan Nealy: like fuck you I can do this
+(04:32:58 PM) Ryan Nealy: shifting from 2nd to 3rd just wrecked it
+(04:33:25 PM) Ryan Nealy: the fun part is when yo ufall
+(04:33:29 PM) Ryan Nealy: you just don't like don't get hurt
+(04:33:41 PM) Ryan Nealy: at all you just get up and laugh like OMG THAT WAS FUN 
+(04:35:04 PM) jedireign: brb, gotta skype
+(05:53:38 PM) jedireign: ⛐
+(05:53:46 PM) jedireign: LOL best unicode character _EVER_
+(05:54:15 PM) Ryan Nealy: can't read it
+(05:54:34 PM) jedireign: huh?
+(05:54:39 PM) jedireign: wat
+(05:54:49 PM) jedireign: it's a car swerving.
+(05:54:52 PM) jedireign: does it not show up for you?
+(05:55:19 PM) Ryan Nealy: nah
+(05:55:25 PM) jedireign: crazy.
+(05:55:31 PM) jedireign: what are you using that doesn't support unicode?
+(06:00:53 PM) Ryan Nealy: pidgin
+(06:03:32 PM) jedireign: ... weirdc
+(06:03:35 PM) jedireign: I'm also using pidgin. LOL
+(06:03:52 PM) Ryan Nealy: could be my work computer who knows

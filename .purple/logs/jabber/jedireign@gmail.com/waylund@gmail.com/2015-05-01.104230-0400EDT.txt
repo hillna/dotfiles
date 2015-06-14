@@ -1,0 +1,77 @@
+Conversation with waylund@gmail.com at Fri 01 May 2015 10:42:30 AM EDT on jedireign@gmail.com/Adium (jabber)
+(10:42:35 AM) jedireign: https://www.youtube.com/watch?v=yKORsrlN-2k you have probably already seen this.
+(10:43:07 AM) Dan Lynn: nope
+(10:43:39 AM) jedireign: it's a pretty big deal
+(10:54:58 AM) Dan Lynn: so a full charge on 3 of them should last th average person a full day. not bad for $10k
+(10:56:00 AM) Dan Lynn: I assume these are lithium ion right now
+(10:56:02 AM) jedireign: 30kWh?
+(10:56:09 AM) jedireign: that's ... way more than the average person?
+(10:56:15 AM) jedireign: they're 10kWh units...
+(10:56:23 AM) jedireign: Unless I am vastly underestimating my electricity usage.
+(10:56:34 AM) Dan Lynn: studies say we average 900 kWh/month
+(10:57:00 AM) Dan Lynn: I was thinking I should look at my power bill and see
+(10:57:18 AM) jedireign: jesus
+(10:58:53 AM) Dan Lynn: my average for last month was 21.74. I have a lot more electronics, but I could see for people who have AC how they'd average around 30
+(10:59:16 AM) jedireign: average per day?
+(10:59:25 AM) jedireign: hm now I'm interested in what I pull in my apartment.
+(11:00:21 AM) jedireign: about half the average
+(11:00:22 AM) jedireign: 484/mo
+(11:00:34 AM) jedireign: but I have free heat/ac/gas
+(11:05:35 AM) Dan Lynn: nice
+(11:10:04 AM) Dan Lynn: I really do need to get solar on my house sooner rather than later
+(11:11:01 AM) jedireign: maybe wait until a little later
+(11:11:04 AM) jedireign: panel.s are fucking garbage still
+(11:11:09 AM) jedireign: looking at consumer market stuff righ tnow
+(11:11:32 AM) Dan Lynn: yeah - but I have a feeling they'll always be garbage compared to what's coming up
+(11:11:38 AM) jedireign:  $400 for 265W - 39x64"
+(11:11:45 AM) jedireign: lmao yeah, definitely
+(11:11:52 AM) jedireign: but by garbage I mean $400 to power two/three lightbulbs
+(11:12:07 AM) jedireign: in perfect conditions
+(11:12:57 AM) Dan Lynn: wow, pretty hefty warranty
+(11:13:16 AM) jedireign: I'm super excited for the future of this tech, thoug
+(11:13:20 AM) Dan Lynn: have you been to colorado? We do "perfect conditions" well
+(11:13:22 AM) jedireign: especailly with how much musk is investing and all
+(11:13:26 AM) jedireign: nope, never
+(11:13:28 AM) jedireign: other than al ayover
+(11:13:32 AM) jedireign: I'm going to Boulder this summer, though :D
+(11:13:34 AM) Dan Lynn: 330 days of sunshine
+(11:13:40 AM) Dan Lynn: oh nice, we'll have to meet up
+(11:13:41 AM) jedireign: niiice
+(11:13:54 AM) jedireign: Yeah, definitely!
+(11:31:40 AM) Dan Lynn: Oh, so I've got something you'll really like
+(11:31:45 AM) jedireign: ohhh
+(11:31:47 AM) jedireign: I like things
+(11:33:20 AM) Dan Lynn: I saw a talk a little while back from a guy who worked for NASA as a mission commander a few times and he's working with amateurs around the world basically building simulation space ships and mars colonies in an effort to do experiments on sustainable living in space as well as dealing with groups of people in confined spaces.
+(11:33:35 AM) jedireign: ohhh gooood I lov eit
+(11:35:16 AM) Dan Lynn: So I've been talking to Mel and the kids about a summer project where the kids do exactly that. There is an arts and crafts part where they come up with how they'll build their ship. They'll talk about what jobs people have to fill, figure out creative ways to use the space, effective use of limited power, etc and then do some 2-hour sessions, then 4, then maybe 8 and if some of those go well, a 24-hour mission
+(11:36:55 AM) jedireign: Doing dad right, holy fuck
+(11:37:23 AM) Dan Lynn: Yeah, we'll see how it goes :)
+(11:37:33 AM) jedireign: haha you're awesome, Dan.
+(11:38:29 AM) Dan Lynn: I told them to pick one or two friends who they think they'd like to do it with and we'll talk to their parents too. Then comes asking companies to donate supplies :) and figuring out where to put this shit. I have a feeling I may lose my garage for the summer
+(11:40:09 AM) jedireign: hahaha
+(11:40:41 AM) Dan Lynn: they do enough camping that I think they can handle it well
+(11:41:01 AM) jedireign: awesome
+(11:41:04 AM) jedireign: I need to get some camping going on
+(11:41:09 AM) jedireign: get up to the upper penninsula this summer
+(11:41:28 AM) jedireign: also have been looking ito places to microcamp
+(11:41:40 AM) jedireign: as in leave work, go to woods, pack up in morning, go to office.
+(11:44:24 AM) Dan Lynn: that'd be cool!
+(11:46:54 AM) jedireign: one of the guys I work with bikes to work in the morning, but stops off the trail to cook himself a camp breakfast and coffee
+(11:58:30 AM) Dan Lynn: that's pretty cool
+(01:23:25 PM) Dan Lynn: have you ever had a problem with a monitor where one side of it is really light, like a backlight problem but the opposite?
+(01:23:53 PM) jedireign: like 1/2 of the screen is overbright?
+(01:23:58 PM) Dan Lynn: yeah
+(01:24:02 PM) jedireign: could it be backlight bleeding from the edge?
+(01:24:06 PM) jedireign: is it an LED screen?
+(01:24:36 PM) Dan Lynn: I don't think so - it's the old black and grey dell monitors from hosting
+(01:25:06 PM) jedireign: Hmmm, well, that being the case is more confusing, since CCFL backlights usually have a single CCFL
+(01:25:10 PM) jedireign: so ti's either all or nothing kind of deal
+(01:25:15 PM) jedireign: unless those have two and one of them died.
+(01:25:44 PM) Dan Lynn: yeah, so that's the odd thing, one side is normal - the other is like approaching white
+(01:25:54 PM) Dan Lynn: and it is almost like desaturation
+(01:26:12 PM) Dan Lynn: so approaching grey I suppose is a more accurate way of putting it.
+(01:27:57 PM) jedireign: hmmmm yeah I'm not sure what could cause that
+(01:28:10 PM) Dan Lynn: me neither - never saw that before
+(01:29:27 PM) Dan Lynn: may be new monitor time
+(01:29:29 PM) Dan Lynn: :(
+(01:50:37 PM) waylund@gmail.com is now known as Daniel Lynn. 

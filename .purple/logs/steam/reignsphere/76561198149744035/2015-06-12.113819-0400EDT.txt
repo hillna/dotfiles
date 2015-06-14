@@ -1,0 +1,129 @@
+Conversation with 76561198149744035 at Fri 12 Jun 2015 11:38:19 AM EDT on reignsphere (steam)
+(11:38:19 AM) |GoW| Demon_Farky: omg this seedbox is so awesome.  Thanks for telling me about it.
+(11:40:04 AM) reignsphere: <3
+(11:40:07 AM) reignsphere: isn't it great?
+(11:40:09 AM) reignsphere: and so fast!
+(11:40:15 AM) |GoW| Demon_Farky: I know righ !  It's amazing
+(11:40:28 AM) reignsphere: and yeah
+(11:40:31 AM) |GoW| Demon_Farky: You know of a good way to auto transfer it back to yourself?  Or do you it manually?
+(11:40:33 AM) reignsphere: the host literally gives no fucks about DMCA
+(11:40:36 AM) reignsphere: it holds no water over there
+(11:40:40 AM) reignsphere: I do it manually, for now
+(11:40:45 AM) |GoW| Demon_Farky: Kk, me too.
+(11:40:58 AM) reignsphere: _BEST WAY_ is to have a post-download script that transfers the files to your local network
+(11:40:59 AM) |GoW| Demon_Farky: I've been going like crazy, like 3 TB atm ;P
+(11:41:13 AM) reignsphere: Or have a remote directory mounted from the seedbox to your local network
+(11:41:19 AM) reignsphere: and ahve it auto copy there when torrent completes
+(11:41:25 AM) reignsphere: many different ways to do it
+(11:41:28 AM) reignsphere: none of them windows friendly :3
+(11:41:37 AM) |GoW| Demon_Farky: Ya, I got the remote mount with SFTP at the moment.
+(11:41:45 AM) |GoW| Demon_Farky: Was working on the auto move but figured I'd ask.
+(11:41:52 AM) reignsphere: yeah
+(11:42:04 AM) reignsphere: either a scritp using SCP or a remote mounted file system
+(11:42:10 AM) |GoW| Demon_Farky: And yes, you are correct.  Most of what I've found is crap for windows.
+(11:42:23 AM) reignsphere: When I automate mine I will do it via remote mounts, most likely
+(11:42:33 AM) reignsphere: hm maybe not
+(11:42:37 AM) reignsphere: I havben't really decided ;)
+(11:42:41 AM) |GoW| Demon_Farky: lol
+(11:42:43 AM) reignsphere: because remote mounts might not be the most reliable
+(11:42:44 AM) |GoW| Demon_Farky: I liked the mounts.
+(11:43:02 AM) |GoW| Demon_Farky: I tried SSHFS at first, now that super sucked ass.
+(11:43:06 AM) reignsphere: if my internet goe sdown or something I will have to put a precursor in the transfer script to ensure the firle is mounted blah blah
+(11:43:15 AM) |GoW| Demon_Farky: Yup.
+(11:43:15 AM) reignsphere: SSHFS is what I'm talking about ;)
+(11:43:19 AM) reignsphere: it's literally the same connection as SFTP
+(11:43:25 AM) reignsphere: but it's persistent as a filesystem mount
+(11:43:26 AM) |GoW| Demon_Farky: Right, but for Windows it blew chunks.
+(11:43:30 AM) reignsphere: oh yeah fuck windows
+(11:43:34 AM) |GoW| Demon_Farky: lol
+(11:43:39 AM) reignsphere: windows has more aids than freddy murcury
+(11:43:51 AM) |GoW| Demon_Farky: I've been reworking the systems to reset up the MediaCenter with Linux.
+(11:43:52 AM) reignsphere: when it comes to actual productive server work
+(11:43:54 AM) reignsphere: it's the _worst_
+(11:44:02 AM) |GoW| Demon_Farky: Ya, it's just ugly.
+(11:44:03 AM) reignsphere: SO
+(11:44:06 AM) reignsphere: you want to get hardcore
+(11:44:08 AM) reignsphere: and have a media server
+(11:44:11 AM) reignsphere: with a ton of drive?
+(11:44:15 AM) reignsphere: I assume you already have that
+(11:44:16 AM) |GoW| Demon_Farky: Yes
+(11:44:16 AM) reignsphere: but windows
+(11:44:17 AM) |GoW| Demon_Farky: yes i do
+(11:44:31 AM) reignsphere: backup all the data
+(11:44:33 AM) reignsphere: wipe the drives
+(11:44:35 AM) reignsphere: install this: http://www.freenas.org/
+(11:44:47 AM) reignsphere: you can set up the drives in ZFS groups (better than RAID) 
+(11:44:47 AM) |GoW| Demon_Farky: Oooooo ... NAS, I was looking at that but I knew very very little
+(11:44:50 AM) reignsphere: and it has Plex and shit built in
+(11:44:55 AM) |GoW| Demon_Farky: OMG
+(11:45:00 AM) reignsphere: yeah instead of windows sharing your nonsense directly
+(11:45:17 AM) reignsphere: you have it all on here, set up windows/linux shares, can snapshot the whole thing for backups, built into crashplan
+(11:45:26 AM) reignsphere: setup's a bit more on the advanced side but they have very good documentation
+(11:45:31 AM) reignsphere: instead of having "hardware raid 5"
+(11:45:35 AM) reignsphere: you build a RAID-Z2
+(11:45:42 AM) reignsphere: in software
+(11:45:59 AM) reignsphere: it will also unmarry your drives from that specific hardware (which they're currently married with hardware RAID)
+(11:46:06 AM) |GoW| Demon_Farky: Dude, that is bonerific and is exactly what I'm looking for.
+(11:46:15 AM) reignsphere: yep :)
+(11:46:21 AM) reignsphere: I'm planning a freenas build, myself
+(11:46:25 AM) reignsphere: but I have to buy a bunch of hardware :(
+(11:46:32 AM) reignsphere: going to start it off with 5x 3TB drives
+(11:46:37 AM) reignsphere:  and have the ability to add 10 more
+(11:46:40 AM) |GoW| Demon_Farky: Oooo nice
+(11:46:52 AM) reignsphere: and figure by the time I fill 15T raw, 5, 6, 10TB drives will be available :D
+(11:46:59 AM) reignsphere: OH ALSO
+(11:47:03 AM) reignsphere: you can encrypt _the entire thing_
+(11:47:30 AM) |GoW| Demon_Farky: So no one can view it except me ?
+(11:48:03 AM) reignsphere: well all of the shares can be secured, but it's more
+(11:48:14 AM) reignsphere: if it gets shut dwon (confiscated or stolen or whatever)
+(11:48:16 AM) reignsphere: then booted back up
+(11:48:22 AM) reignsphere: you can't actually boot the storage without a passphrase
+(11:48:27 AM) |GoW| Demon_Farky: OMG
+(11:48:30 AM) |GoW| Demon_Farky: thats fucking perfect
+(11:48:42 AM) reignsphere: also yo ucan run owncloud on it
+(11:48:51 AM) reignsphere: which is dropbox, google like calendars and contacts, etc
+(11:48:58 AM) |GoW| Demon_Farky: Oh sweet
+(11:49:05 AM) reignsphere: yeah it's like
+(11:49:07 AM) reignsphere: "The solution"
+(11:49:10 AM) reignsphere: For home data services
+(11:49:10 AM) |GoW| Demon_Farky: I may have to change my WorkServer to that as well then
+(11:50:16 AM) |GoW| Demon_Farky: How powerful does the machine need to be ?
+(11:50:54 AM) reignsphere: not terribly
+(11:50:57 AM) reignsphere: but decently if you're encrypting
+(11:51:03 AM) reignsphere: it recommends like i5 16GB of RAM
+(11:51:31 AM) |GoW| Demon_Farky: Ya, I'm not anywhere close to that .. lol  Intel Core Duo (I believe) with 4GB and 2.6Ghz
+(11:53:41 AM) |GoW| Demon_Farky: I guess I dont have to have the encryption.  I have to large electro-magnets next to the casings on a Remote Switch connected to my phone so if the drives get confiscated I can panic button and erase ;P
+(11:53:47 AM) |GoW| Demon_Farky: two**
+(11:53:55 AM) |GoW| Demon_Farky: Sounds ridiculious, but I really wanted to see if I could do it :P
+(12:03:56 PM) reignsphere: lmfao that is ridiculous
+(12:03:58 PM) reignsphere: also probably won't work
+(12:04:18 PM) reignsphere: you'd be better off having the phone button kick off a script that does this:
+(12:04:32 PM) reignsphere: dd if=/dev/urandom of=/dev/sda
+(12:04:46 PM) |GoW| Demon_Farky: ooo, I didn't think about using a script
+(12:05:18 PM) |GoW| Demon_Farky: when i was playing with it I ruined two hard drives lol, luckily they were just junkers.
+(12:06:16 PM) reignsphere: yeah that will actually dump random data to the disk
+(12:06:19 PM) reignsphere: overwriting everything
+(12:06:25 PM) reignsphere: moire reliable than magnets
+(12:06:31 PM) |GoW| Demon_Farky: Ahhh, no recovery. Gotcha
+(12:06:34 PM) reignsphere: remember: every hard drive has a GIANT NEODYMINUM MAGNET INSIDE OF IT
+(12:06:53 PM) |GoW| Demon_Farky: I love the way you think ;)
+(12:06:54 PM) reignsphere: the whole magnets & drives "myth" came around from floppy disks lol
+(12:07:04 PM) reignsphere: like, while yes it's "true"
+(12:07:11 PM) reignsphere: it takes a LOT of power to interrupt a modern hard disk
+(12:07:22 PM) reignsphere: where as a floppy disk was like "whopps you put that near a speaker, good job fucker"
+(12:07:29 PM) |GoW| Demon_Farky: lol
+(12:07:50 PM) |GoW| Demon_Farky: It does take a lot of of power, it shuts the whole room down and blows the fuse ;P
+(12:07:55 PM) reignsphere: hahahaha
+(12:07:58 PM) |GoW| Demon_Farky: But its a fun toy
+(12:07:59 PM) reignsphere: dude you're going to catch your house on fire
+(12:08:04 PM) |GoW| Demon_Farky: LOL!
+(12:08:11 PM) |GoW| Demon_Farky: The script is way more reasonable
+(12:08:16 PM) reignsphere: hahahahahahaha THAT"LL KEEP THAT DATA SAFE
+(12:08:22 PM) |GoW| Demon_Farky: LOL!
+(12:08:26 PM) |GoW| Demon_Farky: *watches houes burning*
+(12:08:29 PM) reignsphere: hahahahaha
+(12:08:31 PM) reignsphere: "take that NSA"
+(12:08:35 PM) |GoW| Demon_Farky: LOL!
+(12:08:47 PM) |GoW| Demon_Farky: Omg stop .. I'm laughing out loud and people are starring
+(12:09:40 PM) reignsphere: hahahahahaha
+(12:11:24 PM) reignsphere: http://i.imgur.com/fWIJ3L5.jpg
