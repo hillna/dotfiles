@@ -1,12 +1,12 @@
 # Olark
 export PATH=$PATH:./.node-virtualenv/bin
-export OLARK_HOME=~/dev/Olark/puppet/modules/olark/files
+export OLARK_HOME=~/dev/olark/puppet/modules/olark/files
 export OLARK_STATE=/tmp/olark/state
-export OLARK_APPS=~/dev/Olark
+export OLARK_APPS=~/dev/olark
 export OLARK_ENV=jz
 source $OLARK_HOME/env/bootstrap
 
 # Olark AWS
-source $HOME/.awskey
-source $HOME/.rskey
+source $HOME/.keys/awskey
+source $HOME/.keys/rskey
 
