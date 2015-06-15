@@ -13,7 +13,12 @@ bspc monitor DP-3 -d IV V
 bspc monitor DP-5 -d VI VII
 
 # Macbook
-bspc monitor eDP1 -d I II III IV V VI
+if [ $(bspc query -M |grep DP2) ]; then
+  bspc monitor DP2 -d I II III IV
+  bspc monitor eDP1 -d VI VI VII
+else
+  bspc monitor eDP1 -d I II III IV V VI
+fi
 
 bspc rule -a Gimp follow=on floating=on
 bspc rule -a Steam follow=off floating=off

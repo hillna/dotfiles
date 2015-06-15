@@ -56,8 +56,11 @@ super + bracket{left,right}
 super + ctrl + {h,j,k,l}
 	bspc window -p {left,down,up,right}
 
-super + {_,shift + }space
-	bspc {window -p cancel,desktop -c}
+super + + shift + space
+	bspc desktop -c
+
+super + semicolon
+        bspc window -p cancel
 
 super + alt + {h,j,k,l}
 	bspc window -e {left -10,down +10,up -10,right +10}
@@ -93,6 +96,9 @@ Print
 
 super + Return
 	urxvtc -e tmux
+
+super + space
+        urxvtc -e tmux
 
 super + e
         google-chrome-stable
