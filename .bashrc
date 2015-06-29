@@ -8,5 +8,5 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-. $HOME/.bash_aliases
+. $HOME/.shellrc.load
 
