@@ -6,6 +6,7 @@ alias py="python"
 alias p="py"
 alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
+alias chrome='chromium --force-device-scale-factor'
 
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then
