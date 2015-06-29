@@ -101,10 +101,10 @@ super + space
         urxvtc -e tmux
 
 super + e
-        google-chrome-stable
+        chromium --force-device-scale-factor
 
 super + r
-	dmenu_run
+	dmenu_recent_aliases
 
 super + Escape
         xscreensaver-command --lock
