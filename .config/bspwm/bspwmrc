@@ -21,14 +21,17 @@ else
 fi
 
 bspc rule -a Gimp follow=on floating=on
-bspc rule -a Steam follow=off floating=off
+bspc rule -a Steam follow=off floating=on
 bspc rule -a mplayer2 floating=on
 bspc rule -a vlc floating=on
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a feh floating=on
-bspc rule -a KSP.x86_64 fullscreen=on
+bspc rule -a 'Kerbal Space Program' fullscreen=on
 
-##$HOME/.config/bspwm/panel/panel &
+# Panel
+#$HOME/.config/bspwm/panel/panel &
+
+# Compositing
 compton -b
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
