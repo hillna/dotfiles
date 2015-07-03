@@ -26,6 +26,7 @@ bspc rule -a mplayer2 floating=on
 bspc rule -a vlc floating=on
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a feh floating=on
+bspc rule -a KSP.x86_64 fullscreen=on
 
 ##$HOME/.config/bspwm/panel/panel &
 compton -b
