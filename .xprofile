@@ -1,6 +1,7 @@
 # env
 #export TERM="xterm-256color"
 export EDITOR="vim"
+export BROWSER="chromium --force-device-scale-factor"
 export PANEL_FIFO="/tmp/panel-fifo"
 
 # screensaver & lock

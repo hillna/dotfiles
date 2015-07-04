@@ -26,7 +26,7 @@ bspc rule -a mplayer2 floating=on
 bspc rule -a vlc floating=on
 bspc rule -a Conky sticky=on manage=off lower=on
 bspc rule -a feh floating=on
-bspc rule -a 'Kerbal Space Program' fullscreen=on
+bspc rule -a Kerbal\ Space\ Program fullscreen=on
 
 # Panel
 #$HOME/.config/bspwm/panel/panel &
