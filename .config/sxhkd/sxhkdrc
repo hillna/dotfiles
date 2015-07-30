@@ -101,8 +101,7 @@ super + space
         urxvtc -e tmux
 
 super + e
-        chromium --force-device-scale-factor
-
+        google-chrome-stable
 super + r
 	dmenu_recent_aliases
 

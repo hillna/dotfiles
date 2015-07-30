@@ -3,6 +3,8 @@
 # Panel for bspwm using lemonbar
 ##
 
+export PANEL_FIFO="/tmp/panel-fifo"
+
 cd $(dirname $0)
 source $(dirname $0)/config
 

@@ -1,11 +1,10 @@
-#x setup
+# x setup
 xsetroot -cursor_name left_ptr
 
 # env
 #export TERM="xterm-256color"
 export EDITOR="vim"
-export BROWSER="chromium --force-device-scale-factor"
-export PANEL_FIFO="/tmp/panel-fifo"
+export BROWSER="google-chrome-stable"
 
 # screensaver & lock
 #xss-lock -- xscreensaver-command -lock &
