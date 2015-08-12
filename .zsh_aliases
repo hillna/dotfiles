@@ -8,6 +8,8 @@ alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
 alias chrome='chromium --force-device-scale-factor'
 alias kerbal='cd ~/KSP && ./ksp.sh'
+alias reboot='sudo reboot'
+alias shutdown='sudo shutdown -h now'
 
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then
