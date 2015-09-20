@@ -102,6 +102,10 @@ super + space
 
 super + e
         google-chrome-beta
+
+super + shift + e
+        google-chrome-beta -incognito
+
 super + r
 	dmenu_recent_aliases
 
