@@ -12,6 +12,6 @@ xscreensaver -no-splash &
 
 # autorun
 urxvtd -q -f -o &
-sxhkd &
+#sxhkd &
 dropbox &
 
