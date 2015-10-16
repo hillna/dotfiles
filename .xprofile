@@ -4,7 +4,7 @@ xsetroot -cursor_name left_ptr
 # env
 #export TERM="xterm-256color"
 export EDITOR="vim"
-export BROWSER="google-chrome-beta"
+export BROWSER=""
 
 # screensaver & lock
 #xss-lock -- xscreensaver-command -lock &

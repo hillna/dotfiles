@@ -5,6 +5,7 @@ export OLARK_STATE=/tmp/olark/state
 export OLARK_APPS=~/dev/olark
 export OLARK_ENV=jz
 source $OLARK_HOME/env/bootstrap
+export PATH=~/dev/olark/buildtools:$PATH
 
 # Olark AWS
 source $HOME/.keys/awskey
