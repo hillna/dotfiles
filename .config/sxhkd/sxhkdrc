@@ -101,7 +101,11 @@ super + space
         urxvtc -e tmux
 
 super + e
-        google-chrome-beta
+        chromium
+
+super + shift + e
+        chromium -incognito
+
 super + r
 	dmenu_recent_aliases
 

@@ -21,3 +21,5 @@
 	smudge = git-media-smudge %f
 [commit]
 	gpgsign = false
+[merge]
+	tool = meld
