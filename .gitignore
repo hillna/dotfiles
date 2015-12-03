@@ -1,6 +1,6 @@
 *.swp
 .vim/.netrwhist
-.vim/bundle
+.vim/bundle/*
 *.bak
 .config/bspwm/wallpaper/*
 .keys
