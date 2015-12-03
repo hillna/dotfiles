@@ -95,7 +95,7 @@ Print
         scrot -q 100
 
 super + Return
-	urxvtc -e tmux
+	termite -e tmux
 
 super + space
         urxvtc -e tmux

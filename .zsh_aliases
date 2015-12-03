@@ -10,7 +10,7 @@ alias chrome='google-chrome-beta'
 alias kerbal='cd ~/KSP && ./ksp.sh'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
-alias crashplan_ssh='sudo systemctl stop crashplan.service && ssh -L 4255:127.0.0.1:4243 root@crashplan && sudo systemctl start crashplan.service'
+alias crashplan_baltar='ssh -X crashplan "CrashPlanDesktop"'
 
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then

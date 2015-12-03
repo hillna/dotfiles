@@ -1,5 +1,5 @@
 # Olark
-export PATH=$PATH:./.node-virtualenv/bin
+#export PATH=$PATH:./.node-virtualenv/bin
 export OLARK_HOME=~/dev/olark/puppet/modules/olark/files
 export OLARK_STATE=/tmp/olark/state
 export OLARK_APPS=~/dev/olark

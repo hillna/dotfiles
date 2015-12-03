@@ -64,7 +64,8 @@ URxvt.url-select.underline: true
 
 ! Transparency
 URxvt.depth: 32
-URxvt.background: [85]#002b36
+URxvt.background: #002b36
+! URxvt.background: [85]#002b36
 
 !!Source http://github.com/altercation/solarized
 .
