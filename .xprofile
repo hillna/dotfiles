@@ -1,6 +1,9 @@
 # x setup
 xsetroot -cursor_name left_ptr
 
+# fonts
+xset +fp ~/.fonts
+
 # env
 #export TERM="xterm-256color"
 export EDITOR="vim"
