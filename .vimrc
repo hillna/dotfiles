@@ -13,6 +13,7 @@ call vundle#begin()
 " Vundle Plugins
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+Plugin 'bling/vim-airline'
 
 " End Vundle Plugins
 
@@ -26,8 +27,12 @@ let g:solarized_termtrans = 1
 colorscheme solarized
 filetype plugin indent on
 
+set background=dark
+
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+set timeoutlen=1000 ttimeoutlen=10
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 

@@ -1,3 +1,6 @@
+[options]
+font = monaco 10
+
 # Solarized dark color scheme
 
 [colors]
