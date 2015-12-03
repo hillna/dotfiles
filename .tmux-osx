@@ -1,4 +1,4 @@
-source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline-base.conf"
+source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
 
 unbind -t vi-copy 'y'
 bind-key -t vi-copy 'y' copy-pipe "/usr/local/bin/reattach-to-user-namespace pbcopy"
