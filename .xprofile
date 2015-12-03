@@ -1,10 +1,13 @@
 # x setup
 xsetroot -cursor_name left_ptr
 
+# fonts
+xset +fp ~/.fonts
+
 # env
 #export TERM="xterm-256color"
 export EDITOR="vim"
-export BROWSER="google-chrome-stable"
+export BROWSER=""
 
 # screensaver & lock
 #xss-lock -- xscreensaver-command -lock &
@@ -12,6 +15,6 @@ xscreensaver -no-splash &
 
 # autorun
 urxvtd -q -f -o &
-sxhkd &
+#sxhkd &
 dropbox &
 

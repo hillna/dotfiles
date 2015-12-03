@@ -95,13 +95,17 @@ Print
         scrot -q 100
 
 super + Return
-	urxvtc -e tmux
+	termite -e tmux
 
 super + space
         urxvtc -e tmux
 
 super + e
-        google-chrome-beta
+        chromium
+
+super + shift + e
+        chromium -incognito
+
 super + r
 	dmenu_recent_aliases
 
