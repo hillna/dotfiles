@@ -1,0 +1,37 @@
+# geometry
+PANEL_HEIGHT=20
+PANEL_WIDTH=''
+PANEL_GEOMETRY="${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0"
+
+# font
+PANEL_FONT="Roboto Bold:size=14"
+PANEL_JP_FONT="Source Han Sans JP Bold:size=11"
+PANEL_KR_FONT="Source Han Sans KR Bold:size=11"
+ICON_FONT="Ionicons:size=16"
+
+# wifi
+icon_wifi='\uf25c'
+
+# battery
+icon_battery_low='\uf115'
+icon_battery_half='\uf114'
+icon_battery_full='\uf113'
+icon_battery_charging='\uf111'
+
+# music
+icon_play='\uf215'
+icon_pause='\uf478'
+
+# brightness
+#
+icon_brightness='\uf3b0'
+
+# datetime
+icon_calendar='\uf117'
+icon_clock='\uf26e'
+
+# volume
+icon_volume_off='\uf3b9'
+icon_volume_min='\uf3b8'
+icon_volume_mid='\uf3b7'
+icon_volume_max='\uf3ba'

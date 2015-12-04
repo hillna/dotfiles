@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $(pgrep -cx panel) -eq 1 ] ; then
+if [ $(pgrep -cx panel) -gt 0 ] ; then
     pkill panel &
     bspc config top_padding 0
 else

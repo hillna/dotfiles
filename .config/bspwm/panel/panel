@@ -1,16 +1,14 @@
 #! /bin/sh
-#
-# Panel for bspwm using lemonbar
-##
 
 export PANEL_FIFO="/tmp/panel-fifo"
 
 cd $(dirname $0)
-source $(dirname $0)/config
+source $(dirname $0)/panel_config
+source $(dirname $0)/panel_colors
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
-    printf "%s\n" "The panel is already running." >&2
-    exit 1
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
 fi
 
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
@@ -18,18 +16,96 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-bspc config top_padding 14
-
+bspc config top_padding 20
 bspc control --subscribe > "$PANEL_FIFO" &
-./panel_data > "$PANEL_FIFO" &
 
-cat "$PANEL_FIFO" \
-        | ./panel_bspwm \
-	| lemonbar \
-		-f "$FONT1","$FONT2"\
-		-F "$COLOR_FOREGROUND"\
-		-B "$COLOR_BACKGROUND"\
-		-g "$PANEL_GEOMETRY"\
-		-u $LINEHEIGHT &
+# datetime
+while true; do
+	echo -e "TIME${icon_clock} $(date +"%_H:%M")"
+	sleep 1
+done > "$PANEL_FIFO" &
+
+while true; do
+	echo -e "DAY${icon_calendar} $(date +'%a, %b %d')"
+	sleep 60
+done > "$PANEL_FIFO" &
+
+
+# battery
+#while true; do
+#	batt_level=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
+#
+#	if [[ $(cat "/sys/class/power_supply/AC/online") != 1 ]]; then
+#		if [[ $bat_level -ge 80 ]]; then
+#			batt_icon=$icon_battery_full
+#		elif [[ $bat_level -ge 20 && $bat_level -le 80 ]]; then
+#			batt_icon=$icon_battery_half
+#		elif [[ $bat_level -le 20 ]]; then
+#			batt_icon=$icon_battery_low
+#		fi
+#		remaining=$(acpi -b | awk '{print $5}')
+#	else
+#		batt_icon=$icon_battery_charging
+#	fi
+#
+#	echo -e "BATT${batt_icon} ${batt_level}"
+#	sleep 60
+#done > "$PANEL_FIFO" &
+
+# wifi
+#while true; do
+#	echo -e "SSID${icon_wifi} $(iw wlp9s0 link | grep 'SSID' | sed 's/SSID: //')"
+#	sleep 1;
+#done > "$PANEL_FIFO" &
+
+# brightness
+#while true; do
+#	echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
+#	sleep 5
+#done > "$PANEL_FIFO" &
+
+# volume
+while true; do
+	state=$(amixer get Master | grep "Front Right:" | awk '{print $6}' | tr -d '[%]')
+	level=$(amixer get Master | grep "Front Right:" | awk '{print $5}' | tr -d '[%]')
+
+	if [[ "$state" == "on" ]]; then
+		if [[ $level -eq 100 ]]; then
+			vol_icon=${icon_volume_max}
+		elif [[ $level -gt 0 && $level -lt 100 ]]; then
+			vol_icon=${icon_volume_mid}
+		else
+			vol_icon=${icon_volume_min}
+		fi
+	else
+		vol_icon=${icon_volume_off}
+	fi
+	echo -e "VOL${vol_icon} ${level}"
+	sleep 1
+done > "$PANEL_FIFO" &
+
+# music
+while true; do
+	track_title="$(mpc current)"
+	if [[ "$track_title" != "" ]]; then
+		if mpc status | grep -q "pause"; then
+			music_icon=$icon_pause
+		else
+			music_icon=$icon_play
+		fi
+	fi
+	echo -e "M${music_icon} ${track_title}"
+	sleep 5
+done > "$PANEL_FIFO" &
+
+./panel_bar < "$PANEL_FIFO" | lemonbar \
+	-g "$PANEL_GEOMETRY" \
+	-f "$PANEL_FONT" \
+	-f "$PANEL_JP_FONT" \
+	-f "$PANEL_KR_FONT" \
+	-f "$ICON_FONT" \
+	-F "$COLOR_FOREGROUND" \
+	-B "$COLOR_BACKGROUND" \
+	&
+
 wait
-
