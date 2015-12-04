@@ -55,17 +55,22 @@ then
             sleep 60
     done > "$PANEL_FIFO" &
 fi
+
 #wifi
-#while true; do
-#	echo -e "SSID${icon_wifi} $(iw wlp3s0 link | grep 'SSID' | sed 's/SSID: //')"
-#	sleep 1;
-#done > "$PANEL_FIFO" &
+if ip link |grep wlp3s0 &> /dev/null
+    while true; do
+            echo -e "SSID${icon_wifi} $(iw wlp3s0 link | grep 'SSID' | sed 's/SSID: //')"
+            sleep 1;
+    done > "$PANEL_FIFO" &
+fi
 
 # brightness
-#while true; do
-#	echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
-#	sleep 5
-#done > "$PANEL_FIFO" &
+if [[ $(xbacklight -get) -gt 0 ]]
+    while true; do
+            echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
+            sleep 5
+    done > "$PANEL_FIFO" &
+fi
 
 # volume
 while true; do
