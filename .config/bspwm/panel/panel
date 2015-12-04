@@ -66,13 +66,10 @@ then
 fi
 
 # brightness
-if [[ $(xbacklight -get) -gt 0 ]]
-then
-    while true; do
-            echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
-            sleep 5
-    done > "$PANEL_FIFO" &
-fi
+#    while true; do
+#            echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
+#            sleep 5
+#    done > "$PANEL_FIFO" &
 
 # volume
 while true; do
