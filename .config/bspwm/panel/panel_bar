@@ -85,5 +85,5 @@ while read -r line ; do
 				done
 				;;
 		esac
-		printf "%s\n" "%{l}${wm_infos}%{c}${music}%{r}${vol}${brightness}${ssid}${batt}${day}${clock}"
+		printf "%s\n" "%{Sf}%{r}${day}${clock}%{S+}%{l}${wm_infos}%{c}${music}%{r}${vol}${brightness}${ssid}${batt}${day}${clock}%{Sl}%{r}${day}${clock}"
 	done

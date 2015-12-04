@@ -16,7 +16,7 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-bspc config top_padding 29
+bspc config top_padding 20
 bspc control --subscribe > "$PANEL_FIFO" &
 
 # datetime
@@ -53,16 +53,16 @@ done > "$PANEL_FIFO" &
 #done > "$PANEL_FIFO" &
 
 # wifi
-while true; do
-	echo -e "SSID${icon_wifi} $(iw wlp9s0 link | grep 'SSID' | sed 's/SSID: //')"
-	sleep 1;
-done > "$PANEL_FIFO" &
+#while true; do
+#	echo -e "SSID${icon_wifi} $(iw wlp9s0 link | grep 'SSID' | sed 's/SSID: //')"
+#	sleep 1;
+#done > "$PANEL_FIFO" &
 
 # brightness
-while true; do
-	echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
-	sleep 5
-done > "$PANEL_FIFO" &
+#while true; do
+#	echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
+#	sleep 5
+#done > "$PANEL_FIFO" &
 
 # volume
 while true; do
@@ -99,7 +99,6 @@ while true; do
 done > "$PANEL_FIFO" &
 
 ./panel_bar < "$PANEL_FIFO" | lemonbar \
-#	-n "$PANEL_WM_NAME" \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
 	-f "$PANEL_JP_FONT" \
