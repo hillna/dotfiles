@@ -33,7 +33,7 @@ done > "$PANEL_FIFO" &
 
 
 # battery
-while [-e /sys/class/power_supply/AC ]; do
+while [-d "/sys/class/power_supply/AC" ]; do
 	batt_level=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
 
 	if [[ $(cat "/sys/class/power_supply/AC/online") != 1 ]]; then
