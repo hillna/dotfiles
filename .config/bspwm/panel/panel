@@ -33,26 +33,28 @@ done > "$PANEL_FIFO" &
 
 
 # battery
-while [-d "/sys/class/power_supply/AC" ]; do
-	batt_level=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
+if [-d "/sys/class/power_supply/AC" ]
+then
+    while true; do
+            batt_level=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
 
-	if [[ $(cat "/sys/class/power_supply/AC/online") != 1 ]]; then
-		if [[ $bat_level -ge 80 ]]; then
-			batt_icon=$icon_battery_full
-		elif [[ $bat_level -ge 20 && $bat_level -le 80 ]]; then
-			batt_icon=$icon_battery_half
-		elif [[ $bat_level -le 20 ]]; then
-			batt_icon=$icon_battery_low
-		fi
-		remaining=$(acpi -b | awk '{print $5}')
-	else
-		batt_icon=$icon_battery_charging
-	fi
+            if [[ $(cat "/sys/class/power_supply/AC/online") != 1 ]]; then
+                    if [[ $bat_level -ge 80 ]]; then
+                            batt_icon=$icon_battery_full
+                    elif [[ $bat_level -ge 20 && $bat_level -le 80 ]]; then
+                            batt_icon=$icon_battery_half
+                    elif [[ $bat_level -le 20 ]]; then
+                            batt_icon=$icon_battery_low
+                    fi
+                    remaining=$(acpi -b | awk '{print $5}')
+            else
+                    batt_icon=$icon_battery_charging
+            fi
 
-	echo -e "BATT${batt_icon} ${batt_level}"
-	sleep 60
-done > "$PANEL_FIFO" &
-
+            echo -e "BATT${batt_icon} ${batt_level}"
+            sleep 60
+    done > "$PANEL_FIFO" &
+fi
 #wifi
 #while true; do
 #	echo -e "SSID${icon_wifi} $(iw wlp3s0 link | grep 'SSID' | sed 's/SSID: //')"
