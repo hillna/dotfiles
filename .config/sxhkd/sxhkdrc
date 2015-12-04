@@ -97,9 +97,6 @@ Print
 super + Return
 	termite -e tmux
 
-super + space
-        urxvtc -e tmux
-
 super + e
         chromium
 
