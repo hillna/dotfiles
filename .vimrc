@@ -14,6 +14,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
+Plugin 'rodjek/vim-puppet'
+Plugin 'altercation/vim-colors-solarized'
 
 " End Vundle Plugins
 

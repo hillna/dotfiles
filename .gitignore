@@ -4,3 +4,4 @@
 *.bak
 .config/bspwm/wallpaper/*
 .keys
+.ncmpcpp/error.log
