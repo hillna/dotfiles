@@ -58,6 +58,7 @@ fi
 
 #wifi
 if ip link |grep wlp3s0 &> /dev/null
+then
     while true; do
             echo -e "SSID${icon_wifi} $(iw wlp3s0 link | grep 'SSID' | sed 's/SSID: //')"
             sleep 1;
@@ -66,6 +67,7 @@ fi
 
 # brightness
 if [[ $(xbacklight -get) -gt 0 ]]
+then
     while true; do
             echo -e "BN${icon_brightness} $(printf "%.*f\n" 0 $(xbacklight -get))"
             sleep 5
