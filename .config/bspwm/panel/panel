@@ -33,7 +33,7 @@ done > "$PANEL_FIFO" &
 
 
 # battery
-if [-d "/sys/class/power_supply/ADP1" ]
+if [ -d "/sys/class/power_supply/ADP1" ]
 then
     while true; do
             batt_level=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
