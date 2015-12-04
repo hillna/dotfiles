@@ -33,12 +33,12 @@ done > "$PANEL_FIFO" &
 
 
 # battery
-if [-d "/sys/class/power_supply/AC" ]
+if [-d "/sys/class/power_supply/ADP1" ]
 then
     while true; do
             batt_level=$(acpi -b | grep -o '[[:digit:]]\+%' | sed 's/%//')
 
-            if [[ $(cat "/sys/class/power_supply/AC/online") != 1 ]]; then
+            if [[ $(cat "/sys/class/power_supply/ADP1/online") != 1 ]]; then
                     if [[ $bat_level -ge 80 ]]; then
                             batt_icon=$icon_battery_full
                     elif [[ $bat_level -ge 20 && $bat_level -le 80 ]]; then
