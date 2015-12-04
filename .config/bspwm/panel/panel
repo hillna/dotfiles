@@ -3,6 +3,7 @@
 export PANEL_FIFO="/tmp/panel-fifo"
 
 cd $(dirname $0)
+
 source $(dirname $0)/panel_config
 source $(dirname $0)/panel_colors
 
@@ -16,7 +17,7 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-bspc config top_padding 20
+bspc config top_padding $PANEL_HEIGHT
 bspc control --subscribe > "$PANEL_FIFO" &
 
 # datetime
