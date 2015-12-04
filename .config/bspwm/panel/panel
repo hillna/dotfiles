@@ -99,7 +99,6 @@ while true; do
 done > "$PANEL_FIFO" &
 
 ./panel_bar < "$PANEL_FIFO" | lemonbar \
-	-b \
 #	-n "$PANEL_WM_NAME" \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
