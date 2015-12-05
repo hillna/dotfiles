@@ -1,5 +1,6 @@
 # x setup
 xsetroot -cursor_name left_ptr
+sh ~/.screenlayout/default.sh
 
 # fonts
 xset +fp ~/.fonts
