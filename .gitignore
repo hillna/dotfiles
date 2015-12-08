@@ -5,3 +5,4 @@
 .config/bspwm/wallpaper/*
 .keys
 .ncmpcpp/error.log
+.config/termite/config
