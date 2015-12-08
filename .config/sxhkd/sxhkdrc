@@ -87,9 +87,7 @@ super + !button{1-3}
 super + @button{1-3}
 	bspc pointer -u
 
-#
 # wm independent hotkeys
-#
 
 Print
         scrot -q 100
@@ -113,4 +111,3 @@ super + Escape
 # reload bspwmrc & sxhkd
 super + alt + Escape
         $HOME/.config/bspwm/bspwmrc && pkill -USR1 -x sxhkd
-
