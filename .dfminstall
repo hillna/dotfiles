@@ -1,4 +1,5 @@
 .config recurse
 .ssh recurse
+.vim recurse
 README.md skip
 .gitmodules skip
