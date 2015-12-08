@@ -1,6 +1,14 @@
 # x setup
 xsetroot -cursor_name left_ptr
 
+# set configs
+if [ -f /etc/macbook ]
+then
+    ln -s ~/.config/termite/config.mac ~/.config/termite/config
+else
+    ln -s ~/.config/termite/config.default ~/.config/termite/config
+fi
+
 # fonts
 xset +fp ~/.fonts
 
@@ -14,7 +22,6 @@ export BROWSER=""
 xscreensaver -no-splash &
 
 # autorun
-urxvtd -q -f -o &
-#sxhkd &
+#urxvtd -q -f -o &
 dropbox &
 
