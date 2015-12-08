@@ -1,3 +1,4 @@
+.ncmpcpp recurse
 .config recurse
 .ssh recurse
 .vim recurse
