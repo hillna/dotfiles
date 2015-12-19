@@ -13,15 +13,17 @@ fi
 xset +fp ~/.fonts
 
 # env
-#export TERM="xterm-256color"
 export EDITOR="vim"
 export BROWSER=""
 
 # screensaver & lock
-#xss-lock -- xscreensaver-command -lock &
 xscreensaver -no-splash &
 
+# keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 # autorun
-#urxvtd -q -f -o &
 dropbox &
+owncloud &
 
