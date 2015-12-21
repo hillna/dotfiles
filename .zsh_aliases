@@ -15,6 +15,7 @@ alias crashplan_baltar='ssh -X crashplan "CrashPlanDesktop"'
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then
     alias python="python2"
+    alias pip="pip2"
     alias python-config="python2-config"
     alias virtualenv="virtualenv2"
 fi
