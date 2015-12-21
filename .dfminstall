@@ -1,7 +1,7 @@
 .ncmpcpp recurse
 .config recurse
 .ssh recurse
-.vim/bundle recurse
+.vim recurse
 .weechat recurse
 README.md skip
 .gitmodules skip
