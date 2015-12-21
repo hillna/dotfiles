@@ -25,7 +25,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle Settings
 
-execute pathogen#infect()
 syntax enable
 let g:solarized_termtrans = 1
 colorscheme solarized

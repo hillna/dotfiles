@@ -102,7 +102,7 @@ super + shift + e
         chromium -incognito
 
 super + r
-	dmenu_recent_aliases
+	rofi -show run
 
 super + Escape
         xscreensaver-command --lock

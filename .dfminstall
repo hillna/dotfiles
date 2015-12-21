@@ -1,6 +1,9 @@
+setup.sh exec
+setup.sh skip
 .ncmpcpp recurse
 .config recurse
 .ssh recurse
-.vim recurse
+.weechat recurse
 README.md skip
 .gitmodules skip
+.oh-my-zsh recurse
