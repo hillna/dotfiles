@@ -7,7 +7,6 @@ alias p="py"
 alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/Steam/Steam.exe -no-dwrite >/dev/null 2>&1 &'
 alias chrome='google-chrome-beta'
-alias kerbal='cd ~/KSP && ./ksp.sh'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
 alias crashplan_baltar='ssh -X crashplan "CrashPlanDesktop"'
