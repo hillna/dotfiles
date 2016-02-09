@@ -7,7 +7,7 @@ PANEL_GEOMETRY="${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0"
 PANEL_FONT="Roboto Bold:size=14"
 PANEL_JP_FONT="Source Han Sans JP Bold:size=11"
 PANEL_KR_FONT="Source Han Sans KR Bold:size=11"
-ICON_FONT="Ionicons:size=16"
+ICON_FONT="Ionicons:size=14"
 
 # wifi
 icon_wifi='\uf25c'
