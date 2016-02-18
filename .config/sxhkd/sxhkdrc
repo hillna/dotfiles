@@ -5,7 +5,7 @@
 super + alt + ctrl + Escape
 	bspc quit && pkill panel
 
-super + ctrl + Tab 
+super + ctrl + Tab
         $HOME/bin/toggle_panel
 
 super + ctrl + w
