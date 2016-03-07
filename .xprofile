@@ -15,7 +15,6 @@ xset +fp ~/.fonts
 # env
 export EDITOR="vim"
 export BROWSER=""
-export PATH=$HOME/bin:$PATH
 
 # screensaver & lock
 xscreensaver -no-splash &
