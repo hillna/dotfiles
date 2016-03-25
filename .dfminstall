@@ -1,5 +1,5 @@
-setup.sh exec
-setup.sh skip
+bootstrap.sh exec
+bootstrap.sh skip
 .ncmpcpp recurse
 .config recurse
 .ssh recurse
