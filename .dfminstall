@@ -7,3 +7,4 @@ setup.sh skip
 README.md skip
 .gitmodules skip
 .oh-my-zsh recurse
+.local recurse
