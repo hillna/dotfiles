@@ -10,7 +10,7 @@ if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
     vim +PluginInstall +qall
 fi
 
-if [! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
+if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
     pip install --user powerline-status
 fi
 

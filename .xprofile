@@ -15,6 +15,8 @@ xset +fp ~/.fonts
 # env
 export EDITOR="vim"
 export BROWSER=""
+
+export POWERLINE_COMMAND=$HOME/.local/bin/powerline
 export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
 
 # screensaver & lock
