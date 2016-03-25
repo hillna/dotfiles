@@ -16,7 +16,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export GOPATH=$HOME/dev/golang
 
 export PATH=$PATH:/opt/ec2-api-tools/bin
-export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$PATH:$HOME/.local/lib/python2.7/site-packages
 
 # Olark
