@@ -12,11 +12,10 @@ fi
 
 # Paths
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 export PATH=$PATH:/opt/ec2-api-tools/bin
+export GOPATH=$HOME/dev/golang
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
-export GOPATH=~/dev/golang
-
 
 # Olark
 if [ -f $HOME/.olark_rc ] ; then

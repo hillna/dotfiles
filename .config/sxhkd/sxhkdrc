@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	termite -e tmux
+        termite -e tmux
 
 # program launcher
 super + r
@@ -32,7 +32,7 @@ super + alt + Escape
 
 # quit bspwm normally
 super + alt + ctrl + Escape
-	pkill panel && bspc quit
+	bspc quit && pkill panel
 
 # close and kill
 super + {_,ctrl + }w
