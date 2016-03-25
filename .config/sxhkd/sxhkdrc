@@ -50,6 +50,14 @@ super + y
 super + g
 	bspc node -s biggest
 
+# balance nodes on current desktop
+super + b
+        bspc node @/ -B
+
+# flip nodes on current desktop
+super + {comma,period}
+        bspc node @/ -F {horizontal,vertical}
+
 #
 # state/flags
 #
@@ -107,6 +115,10 @@ super + ctrl + {h,j,k,l}
 # preselect the ratio
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
+
+# move node into preselect region
+super + shift + ctrl {h,j,k,l}
+        bspc node -n {west,south,north,east}.!automatic
 
 # cancel the preselection for the focused node
 super + semicolon
