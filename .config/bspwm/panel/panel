@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 export PANEL_FIFO="/tmp/panel-fifo"
 

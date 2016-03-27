@@ -11,13 +11,14 @@ if [ -f /usr/libexec/java_home ]; then
 fi
 
 # Paths
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 export GOPATH=$HOME/dev/golang
-
 export PATH=$PATH:/opt/ec2-api-tools/bin
-export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 export PATH=$PATH:$HOME/.local/lib/python2.7/site-packages
+export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+export PATH=$HOME/.local/bin:$HOME/bin:$PATH
 
 # Olark
 if [ -f $HOME/.olark_rc ] ; then
