@@ -23,14 +23,14 @@ export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
 # screensaver & lock
 xscreensaver -no-splash &
 
+# keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 # ssh-agent config
 if [ $(uname |grep Linux) ] ; then
     eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 fi
-
-# keyring
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-export SSH_AUTH_SOCK
 
 # autorun
 owncloud &
