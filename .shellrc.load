@@ -18,16 +18,9 @@ export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-export PATH=$HOME/.local/bin:$HOME/bin:$PATH
-
 # Olark
 if [ -f $HOME/.olark_rc ] ; then
   source $HOME/.olark_rc
 #  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
-fi
-
-# ssh-agent config
-if [ $(uname |grep Linux) ] ; then
-    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 fi
 
