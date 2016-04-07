@@ -11,6 +11,7 @@ if [ -f /usr/libexec/java_home ]; then
 fi
 
 # Paths
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 export GOPATH=$HOME/dev/golang
 export PATH=$PATH:/opt/ec2-api-tools/bin
 export PATH=$PATH:$HOME/.local/lib/python2.7/site-packages
