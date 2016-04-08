@@ -16,6 +16,8 @@ xset +fp ~/.fonts
 export EDITOR="vim"
 export BROWSER=""
 
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+
 export POWERLINE_COMMAND=$HOME/.local/bin/powerline
 export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
 
