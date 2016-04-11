@@ -113,6 +113,6 @@ done > "$PANEL_FIFO" &
 	-f "$ICON_FONT" \
 	-F "$COLOR_FOREGROUND" \
 	-B "$COLOR_BACKGROUND" \
-	&
+        &
 
 wait
