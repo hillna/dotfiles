@@ -34,5 +34,6 @@ if [ $(uname |grep Linux) ] ; then
 fi
 
 # autorun
+$HOME/bin/toggle_panel
 owncloud &
 

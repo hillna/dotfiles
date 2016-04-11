@@ -1,9 +1,11 @@
 #!/bin/sh
 
 if [ $(pgrep -cx panel) -gt 0 ] ; then
+    pkill lxpanel &
     pkill panel &
     bspc config top_padding 0
 else
     $HOME/.config/bspwm/panel/panel &
+    lxpanel --profile Arch &
 fi
 
