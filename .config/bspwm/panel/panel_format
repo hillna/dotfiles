@@ -31,6 +31,9 @@ while read -r line ; do
 		VOL*)
 			vol="${line#???}$padding"
 			;;
+                RAM*)
+                        ram="${line#???}$padding"
+                        ;;
 		W*)
 			# bspwm internal state
 			wm_infos=""
@@ -85,5 +88,6 @@ while read -r line ; do
 				done
 				;;
 		esac
-		printf "%s\n" "%{Sf}%{r}${day}${clock}%{S+}%{l}${wm_infos}%{c}${music}%{r}${vol}${brightness}${ssid}${batt}${day}${clock}%{Sl}%{r}${day}${clock}"
+		printf "%s\n" "%{Sf}%{r}${day}${clock}%{S+}%{l}${wm_infos}%{c}${music}%{r}${ram}${vol}${brightness}${ssid}${batt}${day}${clock}%{Sl}%{r}${day}${clock}"
 	done
+

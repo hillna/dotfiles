@@ -105,6 +105,15 @@ while true; do
 	sleep 5
 done > "$PANEL_FIFO" &
 
+# memory
+
+while true; do
+    memory_level="$(awk '/MemTotal:/{total=$2}/MemAvailable:/{free=$2;print int(100-100/(total/free))}' /proc/meminfo)"
+
+    echo -e "RAM${icon_memory} ${memory_level}%"
+    sleep 30
+done > "$PANEL_FIFO" &
+
 ./panel_format < "$PANEL_FIFO" | lemonbar \
         -d \
 	-g "$PANEL_GEOMETRY" \

@@ -18,6 +18,9 @@ icon_battery_half='\uf114'
 icon_battery_full='\uf113'
 icon_battery_charging='\uf111'
 
+# memory
+icon_memory='\uf3f2'
+
 # music
 icon_play='\uf215'
 icon_pause='\uf478'
