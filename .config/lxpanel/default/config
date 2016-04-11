@@ -1,1 +1,2 @@
 [Command]
+Logout=bspc kill && pkill panel
