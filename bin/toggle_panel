@@ -1,13 +1,11 @@
 #!/bin/sh
 
 if [ $(pgrep -cx panel) -gt 0 ] ; then
-#    pkill lxpanel &
     pkill stalonetray &
     pkill panel &
     bspc config top_padding 0
 else
     $HOME/.config/bspwm/panel/panel &
-    stalonetray &
-#    lxpanel --profile arch &
+    sleep 1s && stalonetray &
 fi
 
