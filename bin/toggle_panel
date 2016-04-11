@@ -1,12 +1,12 @@
 #!/bin/sh
 
-if [ $(pgrep -cx panel) -gt 0 ] ; then
-    pkill lxpanel &
-    pkill panel &
+if [ $(pgrep -cx panelbar) -gt 0 ] ; then
+    pkill lxpanel && lxpanel &
+    pkill panelbar &
     bspc config top_padding 0
 else
     pkill lxpanel &
-    $HOME/.config/bspwm/panel/panel &
-    sleep 1s && lxpanel &
+    $HOME/.config/bspwm/panel/panelbar &
+    sleep 1s && lxpanel -p unhidden &
 fi
 

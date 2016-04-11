@@ -105,7 +105,7 @@ while true; do
 	sleep 5
 done > "$PANEL_FIFO" &
 
-./panel_bar < "$PANEL_FIFO" | lemonbar \
+./panel_format < "$PANEL_FIFO" | lemonbar \
         -d \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
