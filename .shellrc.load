@@ -25,3 +25,8 @@ if [ -f $HOME/.olark_rc ] ; then
 #  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
 fi
 
+# ssh-agent config
+if [ $(uname |grep Linux) ] ; then
+    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+fi
+
