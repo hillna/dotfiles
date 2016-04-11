@@ -11,7 +11,7 @@ Global {
   setdocktype=1
   usefontcolor=1
   transparent=1
-  alpha=0
+  alpha=255
   tintcolor=#002b36
   fontcolor=#839496
   iconsize=20
