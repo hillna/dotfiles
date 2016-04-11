@@ -1,0 +1,6 @@
+background "#002b36"
+icon_size 20
+grow_gravity E
+scrollbars none
+window_layer top
+
