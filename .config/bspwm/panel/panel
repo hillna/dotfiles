@@ -106,6 +106,7 @@ while true; do
 done > "$PANEL_FIFO" &
 
 ./panel_bar < "$PANEL_FIFO" | lemonbar \
+        -d \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
 	-f "$PANEL_JP_FONT" \
@@ -116,3 +117,4 @@ done > "$PANEL_FIFO" &
         &
 
 wait
+
