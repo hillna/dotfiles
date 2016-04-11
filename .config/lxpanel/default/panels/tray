@@ -1,0 +1,15 @@
+Global {
+    edge = top
+    allign = left
+    margin = 0
+    widthtype = pixel
+    width = 100
+    height = 20
+    transparent = 1
+    setdocktype = 1
+}
+
+Plugin {
+    type = tray
+}
+
