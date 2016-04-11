@@ -15,7 +15,7 @@ Global {
   tintcolor=#002b36
   fontcolor=#839496
   iconsize=20
-  monitor=2
+  monitor=0
 }
 Plugin {
   type=tray
