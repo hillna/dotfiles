@@ -5,8 +5,7 @@ Global {
   edge=top
   allign=left
   margin=0
-  widthtype=pixels
-  width=100
+  widthtype=request
   height=20
   setdocktype=1
   usefontcolor=1
