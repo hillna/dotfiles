@@ -19,7 +19,7 @@ icon_battery_full='\uf113'
 icon_battery_charging='\uf111'
 
 # memory
-icon_memory='\uf3f2'
+icon_memory='\uf35c'
 
 # music
 icon_play='\uf215'
