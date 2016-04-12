@@ -16,6 +16,8 @@ Global {
   fontcolor=#839496
   iconsize=20
   monitor=0
+  autohide=1
+  heightwhenhidden=4
 }
 Plugin {
   type=tray
