@@ -61,7 +61,7 @@ if ip link |grep wlp3s0 &> /dev/null
 then
     while true; do
             echo -e "SSID${icon_wifi} $(iw wlp3s0 link | grep 'SSID' | sed 's/SSID: //')"
-            sleep 1;
+            sleep 10;
     done > "$PANEL_FIFO" &
 fi
 
@@ -92,18 +92,18 @@ while true; do
 done > "$PANEL_FIFO" &
 
 # music
-while true; do
+if [[ "$(mpc current)" != "" ]]; then
+    while true; do
 	track_title="$(mpc current)"
-	if [[ "$track_title" != "" ]]; then
-		if mpc status | grep -q "pause"; then
-			music_icon=$icon_pause
-		else
-			music_icon=$icon_play
-		fi
-	fi
-	echo -e "M${music_icon} ${track_title}"
+        if mpc status | grep -q "pause"; then
+            track_title="%{A:mpc play:}${icon_pause} $(mpc current)%{A}"
+        else
+            track_title="%{A:mpc pause:}${icon_play} $(mpc current)%{A}"
+        fi
+	echo -e "M${track_title}"
 	sleep 5
-done > "$PANEL_FIFO" &
+    done > "$PANEL_FIFO" &
+fi
 
 # cpu & memory
 while true; do
@@ -131,7 +131,7 @@ done > "$PANEL_FIFO" &
 	-f "$ICON_FONT" \
 	-F "$COLOR_FOREGROUND" \
 	-B "$COLOR_BACKGROUND" \
-        &
+        | sh &
 
 wait
 
