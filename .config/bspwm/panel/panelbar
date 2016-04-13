@@ -105,14 +105,22 @@ while true; do
 	sleep 5
 done > "$PANEL_FIFO" &
 
-# memory
+# cpu & memory
+while true; do
+    cpu_load="$(top -bn1 | grep load | awk '{printf "%.2f\n", $(NF-2)}')"
+
+    echo -e "CPU${icon_cpu} ${cpu_load}"
+    sleep 10
+done > "$PANEL_FIFO" &
 
 while true; do
-    memory_level="$(awk '/MemTotal:/{total=$2}/MemAvailable:/{free=$2;print int(100-100/(total/free))}' /proc/meminfo)"
+    ram_load="$(awk '/MemTotal:/{total=$2}/MemAvailable:/{free=$2;print int(100-100/(total/free))"%"}' /proc/meminfo)"
 
-    echo -e "RAM${icon_memory} ${memory_level}%"
-    sleep 15
+    echo -e "RAM${icon_ram} ${ram_load}"
+    sleep 10
 done > "$PANEL_FIFO" &
+
+# run panel
 
 ./panel_format < "$PANEL_FIFO" | lemonbar \
         -d \
