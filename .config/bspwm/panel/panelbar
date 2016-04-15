@@ -124,6 +124,7 @@ done > "$PANEL_FIFO" &
 
 ./panel_format < "$PANEL_FIFO" | lemonbar \
         -d \
+        -n "bspwm_panel" \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
 	-f "$PANEL_JP_FONT" \
