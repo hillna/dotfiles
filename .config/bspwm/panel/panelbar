@@ -122,9 +122,7 @@ while true; do
 done > "$PANEL_FIFO" &
 
 # run panel
-
 ./panel_format < "$PANEL_FIFO" | lemonbar \
-        -d \
         -n "$PANEL_WM_NAME" \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
