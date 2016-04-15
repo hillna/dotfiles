@@ -1,13 +1,15 @@
+PANEL_WM_NAME=bspwm_panel
+
 # geometry
 PANEL_HEIGHT=20
 PANEL_WIDTH=''
-PANEL_GEOMETRY="${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0"
+PANEL_GEOMETRY='${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0'
 
 # font
-PANEL_FONT="Roboto Bold:size=14"
-PANEL_JP_FONT="Source Han Sans JP Bold:size=11"
-PANEL_KR_FONT="Source Han Sans KR Bold:size=11"
-ICON_FONT="Ionicons:size=14"
+PANEL_FONT='Roboto Bold:size=14'
+PANEL_JP_FONT='Source Han Sans JP Bold:size=11'
+PANEL_KR_FONT='Source Han Sans KR Bold:size=11'
+ICON_FONT='Ionicons:size=14'
 
 # wifi
 icon_wifi='\uf25c'

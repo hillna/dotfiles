@@ -7,7 +7,7 @@ cd $(dirname $0)
 source $(dirname $0)/panel_config
 source $(dirname $0)/panel_colors
 
-if [ $(pgrep -cx panel) -gt 1 ] ; then
+if [ $(pgrep -cx panelbar) -gt 1 ] ; then
 	printf "%s\n" "The panel is already running." >&2
 	exit 1
 fi
@@ -124,7 +124,7 @@ done > "$PANEL_FIFO" &
 
 ./panel_format < "$PANEL_FIFO" | lemonbar \
         -d \
-        -n "bspwm_panel" \
+        -n "$PANEL_WM_NAME" \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
 	-f "$PANEL_JP_FONT" \
