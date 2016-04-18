@@ -6,6 +6,9 @@
 super + Return
         termite -e tmux
 
+super + shift + Return
+        termite
+
 # program launcher
 super + r
 	rofi -show run
