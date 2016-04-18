@@ -43,7 +43,7 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git git-flow zsh-syntax-highlighting colorize tmux)
 
 # tmux options
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 
 source $ZSH/oh-my-zsh.sh
 
