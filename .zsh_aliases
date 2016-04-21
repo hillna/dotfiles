@@ -20,6 +20,13 @@ if [ $(uname |grep Linux) ] ; then
     alias virtualenv="virtualenv2"
 fi
 
+# mpc aliases
+
+alias play="mpc play"
+alias pause="mpc pause"
+alias next="mpc next"
+alias prev="mpc prev"
+
 # Git Aliases
 alias gpullr="git pull --rebase origin master"
 alias gpush="gpullr && git push origin master"
