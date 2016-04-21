@@ -93,8 +93,8 @@ while true; do
 done > "$PANEL_FIFO" &
 
 # music
-if [[ "$(mpc current)" != "" ]]; then
-    while true; do
+while true; do
+    if [[ "$(mpc current)" != "" ]]; then
 	track_title="$(mpc current)"
         if mpc status | grep -q "pause"; then
             track_title="%{A:mpc play:}${icon_pause} $(mpc current)%{A}"
@@ -102,9 +102,9 @@ if [[ "$(mpc current)" != "" ]]; then
             track_title="%{A:mpc pause:}${icon_play} $(mpc current)%{A}"
         fi
 	echo -e "M${track_title}"
-	sleep 5
-    done > "$PANEL_FIFO" &
-fi
+    fi
+    sleep 5
+done > "$PANEL_FIFO" &
 
 # cpu & memory
 while true; do
