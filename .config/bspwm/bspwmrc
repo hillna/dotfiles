@@ -27,9 +27,10 @@ else
 fi
 
 bspc rule -a Gimp follow=on state=floating
-bspc rule -a mplayer2 state=floating
+bspc rule -a mplayer state=floating
 bspc rule -a vlc state=floating
 bspc rule -a feh state=floating
+bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
 
 # Compositing
 compton -b
