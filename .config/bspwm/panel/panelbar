@@ -101,6 +101,8 @@ while true; do
             track_title="%{A:mpc pause:}${icon_play} $(mpc current)%{A}"
         fi
 	echo -e "M${track_title}"
+    else
+        tracktitle=""
     fi
     sleep 1
 done > "$PANEL_FIFO" &
