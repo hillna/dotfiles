@@ -17,7 +17,7 @@ Global {
   iconsize=20
   monitor=0
   autohide=1
-  heightwhenhidden=4
+  heightwhenhidden=2
 }
 Plugin {
   type=tray
