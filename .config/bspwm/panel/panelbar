@@ -127,7 +127,9 @@ while true; do
     arch_updates="$(checkupdates | wc -l)"
     aur_updates="$(checkupdates-aur |wc -l)"
 
-    echo -e "UPD${icon_updates} ${arch_updates}(${aur_updates})"
+    if [ ${arch_updates} -gt 0 ] || [ ${aur_updates} -gt 0 ]; then
+        echo -e "UPD${icon_updates} ${arch_updates}(${aur_updates})"
+    fi
 
     sleep 60m
 done > "$PANEL_FIFO" &
