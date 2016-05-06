@@ -26,6 +26,9 @@ icon_ram='\uf35c'
 # cpu
 icon_cpu='\uf2b3'
 
+#updates
+icon_updates'\uf3eb'
+
 # music
 icon_play='\uf215'
 icon_pause='\uf478'
@@ -43,3 +46,4 @@ icon_volume_off='\uf3b9'
 icon_volume_min='\uf3b8'
 icon_volume_mid='\uf3b7'
 icon_volume_max='\uf3ba'
+
