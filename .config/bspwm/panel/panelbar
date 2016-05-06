@@ -122,6 +122,16 @@ while true; do
     sleep 10
 done > "$PANEL_FIFO" &
 
+# updates
+while true; do
+    arch_updates="$(checkupdates | wc -l)"
+    aur_updates="$(checkupdates-aur |wc -l)"
+
+    echo -e "UPD${icon_updates} ${arch_updates}(${aur_updates})"
+
+    sleep 60m
+done > "$PANEL_FIFO" &
+
 # run panel
 ./panel_format < "$PANEL_FIFO" | lemonbar \
         -n "$PANEL_WM_NAME" \
