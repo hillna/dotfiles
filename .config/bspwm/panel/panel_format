@@ -37,6 +37,9 @@ while read -r line ; do
                 CPU*)
                         cpu="${line#???}$padding"
                         ;;
+                UPD*)
+                        updates="${line#???}$padding"
+                        ;;
 		W*)
 			# bspwm internal state
 			wm_infos=""
@@ -91,6 +94,6 @@ while read -r line ; do
 				done
 				;;
 		esac
-		printf "%s\n" "%{Sf}%{r}${day}${clock}%{S+}%{l}${wm_infos}%{c}${music}%{r}${cpu}${ram}|${padding}${vol}${brightness}${ssid}${batt}${day}${clock}%{Sl}%{r}${day}${clock}"
+		printf "%s\n" "%{Sf}%{r}${day}${clock}%{S+}%{l}${wm_infos}%{c}${music}%{r}${cpu}${ram}${updates}|${padding}${vol}${brightness}${ssid}${batt}${day}${clock}%{Sl}%{r}${day}${clock}"
 	done
 
