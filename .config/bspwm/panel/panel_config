@@ -27,7 +27,7 @@ icon_ram='\uf35c'
 icon_cpu='\uf2b3'
 
 #updates
-icon_updates='\uf3eb'
+icon_updates='\uf3ec'
 
 # music
 icon_play='\uf215'
