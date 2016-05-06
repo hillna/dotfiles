@@ -7,7 +7,7 @@ cd $(dirname $0)
 source $(dirname $0)/panel_config
 source $(dirname $0)/panel_colors
 
-if [ $(pgrep -cx panelbar) -gt 1 ] ; then
+if xdo -id -a "$PANEL_WM_NAME" > /dev/null ; then
 	printf "%s\n" "The panel is already running." >&2
 	exit 1
 fi
@@ -136,6 +136,7 @@ done > "$PANEL_FIFO" &
 
 # run panel
 ./panel_format < "$PANEL_FIFO" | lemonbar \
+        -d \
         -n "$PANEL_WM_NAME" \
 	-g "$PANEL_GEOMETRY" \
 	-f "$PANEL_FONT" \
@@ -145,6 +146,16 @@ done > "$PANEL_FIFO" &
 	-F "$COLOR_FOREGROUND" \
 	-B "$COLOR_BACKGROUND" \
         | sh &
+
+wid=$(xdo id -a "$PANEL_WM_NAME")
+tries_left=20
+while [ -z "$wid" -a "$tries_left" -gt 0 ] ; do
+    sleep 0.05
+    wid=$(xdo id -a "$PANEL_WM_NAME")
+    tries_left=$((tries_left - 1))
+done
+
+[ -n "$wid" ] && xdo above -t "$(xdo id -N Bspwm -n root | sort | head -n 1)" "$wid"
 
 wait
 
