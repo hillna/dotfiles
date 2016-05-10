@@ -131,7 +131,7 @@ while true; do
         echo -e "UPD${icon_updates} ${arch_updates}(${aur_updates})"
     fi
 
-    sleep 60m
+    sleep 15m
 done > "$PANEL_FIFO" &
 
 # run panel
