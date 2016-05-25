@@ -7,7 +7,7 @@ Global {
   margin=0
   widthtype=pixel
   width=140
-  height=20
+  height=22
   setdocktype=1
   usefontcolor=1
   transparent=1

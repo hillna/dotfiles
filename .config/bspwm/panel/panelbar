@@ -17,8 +17,7 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-PANEL_PADDING=$(($PANEL_HEIGHT + 4))
-bspc config top_padding "$PANEL_PADDING"
+bspc config top_padding "$PANEL_HEIGHT"
 bspc subscribe > "$PANEL_FIFO" &
 
 # datetime
@@ -138,24 +137,24 @@ done > "$PANEL_FIFO" &
 ./panel_format < "$PANEL_FIFO" | lemonbar \
         -d \
         -n "$PANEL_WM_NAME" \
-	-g "$PANEL_GEOMETRY" \
+        -g "${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0" \
 	-f "$PANEL_FONT" \
 	-f "$PANEL_JP_FONT" \
 	-f "$PANEL_KR_FONT" \
 	-f "$ICON_FONT" \
 	-F "$COLOR_FOREGROUND" \
 	-B "$COLOR_BACKGROUND" \
-        | sh &
+        &
 
-wid=$(xdo id -a "$PANEL_WM_NAME")
-tries_left=20
-while [ -z "$wid" -a "$tries_left" -gt 0 ] ; do
-    sleep 0.05
+while true; do
+    ref=$(xdo id -N Bspwm -n root | sort | head -n 1)
     wid=$(xdo id -a "$PANEL_WM_NAME")
-    tries_left=$((tries_left - 1))
-done
+    lxwid=$(xdo id -N "lxpanel")
+    xdo lower "$wid"
+    xdo above -t "$wid" "$lxwid"
 
-[ -n "$wid" ] && xdo above -t "$(xdo id -N Bspwm -n root | sort | head -n 1)" "$wid"
+    sleep 1
+done &
 
 wait
 

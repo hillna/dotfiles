@@ -1,9 +1,8 @@
 PANEL_WM_NAME=bspwm_panel
 
 # geometry
-PANEL_HEIGHT=20
+PANEL_HEIGHT=22
 PANEL_WIDTH=''
-PANEL_GEOMETRY='${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0'
 
 # font
 PANEL_FONT='Roboto Bold:size=14'
