@@ -152,9 +152,9 @@ super + {Left,Down,Up,Right}
 #
 
 # focus
-~button1
-	bspc pointer -g focus
+#~button1
+#	bspc pointer -g focus
 
-super + !button{1-3}
-        bspc pointer --track %i %i
+#super + !button{1-3}
+#        bspc pointer --track %i %i
 
