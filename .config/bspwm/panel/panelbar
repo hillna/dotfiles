@@ -149,9 +149,7 @@ done > "$PANEL_FIFO" &
 while true; do
     ref=$(xdo id -N Bspwm -n root | sort | head -n 1)
     wid=$(xdo id -a "$PANEL_WM_NAME")
-    lxwid=$(xdo id -N "lxpanel")
     xdo lower "$wid"
-    xdo above -t "$wid" "$lxwid"
 
     sleep 1
 done &
