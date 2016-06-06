@@ -16,15 +16,8 @@ bspc monitor DP-3 -d III IV V
 bspc monitor DP-5 -d VI VII
 
 # Macbook
-if [ $(bspc query -M |grep DP3) ]; then
-  bspc monitor eDP1 -d I II III
-  bspc monitor DP3 -d IV V VI VII
-elif [ $(bspc query -M |grep DP2) ]; then
-  bspc monitor eDP1 -d I II III
-  bspc monitor DP2 -d IV V VI VII
-else
-  bspc monitor eDP1 -d I II III IV V VI VII
-fi
+bspc monitor eDP1 -d V VI VII
+bspc monitor DP2 -d I II III IV
 
 bspc rule -a Gimp follow=on state=floating
 bspc rule -a mplayer state=floating
