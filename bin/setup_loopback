@@ -1,0 +1,12 @@
+#!/bin/sh
+
+VIDEO_FIFO="/tmp/video-loopback"
+
+if [[ -f $VIDEO_FIFO ]]; then
+    rm "$VIDEO_FIFO"
+fi
+
+mkfifo "$VIDEO_FIFO"
+
+$HOME/dev/v4l2loopback/examples/yuv4mpeg_to_v4l2 /dev/video1 < "$VIDEO_FIFO" &
+ 
