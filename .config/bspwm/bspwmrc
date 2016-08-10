@@ -24,6 +24,7 @@ bspc rule -a mplayer state=floating
 bspc rule -a vlc state=floating
 bspc rule -a feh state=floating
 bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
+bspc rule -a steam state=tiled
 
 # Compositing
 compton -b

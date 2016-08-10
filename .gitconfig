@@ -22,4 +22,4 @@
 [commit]
 	gpgsign = false
 [merge]
-	tool = meld
+	tool = vimdiff
