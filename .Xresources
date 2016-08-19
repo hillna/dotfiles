@@ -9,6 +9,9 @@
 !!Xft.hinting:                true
 !!Xft.hintstyle:              hintslight
 
+!! Cursor
+Xcursor.theme: Breeze_Snow
+
 !! Common
 
 #define S_yellow        #b58900
