@@ -1,13 +1,13 @@
 #!/bin/bash
 
-for i in `cat $OLARK_APPS/puppet/manifests/host_ips.pp |
-	grep rackspace |
+for i in `cat ~/dev/olark/puppet/manifests/host_ips.pp |
+	grep stacktools |
 	sed 's/,/\ /g' |
 	sed 's/\[/\ /g'| 
 	awk '{print $1}'|
 	sed "s/'//g"`;
 do 
 	echo "$i.olark.net"
-	ssh -oStrictHostKeyChecking=no $i.olark.net 'echo authorized'
+        ssh-keyscan -H $i.olark.net >> ~/.ssh/known_hosts
 done
 
