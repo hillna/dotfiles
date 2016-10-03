@@ -11,8 +11,8 @@ bspc config click_to_focus      true
 remove_disabled_monitors        true
 remove_unplugged_monitors       true
 
+bspc monitor DP-3 -d IV V
 bspc monitor DP-1 -d I II III
-bspc monitor DP-3 -d I IV
 bspc monitor DP-5 -d VI VII
 
 # Macbook
