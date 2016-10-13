@@ -4,8 +4,7 @@
 
 # terminal emulator
 super + Return
-#        termite -e tmux
-        termite
+        termite -e tmux
 
 super + shift + Return
         termite
