@@ -1,5 +1,10 @@
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+	export TERM='xterm-256color'
+else
+	export TERM='xterm-color'
+fi
+
 ZSH=$HOME/.oh-my-zsh
-#ZSH_THEME='bureau'
 ZSH_THEME='bira'
 
 DEFAULT_USER='hilln'

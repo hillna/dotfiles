@@ -1,5 +1,3 @@
-# . $HOME/.shellrc.load
-
 . $HOME/.zsh_aliases
 
 # ENV Variables
