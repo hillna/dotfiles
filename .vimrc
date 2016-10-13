@@ -15,6 +15,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rodjek/vim-puppet'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
