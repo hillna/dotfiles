@@ -1,8 +1,8 @@
-[bar/primary]
+[bar/main]
 monitor = DP-1
 dock = true
 width = 100%
-height = 20
+height = 22
 offset-x = 0
 offset-y = 0
 
@@ -20,15 +20,15 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = tamzen:size=14;1
+font-0 = tamzen:size=12;1
 font-1 = siji:pixelsize=10;0
 font-2 = unifont:size=6;-1
 
-modules-left = bspwm
-modules-center = mpd
-modules-right = cpu memory volume date
+modules-left = bspwm mpd
+modules-center =
+modules-right = volume date
 
-tray-position = right
+tray-position = left
 tray-background = #002B36
 tray-padding = 4
 
@@ -162,7 +162,7 @@ label-disconnected-foreground = #66
 type = internal/date
 date = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M
 date-alt = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M:%S
-interval = 5
+interval = 51
 
 
 [module/backlight]
@@ -177,9 +177,11 @@ ramp-foreground = #666
 
 [module/volume]
 type = internal/volume
-speaker-mixer = Speaker
-headphone-mixer = Headphone
-headphone-id = 9
+master-mixer = Master
+
+;speaker-mixer = Speaker
+;headphone-mixer = Headphone
+;headphone-id = 9
 
 ; format-volume = <ramp-volume> <label-volume>
 format-volume = <label-volume> <bar-volume>
@@ -210,39 +212,41 @@ bar-volume-gradient = false
 bar-volume-indicator = │
 bar-volume-indicator-font = 2
 bar-volume-indicator-foreground = #ff
-bar-volume-fill = ━
+;bar-volume-fill = ━
+bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ━
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = #444444
 
 
-[module/battery]
-type = internal/battery
-full-at = 98
+;[module/battery]
+;type = internal/battery
+;full-at = 98
 
-format-charging = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
-format-full = %{F#666}%{F#cc}  <label-full>
+;format-charging = <animation-charging> <label-charging>
+;format-discharging = <ramp-capacity> <label-discharging>
+;format-full = %{F#666}%{F#cc}  <label-full>
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = #666
+;ramp-capacity-0 = 
+;ramp-capacity-1 = 
+;ramp-capacity-2 = 
+;ramp-capacity-foreground = #666
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = #666
-animation-charging-framerate = 750
+;animation-charging-0 = 
+;animation-charging-1 = 
+;animation-charging-2 = 
+;animation-charging-foreground = #666
+;animation-charging-framerate = 750
 
 
 [module/mpd]
 type = internal/mpd
 
-format-online = <label-time>  <bar-progress>  <label-song>  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>
-format-online-background = #ee333333
-format-online-underline = #cc333333
+format-online =  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next> <label-time> <bar-progress> <label-song> <icon-repeat> <icon-random>
+format-online-background = #002B36
+format-online-underline = #002B36
+;format-online-underline = #8A8A8A
 format-online-padding = 3
 
 format-offline = <label-offline>
@@ -279,10 +283,10 @@ bar-progress-indicator = 
 bar-progress-indicator-foreground = #bb
 bar-progress-fill = ─
 bar-progress-fill-foreground = #bb
-bar-progress-fill-font = 3
+bar-progress-fill-font = 2
 bar-progress-empty = ─
 bar-progress-empty-foreground = #44
-bar-progress-empty-font = 3
+bar-progress-empty-font = 2
 
 label-time-foreground = #77
 

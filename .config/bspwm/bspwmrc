@@ -34,3 +34,10 @@ feh --bg-max --no-xinerama $(find $WALLPAPER |shuf -n1)
 
 xsetroot -cursor_name left_ptr
 
+# panel
+$HOME/.config/lemonbuddy/launch.sh
+
+# autorun
+dropbox &
+owncloud &
+

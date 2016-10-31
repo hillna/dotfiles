@@ -30,7 +30,6 @@ export SSH_AUTH_SOCK
 
 # autorun
 sxhkd &
-lxpanel &
-dropbox &
-owncloud &
+#dropbox &
+#owncloud &
 

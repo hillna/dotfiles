@@ -6,8 +6,11 @@ killall -q lemonbuddy
 # Wait until the processes have been shut down
 while pgrep -x lemonbuddy >/dev/null; do sleep 1; done
 
-# Launch bar1 and bar2
-lemonbuddy bar1 &
+# set margain
+bspc config top_padding 22
+
+# Launch bars
+lemonbuddy main &
 
 echo "Bars launched..."
 
