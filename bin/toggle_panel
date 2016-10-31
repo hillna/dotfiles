@@ -4,6 +4,7 @@ if [ $(pgrep -cx panelbar) -gt 0 ] ; then
     pkill panelbar &
     bspc config top_padding 0
 else
+    bspc config top_padding 22
     $HOME/.config/bspwm/panel/panelbar &
 fi
 
