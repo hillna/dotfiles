@@ -38,6 +38,13 @@ xsetroot -cursor_name left_ptr
 $HOME/.config/lemonbuddy/launch.sh
 
 # autorun
-dropbox &
-owncloud &
+sleep 5s
+
+for exec in dropbox owncloud; do
+    pgrep -x $exec
+    echo $exec
+    if [ $? == 1 ]
+        $exec &
+    fi
+done
 
