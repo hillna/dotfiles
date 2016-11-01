@@ -30,6 +30,7 @@ modules-right = updates volume date
 
 wm-restack = bspwm
 
+
 [bar/main-mac]
 monitor = eDP1
 dock = true
@@ -60,7 +61,12 @@ modules-left = bspwm
 modules-center = mpd
 modules-right = updates volume date
 
+tray-position = right
+tray-background = ${BAR.background}
+tray-padding = 4
+
 wm-restack = bspwm
+
 
 [bar/left]
 monitor = DP-3
@@ -94,6 +100,7 @@ tray-background = ${BAR.background}
 tray-padding = 4
 
 wm-restack = ${bar/main.wm-restack}
+
 
 [bar/right]
 monitor = DP-5
