@@ -11,6 +11,7 @@ bspc config top_padding 22
 
 # Launch bars
 if [ -f /etc/macbook ]
+then
     lemonbuddy main-mac &
 else
     lemonbuddy main &
