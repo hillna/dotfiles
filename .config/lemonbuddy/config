@@ -20,13 +20,14 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = tamzen:size=12;1
+font-0 = roboto:size=14;0
 font-1 = siji:pixelsize=10;0
-font-2 = unifont:size=6;-1
+font-2 = ionicons:size=14;-2
+;font-2 = unifont:size=6;-1
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = date
+modules-right = updates date
 
 tray-position = left
 tray-background = #002B36
@@ -88,7 +89,7 @@ font-2 = ${bar/main.font-2}
 
 modules-left = bspwm
 modules-center =
-modules-right = date
+modules-right = cpu memory date
 
 wm-restack = ${bar/main.wm-restack}
 
@@ -97,19 +98,19 @@ wm-restack = ${bar/main.wm-restack}
 type = internal/bspwm
 ws-icon-default = x
 
-label-active = ⏺ %index%
+label-active = 
 label-active-background = #002B36
 label-active-underline= #cc333333
 label-active-padding = 2
 
-label-occupied = %{O-1}o%{O-1} %index%
+label-occupied = 
 label-occupied-padding = 2
 
-label-urgent = ! %index%
+label-urgent = 
 label-urgent-background = #002B36
 label-urgent-padding = 2
 
-label-empty = x %index%
+label-empty = 
 ;label-empty-foreground = #444
 label-empty-padding = 2
 
@@ -120,7 +121,7 @@ interval = 2
 
 format = <label> <ramp-coreload>
 ;format = <label> <bar-load>
-label = CPU
+label = 
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
@@ -168,7 +169,7 @@ type = internal/memory
 interval = 2
 
 format = <label> <bar-used>
-label = RAM
+label = 
 
 bar-used-width = 20
 bar-used-foreground-0 = #55aa55
@@ -219,7 +220,7 @@ label-disconnected-foreground = #66
 
 [module/date]
 type = internal/date
-date = %Y-%m-%d   %H:%M
+date =  %Y-%m-%d    %H:%M
 ;date = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M
 ;date-alt = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M:%S
 interval = 5
@@ -303,7 +304,7 @@ bar-volume-empty-foreground = #444444
 [module/mpd]
 type = internal/mpd
 
-format-online =  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next> <label-time> <bar-progress> <label-song> <icon-repeat> <icon-random>
+format-online = <label-song> <icon-repeat> <icon-random> <label-time> <bar-progress> <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>
 format-online-background = #002B36
 format-online-underline = #002B36
 ;format-online-underline = #8A8A8A
@@ -317,23 +318,16 @@ label-offline = mpd is off
 label-song-maxlen = 45
 label-song-ellipsis = true
 
-;icon-prev = 
-;icon-seekb = 
-;icon-stop = 
-;icon-play = 
-;icon-pause = 
-;icon-next = 
-;icon-seekf = 
-icon-prev = ⏮
-icon-seekb = ⏪
-icon-stop = ⏹
-icon-play = ⏵
-icon-pause = ⏸
-icon-seekf = ⏩
-icon-next = ⏭
+icon-prev = 
+icon-seekb = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+icon-seekf = 
 
-icon-random = 
-icon-repeat = 
+icon-random = 
+icon-repeat = 
 
 toggle-on-foreground = #e60053
 toggle-off-foreground = #66
@@ -386,4 +380,9 @@ menu-2-1-exec = menu-open-0
 type = internal/counter
 format = <counter>
 interval = 0.1
+
+[module/updates]
+type = custom/script
+exec = $HOME/.config/lemonbuddy/updates.sh
+interval = 300
 

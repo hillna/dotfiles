@@ -42,7 +42,6 @@ sleep 5s
 
 for exec in dropbox owncloud; do
     pgrep -x $exec
-    echo $exec
     if [ $? == 1 ]
         $exec &
     fi
