@@ -34,6 +34,61 @@ tray-padding = 4
 
 wm-restack = bspwm
 
+[bar/left]
+monitor = DP-3
+dock = true
+width = 100%
+height = ${bar/main.height}
+offset-x = 0
+offset-y = 0
+
+background = ${bar/main.background}
+foreground = ${bar/main.foreground}
+linecolor = ${bar/main.linecolor}
+
+spacing = 1
+lineheight = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = ${bar/main.font-0}
+font-1 = ${bar/main.font-1}
+font-2 = ${bar/main.font-2}
+
+modules-left = bspwm
+modules-center =
+modules-right = date
+
+[bar/right]
+monitor = DP-5
+dock = true
+width = 100%
+height = ${bar/main.height}
+offset-x = 0
+offset-y = 0
+
+background = ${bar/main.background}
+foreground = ${bar/main.foreground}
+linecolor = ${bar/main.linecolor}
+
+spacing = 1
+lineheight = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = ${bar/main.font-0}
+font-1 = ${bar/main.font-1}
+font-2 = ${bar/main.font-2}
+
+modules-left = bspwm
+modules-center = cpu memory
+modules-right = date
+
+
 [module/bspwm]
 type = internal/bspwm
 ws-icon-default = x
@@ -59,34 +114,34 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 
-;format = <label> <bar-load> <ramp-coreload>
-format = <label> <bar-load>
+format = <label> <ramp-coreload>
+;format = <label> <bar-load>
 label = CPU
 
-;ramp-coreload-0 = ▁
-;ramp-coreload-0-font = 2
-;ramp-coreload-0-foreground = #55aa55
-;ramp-coreload-1 = ▂
-;ramp-coreload-1-font = 2
-;ramp-coreload-1-foreground = #55aa55
-;ramp-coreload-2 = ▃
-;ramp-coreload-2-font = 2
-;ramp-coreload-2-foreground = #55aa55
-;ramp-coreload-3 = ▄
-;ramp-coreload-3-font = 2
-;ramp-coreload-3-foreground = #55aa55
-;ramp-coreload-4 = ▅
-;ramp-coreload-4-font = 2
-;ramp-coreload-4-foreground = #f5a70a
-;ramp-coreload-5 = ▆
-;ramp-coreload-5-font = 2
-;ramp-coreload-5-foreground = #f5a70a
-;ramp-coreload-6 = ▇
-;ramp-coreload-6-font = 2
-;ramp-coreload-6-foreground = #ff5555
-;ramp-coreload-7 = █
-;ramp-coreload-7-font = 2
-;ramp-coreload-7-foreground = #ff5555
+ramp-coreload-0 = ▁
+ramp-coreload-0-font = 2
+ramp-coreload-0-foreground = #55aa55
+ramp-coreload-1 = ▂
+ramp-coreload-1-font = 2
+ramp-coreload-1-foreground = #55aa55
+ramp-coreload-2 = ▃
+ramp-coreload-2-font = 2
+ramp-coreload-2-foreground = #55aa55
+ramp-coreload-3 = ▄
+ramp-coreload-3-font = 2
+ramp-coreload-3-foreground = #55aa55
+ramp-coreload-4 = ▅
+ramp-coreload-4-font = 2
+ramp-coreload-4-foreground = #f5a70a
+ramp-coreload-5 = ▆
+ramp-coreload-5-font = 2
+ramp-coreload-5-foreground = #f5a70a
+ramp-coreload-6 = ▇
+ramp-coreload-6-font = 2
+ramp-coreload-6-foreground = #ff5555
+ramp-coreload-7 = █
+ramp-coreload-7-font = 2
+ramp-coreload-7-foreground = #ff5555
 
 bar-load-width = 20
 bar-load-foreground-0 = #55aa55

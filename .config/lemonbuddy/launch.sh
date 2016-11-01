@@ -11,6 +11,8 @@ bspc config top_padding 22
 
 # Launch bars
 lemonbuddy main &
+lemonbuddy left &
+lemonbuddy right &
 
 echo "Bars launched..."
 
