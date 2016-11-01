@@ -97,8 +97,8 @@ wm-restack = ${bar/main.wm-restack}
 type = internal/bspwm
 ws-icon-default = x
 
-label-active = 
-label-active-background = #002B36
+label-active = 
+label-active-background = #073642
 label-active-underline= #cc333333
 label-active-padding = 2
 
@@ -219,7 +219,7 @@ label-disconnected-foreground = #66
 
 [module/date]
 type = internal/date
-date =  %Y-%m-%d    %H:%M
+date =  %Y-%m-%d   %H:%M
 ;date = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M
 ;date-alt = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M:%S
 interval = 5
@@ -253,8 +253,8 @@ label-muted = 
 
 ramp-volume-0 = 
 ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
+ramp-volume-2 = 
+;ramp-volume-3 = 
 ramp-volume-foreground = ${BAR.foreground}
 
 ;ramp-headphones-0 = 
