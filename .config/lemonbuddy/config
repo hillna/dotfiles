@@ -21,17 +21,12 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = roboto:size=14;0
-font-1 = siji:pixelsize=10;0
+font-1 = siji:pixelsize=10;-4
 font-2 = ionicons:size=14;-2
-;font-2 = unifont:size=6;-1
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = updates date
-
-tray-position = left
-tray-background = #002B36
-tray-padding = 4
+modules-right = updates volume date
 
 wm-restack = bspwm
 
@@ -61,6 +56,10 @@ font-2 = ${bar/main.font-2}
 modules-left = bspwm
 modules-center =
 modules-right = date
+
+tray-position = right
+tray-background = ${BAR.background}
+tray-padding = 4
 
 wm-restack = ${bar/main.wm-restack}
 
@@ -119,8 +118,8 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 
-format = <label> <ramp-coreload>
-;format = <label> <bar-load>
+;format = <label> <ramp-coreload>
+format = <label> <bar-load>
 label = 
 
 ramp-coreload-0 = ▁
@@ -148,7 +147,7 @@ ramp-coreload-7 = █
 ramp-coreload-7-font = 2
 ramp-coreload-7-foreground = #ff5555
 
-bar-load-width = 20
+bar-load-width = 10
 bar-load-foreground-0 = #55aa55
 bar-load-foreground-1 = #55aa55
 bar-load-foreground-2 = #f5a70a
@@ -171,7 +170,7 @@ interval = 2
 format = <label> <bar-used>
 label = 
 
-bar-used-width = 20
+bar-used-width = 10
 bar-used-foreground-0 = #55aa55
 bar-used-foreground-1 = #55aa55
 bar-used-foreground-2 = #f5a70a
@@ -210,7 +209,7 @@ ramp-signal-foreground = #666
 
 [module/wired]
 type = internal/network
-interface = net0
+interface = eno1
 interval = 3.0
 
 label-connected = %{T3}%local_ip%%{T-}
@@ -244,19 +243,19 @@ master-mixer = Master
 ;headphone-mixer = Headphone
 ;headphone-id = 9
 
-; format-volume = <ramp-volume> <label-volume>
-format-volume = <label-volume> <bar-volume>
+format-volume = <ramp-volume>
+;format-volume = <label-volume> <bar-volume>
 
 label-volume = VOL
 label-volume-foreground = ${BAR.foreground}
 
-label-muted = %{F#66} sound muted
+label-muted = 
 
-;ramp-volume-0 = 
-;ramp-volume-1 = 
-;ramp-volume-2 = 
-;ramp-volume-3 = 
-;ramp-volume-foreground = #666
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-foreground = ${BAR.foreground}
 
 ;ramp-headphones-0 = 
 ;ramp-headphones-1 = 
@@ -304,7 +303,8 @@ bar-volume-empty-foreground = #444444
 [module/mpd]
 type = internal/mpd
 
-format-online = <label-song> <icon-repeat> <icon-random> <label-time> <bar-progress> <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>
+format-online = <icon-repeat> <icon-random> <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <bar-progress>  <label-song>
+;format-online = <label-song> <icon-repeat> <icon-random> <label-time> <bar-progress> <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>
 format-online-background = #002B36
 format-online-underline = #002B36
 ;format-online-underline = #8A8A8A
@@ -313,7 +313,7 @@ format-online-padding = 3
 format-offline = <label-offline>
 format-offline-foreground = #66
 
-label-offline = mpd is off
+label-offline =
 
 label-song-maxlen = 45
 label-song-ellipsis = true
@@ -333,7 +333,7 @@ toggle-on-foreground = #e60053
 toggle-off-foreground = #66
 
 bar-progress-width = 15
-bar-progress-indicator = 
+bar-progress-indicator = 
 bar-progress-indicator-foreground = #bb
 bar-progress-fill = ─
 bar-progress-fill-foreground = #bb
@@ -343,43 +343,6 @@ bar-progress-empty-foreground = #44
 bar-progress-empty-font = 2
 
 label-time-foreground = #8A8A8A
-
-[module/powermenu]
-type = custom/menu
-
-label-open = 
-label-close = 
-label-separator = /
-
-menu-0-0 = Terminate WM
-menu-0-0-foreground = #e60053
-menu-0-0-exec = bspc quit -1
-menu-0-1 = Reboot
-menu-0-1-foreground = #e60053
-menu-0-1-exec = menu-open-1
-menu-0-2 = Power off
-menu-0-2-foreground = #e60053
-menu-0-2-exec = menu-open-2
-
-menu-1-0 = Cancel
-menu-1-0-foreground = #e60053
-menu-1-0-exec = menu-open-0
-menu-1-1 = Reboot
-menu-1-1-foreground = #e60053
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = Power off
-menu-2-0-foreground = #e60053
-menu-2-0-exec = sudo poweroff
-menu-2-1 = Cancel
-menu-2-1-foreground = #e60053
-menu-2-1-exec = menu-open-0
-
-
-[module/counter]
-type = internal/counter
-format = <counter>
-interval = 0.1
 
 [module/updates]
 type = custom/script
