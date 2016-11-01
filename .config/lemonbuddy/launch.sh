@@ -10,9 +10,13 @@ while pgrep -x lemonbuddy >/dev/null; do sleep 1; done
 bspc config top_padding 22
 
 # Launch bars
-lemonbuddy main &
-lemonbuddy left &
-lemonbuddy right &
+if [ -f /etc/macbook ]
+    lemonbuddy main-mac &
+else
+    lemonbuddy main &
+    lemonbuddy left &
+    lemonbuddy right &
+fi
 
 echo "Bars launched..."
 

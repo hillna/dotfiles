@@ -30,6 +30,38 @@ modules-right = updates volume date
 
 wm-restack = bspwm
 
+[bar/main-mac]
+monitor = eDP1
+dock = true
+width = 100%
+height = 22
+offset-x = 0
+offset-y = 0
+
+background = #002B36
+foreground = #8A8A8A
+linecolor = #8A8A8A
+
+;border-bottom = 2
+;border-bottom-color = #333
+
+spacing = 1
+lineheight = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = roboto:size=14;0
+font-1 = siji:pixelsize=10;-4
+font-2 = ionicons:size=14;-2
+
+modules-left = bspwm
+modules-center = mpd
+modules-right = updates volume date
+
+wm-restack = bspwm
+
 [bar/left]
 monitor = DP-3
 dock = true
@@ -55,7 +87,7 @@ font-2 = ${bar/main.font-2}
 
 modules-left = bspwm
 modules-center =
-modules-right = date
+modules-right = time
 
 tray-position = right
 tray-background = ${BAR.background}
@@ -88,7 +120,7 @@ font-2 = ${bar/main.font-2}
 
 modules-left = bspwm
 modules-center =
-modules-right = cpu memory date
+modules-right = memory cpu time
 
 wm-restack = ${bar/main.wm-restack}
 
@@ -118,9 +150,11 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 
-;format = <label> <ramp-coreload>
-format = <label> <bar-load>
-label = 
+format = <label> <ramp-load>
+;format = <label> <bar-load>
+;format = <labe> <ramp-coreload>
+;label = 
+label = 
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
@@ -146,6 +180,31 @@ ramp-coreload-6-foreground = #ff5555
 ramp-coreload-7 = █
 ramp-coreload-7-font = 2
 ramp-coreload-7-foreground = #ff5555
+
+ramp-load-0 = ▁
+ramp-load-0-font = 2
+ramp-load-0-foreground = #55aa55
+ramp-load-1 = ▂
+ramp-load-1-font = 2
+ramp-load-1-foreground = #55aa55
+ramp-load-2 = ▃
+ramp-load-2-font = 2
+ramp-load-2-foreground = #55aa55
+ramp-load-3 = ▄
+ramp-load-3-font = 2
+ramp-load-3-foreground = #55aa55
+ramp-load-4 = ▅
+ramp-load-4-font = 2
+ramp-load-4-foreground = #f5a70a
+ramp-load-5 = ▆
+ramp-load-5-font = 2
+ramp-load-5-foreground = #f5a70a
+ramp-load-6 = ▇
+ramp-load-6-font = 2
+ramp-load-6-foreground = #ff5555
+ramp-load-7 = █
+ramp-load-7-font = 2
+ramp-load-7-foreground = #ff5555
 
 bar-load-width = 10
 bar-load-foreground-0 = #55aa55
@@ -220,8 +279,15 @@ label-disconnected-foreground = #66
 [module/date]
 type = internal/date
 date =  %Y-%m-%d   %H:%M
+date-alt =  %A   %H:%M
 ;date = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M
 ;date-alt = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M:%S
+interval = 5
+
+
+[module/time]
+type = internal/date
+date =  %H:%M
 interval = 5
 
 
@@ -254,7 +320,6 @@ label-muted = 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-;ramp-volume-3 = 
 ramp-volume-foreground = ${BAR.foreground}
 
 ;ramp-headphones-0 = 
@@ -343,6 +408,7 @@ bar-progress-empty-foreground = #44
 bar-progress-empty-font = 2
 
 label-time-foreground = #8A8A8A
+
 
 [module/updates]
 type = custom/script
