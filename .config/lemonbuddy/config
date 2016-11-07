@@ -59,7 +59,7 @@ font-2 = ionicons:size=14;-2
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = updates volume battery date
+modules-right = updates battery wifi volume date
 
 tray-position = right
 tray-background = ${BAR.background}
@@ -254,14 +254,15 @@ bar-used-empty-foreground = #444444
 
 [module/wifi]
 type = internal/network
-interface = net1
+interface = wlp3s0
 interval = 3.0
 ;udspeed-minwidth = 3
 
 format-connected = <ramp-signal> <label-connected>
-;label-connected = %essid% %{F#66}%local_ip%
+label-connected = %essid% %{F#66}%local_ip%
 ;label-connected = %{F#666}%{F#cc} %upspeed% %{F#666}%{F#cc} %downspeed%
-label-connected = %{O-6 F#666}%{O2 F#cc}%downspeed%
+;label-connected = %{O-6 F#666}%{O2 F#cc}%downspeed%
+;label-connected = connected
 label-disconnected = %{F#666}%{F#cc} not connected
 label-disconnected-foreground = #66
 
