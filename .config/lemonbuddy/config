@@ -300,12 +300,14 @@ interval = 5
 
 
 [module/backlight]
-type = internal/backlight
-card = intel_backlight
+type = internal/xbacklight
 format = <ramp> <label>
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+lable = %percentage%
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
 ramp-foreground = #666
 
 
@@ -328,6 +330,7 @@ label-muted = 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+ramp-volume-3 = 
 ramp-volume-foreground = ${BAR.foreground}
 
 ;ramp-headphones-0 = 
