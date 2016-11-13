@@ -59,7 +59,7 @@ font-2 = ionicons:size=14;-2
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = updates battery backlight volume date
+modules-right = updates wifi battery backlight volume date
 
 tray-position = right
 tray-background = ${BAR.background}
