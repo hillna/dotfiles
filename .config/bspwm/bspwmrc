@@ -11,13 +11,13 @@ bspc config click_to_focus      true
 remove_disabled_monitors        true
 remove_unplugged_monitors       true
 
-bspc monitor DP-3 -d I II
-bspc monitor DP-1 -d III IV V
-bspc monitor DP-5 -d VI VII
+bspc monitor DP-3 -d 1 2 3
+bspc monitor DP-1 -d 4 5 6 7
+bspc monitor DP-5 -d 8 9 0
 
 # Macbook
-bspc monitor eDP1 -d I II III IV V VI
-bspc monitor DP2 -d VII VIII IX
+bspc monitor eDP1 -d 1 2 3 4 5 6
+bspc monitor DP2 -d 7 8 9 0
 
 bspc rule -a Gimp follow=on state=floating
 bspc rule -a mplayer state=floating
