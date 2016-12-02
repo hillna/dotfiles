@@ -27,7 +27,10 @@ bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
 bspc rule -a steam state=tiled
 
 # Compositing
-compton -b
+if ! pgrep compton
+then
+    compton -b
+fi
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
 feh --bg-max --no-xinerama $(find $WALLPAPER |shuf -n1)
