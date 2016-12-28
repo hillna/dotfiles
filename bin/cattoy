@@ -1,0 +1,5 @@
+
+while true; do
+    xdotool mousemove $(($RANDOM % 1024)) $(($RANDOM % 1024))
+    sleep .5s
+done
