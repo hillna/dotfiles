@@ -25,6 +25,7 @@ bspc rule -a vlc state=floating
 bspc rule -a feh state=floating
 bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
 bspc rule -a steam state=tiled
+bspc rule -a peek state=floating
 
 # Compositing
 if ! pgrep compton
