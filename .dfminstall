@@ -6,4 +6,3 @@ bootstrap.sh skip
 .weechat recurse
 README.md skip
 .gitmodules skip
-.oh-my-zsh recurse
