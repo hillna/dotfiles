@@ -1,5 +1,8 @@
 #!/bin/sh
 
+cd $HOME/.dotfiles
+git submodule init && git submodule update
+
 if [ ! -d $HOME/.oh-my-zsh ]; then
     sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 fi

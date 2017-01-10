@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/--name"]
 	path = .vim/bundle/--name
 	url = git@github.com:VundleVim/Vundle.vim.git
+[submodule ".zsh-custom/plugins/zsh-syntax-highlighting"]
+	path = .zsh-custom/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
