@@ -2,12 +2,14 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-!! Let /etc/X11/xinit/xinitrc.d/infinality-settings control fonts
-!!Xft.dpi:                    82
-!!Xft.antialias:              true
-!!Xft.rgba:                   rgb
-!!Xft.hinting:                true
-!!Xft.hintstyle:              hintslight
+!! Fonts
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
 
 !! Cursor
 Xcursor.theme: Breeze_Snow
@@ -125,7 +127,7 @@ rofi.color-window: #002b37, #002b37, #003642
 rofi.color-normal: #002b37, #819396, #002b37, #003642, #819396
 rofi.color-active: #002b37, #008ed4, #002b37, #003642, #008ed4
 rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
-rofi.font: Envy Code R 15
+rofi.font: Hack R 15
 rofi.padding: 15
 rofi.lines: 5
 rofi.borderwidth: 3

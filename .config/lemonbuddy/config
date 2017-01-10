@@ -20,9 +20,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = roboto:size=14;0
+font-0 = roboto:size=16;0
 font-1 = siji:pixelsize=10;-4
-font-2 = ionicons:size=14;-2
+font-2 = ionicons:size=16;-2
 
 modules-left = bspwm
 modules-center = mpd
@@ -53,9 +53,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = roboto:size=14;0
+font-0 = roboto:size=16;0
 font-1 = siji:pixelsize=10;-4
-font-2 = ionicons:size=14;-2
+font-2 = ionicons:size=16;-2
 
 modules-left = bspwm
 modules-center = mpd
