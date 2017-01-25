@@ -127,7 +127,7 @@ font-2 = ${bar/main.font-2}
 
 modules-left = bspwm
 modules-center =
-modules-right = memory cpu time
+modules-right = cpu memory time
 
 wm-restack = ${bar/main.wm-restack}
 
