@@ -20,9 +20,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = roboto:size=16;0
-font-1 = siji:pixelsize=10;-4
-font-2 = ionicons:size=16;-2
+font-0 = roboto:size=12;+1
+font-1 = siji:pixelsize=8;+1
+font-2 = ionicons:size=12;+2
 
 modules-left = bspwm
 modules-center = mpd
@@ -53,9 +53,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = roboto:size=16;0
-font-1 = siji:pixelsize=10;-4
-font-2 = ionicons:size=16;-2
+font-0 = roboto:size=12;+1
+font-1 = siji:pixelsize=8;0
+font-2 = ionicons:size=12;+2
 
 modules-left = bspwm
 modules-center = mpd
@@ -157,10 +157,7 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 
-format = <label> <ramp-load>
-;format = <label> <bar-load>
-;format = <labe> <ramp-coreload>
-;label = 
+format = <label> <ramp-coreload>
 label = 
 
 ramp-coreload-0 = ▁
@@ -213,7 +210,7 @@ ramp-load-7 = █
 ramp-load-7-font = 2
 ramp-load-7-foreground = #ff5555
 
-bar-load-width = 10
+bar-load-width = 15
 bar-load-foreground-0 = #55aa55
 bar-load-foreground-1 = #55aa55
 bar-load-foreground-2 = #f5a70a
@@ -236,18 +233,18 @@ interval = 2
 format = <label> <bar-used>
 label = 
 
-bar-used-width = 10
+bar-used-width = 15
 bar-used-foreground-0 = #55aa55
 bar-used-foreground-1 = #55aa55
 bar-used-foreground-2 = #f5a70a
 bar-used-foreground-3 = #ff5555
 bar-used-gradient = false
-bar-used-indicator = │
+bar-used-indicator =
 bar-used-indicator-font = 2
 bar-used-indicator-foreground = #ff
-bar-used-fill = ━
+bar-used-fill = ▐
 bar-used-fill-font = 2
-bar-used-empty = ━
+bar-used-empty = ▐
 bar-used-empty-font = 2
 bar-used-empty-foreground = #444444
 
@@ -428,6 +425,6 @@ label-time-foreground = #8A8A8A
 
 [module/updates]
 type = custom/script
-exec = $HOME/.config/lemonbuddy/updates.sh
+exec = $HOME/.config/polybar/updates.sh
 interval = 300
 

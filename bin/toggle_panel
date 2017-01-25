@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ $(pgrep -cx lemonbuddy) -gt 0 ] ; then
-    pkill lemonbuddy &
+if [ $(pgrep -cx polybar) -gt 0 ] ; then
+    pkill polybar &
     bspc config top_padding 0
 else
-    $HOME/.config/lemonbuddy/launch.sh
+    $HOME/.config/polybar/launch.sh
 fi
 

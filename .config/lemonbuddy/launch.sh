@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 # Terminate already running bar instances
-killall -q lemonbuddy
+killall -q polybar
 
 # Wait until the processes have been shut down
-while pgrep -x lemonbuddy >/dev/null; do sleep 1; done
+while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # set margain
 bspc config top_padding 22
@@ -12,11 +12,11 @@ bspc config top_padding 22
 # Launch bars
 if [ -f /etc/macbook ]
 then
-    lemonbuddy main-mac &
+    polybar main-mac &
 else
-    lemonbuddy main &
-    lemonbuddy left &
-    lemonbuddy right &
+    polybar main &
+    polybar left &
+    polybar right &
 fi
 
 echo "Bars launched..."
