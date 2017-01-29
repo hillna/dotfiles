@@ -39,7 +39,7 @@ feh --bg-max --no-xinerama $(find $WALLPAPER |shuf -n1)
 xsetroot -cursor_name left_ptr
 
 # panel
-$HOME/.config/lemonbuddy/launch.sh
+$HOME/.config/polybar/launch.sh
 
 # autorun
 sleep 5s
