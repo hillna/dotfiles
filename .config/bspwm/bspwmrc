@@ -26,6 +26,8 @@ bspc rule -a feh state=floating
 bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
 bspc rule -a steam state=tiled
 bspc rule -a peek state=floating
+# Eve Online
+bspc rule -a exefile.exe state=fullscreen
 
 # Compositing
 if ! pgrep compton

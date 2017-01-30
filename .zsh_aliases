@@ -11,6 +11,7 @@ alias tmuxs="tmux list-sessions"
 alias tmuxa="tmux attach-session -t"
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
+alias gssh='gcloud compute ssh'
 
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then
