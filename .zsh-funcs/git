@@ -1,0 +1,12 @@
+function git-add(){
+    git add $(git status -s | egrep '^(\s|\?\?).*?$' | fzf -m | cut -c4-)
+    git commit -v
+}
+
+function git-remove(){
+    git reset HEAD -- $(git status -s | egrep -v '^(\s|\?\?).*?$' | fzf -m | cut -c4-)
+}
+
+function git-checkout(){
+    git checkout -- $(git status -s | egrep '^(\s|\?\?).*?$' | fzf -m | cut -c4-)
+}
