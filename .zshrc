@@ -47,7 +47,7 @@ ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_AUTOCONNECT=false
 
 fpath=(
-    ~/.zsh_functions
+    ~/.zsh-funcs
     "${fpath[@]}"
 )
 
