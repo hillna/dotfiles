@@ -1,0 +1,8 @@
+function ffg(){
+    file=$(git grep -n $1 | fzf | awk -F ":" '{ print $1 " " $2 }')
+    if [[ ! -z $file ]]; then
+        split=("${(@s/ /)file}")
+        vim $(echo $split[1] | tr '\n' ' ') +$split[2]
+    fi
+
+}

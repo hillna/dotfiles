@@ -20,6 +20,7 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
+Plugin 'nvie/vim-flake8'
 
 " End Vundle Plugins
 
