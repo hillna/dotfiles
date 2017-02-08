@@ -46,10 +46,12 @@ plugins=(git git-flowcolorize tmux zsh-syntax-highlighting)
 ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_AUTOCONNECT=false
 
+# zsh functions
 fpath=(
     ~/.zsh-funcs
     "${fpath[@]}"
 )
+autoload -Uz ffg
 
 source $ZSH/oh-my-zsh.sh
 
