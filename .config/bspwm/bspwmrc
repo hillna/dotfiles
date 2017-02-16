@@ -32,7 +32,7 @@ bspc rule -a exefile.exe state=fullscreen
 # Compositing
 if ! pgrep compton
 then
-    compton -b
+  compton -b
 fi
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
@@ -41,15 +41,18 @@ feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
 xsetroot -cursor_name left_ptr
 
 # panel
-$HOME/.config/polybar/launch.sh
+if ! pgrep polybar
+then
+  $HOME/.config/polybar/launch.sh
+fi
 
 # autorun
 sleep 5s
 
 for exec in dropbox owncloud; do
-    pgrep -x $exec
-    if [ $? == 1 ]; then
-        $exec &
-    fi
+  pgrep -x $exec
+  if [ $? == 1 ]; then
+    $exec &
+  fi
 done
 

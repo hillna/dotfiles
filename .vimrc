@@ -40,5 +40,5 @@ let g:airline_powerline_fonts = 1
 
 set timeoutlen=1000 ttimeoutlen=10
 
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
