@@ -59,7 +59,7 @@ font-2 = ionicons:size=12;+2
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = updates wifi battery backlight volume date
+modules-right = updates wifi battery backlight volume date time
 
 tray-position = right
 tray-background = ${BAR.background}
@@ -283,17 +283,17 @@ label-disconnected-foreground = #66
 
 [module/date]
 type = internal/date
-date =  %Y-%m-%d   %H:%M
-date-alt =  %A   %H:%M
-;date = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M
-;date-alt = %%{F#666}%{F#cc} %Y-%m-%d  %%{F#e60053}%%{F#cc} %H:%M:%S
-interval = 5
-
+label = %date%   %time%
+date =  %Y-%m-%d
+date-alt =  %A
+time =  %H:%M
+time-alt =  %H:%M
+interval = 1
 
 [module/time]
 type = internal/date
 date =  %H:%M
-interval = 5
+interval = 1
 
 
 [module/backlight]
