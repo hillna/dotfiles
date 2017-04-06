@@ -29,10 +29,10 @@ bspc rule -a peek state=floating
 # Eve Online
 bspc rule -a exefile.exe state=fullscreen
 
-# Compositing
+ Compositing
 if ! pgrep compton
 then
-  compton -b
+  compton &
 fi
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
