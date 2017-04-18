@@ -8,6 +8,8 @@ if [ -f /usr/libexec/java_home ]; then
   export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
+export WINEDEBUG=-all
+
 # Paths
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 export GOPATH=$HOME/dev/golang
