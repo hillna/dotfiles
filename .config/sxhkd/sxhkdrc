@@ -11,7 +11,7 @@ super + shift + Return
 
 # program launcher
 super + r
-        rofi -show run
+        rofi -show run -terminal termite
 
 super + e
         chromium
