@@ -1,0 +1,2 @@
+xclip -in
+xclip -o | xclip -selection c
