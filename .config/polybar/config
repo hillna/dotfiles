@@ -312,6 +312,9 @@ ramp-foreground = #666
 
 [module/volume]
 type = internal/volume
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
 master-mixer = Master
 
 ;speaker-mixer = Speaker
