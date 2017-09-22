@@ -30,6 +30,7 @@ bspc rule -a steam state=tiled
 bspc rule -a peek state=floating
 bspc rule -a Wine state=tiled
 bspc rule -a qjackctl state=floating
+bspc rule -a Gladish state=floating
 # Eve Online
 bspc rule -a exefile.exe state=fullscreen
 
@@ -50,12 +51,22 @@ then
   $HOME/.config/polybar/launch.sh
 fi
 
+# JACK
+#if jack_control status |grep stopped
+#then
+#  cadence-session-start --system-start
+#fi
+#
+#if ! pgrep cadence
+#then
+#  cadence --minimized &
+#fi
+
 # autorun
 sleep 5s
 
 for exec in dropbox; do
-  pgrep -x $exec
-  if [ $? == 1 ]; then
+  if ! pgrep $exec; then
     $exec &
   fi
 done

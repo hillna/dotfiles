@@ -1,13 +1,19 @@
 #!/bin/bash
 
 jack_control start
-jack_control ds alsa
-jack_control dps device hw:XFi
-jack_control dps device hw:Device
-jack_control dps rate 48000
-jack_control dps nperiods 2
-jack_control dps period 64
-sleep 10
+#jack_control ds alsa
+#jack_control eps realtime True
+#jack_control dps device hw:XFi
+#jack_control dps device hw:XFi
+#jack_control dps rate 48000
+#jack_control dps period 256
+#jack_control dps nperiods 2
+
+#alsa_out -j "Modi Out" -d hw:2,1 &
+#alsa_in -j "Onboard In" -d hw:2,0 &
+#alsa_in -j "Guitar" -d hw:5,0 &
+
 a2jmidid -e &
-sleep 10
-qjackctl &
+
+#qjackctl &
+cadence --minimized &
