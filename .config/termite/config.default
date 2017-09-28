@@ -12,7 +12,7 @@ background = rgba(0, 17, 21, 0.9)
 cursor = #93a1a1
 
 # if unset, will reverse foreground and background
-highlight = #073642
+highlight = #839496
 
 # colors from color0 to color254 can be set
 color0 = #073642
