@@ -11,13 +11,13 @@ bspc config click_to_focus      true
 remove_disabled_monitors        true
 remove_unplugged_monitors       true
 
-# Show connected monitors: `xrandr -q`
+## Show connected monitors: `xrandr -q`
 
 bspc monitor DP-3 -d 1 2 3
 bspc monitor DP-1 -d 4 5 6 7
 bspc monitor DP-5 -d 8 9 0
 
-# Macbook
+## Macbook
 bspc monitor eDP-1 -d 1 2 3 4 5 6
 bspc monitor DP2 -d 7 8 9 0
 
@@ -31,10 +31,12 @@ bspc rule -a peek state=floating
 bspc rule -a Wine state=tiled
 bspc rule -a qjackctl state=floating
 bspc rule -a Gladish state=floating
-# Eve Online
+bspc rule -a jack_mixer state=floating
+
+## Eve Online
 bspc rule -a exefile.exe state=fullscreen
 
-# Compositing
+## Compositing
 if ! pgrep compton
 then
   compton -b
@@ -45,24 +47,25 @@ feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
 
 xsetroot -cursor_name left_ptr
 
-# panel
+## panel
 if ! pgrep polybar
 then
   $HOME/.config/polybar/launch.sh
 fi
 
-# JACK
-#if jack_control status |grep stopped
-#then
-#  cadence-session-start --system-start
-#fi
-#
-#if ! pgrep cadence
-#then
-#  cadence --minimized &
-#fi
+## JACK
+if jack_control status |grep stopped
+then
+  cadence-session-start --system-start
+#  ladish_control sload Standard
+fi
 
-# autorun
+if ! pgrep cadence
+then
+  cadence --minimized &
+fi
+
+## autorun
 sleep 5s
 
 for exec in dropbox; do
