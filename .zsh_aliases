@@ -11,7 +11,11 @@ alias tmuxs="tmux list-sessions"
 alias tmuxa="tmux attach-session -t"
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
-alias gssh='gcloud compute ssh'
+alias gssh="gcloud compute ssh"
+alias gsshp="gcloud beta compute ssh --internal-ip --project=olark-main"
+alias gsshs="gcloud beta compute ssh --internal-ip --project=olark-staging"
+alias gsshc="gcloud beta compute ssh --internal-ip --project=olark-core"
+
 
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then
