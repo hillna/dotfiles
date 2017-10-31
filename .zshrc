@@ -53,7 +53,8 @@ fpath=(
 )
 autoload -Uz ffg
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 . $HOME/.shellrc.load
 
