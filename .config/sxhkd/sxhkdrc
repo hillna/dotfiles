@@ -9,6 +9,10 @@ super + Return
 super + shift + Return
         termite
 
+# screenshot
+super + F12
+        scrot -s
+
 # program launcher
 super + r
         rofi -show run -terminal termite
