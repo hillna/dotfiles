@@ -25,10 +25,72 @@ font-1 = siji:pixelsize=8;+1
 font-2 = ionicons:size=12;+2
 
 modules-left = bspwm
-modules-center = mpd
+modules-center = window
 modules-right = updates volume date
 
 wm-restack = bspwm
+
+[bar/left]
+monitor = DP-3
+dock = true
+width = 100%
+height = ${bar/main.height}
+offset-x = 0
+offset-y = 0
+
+background = ${bar/main.background}
+foreground = ${bar/main.foreground}
+linecolor = ${bar/main.linecolor}
+
+spacing = 1
+lineheight = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = ${bar/main.font-0}
+font-1 = ${bar/main.font-1}
+font-2 = ${bar/main.font-2}
+
+modules-left = bspwm
+modules-center = mpd
+modules-right = time
+
+tray-position = right
+tray-background = ${BAR.background}
+tray-padding = 4
+
+wm-restack = ${bar/main.wm-restack}
+
+[bar/right]
+monitor = DP-5
+dock = true
+width = 100%
+height = ${bar/main.height}
+offset-x = 0
+offset-y = 0
+
+background = ${bar/main.background}
+foreground = ${bar/main.foreground}
+linecolor = ${bar/main.linecolor}
+
+spacing = 1
+lineheight = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = ${bar/main.font-0}
+font-1 = ${bar/main.font-1}
+font-2 = ${bar/main.font-2}
+
+modules-left = bspwm
+modules-center =
+modules-right = cpu memory time
+
+wm-restack = ${bar/main.wm-restack}
 
 
 [bar/main-mac]
@@ -66,70 +128,6 @@ tray-background = ${BAR.background}
 tray-padding = 4
 
 wm-restack = bspwm
-
-
-[bar/left]
-monitor = DP-3
-dock = true
-width = 100%
-height = ${bar/main.height}
-offset-x = 0
-offset-y = 0
-
-background = ${bar/main.background}
-foreground = ${bar/main.foreground}
-linecolor = ${bar/main.linecolor}
-
-spacing = 1
-lineheight = 1
-padding-left = 0
-padding-right = 2
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = ${bar/main.font-0}
-font-1 = ${bar/main.font-1}
-font-2 = ${bar/main.font-2}
-
-modules-left = bspwm
-modules-center =
-modules-right = time
-
-tray-position = right
-tray-background = ${BAR.background}
-tray-padding = 4
-
-wm-restack = ${bar/main.wm-restack}
-
-
-[bar/right]
-monitor = DP-5
-dock = true
-width = 100%
-height = ${bar/main.height}
-offset-x = 0
-offset-y = 0
-
-background = ${bar/main.background}
-foreground = ${bar/main.foreground}
-linecolor = ${bar/main.linecolor}
-
-spacing = 1
-lineheight = 1
-padding-left = 0
-padding-right = 2
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = ${bar/main.font-0}
-font-1 = ${bar/main.font-1}
-font-2 = ${bar/main.font-2}
-
-modules-left = bspwm
-modules-center =
-modules-right = cpu memory time
-
-wm-restack = ${bar/main.wm-restack}
 
 
 [module/bspwm]
@@ -433,3 +431,7 @@ type = custom/script
 exec = $HOME/.config/polybar/updates.sh
 interval = 300
 
+[module/window]
+type = custom/script
+exec = xdotool getactivewindow getwindowname
+interval = 1
