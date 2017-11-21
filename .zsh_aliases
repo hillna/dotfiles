@@ -44,3 +44,4 @@ if [ -f /usr/local/bin/gsleep ]; then
   alias sleep="gsleep"
 fi
 
+eval $(thefuck --alias)
