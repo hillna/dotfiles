@@ -18,10 +18,10 @@ super + {_,shift +}r
         rofi -show {run,window} -terminal termite
 
 super + e
-        firefox
+        chromium
 
 super + shift + e
-        firefox -private
+        chromium --incognitom
 
 super + ctrl + Tab
         $HOME/bin/toggle_panel
