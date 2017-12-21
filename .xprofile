@@ -15,7 +15,7 @@ xset +fp ~/.fonts
 
 # env
 export EDITOR="vim"
-export BROWSER=""
+export BROWSER="chromium"
 
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
@@ -31,6 +31,4 @@ export SSH_AUTH_SOCK
 
 # autorun
 sxhkd &
-#dropbox &
-#owncloud &
 

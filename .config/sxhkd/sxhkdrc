@@ -21,7 +21,7 @@ super + e
         chromium
 
 super + shift + e
-        chromium --incognitom
+        chromium --incognito
 
 super + ctrl + Tab
         $HOME/bin/toggle_panel
