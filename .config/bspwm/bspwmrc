@@ -8,7 +8,7 @@ bspc config borderless_monocle  false
 bspc config gapless_monocle     true
 bspc config paddingless_monocole false
 
-bspc config click_to_focus      true
+bspc config click_to_focus      button1
 
 bspc config remove_disabled_monitors        true
 bspc config remove_unplugged_monitors       true
