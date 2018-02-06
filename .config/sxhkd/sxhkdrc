@@ -10,7 +10,8 @@ super + shift + Return
         termite
 
 # screenshot
-super + F12
+super + F2
+#        scrot -s -e 'mv $f ~/shots'
         scrot -s
 
 # program launcher
