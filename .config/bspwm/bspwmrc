@@ -47,8 +47,7 @@ then
 fi
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
-#feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
-feh --bg-max --no-xinerama $WALLPAPER/falcon_heavy_profile.jpg
+feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
 
 xsetroot -cursor_name left_ptr
 

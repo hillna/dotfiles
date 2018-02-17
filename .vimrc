@@ -21,6 +21,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'nvie/vim-flake8'
+Plugin 'kovetskiy/sxhkd-vim'
 
 " End Vundle Plugins
 
