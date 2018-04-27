@@ -58,16 +58,15 @@ then
 fi
 
 ## JACK
-if jack_control status |grep stopped
-then
-#  cadence-session-start --system-start
-  ladish_control sload Standard
-fi
-
-if ! pgrep -a python3 |grep cadence
-then
-  cadence --minimized &
-fi
+#if jack_control status |grep stopped
+#then
+#  ladish_control sload Standard
+#fi
+#
+#if ! pgrep -a python3 |grep cadence
+#then
+#  cadence --minimized &
+#fi
 
 ## autorun
 sleep 5s
