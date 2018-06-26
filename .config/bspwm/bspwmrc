@@ -1,6 +1,7 @@
 #! /bin/sh
 
 sxhkd &
+#xsetroot -cursor_name left_ptr
 
 bspc config border_width        2
 bspc config window_gap         	8
@@ -17,9 +18,9 @@ bspc config remove_unplugged_monitors       true
 
 ## Show connected monitors: `xrandr -q`
 
-bspc monitor DP-3 -d 1 2 3
-bspc monitor DP-1 -d 4 5 6 7
-bspc monitor DP-5 -d 8 9 0
+bspc monitor DisplayPort-1 -d 1 2 3
+bspc monitor DisplayPort-0 -d 4 5 6 7
+bspc monitor HDMI-A-0 -d 8 9 0
 
 ## Macbook
 bspc monitor eDP-1 -d 1 2 3 4 5 6
@@ -43,13 +44,11 @@ bspc rule -a exefile.exe state=fullscreen
 ## Compositing
 if ! pgrep compton
 then
-  compton -b
+  compton &
 fi
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
 feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
-
-xsetroot -cursor_name left_ptr
 
 ## panel
 if ! pgrep polybar
