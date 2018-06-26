@@ -4,3 +4,4 @@
 .keys
 .ncmpcpp/error.log
 .config/termite/config
+.fonts/.uuid
