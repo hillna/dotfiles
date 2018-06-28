@@ -18,7 +18,7 @@ if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
 fi
 
 if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
-    pip install --user powerline-status
+    pip2 install --user powerline-status
 fi
 
 #bin/dfm install
