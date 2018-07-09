@@ -69,8 +69,10 @@ fi
 
 ## autorun
 sleep 5s
+autorun = (dropbox
+           blueman-applet)
 
-for exec in dropbox; do
+for exec in ${autorun}; do
   if ! pgrep $exec; then
     $exec &
   fi

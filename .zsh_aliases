@@ -4,6 +4,7 @@
 alias ll="ls -l"
 alias py="python"
 alias p="py"
+alias aur="aurman"
 alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/steam/Steam.exe -no-cef-sandbox -no-dwrite >/dev/null 2>&1 &'
 alias chrome='google-chrome-beta'
