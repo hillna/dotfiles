@@ -4,12 +4,13 @@ xsetroot -cursor_name left_ptr
 # set configs
 if [ -f /etc/macbook ]
 then
-    ~/.screenlayout/singlescreen.sh
     ln -s ~/.config/termite/config.mac ~/.config/termite/config
 else
-    autorandr --change
     ln -s ~/.config/termite/config.default ~/.config/termite/config
 fi
+
+# set screen
+autorandr --change
 
 # fonts
 xset +fp ~/.fonts
