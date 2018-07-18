@@ -1,6 +1,3 @@
-# x setup
-xsetroot -cursor_name left_ptr
-
 # set configs
 if [ -f /etc/macbook ]
 then
@@ -14,6 +11,9 @@ autorandr --change
 
 # fonts
 xset +fp ~/.fonts
+
+# theme
+xsetroot -cursor_name left_ptr
 
 # env
 export EDITOR="vim"

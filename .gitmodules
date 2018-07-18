@@ -7,3 +7,6 @@
 [submodule ".zsh-custom/plugins/zsh-syntax-highlighting"]
 	path = .zsh-custom/plugins/zsh-syntax-highlighting
 	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule ".icons/Initial"]
+	path = .icons/Initial
+	url = https://github.com/cbrnix/Initial.git
