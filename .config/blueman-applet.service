@@ -1,0 +1,12 @@
+[Unit]
+Description=Blueman Bluetooth Manager Applet
+Documentation=man:blueman-applet(1)
+BindsTo=xorg.service
+After=xorg.service
+
+[Service]
+ExecStart=/usr/bin/blueman-applet
+ExecReload=/usr/bin/kill -SIGUSR1 $MAINPID
+
+[Install]
+WantedBy=graphical.target
