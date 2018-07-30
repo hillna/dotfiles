@@ -13,7 +13,7 @@ Xft.lcdfilter: lcddefault
 
 !! Cursor
 Xcursor.theme: Hacked_White
-!! Xcursor.size:  16
+Xcursor.size:  12
 
 !! Common
 

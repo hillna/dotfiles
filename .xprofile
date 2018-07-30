@@ -12,9 +12,6 @@ autorandr --change
 # fonts
 xset +fp ~/.fonts
 
-# theme
-xsetroot -cursor_name left_ptr
-
 # env
 export EDITOR="vim"
 export BROWSER="chromium"

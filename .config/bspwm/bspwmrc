@@ -2,6 +2,9 @@
 
 sxhkd &
 
+# theme
+xsetroot -cursor_name left_ptr
+
 bspc config border_width        2
 bspc config window_gap         	8
 
