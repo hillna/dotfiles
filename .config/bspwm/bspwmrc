@@ -3,15 +3,15 @@
 sxhkd &
 
 # theme
-xsetroot -cursor_name left_ptr
+#xsetroot -cursor_name left_ptr
 
 bspc config border_width        2
 bspc config window_gap         	8
 
-bspc config split_ratio         0.52
-bspc config borderless_monocle  false
-bspc config gapless_monocle     true
-bspc config paddingless_monocole false
+bspc config split_ratio           0.52
+bspc config borderless_monocle    false
+bspc config gapless_monocle       true
+bspc config paddingless_monocole  false
 
 bspc config click_to_focus      button1
 
@@ -39,15 +39,6 @@ bspc rule -a qjackctl state=floating
 bspc rule -a Gladish state=floating
 bspc rule -a jack_mixer state=floating
 
-## Eve Online
-bspc rule -a exefile.exe state=fullscreen
-
-## Compositing
-#if ! pgrep compton
-#then
-#  compton &
-#fi
-
 WALLPAPER=$HOME/.config/bspwm/wallpaper
 feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
 
@@ -56,17 +47,6 @@ if ! pgrep polybar
 then
   $HOME/.config/polybar/launch.sh
 fi
-
-## JACK
-#if jack_control status |grep stopped
-#then
-#  ladish_control sload Standard
-#fi
-#
-#if ! pgrep -a python3 |grep cadence
-#then
-#  cadence --minimized &
-#fi
 
 ## autorun
 sleep 5s
