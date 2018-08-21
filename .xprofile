@@ -13,6 +13,9 @@ autorandr -l default
 # fonts
 xset +fp ~/.fonts
 
+# cursor
+xsetroot -cursor_name left_ptr
+
 # set configs
 if [ -f /etc/macbook ]
 then
