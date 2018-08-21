@@ -15,7 +15,7 @@ comphelp() {
 }
 
 comp() {
-    xcompmgr -CcfF -I-.015 -O-.03 -D6 -t-1 -l-3 -r4.2 -o.5 &
+    xcompmgr -Cc -I-.015 -O-.03 -D6 -t-1 -l-3 -r4.2 -o.5 &
 }
 
 checkcomp() {
@@ -36,7 +36,7 @@ startcomp() {
 togglecomp() {
     if pgrep xcompmgr &>/dev/null; then
         echo "Turning xcompmgr ON"
-	comp
+        comp
     else
         echo "Turning xcompmgr OFF"
         pkill xcompmgr &

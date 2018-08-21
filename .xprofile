@@ -8,20 +8,19 @@ export POWERLINE_COMMAND=$HOME/.local/bin/powerline
 export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
 
 # set screen
-autorandr -l default
+#autorandr -l default
 
 # fonts
 xset +fp ~/.fonts
-
-# cursor
-xsetroot -cursor_name left_ptr
 
 # set configs
 if [ -f /etc/macbook ]
 then
     ln -s ~/.config/termite/config.mac ~/.config/termite/config
+    autorandr --change
 else
     ln -s ~/.config/termite/config.default ~/.config/termite/config
+    $HOME/.screenlayout/triptic.sh
 fi
 
 # compositing
