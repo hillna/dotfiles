@@ -1,0 +1,55 @@
+#!/bin/bash
+#
+# Start a composition manager.
+# (xcompmgr in this case)
+
+comphelp() {
+    echo "Composition Manager:"
+    echo "   toggle: 	COMPMGR"
+    echo "   toggle:    COMPMGR --toggle"
+    echo "   (re)start: COMPMGR --start"
+    echo "   stop:      COMPMGR --stop"
+    echo "   query:     COMPMGR --query"
+    echo "              returns 0 if composition manager is running, else 1"
+    exit
+}
+
+comp() {
+    xcompmgr -CcfF -I-.015 -O-.03 -D6 -t-1 -l-3 -r4.2 -o.5 &
+}
+
+checkcomp() {
+    pgrep xcompmgr &>/dev/null
+}
+
+stopcomp() {
+    checkcomp && killall xcompmgr
+}
+
+startcomp() {
+    stopcomp
+    # Example settings only. Replace with your own.
+    comp
+    exit
+}
+
+togglecomp() {
+    if pgrep xcompmgr &>/dev/null; then
+        echo "Turning xcompmgr ON"
+	comp
+    else
+        echo "Turning xcompmgr OFF"
+        pkill xcompmgr &
+    fi
+    exit 0
+}
+
+case "$1" in
+    "")   togglecomp ;;
+    "--query") checkcomp ;;
+    "--toggle") togglecomp ;;
+    "--start") startcomp ;;
+    "--stop") stopcomp; exit ;;
+    *)    comphelp ;;
+esac
+
