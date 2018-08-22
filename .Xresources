@@ -16,7 +16,6 @@ Xcursor.theme: Hacked_White
 Xcursor.size:  12
 
 !! Common
-
 #define S_yellow        #b58900
 #define S_orange        #cb4b16
 #define S_red           #dc322f
