@@ -20,10 +20,10 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Olark
-if [ -f $HOME/.olark_rc ] ; then
-  source $HOME/.olark_rc
+#if [ -f $HOME/.olark_rc ] ; then
+#  source $HOME/.olark_rc
 #  export PATH=$OLARK_APPS/marketing/node_modules/.bin:$PATH
-fi
+#fi
 
 source /usr/share/nvm/init-nvm.sh
 
