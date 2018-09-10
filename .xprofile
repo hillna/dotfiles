@@ -16,6 +16,7 @@ xset +fp ~/.fonts
 # set configs
 if [ -f /etc/macbook ]
 then
+    setxkbmap -layout us -option ctrl:nocaps
     ln -s ~/.config/termite/config.mac ~/.config/termite/config
     autorandr --change
 else
