@@ -2,6 +2,7 @@ bootstrap.sh exec
 bootstrap.sh skip
 .ncmpcpp recurse
 .config recurse
+.config/nvim recurse
 .ssh recurse
 .weechat recurse
 README.md skip
