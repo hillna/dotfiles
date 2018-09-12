@@ -1,6 +1,3 @@
-bootstrap.sh exec
-bootstrap.sh skip
-
 .config recurse
 .ncmpcpp recurse
 .ssh recurse
@@ -9,3 +6,6 @@ bootstrap.sh skip
 
 .gitmodules skip
 README.md skip
+
+bootstrap.sh exec
+bootstrap.sh skip

@@ -22,10 +22,26 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'nvie/vim-flake8'
 Plugin 'kovetskiy/sxhkd-vim'
+" Plugin 'ncm2/ncm2'
+" Plugin 'roxma/nvim-yarp'
+
+" ncm2 completion sources
+" https://github.com/ncm2/ncm2/wiki
+" Plugin 'ncm2/ncm2-tmux'
+" Plugin 'ncm2/ncm2-github'
+" Plugin 'ncm2/ncm2-path'
+" Plugin 'ncm2/ncm2-jedi'
+" Plugin 'ncm2/ncm2-tern'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle Settings
+
+" enable ncm2 for all buffers
+" autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANT: :help Ncm2PopupOpen for more information
+" set completeopt=noinsert,menuone,noselect
 
 syntax enable
 let g:solarized_termtrans = 1
