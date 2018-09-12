@@ -23,8 +23,6 @@ Plugin 'tpope/vim-git'
 Plugin 'nvie/vim-flake8'
 Plugin 'kovetskiy/sxhkd-vim'
 
-" End Vundle Plugins
-
 call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle Settings
