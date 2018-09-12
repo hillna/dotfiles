@@ -1,10 +1,11 @@
-.ncmpcpp recurse
-.config recurse
-.config/nvim/bundle skip
-.config/gtk-3.0/bookmarks skip
-.ssh recurse
-.weechat recurse
-README.md skip
-.gitmodules skip
 bootstrap.sh exec
 bootstrap.sh skip
+
+.config recurse
+.ncmpcpp recurse
+.ssh recurse
+.vim recurse
+.weechat recurse
+
+.gitmodules skip
+README.md skip
