@@ -1,6 +1,3 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME='bira'
-
 DEFAULT_USER='hilln'
 
 setopt AUTO_CD
@@ -57,6 +54,5 @@ autoload -Uz ffg
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 . $HOME/.shellrc.load
-
 
 #eval $(thefuck --alias)
