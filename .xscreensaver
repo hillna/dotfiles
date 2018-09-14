@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.40 for hilln on Mon Sep 10 19:58:40 2018.
+# Written by xscreensaver-demo 5.40 for hilln on Fri Sep 14 00:02:25 2018.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
-cycle:		0:10:00
+cycle:		0:05:00
 lock:		True
 lockTimeout:	0:02:00
 passwdTimeout:	0:00:30
@@ -35,7 +35,7 @@ chooseRandomImages: False
 imageDirectory:	
 
 mode:		one
-selected:	34
+selected:	88
 
 textMode:	file
 textLiteral:	XScreenSaver
@@ -130,9 +130,10 @@ programs:								      \
 				spotlight -root				    \n\
 				squiral -root				    \n\
 				wander -root				    \n\
--				webcollage -root			    \n\
+-				webcollage -root -delay 0 -opacity 1	    \n\
 				xflame -root				    \n\
-				xmatrix -root				    \n\
+				xmatrix -root -no-trace -no-knock-knock	      \
+				  -delay 52500				    \n\
   GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
 				xrayswarm -root				    \n\
@@ -186,7 +187,7 @@ programs:								      \
 				fontglide -root				    \n\
   GL: 				gleidescope -root			    \n\
   GL: 				glknots -root				    \n\
-  GL: 				glmatrix -root				    \n\
+  GL: 				glmatrix -root -density 52		    \n\
 - GL: 				glslideshow -root			    \n\
   GL: 				hypertorus -root			    \n\
 - GL: 				jigglypuff -root			    \n\

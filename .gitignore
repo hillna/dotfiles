@@ -1,7 +1,8 @@
 *.swp
 *.bak
 .config/bspwm/wallpaper/*
-.keys
-.ncmpcpp/error.log
+.config/gtk-3.0/bookmarks
 .config/termite/config
 .fonts/.uuid
+.keys
+.ncmpcpp/error.log
