@@ -21,7 +21,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = roboto:size=12;+1
-font-1 = siji:pixelsize=8;+1
+font-1 = siji:pixelsize=14;+1
 font-2 = ionicons:size=12;+2
 
 modules-left = bspwm
@@ -58,7 +58,7 @@ modules-center = mpd
 modules-right = time
 
 tray-position = right
-tray-background = ${BAR.background}
+tray-background = ${root.background}
 tray-padding = 4
 
 wm-restack = ${bar/main.wm-restack}
@@ -115,16 +115,16 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = roboto:size=12;+1
-font-1 = siji:pixelsize=8;0
-font-2 = ionicons:size=12;+2
+font-0 = "NotoSans Nerd Font:size=12;+2"
+font-1 = "Wuncon Siji:size=18;+2"
+;font-2 = "Ionicons:size=12;+2"
 
 modules-left = bspwm
 modules-center = mpd
 modules-right = updates wifi battery backlight volume date
 
 tray-position = right
-tray-background = ${BAR.background}
+tray-background = ${root.background}
 tray-padding = 4
 
 wm-restack = bspwm
@@ -132,24 +132,23 @@ wm-restack = bspwm
 
 [module/bspwm]
 type = internal/bspwm
-ws-icon-default = x
+ws-icon-default = 
 
-label-focused = o
+label-focused = 
 label-focused-background = #073642
 label-focused-underline= #cc333333
-label-focused-padding = 2
-label-focused-font = 1
+label-focused-padding = 1
 
-label-occupied = +
-label-occupied-padding = 2
+label-occupied = 
+label-occupied-padding = 1
 
-label-urgent = !
+label-urgent = 
 label-urgent-background = #002B36
-label-urgent-padding = 2
+label-urgent-padding = 1
 
-label-empty = -
+label-empty = 
 ;label-empty-foreground = #444
-label-empty-padding = 2
+label-empty-padding = 1
 
 
 [module/cpu]
@@ -256,19 +255,14 @@ interface = wlp3s0
 interval = 3.0
 ;udspeed-minwidth = 3
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <ramp-signal><label-connected>
 label-connected = %essid% %{F#66}%local_ip%
-;label-connected = %{F#666}%{F#cc} %upspeed% %{F#666}%{F#cc} %downspeed%
-;label-connected = %{O-6 F#666}%{O2 F#cc}%downspeed%
-;label-connected = connected
 label-disconnected = %{F#666}%{F#cc} not connected
 label-disconnected-foreground = #66
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 
+;ramp-signal-1 = 
+;ramp-signal-2 = 
 ramp-signal-foreground = #666
 
 
@@ -285,29 +279,32 @@ label-disconnected-foreground = #66
 [module/date]
 type = internal/date
 format-foreground = #8A8A8A
-label = %date%   %time%
-date =  %Y-%m-%d
-date-alt =  %A
-time =  %H:%M
-time-alt =  %H:%M
+label = %date%  %time%
+date =  %Y-%m-%d
+date-alt = %A
+time = %H:%M
+time-alt = %H:%M
 interval = 1
 
 [module/time]
 type = internal/date
 format-foreground = #8A8A8A
-date =  %H:%M
+format-foreground-font = 1
+date =  %H:%M
 interval = 1
 
 
 [module/backlight]
 type = internal/xbacklight
-format = <ramp> <label>
+format = <ramp><label>
 lable = %percentage%
-ramp-0 = 🌕
-ramp-1 = 🌔
-ramp-2 = 🌓
-ramp-3 = 🌒
-ramp-4 = 🌑
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
 ramp-foreground = #666
 
 
@@ -326,7 +323,7 @@ format-volume = <ramp-volume>
 ;format-volume = <label-volume> <bar-volume>
 
 label-volume = VOL
-label-volume-foreground = ${BAR.foreground}
+label-volume-foreground = ${root.foreground}
 
 label-muted = 
 
@@ -334,7 +331,7 @@ ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
-ramp-volume-foreground = ${BAR.foreground}
+ramp-volume-foreground = ${root.foreground}
 
 ;ramp-headphones-0 = 
 ;ramp-headphones-1 = 
@@ -366,20 +363,27 @@ full-at = 98
 battery = BAT0
 adapter = ADP1
 
-format-charging = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
-format-full = %{F#666}%{F#cc}  <label-full>
-label-full = 
+format-charging = <animation-charging><label-charging>
+format-discharging = <ramp-capacity><label-discharging>
+format-full = <label-full>
+label-full = 
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
 ramp-capacity-foreground = #666
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
 animation-charging-foreground = #666
 animation-charging-framerate = 750
 
@@ -438,8 +442,6 @@ interval = 300
 type = internal/xwindow
 
 format = <label>
-#format-background =
-#format-foreground =
 format-padding = 4
 
 label = %title%

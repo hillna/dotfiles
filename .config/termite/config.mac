@@ -1,5 +1,6 @@
 [options]
 font = DejaVu Sans Mono for Powerline 12
+#font = NotoSansMono Nerd Font 12
 
 # Solarized dark color scheme
 
