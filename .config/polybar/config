@@ -1,6 +1,6 @@
 [bar/main]
 monitor = DisplayPort-0
-dock = true
+override-redirect = true
 width = 100%
 height = 22
 offset-x = 0
@@ -32,7 +32,7 @@ wm-restack = bspwm
 
 [bar/left]
 monitor = DisplayPort-1
-dock = true
+override-redirect = true
 width = 100%
 height = ${bar/main.height}
 offset-x = 0
@@ -65,7 +65,7 @@ wm-restack = ${bar/main.wm-restack}
 
 [bar/right]
 monitor = HDMI-A-0
-dock = true
+override-redirect = true
 width = 100%
 height = ${bar/main.height}
 offset-x = 0
@@ -95,7 +95,7 @@ wm-restack = ${bar/main.wm-restack}
 
 [bar/main-mac]
 monitor = eDP1
-dock = true
+override-redirect = true
 width = 100%
 height = 22
 offset-x = 0
@@ -134,19 +134,20 @@ wm-restack = bspwm
 type = internal/bspwm
 ws-icon-default = x
 
-label-focused = 
+label-focused = o
 label-focused-background = #073642
 label-focused-underline= #cc333333
 label-focused-padding = 2
+label-focused-font = 1
 
-label-occupied = 
+label-occupied = +
 label-occupied-padding = 2
 
-label-urgent = 
+label-urgent = !
 label-urgent-background = #002B36
 label-urgent-padding = 2
 
-label-empty = 
+label-empty = -
 ;label-empty-foreground = #444
 label-empty-padding = 2
 
@@ -311,7 +312,7 @@ ramp-foreground = #666
 
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 master-soundcard = default
 speaker-soundcard = default
 headphone-soundcard = default
