@@ -10,8 +10,8 @@ background = #002B36
 foreground = #8A8A8A
 linecolor = #8A8A8A
 
-;border-bottom = 2
-;border-bottom-color = #333
+border-bottom = 1
+border-bottom-color = #8A8A8A
 
 spacing = 1
 lineheight = 1
@@ -20,9 +20,8 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = roboto:size=12;+1
-font-1 = siji:pixelsize=14;+1
-font-2 = ionicons:size=12;+2
+font-0 = "NotoSans Nerd Font:size=12;+3"
+font-1 = "Wuncon Siji:size=18;+3"
 
 modules-left = bspwm
 modules-center = title
@@ -105,8 +104,8 @@ background = #002B36
 foreground = #8A8A8A
 linecolor = #8A8A8A
 
-;border-bottom = 2
-;border-bottom-color = #333
+border-bottom = 1
+border-bottom-color = #8A8A8A
 
 spacing = 1
 lineheight = 1
@@ -115,13 +114,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "NotoSans Nerd Font:size=12;+2"
-font-1 = "Wuncon Siji:size=18;+2"
-;font-2 = "Ionicons:size=12;+2"
+font-0 = "NotoSans Nerd Font:size=12;+3"
+font-1 = "Wuncon Siji:size=18;+3"
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = updates wifi battery backlight volume date
+modules-right = updates wifi volume backlight battery date
 
 tray-position = right
 tray-background = ${root.background}
@@ -135,19 +133,16 @@ type = internal/bspwm
 ws-icon-default = 
 
 label-focused = 
-label-focused-background = #073642
-label-focused-underline= #cc333333
 label-focused-padding = 1
 
-label-occupied = 
+label-occupied = 
 label-occupied-padding = 1
 
-label-urgent = 
-label-urgent-background = #002B36
+label-urgent = 
 label-urgent-padding = 1
 
 label-empty = 
-;label-empty-foreground = #444
+label-empty-foreground = #444
 label-empty-padding = 1
 
 
@@ -253,12 +248,11 @@ bar-used-empty-foreground = #444444
 type = internal/network
 interface = wlp3s0
 interval = 3.0
-;udspeed-minwidth = 3
 
 format-connected = <ramp-signal><label-connected>
-label-connected = %essid% %{F#66}%local_ip%
+label-connected = %essid% %{F#444}%local_ip%
 label-disconnected = %{F#666}%{F#cc} not connected
-label-disconnected-foreground = #66
+label-disconnected-foreground = #444
 
 ramp-signal-0 = 
 ;ramp-signal-1 = 
@@ -273,7 +267,7 @@ interval = 3.0
 
 label-connected = %{T3}%local_ip%%{T-}
 label-disconnected = %{T3}Not connected%{T-}
-label-disconnected-foreground = #66
+label-disconnected-foreground = #444
 
 
 [module/date]
@@ -296,7 +290,7 @@ interval = 1
 
 [module/backlight]
 type = internal/xbacklight
-format = <ramp><label>
+format = <ramp>
 lable = %percentage%
 ramp-0 = 
 ramp-1 = 
@@ -305,55 +299,22 @@ ramp-3 = 
 ramp-4 = 
 ramp-5 = 
 ramp-6 = 
-ramp-foreground = #666
 
 
 [module/volume]
-type = internal/alsa
-master-soundcard = default
-speaker-soundcard = default
-headphone-soundcard = default
-master-mixer = Master
+type = internal/pulseaudio
 
-;speaker-mixer = Speaker
-;headphone-mixer = Headphone
-;headphone-id = 9
+;sink =
+use-ui-max = true
 
 format-volume = <ramp-volume>
-;format-volume = <label-volume> <bar-volume>
 
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
+label-muted = 
 
-label-muted = 
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
+ramp-volume-0 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
 ramp-volume-foreground = ${root.foreground}
-
-;ramp-headphones-0 = 
-;ramp-headphones-1 = 
-
-bar-volume-width = 20
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = │
-bar-volume-indicator-font = 2
-bar-volume-indicator-foreground = #ff
-;bar-volume-fill = ━
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ━
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = #444444
 
 
 [module/battery]
@@ -363,8 +324,8 @@ full-at = 98
 battery = BAT0
 adapter = ADP1
 
-format-charging = <animation-charging><label-charging>
-format-discharging = <ramp-capacity><label-discharging>
+format-charging = <animation-charging>
+format-discharging = <ramp-capacity>
 format-full = <label-full>
 label-full = 
 
@@ -378,13 +339,11 @@ ramp-capacity-6 = 
 ramp-capacity-7 = 
 ramp-capacity-8 = 
 ramp-capacity-9 = 
-ramp-capacity-foreground = #666
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
-animation-charging-foreground = #666
 animation-charging-framerate = 750
 
 
@@ -399,7 +358,7 @@ format-online-underline = #002B36
 format-online-padding = 3
 
 format-offline = <label-offline>
-format-offline-foreground = #66
+format-offline-foreground = #444
 
 label-offline =
 
@@ -418,7 +377,7 @@ icon-random = 
 icon-repeat = 
 
 toggle-on-foreground = #e60053
-toggle-off-foreground = #66
+toggle-off-foreground = #444
 
 bar-progress-width = 15
 bar-progress-indicator = 
