@@ -10,7 +10,7 @@ background = #002B36
 foreground = #8A8A8A
 linecolor = #8A8A8A
 
-border-bottom = 1
+border-bottom-size = 1
 border-bottom-color = #8A8A8A
 
 spacing = 1
@@ -104,7 +104,7 @@ background = #002B36
 foreground = #8A8A8A
 linecolor = #8A8A8A
 
-border-bottom = 1
+border-bottom-size = 1
 border-bottom-color = #8A8A8A
 
 spacing = 1
