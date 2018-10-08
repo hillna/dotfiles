@@ -25,7 +25,7 @@ font-1 = "Wuncon Siji:size=18;+3"
 
 modules-left = bspwm
 modules-center = title
-modules-right = updates volume date
+modules-right = updates wifi volume date
 
 wm-restack = bspwm
 
@@ -50,7 +50,6 @@ module-margin-right = 2
 
 font-0 = ${bar/main.font-0}
 font-1 = ${bar/main.font-1}
-font-2 = ${bar/main.font-2}
 
 modules-left = bspwm
 modules-center = mpd
@@ -83,7 +82,6 @@ module-margin-right = 2
 
 font-0 = ${bar/main.font-0}
 font-1 = ${bar/main.font-1}
-font-2 = ${bar/main.font-2}
 
 modules-left = bspwm
 modules-center =
@@ -150,7 +148,7 @@ label-empty-padding = 1
 type = internal/cpu
 interval = 2
 
-#format = <label> <ramp-coreload>
+;format = <label> <ramp-coreload>
 format = <label>
 label =  %percentage%%
 
@@ -266,7 +264,8 @@ interface = eno1
 interval = 3.0
 
 label-connected = %{T3}%local_ip%%{T-}
-label-disconnected = %{T3}Not connected%{T-}
+;label-disconnected = %{T3}Not connected%{T-}
+label-disconnected =
 label-disconnected-foreground = #444
 
 
