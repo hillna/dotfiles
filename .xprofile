@@ -25,7 +25,8 @@ else
 fi
 
 # compositing
-$HOME/bin/compmgr --start
+#$HOME/bin/compmgr --start
+compton -b
 
 # screensaver & lock
 xscreensaver -no-splash &
