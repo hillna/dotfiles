@@ -14,7 +14,8 @@ alias tmuxa="tmux attach-session -t"
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown -h now'
 alias gssh="gcloud compute ssh"
-alias gsshp="gcloud beta compute ssh --internal-ip --project=olark-main"
+alias gsshm="gcloud beta compute ssh --internal-ip --project=olark-main"
+alias gsshp="gcloud beta compute ssh --internal-ip --project=olark-prod"
 alias gsshs="gcloud beta compute ssh --internal-ip --project=olark-staging"
 alias gsshc="gcloud beta compute ssh --internal-ip --project=olark-core"
 alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
