@@ -13,6 +13,8 @@ if [ ! -f $HOME/.vim/autoload/plug.vim ]; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
+vim +'PlugInstall --sync' +qa
+nvim +'PlugInstall --sync' +qa
 
 if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
     pip2 install --user powerline-status
