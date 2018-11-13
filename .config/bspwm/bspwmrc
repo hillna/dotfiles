@@ -42,6 +42,9 @@ bspc rule -a jack_mixer state=floating
 WALLPAPER=$HOME/.config/bspwm/wallpaper
 feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
 
+# screensaver & lock
+xscreensaver -no-splash &
+
 ## panel
 if ! pgrep polybar
 then
