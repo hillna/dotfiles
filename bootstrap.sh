@@ -9,11 +9,12 @@ if [ ! -d $HOME/.zprezto ]; then
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 fi
 
-if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
-    mkdir -p $HOME/.vim/bundle
-    git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+if [ ! -f $HOME/.vim/autoload/plug.vim ]; then
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
-nvim +PluginInstall +qall
+vim +'PlugInstall --sync' +qa
+nvim +'PlugInstall --sync' +qa
 
 if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
     pip2 install --user powerline-status
