@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set encoding=utf-8
 
-set number			" line numbers
+set number                    " line numbers
 " set paste
 " set mouse=a
 
@@ -25,13 +25,17 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+Plug 'fszymanski/deoplete-emoji'
+Plug 'zchee/deoplete-jedi'
 call plug#end()
 
 syntax enable
-let g:deoplete#enable_at_startup = 1
 let g:solarized_termtrans = 1
 colorscheme solarized
 filetype plugin indent on
+
+" deoplete settings
+let g:deoplete#enable_at_startup = 1
 
 set background=dark
 
