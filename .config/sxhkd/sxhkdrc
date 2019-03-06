@@ -40,7 +40,7 @@ super + alt + Escape
 
 # quit bspwm normally
 super + alt + ctrl + Escape
-        bspc quit && pkill panel
+        bspc quit
 
 # close and kill
 super + {_,ctrl + }w

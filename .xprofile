@@ -26,7 +26,8 @@ fi
 
 # compositing
 #$HOME/bin/compmgr --start
-compton -b
+#compton -b
+xcompmgr -o.70 &
 
 # keyring
 #eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
