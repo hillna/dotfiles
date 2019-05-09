@@ -150,7 +150,7 @@ interval = 2
 
 ;format = <label> <ramp-coreload>
 format = <label>
-label =  %percentage%%
+label = CPU: %percentage%%
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
@@ -224,7 +224,7 @@ interval = 2
 
 #format = <label> <bar-used>
 format = <label>
-label =  %gb_used%/%gb_free%
+label = RAM: %gb_used%/%gb_free%
 
 bar-used-width = 15
 bar-used-foreground-0 = #55aa55
