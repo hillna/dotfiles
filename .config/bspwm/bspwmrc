@@ -54,7 +54,7 @@ fi
 
 ## autorun
 sleep 5s
-autorun=(blueman-applet)
+autorun=(blueman-applet qjackctl)
 
 for exec in ${autorun}; do
   if ! pgrep $exec; then
