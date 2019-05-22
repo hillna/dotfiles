@@ -35,6 +35,7 @@ bspc rule -a mplayer state=floating
 bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
 bspc rule -a peek state=floating
 bspc rule -a qjackctl state=floating
+bspc rule -a Graph - Jack Audio Connection Kit state=tiled
 bspc rule -a steam state=tiled
 bspc rule -a vlc state=floating
 bspc rule -a Wine state=tiled
