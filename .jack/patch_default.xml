@@ -1,45 +1,44 @@
 <!DOCTYPE patchbay>
 <patchbay version="0.5.7" name="patch_default">
  <output-sockets>
-  <socket client="PulseAudio JACK Sink" exclusive="off" type="jack-audio" name="PulseAudio JACK Sink 1">
+  <socket type="jack-audio" exclusive="off" client="PulseAudio JACK Sink" name="PulseAudio JACK Sink 1">
    <plug>front-left</plug>
    <plug>front-right</plug>
   </socket>
-  <socket client="system" exclusive="off" type="jack-audio" name="system 1">
+  <socket type="jack-audio" exclusive="off" client="system" name="system 1">
    <plug>capture_1</plug>
    <plug>capture_2</plug>
   </socket>
-  <socket client="VCV Rack" exclusive="off" type="jack-audio" name="VCV Rack 1">
+  <socket type="jack-audio" exclusive="off" client="VCV Rack" name="VCV Rack 1">
    <plug>outport 0</plug>
    <plug>outport 1</plug>
   </socket>
  </output-sockets>
  <input-sockets>
-  <socket client="system" exclusive="off" type="jack-audio" name="system 1">
+  <socket type="jack-audio" exclusive="off" client="system" name="system 1">
    <plug>playback_1</plug>
    <plug>playback_2</plug>
   </socket>
-  <socket client="Modi Out" exclusive="off" type="jack-audio" name="Modi Out 1">
-   <plug>playback_1</plug>
-   <plug>playback_2</plug>
-  </socket>
-  <socket client="PulseAudio JACK Source" exclusive="off" type="jack-audio" name="PulseAudio JACK Source 1">
+  <socket type="jack-audio" exclusive="off" client="PulseAudio JACK Source" name="PulseAudio JACK Source 1">
    <plug>front-left</plug>
    <plug>front-right</plug>
   </socket>
-  <socket client="VCV Rack" exclusive="off" type="jack-audio" name="VCV Rack 1">
+  <socket type="jack-audio" exclusive="off" client="Modi Playback" name="Modi Playback 1">
+   <plug>playback_1</plug>
+   <plug>playback_2</plug>
+  </socket>
+  <socket type="jack-audio" exclusive="off" client="VCV Rack" name="VCV Rack 1">
    <plug>inport 0</plug>
    <plug>inport 1</plug>
   </socket>
  </input-sockets>
  <slots/>
  <cables>
-  <cable type="jack-audio" output="PulseAudio JACK Sink 1" input="Modi Out 1"/>
-  <cable type="jack-audio" output="PulseAudio JACK Sink 1" input="system 1"/>
-  <cable type="jack-audio" output="system 1" input="PulseAudio JACK Source 1"/>
-  <cable type="jack-audio" output="system 1" input="VCV Rack 1"/>
-  <cable type="jack-audio" output="VCV Rack 1" input="Modi Out 1"/>
-  <cable type="jack-audio" output="VCV Rack 1" input="system 1"/>
+  <cable type="jack-audio" input="Modi Playback 1" output="PulseAudio JACK Sink 1"/>
+  <cable type="jack-audio" input="system 1" output="PulseAudio JACK Sink 1"/>
+  <cable type="jack-audio" input="PulseAudio JACK Source 1" output="system 1"/>
+  <cable type="jack-audio" input="system 1" output="VCV Rack 1"/>
+  <cable type="jack-audio" input="Modi Playback 1" output="VCV Rack 1"/>
  </cables>
 </patchbay>
 

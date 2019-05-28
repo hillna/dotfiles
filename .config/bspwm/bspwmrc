@@ -48,16 +48,15 @@ feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
 xscreensaver -no-splash &
 
 ## panel
-if ! pgrep polybar
-then
+if ! pgrep polybar; then
   $HOME/.config/polybar/launch.sh
 fi
 
 ## autorun
-sleep 5s
-autorun=(blueman-applet qjackctl)
+sleep 2s
+autorun=(qjackctl blueman-applet)
 
-for exec in ${autorun}; do
+for exec in ${autorun[@]}; do
   if ! pgrep $exec; then
     $exec &
   fi
