@@ -6,3 +6,6 @@
 .fonts/.uuid
 .keys
 .ncmpcpp/error.log
+.jack/patches/*
+.jack/sessions/*
+.jack/snapshots/*
