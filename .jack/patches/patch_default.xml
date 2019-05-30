@@ -1,0 +1,51 @@
+<!DOCTYPE patchbay>
+<patchbay version="0.5.7" name="patch_default">
+ <output-sockets>
+  <socket exclusive="off" client="Pulse Sink1" name="Pulse Sink 1" type="jack-audio">
+   <plug>front-left</plug>
+   <plug>front-right</plug>
+  </socket>
+  <socket exclusive="off" client="Pulse Sink2" name="Pulse Sink 2" type="jack-audio">
+   <plug>front-left</plug>
+   <plug>front-right</plug>
+  </socket>
+  <socket exclusive="off" client="system" name="XR-18 Ch1" type="jack-audio">
+   <plug>capture_1</plug>
+  </socket>
+  <socket exclusive="off" client="Hydrogen" name="Hydrogen" type="jack-audio">
+   <plug>out_L</plug>
+  </socket>
+  <socket exclusive="off" client="VCV Rack" name="VCV Rack" type="jack-audio">
+   <plug>outport 0</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket exclusive="off" client="system" name="XR-18 Aux" type="jack-audio">
+   <plug>playback_1</plug>
+   <plug>playback_2</plug>
+  </socket>
+  <socket exclusive="off" client="system" name="XR-18 Ch15-16" type="jack-audio">
+   <plug>playback_3</plug>
+   <plug>playback_4</plug>
+  </socket>
+  <socket exclusive="off" client="Pulse Source1" name="Pulse Source 1" type="jack-audio">
+   <plug>front-left</plug>
+   <plug>front-right</plug>
+  </socket>
+  <socket exclusive="off" client="system" name="XR-18 Ch13" type="jack-audio">
+   <plug>playback_13</plug>
+  </socket>
+  <socket exclusive="off" client="system" name="XR-18 Ch14" type="jack-audio">
+   <plug>playback_14</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable output="VCV Rack" input="XR-18 Ch14" type="jack-audio"/>
+  <cable output="Hydrogen" input="XR-18 Ch13" type="jack-audio"/>
+  <cable output="Pulse Sink 1" input="XR-18 Aux" type="jack-audio"/>
+  <cable output="Pulse Sink 2" input="XR-18 Ch15-16" type="jack-audio"/>
+  <cable output="XR-18 Ch1" input="Pulse Source 1" type="jack-audio"/>
+ </cables>
+</patchbay>
+
