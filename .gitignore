@@ -9,3 +9,4 @@
 .jack/patches/*
 .jack/sessions/*
 .jack/snapshots/*
+.jack/qjackctl.log
