@@ -3,7 +3,7 @@
 # Additional ALSA devices
 #alsa_out -j "Modi Playback" -d hw:2,1 &
 #alsa_in -j "Onboard In" -d hw:2,0 &
-alsa_in -j "Audigy In" -d hw:0,0 &
+#alsa_in -j "Audigy In" -d hw:0,0 &
 
 sleep 2s
 # PulseAudio sinks
