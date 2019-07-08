@@ -18,7 +18,7 @@ pacmd set-default-sink jack_sink1
 pacmd set-default-source jack_source1
 
 # MIDI setup
-#a2jmidid -e &
+a2jmidid -e &
 
 # Ladish setup
 #ladish_control sload default
