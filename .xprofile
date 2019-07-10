@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
 export EDITOR="vim"
-export BROWSER="chromium"
+export BROWSER="firefox"
 
 export POWERLINE_COMMAND=$HOME/.local/bin/powerline
 export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
