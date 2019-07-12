@@ -44,4 +44,6 @@ elif [ $1 == "disable" ]; then
   ln -s 4.1_original 4.1
 
   echo "Creawsome Disabled"
+else
+  display_usage
 fi
