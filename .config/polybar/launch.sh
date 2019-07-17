@@ -9,15 +9,9 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 # set margain
 bspc config top_padding 22
 
-# Launch bars
-if [ -f /etc/macbook ]
-then
-    polybar main-mac &
-else
-    polybar main &
-    polybar left &
-    polybar right &
-fi
+polybar main &
+polybar left &
+polybar right &
 
 echo "Bars launched..."
 

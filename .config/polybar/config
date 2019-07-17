@@ -90,42 +90,6 @@ modules-right = cpu memory time
 wm-restack = ${bar/main.wm-restack}
 
 
-[bar/main-mac]
-monitor = eDP1
-override-redirect = true
-width = 100%
-height = 22
-offset-x = 0
-offset-y = 0
-
-background = #002B36
-foreground = #8A8A8A
-linecolor = #8A8A8A
-
-border-bottom-size = 1
-border-bottom-color = #8A8A8A
-
-spacing = 1
-lineheight = 1
-padding-left = 0
-padding-right = 2
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = "NotoSans Nerd Font:size=12;+3"
-font-1 = "Wuncon Siji:size=18;+3"
-
-modules-left = bspwm
-modules-center = mpd
-modules-right = updates wifi volume backlight battery date
-
-tray-position = right
-tray-background = ${root.background}
-tray-padding = 4
-
-wm-restack = bspwm
-
-
 [module/bspwm]
 type = internal/bspwm
 ws-icon-default = 
