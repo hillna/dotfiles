@@ -13,7 +13,16 @@ export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
 # fonts
 xset +fp ~/.fonts
 
-$HOME/.screenlayout/triptic.sh
+# set configs
+if [ -f /etc/macbook ]
+then
+    setxkbmap -layout us -option ctrl:nocaps
+    ln -s ~/.config/termite/config.mac ~/.config/termite/config
+    autorandr --change
+else
+    ln -s ~/.config/termite/config.default ~/.config/termite/config
+    $HOME/.screenlayout/triptic.sh
+fi
 
 # compositing
 #$HOME/bin/compmgr --start
