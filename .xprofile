@@ -1,7 +1,7 @@
 # env
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export BROWSER="firefox"
 
 export POWERLINE_COMMAND=$HOME/.local/bin/powerline
