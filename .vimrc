@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'nvie/vim-flake8'
 Plug 'kovetskiy/sxhkd-vim'
+Plug 'saltstack/salt-vim'
 
 " deoplete
 if has('nvim')
