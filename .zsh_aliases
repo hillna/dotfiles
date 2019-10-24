@@ -19,6 +19,7 @@ alias gsshp="gcloud beta compute ssh --internal-ip --project=olark-prod"
 alias gsshs="gcloud beta compute ssh --internal-ip --project=olark-staging"
 alias gsshc="gcloud beta compute ssh --internal-ip --project=olark-core"
 alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
+alias batt="upower -i $(upower -e |grep 'BAT')"
 
 # python2 aliases
 if [ $(uname |grep Linux) ] ; then
