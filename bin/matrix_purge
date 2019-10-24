@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+
+import sys
+import time
+from datetime import datetime
+from matrix_client.client import MatrixClient, MatrixHttpApi
+
+hostname                 = "https://matrix.component.host"
+room_name                = sys.argv[1]
+username                 = sys.argv[2]
+password                 = sys.argv[3]
+max_num_batches_to_fetch = 50
+num_batches_fetched      = 0
+senders                  = [ "@john:matrix.component.host"]
+sleep_between_redacts    = 2 # seconds
+
+def msg_isotimestamp(msg):
+  return datetime.fromtimestamp(msg["origin_server_ts"] / 1000).isoformat()
+
+print("Connecting:", hostname)
+client = MatrixClient(hostname)
+
+print("Logging in:", username)
+token  = client.login_with_password_no_sync(username=username, password=password)
+matrix = MatrixHttpApi(hostname, token=token)
+
+print("Joining Room:", room_name)
+room  = client.join_room(room_name)
+
+print("Starting room message fetching")
+token = room.prev_batch
+msgs  = []
+while num_batches_fetched < max_num_batches_to_fetch:
+    res = matrix.get_room_messages(
+        room.room_id,
+        token,
+        'b',
+        limit = 10000
+    )
+    token = res["end"]
+    if len(res['chunk']) == 0:
+        print("Empty chunk")
+        break
+
+    for event in res["chunk"]:
+        if event["sender"] in senders:
+            msgs.append(event)
+
+    print("Fetching messages before %s" % msg_isotimestamp(msgs[-1]))
+
+    num_batches_fetched += 1
+
+print("Redaction start")
+for i, msg in enumerate(msgs):
+    print(i, "of", len(msgs), msg_isotimestamp(msg), msg["content"])
+    room.redact_message(event_id = msg["event_id"])
+    time.sleep(sleep_between_redacts)
