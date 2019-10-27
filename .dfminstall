@@ -1,5 +1,6 @@
 .config recurse
 .ncmpcpp recurse
+.PrusaSlicer recurse
 .ssh recurse
 .vim recurse
 .weechat recurse
