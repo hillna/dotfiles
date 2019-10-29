@@ -9,10 +9,18 @@ if [ ! -d $HOME/.zprezto ]; then
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 fi
 
+# Powerline & modules
 if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
     pip2 install --user powerline-status
 fi
 
+# Original Powerkube: https://github.com/zcmarine/powerkube
+# Fixed import: https://github.com/rarguelloF/powerkube/tree/fix-kubernetes-import
+if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerkube ]; then
+    pip2 install --user git+https://@github.com/rarguelloF/powerkube.git@fix-kubernetes-import
+fi
+
+# vim plugins
 if [ ! -f $HOME/.vim/autoload/plug.vim ]; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
