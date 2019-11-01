@@ -5,13 +5,13 @@ import time
 from datetime import datetime
 from matrix_client.client import MatrixClient, MatrixHttpApi
 
-hostname                 = "https://matrix.component.host"
+hostname                 = ""
 room_name                = sys.argv[1]
 username                 = sys.argv[2]
 password                 = sys.argv[3]
 max_num_batches_to_fetch = 50
 num_batches_fetched      = 0
-senders                  = [ "@john:matrix.component.host"]
+senders                  = [ ""]
 sleep_between_redacts    = 2 # seconds
 
 def msg_isotimestamp(msg):

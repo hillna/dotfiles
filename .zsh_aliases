@@ -22,12 +22,12 @@ alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
 alias batt="upower -i $(upower -e |grep 'BAT')"
 
 # python2 aliases
-if [ $(uname |grep Linux) ] ; then
-    alias python="python2"
-    alias pip="pip2"
-    alias python-config="python2-config"
-    alias virtualenv="virtualenv2"
-fi
+#if [ $(uname |grep Linux) ] ; then
+#    alias python="python2"
+#    alias pip="pip2"
+#    alias python-config="python2-config"
+#    alias virtualenv="virtualenv2"
+#fi
 
 # mpc aliases
 
