@@ -4,10 +4,12 @@
 
 # terminal emulator
 super + Return
-        termite -e tmux
+#termite -e tmux
+	alacritty -e tmux
 
 super + shift + Return
-        termite
+#termite
+	alacritty
 
 # screenshot
 super + F2
