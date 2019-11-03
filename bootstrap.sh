@@ -27,6 +27,7 @@ if [ ! -f $HOME/.vim/autoload/plug.vim ]; then
 fi
 vim +'PlugInstall --sync' +qa
 nvim +'PlugInstall --sync' +qa
+nvim +'UpdateRemotePlugins' +qa
 
 if [ ! -d $HOME/.vim/plugged/deoplete-jedi/rplugin/python3/deoplete/vendored/jedi ]; then
     cd $HOME/.vim/plugged/deoplete-jedi && \
