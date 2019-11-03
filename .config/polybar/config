@@ -90,8 +90,8 @@ modules-right = cpu memory time
 wm-restack = ${bar/main.wm-restack}
 
 
-[bar/main-mac]
-monitor = eDP1
+[bar/main-xps13]
+monitor = eDP-1
 override-redirect = true
 width = 100%
 height = 22
@@ -112,11 +112,11 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "NotoSans Nerd Font:size=12;+3"
+font-0 = "NotoSans Nerd Font:size=13;+3"
 font-1 = "Wuncon Siji:size=18;+3"
 
 modules-left = bspwm
-modules-center = mpd
+#modules-center = mpd
 modules-right = updates wifi volume backlight battery date
 
 tray-position = right

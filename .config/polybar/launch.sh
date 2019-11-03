@@ -10,9 +10,9 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 bspc config top_padding 22
 
 # Launch bars
-if [ -f /etc/macbook ]
+if [ -f /etc/xps13 ]
 then
-    polybar main-mac &
+    polybar main-xps13 &
 else
     polybar main &
     polybar left &
