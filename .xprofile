@@ -18,11 +18,8 @@ if [ -f /etc/xps13 ]
 then
     setxkbmap -layout us -option ctrl:nocaps
     ln -s ~/.config/termite/config.xps13 ~/.config/termite/config
-#    autorandr --change
-    $HOME/.screenlayout/xps13_single.sh
 else
     ln -s ~/.config/termite/config.default ~/.config/termite/config
-    $HOME/.screenlayout/triptic.sh
 fi
 
 # compositing
