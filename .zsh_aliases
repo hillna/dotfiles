@@ -10,8 +10,6 @@ alias chrome='google-chrome-beta'
 alias tmuxs="tmux list-sessions"
 alias tmuxa="tmux attach-session -t"
 alias vim="nvim"
-alias reboot='sudo reboot'
-alias shutdown='sudo shutdown -h now'
 alias grin='grep -rinsI'
 alias gssh="gcloud compute ssh"
 alias gsshm="gcloud beta compute ssh --internal-ip --project=olark-main"
