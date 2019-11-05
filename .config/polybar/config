@@ -306,6 +306,7 @@ type = internal/pulseaudio
 
 sink = jack_sink1
 use-ui-max = true
+interval = 5
 
 format-volume = <ramp-volume>
 
@@ -328,9 +329,9 @@ format-volume = <ramp-volume>
 
 label-muted = 
 
-ramp-volume-0 = a
-ramp-volume-2 = b
-ramp-volume-3 = c
+ramp-volume-0 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
 ramp-volume-foreground = ${root.foreground}
 
 
