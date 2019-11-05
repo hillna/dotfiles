@@ -117,7 +117,7 @@ font-1 = "Wuncon Siji:size=18;+3"
 
 modules-left = bspwm
 #modules-center = mpd
-modules-right = updates wifi volume backlight battery date
+modules-right = updates wifi volumexps13 backlight battery date
 
 tray-position = right
 tray-background = ${root.background}
@@ -244,7 +244,7 @@ bar-used-empty-foreground = #444444
 
 [module/wifi]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 3.0
 
 format-connected = <ramp-signal><label-connected>
@@ -288,7 +288,8 @@ interval = 1
 
 
 [module/backlight]
-type = internal/xbacklight
+type = internal/backlight
+card = intel_backlight
 format = <ramp>
 lable = %percentage%
 ramp-0 = 
@@ -303,7 +304,7 @@ ramp-6 = 
 [module/volume]
 type = internal/pulseaudio
 
-;sink =
+sink = jack_sink1
 use-ui-max = true
 
 format-volume = <ramp-volume>
@@ -313,6 +314,23 @@ label-muted = 
 ramp-volume-0 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
+ramp-volume-foreground = ${root.foreground}
+
+
+[module/volumexps13]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_00_1f.3.analog-stereo
+use-ui-max = true
+interval = 5
+
+format-volume = <ramp-volume>
+
+label-muted = 
+
+ramp-volume-0 = a
+ramp-volume-2 = b
+ramp-volume-3 = c
 ramp-volume-foreground = ${root.foreground}
 
 

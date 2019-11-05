@@ -18,8 +18,10 @@ if [ -f /etc/xps13 ]
 then
     setxkbmap -layout us -option ctrl:nocaps
     ln -s ~/.config/termite/config.xps13 ~/.config/termite/config
+    ln -s ~/.config/alacritty/alacritty.xps13 ~/.config/alacritty/alacritty.yml
 else
     ln -s ~/.config/termite/config.default ~/.config/termite/config
+    ln -s ~/.config/alacritty/alacritty.default ~/.config/alacritty/alacritty.yml
 fi
 
 # compositing
