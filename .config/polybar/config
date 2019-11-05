@@ -29,6 +29,7 @@ modules-right = updates wifi volume date
 
 wm-restack = bspwm
 
+
 [bar/left]
 monitor = DisplayPort-1
 override-redirect = true
@@ -60,6 +61,7 @@ tray-background = ${root.background}
 tray-padding = 4
 
 wm-restack = ${bar/main.wm-restack}
+
 
 [bar/right]
 monitor = HDMI-A-0
@@ -116,8 +118,8 @@ font-0 = "NotoSans Nerd Font:size=13;+3"
 font-1 = "Wuncon Siji:size=18;+3"
 
 modules-left = bspwm
-#modules-center = mpd
-modules-right = updates wifi volumexps13 backlight battery date
+modules-center = title
+modules-right = updates wifi volume-xps13 backlight battery date
 
 tray-position = right
 tray-background = ${root.background}
@@ -318,7 +320,7 @@ ramp-volume-3 = 
 ramp-volume-foreground = ${root.foreground}
 
 
-[module/volumexps13]
+[module/volume-xps13]
 type = internal/pulseaudio
 
 sink = alsa_output.pci-0000_00_1f.3.analog-stereo
