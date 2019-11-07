@@ -415,7 +415,7 @@ label-time-foreground = #8A8A8A
 [module/updates]
 type = custom/script
 exec = $HOME/.config/polybar/updates.sh
-interval = 300
+interval = 1800
 
 [module/title]
 type = internal/xwindow
