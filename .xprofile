@@ -25,9 +25,7 @@ else
 fi
 
 # compositing
-#$HOME/bin/compmgr --start
-#compton -b
-xcompmgr -o.70 &
+$HOME/bin/compmgr --start
 
 # keyring
 #eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
