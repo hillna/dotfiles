@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Start a composition manager.
-# (xcompmgr in this case)
+# (picom in this case)
 
 comphelp() {
     echo "Composition Manager:"
@@ -15,15 +15,15 @@ comphelp() {
 }
 
 comp() {
-    xcompmgr -Cc -I-.015 -O-.03 -D6 -t-1 -l-3 -r4.2 -o.5 &
+    picom -b
 }
 
 checkcomp() {
-    pgrep xcompmgr &>/dev/null
+    pgrep picom &>/dev/null
 }
 
 stopcomp() {
-    checkcomp && pkill xcompmgr
+    checkcomp && pkill picom
 }
 
 startcomp() {
@@ -34,11 +34,11 @@ startcomp() {
 
 togglecomp() {
     if ! checkcomp; then
-        echo "Turning xcompmgr ON"
+        echo "Turning picom ON"
         comp
     else
-        echo "Turning xcompmgr OFF"
-        stopcomp &
+        echo "Turning picom OFF"
+        stopcomp
     fi
     exit 0
 }
