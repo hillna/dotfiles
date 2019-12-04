@@ -40,6 +40,7 @@ bspc rule -a Graph - Jack Audio Connection Kit state=tiled
 bspc rule -a steam state=tiled
 bspc rule -a vlc state=floating
 bspc rule -a Wine state=tiled
+bspc rule -a QjackCtl state=floating
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
 feh --bg-max --no-xinerama "$(find $WALLPAPER |shuf -n1)"
