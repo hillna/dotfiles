@@ -28,7 +28,6 @@ alias batt="upower -i $(upower -e |grep 'BAT')"
 #fi
 
 # mpc aliases
-
 alias play="mpc play"
 alias pause="mpc pause"
 alias next="mpc next"
@@ -40,5 +39,8 @@ alias gpush="gpullr && git push origin master"
 alias gstatus="git status"
 alias gcommit="git commit -a"
 alias gref="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
+
+# Kubectl aliases
+alias ip2pod='kubectl get pods --all-namespaces -o=custom-columns=NAME:.metadata.name,PODIP:.status.podIP | grep $1'
 
 eval $(thefuck --alias)
