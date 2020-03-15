@@ -11,13 +11,21 @@ alias tmuxs="tmux list-sessions"
 alias tmuxa="tmux attach-session -t"
 alias vim="nvim"
 alias grin='grep -rinsI'
-alias gssh="gcloud compute ssh"
-alias gsshm="gcloud beta compute ssh --internal-ip --project=olark-main"
-alias gsshp="gcloud beta compute ssh --internal-ip --project=olark-prod"
-alias gsshs="gcloud beta compute ssh --internal-ip --project=olark-staging"
-alias gsshc="gcloud beta compute ssh --internal-ip --project=olark-core"
 alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
 alias batt="upower -i $(upower -e |grep 'BAT')"
+
+# Gcloud Aliases
+alias gssh="gcloud compute ssh"
+alias gsshm="gcloud compute ssh --internal-ip --project=olark-main"
+alias gsshp="gcloud compute ssh --internal-ip --project=olark-prod"
+alias gsshs="gcloud compute ssh --internal-ip --project=olark-staging"
+alias gsshc="gcloud compute ssh --internal-ip --project=olark-core"
+alias gscp="gcloud compute scp"
+alias gscpm="gcloud compute scp --internal-ip --project=olark-main"
+alias gscpp="gcloud compute scp --internal-ip --project=olark-prod"
+alias gscps="gcloud compute scp --internal-ip --project=olark-staging"
+alias gscpc="gcloud compute scp --internal-ip --project=olark-core"
+
 
 # python2 aliases
 #if [ $(uname |grep Linux) ] ; then
