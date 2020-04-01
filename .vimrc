@@ -20,7 +20,7 @@ Plug 'saltstack/salt-vim'
 
 " deoplete
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
@@ -28,6 +28,7 @@ else
 endif
 Plug 'fszymanski/deoplete-emoji'
 Plug 'zchee/deoplete-jedi'
+
 call plug#end()
 
 syntax enable
