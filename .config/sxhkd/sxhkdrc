@@ -80,6 +80,16 @@ super + {t,shift + t,s,f}
 super + ctrl + {x,y,z}
   bspc node -g {locked,sticky,private}
 
+# add focused window to a tabbed instance in given direction
+super + q; {h,j,k,l}
+    $HOME/bin/tabc $(bspc query -N -n {west,south,north,east}) add $(bspc query -N -n focused)
+
+# remove one tab from tabbed
+super + q; r
+    tabbed=$(bspc query -N -n focused); \
+    child=$($HOME/bin/tabc $tabbed list | head -n1); \
+    $HOME/bin/tabc $tabbed remove $child
+
 #
 # focus/swap
 #
