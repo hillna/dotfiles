@@ -5,9 +5,11 @@ if ! pgrep sxhkd > /dev/null; then
   sxhkd &
 fi
 
-# theme
+## Theme
 xsetroot -cursor_name left_ptr
+feh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/wallpaper
 
+## Bspwm config
 bspc config border_width        2
 bspc config window_gap         	8
 
@@ -29,6 +31,7 @@ else
   bspc monitor HDMI-A-0 -d 8 9 0
 fi
 
+## Window rules
 # xprop | grep WM_CLASS
 bspc config external_rules_command ~/.config/bspwm/external-rules.sh
 bspc rule -a feh state=floating
@@ -45,25 +48,19 @@ bspc rule -a vlc state=floating
 bspc rule -a Wine state=tiled
 bspc rule -a QjackCtl state=floating
 
-WALLPAPER=$HOME/.config/bspwm/wallpaper
-feh --no-fehbg --bg-max \
-  "$(find $WALLPAPER |shuf -n1)" \
-  "$(find $WALLPAPER |shuf -n1)" \
-  "$(find $WALLPAPER |shuf -n1)"
-
-# screensaver & lock
-if ! pgrep xscreensaver > /dev/null; then
-  echo "Launching xscreensaver"
-  xscreensaver -no-splash &
-fi
-
-## panel
+## Launch panel
 if ! pgrep polybar > /dev/null; then
   echo "Launching polybar"
   $HOME/.config/polybar/launch.sh
 fi
 
-## autorun
+## Launch screensaver
+if ! pgrep xscreensaver > /dev/null; then
+  echo "Launching xscreensaver"
+  xscreensaver -no-splash &
+fi
+
+## Launch autorun
 sleep 2s
 autorun=(qjackctl \
          blueman-applet)
