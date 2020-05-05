@@ -50,3 +50,13 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 autocmd BufWritePre * %s/\s\+$//e
 
+" functions
+function! s:DiffWithSaved()
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
+

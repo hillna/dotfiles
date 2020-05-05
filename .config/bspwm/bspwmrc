@@ -46,7 +46,7 @@ bspc rule -a Wine state=tiled
 bspc rule -a QjackCtl state=floating
 
 WALLPAPER=$HOME/.config/bspwm/wallpaper
-feh --no-fehbg --bg-max --no-xinerama \
+feh --no-fehbg --bg-max \
   "$(find $WALLPAPER |shuf -n1)" \
   "$(find $WALLPAPER |shuf -n1)" \
   "$(find $WALLPAPER |shuf -n1)"
