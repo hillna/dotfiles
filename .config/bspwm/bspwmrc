@@ -21,12 +21,13 @@ bspc config remove_disabled_monitors        true
 bspc config remove_unplugged_monitors       true
 
 ## Show connected monitors: `xrandr -q`
-bspc monitor DisplayPort-1 -d 1 2 3
-bspc monitor DisplayPort-0 -d 4 5 6 7
-bspc monitor HDMI-A-0 -d 8 9 0
-
-## xps13
-bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0
+if [ -f /etc/xps13 ]; then
+  bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0
+else
+  bspc monitor DisplayPort-1 -d 1 2 3
+  bspc monitor DisplayPort-0 -d 4 5 6 7
+  bspc monitor HDMI-A-0 -d 8 9 0
+fi
 
 # xprop | grep WM_CLASS
 bspc config external_rules_command ~/.config/bspwm/external-rules.sh
@@ -68,8 +69,8 @@ autorun=(qjackctl \
          blueman-applet)
 
 for exec in ${autorun[@]}; do
-  echo "Launching $exec"
   if ! pgrep $exec > /dev/null; then
+    echo "Launching $exec"
     $exec &
   fi
 done

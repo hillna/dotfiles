@@ -15,8 +15,7 @@ export POWERLINE_CONFIG_COMMAND=$HOME/.local/bin/powerline-config
 xset +fp ~/.fonts
 
 # set configs
-if [ -f /etc/xps13 ]
-then
+if [ -f /etc/xps13 ]; then
     setxkbmap -layout us -option ctrl:nocaps
     ln -s ~/.config/termite/config.xps13 ~/.config/termite/config
     ln -s ~/.config/alacritty/alacritty.xps13 ~/.config/alacritty/alacritty.yml
