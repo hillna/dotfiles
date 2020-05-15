@@ -1,0 +1,2 @@
+#!/bin/bash
+maim $1 ~/$(date +%Y-%m-%d-%H%M%S)_maim.png
