@@ -1,2 +1,2 @@
 #!/bin/bash
-maim $1 ~/$(date +%Y-%m-%d-%H%M%S)_maim.png
+maim $1 ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
