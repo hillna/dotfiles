@@ -20,6 +20,7 @@ Plug 'saltstack/salt-vim'
 Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Konfekt/vim-alias'
 
 " ncm2
 if has('nvim')
