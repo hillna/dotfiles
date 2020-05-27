@@ -17,27 +17,57 @@ Plug 'tpope/vim-git'
 Plug 'nvie/vim-flake8'
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'saltstack/salt-vim'
+Plug 'lervag/vimtex'
+Plug 'preservim/nerdtree'
+
+" ncm2
+if has('nvim')
+  Plug 'ncm2/ncm2'
+  Plug 'roxma/nvim-yarp'
+  Plug 'ncm2/ncm2-bufword'
+  Plug 'ncm2/ncm2-path'
+  Plug 'ncm2/ncm2-github'
+  Plug 'ncm2/ncm2-tmux'
+  Plug 'ncm2/ncm2-syntax'
+  Plug 'ncm2/ncm2-jedi'
+  Plug 'ncm2/ncm2-vim'
+  Plug 'ncm2/ncm2-go'
+  Plug 'pbogut/ncm2-alchemist'
+  Plug 'ncm2/ncm2-match-highlight'
+endif
 
 " deoplete
-if has('nvim')
+"if has('nvim')
 "  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'fszymanski/deoplete-emoji'
-Plug 'zchee/deoplete-jedi'
+"else
+"  Plug 'Shougo/deoplete.nvim'
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
+"endif
+"Plug 'fszymanski/deoplete-emoji'
+"Plug 'zchee/deoplete-jedi'
 
 call plug#end()
+
+" ncm2 settings
+if has('nvim')
+  " enable ncm2 for all buffers
+  autocmd BufEnter * call ncm2#enable_for_buffer()
+  " IMPORTANT: :help Ncm2PopupOpen for more information
+  set completeopt=noinsert,menuone,noselect
+  let g:ncm2#match_highlight = 'bold'
+  let g:ncm2#match_highlight = 'sans-serif'
+  let g:ncm2#match_highlight = 'sans-serif-bold'
+  let g:ncm2#match_highlight = 'mono-space'
+endif
+
+" deoplete settings
+"let g:deoplete#enable_at_startup = 1
 
 syntax enable
 let g:solarized_termtrans = 1
 colorscheme solarized
 filetype plugin indent on
-
-" deoplete settings
-let g:deoplete#enable_at_startup = 1
 
 set background=dark
 
