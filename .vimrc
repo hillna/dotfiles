@@ -19,6 +19,7 @@ Plug 'kovetskiy/sxhkd-vim'
 Plug 'saltstack/salt-vim'
 Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " ncm2
 if has('nvim')
