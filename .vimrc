@@ -30,12 +30,15 @@ if has('nvim')
   Plug 'ncm2/ncm2-path'
   Plug 'ncm2/ncm2-github'
   Plug 'ncm2/ncm2-tmux'
+  Plug 'Shougo/neco-syntax'
   Plug 'ncm2/ncm2-syntax'
   Plug 'ncm2/ncm2-jedi'
+  Plug 'Shougo/neco-vim'
   Plug 'ncm2/ncm2-vim'
   Plug 'ncm2/ncm2-go'
   Plug 'pbogut/ncm2-alchemist'
   Plug 'ncm2/ncm2-match-highlight'
+  Plug 'ncm2/ncm2-yoink'
 endif
 
 " deoplete
