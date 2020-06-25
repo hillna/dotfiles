@@ -3,6 +3,9 @@ filetype off                  " required
 set encoding=utf-8
 
 set number                    " line numbers
+"set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+set listchars=tab:→\ ,space:·,nbsp:␣,trail:•
+set list
 " set paste
 " set mouse=a
 
