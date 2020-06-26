@@ -51,13 +51,13 @@ bspc rule -a vlc state=floating
 
 
 ## Launch panel
-if [[ ! $(pgrep polybar) ]]; then
+if [[ ! $(pgrep -x polybar) ]]; then
   echo "Launching polybar"
   $HOME/.config/polybar/launch.sh
 fi
 
 ## Launch screensaver
-if [[ ! $(pgrep xscreensaver) ]]; then
+if [[ ! $(pgrep -x xscreensaver) ]]; then
   echo "Launching xscreensaver"
   xscreensaver -no-splash &
 fi
