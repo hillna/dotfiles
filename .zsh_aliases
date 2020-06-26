@@ -1,54 +1,49 @@
 # . $HOME/.zsh_aliases
 
 # Alises
+alias batt="upower -i $(upower -e |grep 'BAT')"
+alias chrome='google-chrome-beta'
+alias grin='grep -rinsI'
 alias ll="ls -l"
 alias py="python"
 alias p="py"
 alias sleepnow="pmset sleepnow"
 alias steam-wine='wine ~/.wine/drive_c/steam/Steam.exe -no-cef-sandbox -no-dwrite >/dev/null 2>&1 &'
-alias chrome='google-chrome-beta'
+alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
 alias tmuxs="tmux list-sessions"
 alias tmuxa="tmux attach-session -t"
 alias vim="nvim"
-alias grin='grep -rinsI'
-alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
-alias batt="upower -i $(upower -e |grep 'BAT')"
+
+# wttr.in Weather Aliases
+alias weather="curl wttr.in/$1"
+alias forecast="curl v2.wttr.in/$1"
 
 # Gcloud Aliases
-alias gssh="gcloud compute ssh"
-alias gsshm="gcloud compute ssh --internal-ip --project=olark-main"
-alias gsshp="gcloud compute ssh --internal-ip --project=olark-prod"
-alias gsshs="gcloud compute ssh --internal-ip --project=olark-staging"
-alias gsshc="gcloud compute ssh --internal-ip --project=olark-core"
 alias gscp="gcloud compute scp"
+alias gscpc="gcloud compute scp --internal-ip --project=olark-core"
 alias gscpm="gcloud compute scp --internal-ip --project=olark-main"
 alias gscpp="gcloud compute scp --internal-ip --project=olark-prod"
 alias gscps="gcloud compute scp --internal-ip --project=olark-staging"
-alias gscpc="gcloud compute scp --internal-ip --project=olark-core"
+alias gssh="gcloud compute ssh"
+alias gsshc="gcloud compute ssh --internal-ip --project=olark-core"
+alias gsshm="gcloud compute ssh --internal-ip --project=olark-main"
+alias gsshp="gcloud compute ssh --internal-ip --project=olark-prod"
+alias gsshs="gcloud compute ssh --internal-ip --project=olark-staging"
 
-
-# python2 aliases
-#if [ $(uname |grep Linux) ] ; then
-#    alias python="python2"
-#    alias pip="pip2"
-#    alias python-config="python2-config"
-#    alias virtualenv="virtualenv2"
-#fi
-
-# mpc aliases
-alias play="mpc play"
-alias pause="mpc pause"
+# MPC Aliases
 alias next="mpc next"
+alias pause="mpc pause"
+alias play="mpc play"
 alias prev="mpc prev"
 
 # Git Aliases
+alias gcommit="git commit -a"
 alias gpullr="git pull --rebase origin master"
 alias gpush="gpullr && git push origin master"
-alias gstatus="git status"
-alias gcommit="git commit -a"
 alias gref="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
+alias gstatus="git status"
 
-# Kubectl aliases
+# Kubectl Aliases
 alias ip2pod='kubectl get pods --all-namespaces -o=custom-columns=NAME:.metadata.name,PODIP:.status.podIP | grep $1'
 
 eval $(thefuck --alias)
