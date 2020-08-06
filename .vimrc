@@ -24,6 +24,7 @@ Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Konfekt/vim-alias'
+Plug 'zhaocai/GoldenView'
 
 " ncm2
 if has('nvim')
