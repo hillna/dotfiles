@@ -17,8 +17,11 @@ super + F2
   scrot -s
 
 # program launcher
-super + {_,shift +}r
-  rofi -show {run,window} -terminal termite
+super + r
+  rofi -combi-modi drun,run -show combi -modi combi -show-icons
+
+super + shift + r
+  rofi -show window -show-icons
 
 super + e
   firefox
@@ -172,10 +175,10 @@ super + {_,shift} + n
 
 # audio controls
 XF86AudioMute
-  pactl set-sink-mute 0 toggle
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86Audio{Lower,Raise}Volume
-  pactl set-sink-mute 0 false; \\
+  pactl set-sink-mute @DEFAULT_SINK@ false; \\
   pactl set-sink-volume 0 {-,+}5%
 
 XF86Audio{Prev,Next}
