@@ -9,7 +9,7 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 # Launch bars
 if [ -f /etc/xps13 ]
 then
-    polybar main-xps13 & disown
+    polybar -r main-xps13 & disown
 else
     polybar -r main & disown
     polybar -r left & disown
