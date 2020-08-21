@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 if [ $(pgrep -cx polybar) -gt 0 ] ; then
-    pkill polybar &
+    pkill polybar
     bspc config top_padding 0
 else
     $HOME/.config/polybar/launch.sh
