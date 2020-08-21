@@ -7,8 +7,9 @@ pkill polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch bars
-if [ -f /etc/xps13 ]
-then
+bspc config top_padding 22
+
+if [ -f /etc/xps13 ]; then
     polybar -r main-xps13 & disown
 else
     polybar -r main & disown
