@@ -18,7 +18,11 @@ super + F2
 
 # program launcher
 super + r
-  rofi -combi-modi drun,run -show combi -modi combi -show-icons
+# rofi -combi-modi drun,run -show combi -modi run -show-icons
+  rofi -modi drun,run -show drun -show-icons
+
+super + ctrl + r
+  rofi -show run
 
 super + shift + r
   rofi -show window -show-icons
