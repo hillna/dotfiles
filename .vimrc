@@ -78,6 +78,8 @@ let g:solarized_termtrans = 1
 colorscheme solarized
 filetype plugin indent on
 
+let g:tex_flavor = 'latex'
+
 set background=dark
 
 set laststatus=2
