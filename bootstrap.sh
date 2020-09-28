@@ -10,8 +10,8 @@ if [ ! -d $HOME/.zprezto ]; then
 fi
 
 # Powerline & modules
-if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerline ]; then
-    pip2 install --user powerline-status
+if [ ! -d $HOME/.local/lib/python3.8/site-packages/powerline ]; then
+    pip install --user powerline-status
 fi
 
 # Original Powerkube: https://github.com/zcmarine/powerkube
