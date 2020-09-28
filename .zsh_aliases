@@ -18,18 +18,6 @@ alias vim="nvim"
 alias weather="curl wttr.in/$1"
 alias forecast="curl v2.wttr.in/$1"
 
-# Gcloud Aliases
-alias gscp="gcloud compute scp"
-alias gscpc="gcloud compute scp --internal-ip --project=olark-core"
-alias gscpm="gcloud compute scp --internal-ip --project=olark-main"
-alias gscpp="gcloud compute scp --internal-ip --project=olark-prod"
-alias gscps="gcloud compute scp --internal-ip --project=olark-staging"
-alias gssh="gcloud compute ssh"
-alias gsshc="gcloud compute ssh --internal-ip --project=olark-core"
-alias gsshm="gcloud compute ssh --internal-ip --project=olark-main"
-alias gsshp="gcloud compute ssh --internal-ip --project=olark-prod"
-alias gsshs="gcloud compute ssh --internal-ip --project=olark-staging"
-
 # MPC Aliases
 alias next="mpc next"
 alias pause="mpc pause"
