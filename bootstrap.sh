@@ -29,10 +29,10 @@ vim +'PlugInstall --sync' +qa
 nvim +'PlugInstall --sync' +qa
 nvim +'UpdateRemotePlugins' +qa
 
-if [ ! -d $HOME/.vim/plugged/deoplete-jedi/rplugin/python3/deoplete/vendored/jedi ]; then
-    cd $HOME/.vim/plugged/deoplete-jedi && \
-    git submodule update --init
-fi
+#if [ ! -d $HOME/.vim/plugged/deoplete-jedi/rplugin/python3/deoplete/vendored/jedi ]; then
+#    cd $HOME/.vim/plugged/deoplete-jedi && \
+#    git submodule update --init
+#fi
 
 echo "Bootstrap completed!"
 
