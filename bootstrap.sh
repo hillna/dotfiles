@@ -16,9 +16,9 @@ fi
 
 # Original Powerkube: https://github.com/zcmarine/powerkube
 # Fixed import: https://github.com/rarguelloF/powerkube/tree/fix-kubernetes-import
-if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerkube ]; then
-    pip2 install --user git+https://@github.com/rarguelloF/powerkube.git@fix-kubernetes-import
-fi
+#if [ ! -d $HOME/.local/lib/python2.7/site-packages/powerkube ]; then
+#    pip2 install --user git+https://@github.com/rarguelloF/powerkube.git@fix-kubernetes-import
+#fi
 
 # vim plugins
 if [ ! -f $HOME/.vim/autoload/plug.vim ]; then
