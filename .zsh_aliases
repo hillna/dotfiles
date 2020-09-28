@@ -1,7 +1,7 @@
 # . $HOME/.zsh_aliases
 
 # Alises
-alias batt="upower -i $(upower -e |grep 'BAT')"
+#alias batt="upower -i $(upower -e |grep 'BAT')"
 alias chrome='google-chrome-beta'
 alias grin='grep -rinsI'
 alias ll="ls -l"
