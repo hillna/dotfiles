@@ -19,8 +19,6 @@ export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-source /usr/share/nvm/init-nvm.sh
-
 # ssh-agent config
 if [ $(uname |grep Linux) ] ; then
     eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
