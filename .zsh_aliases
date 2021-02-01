@@ -13,10 +13,11 @@ alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
 alias tmuxs="tmux list-sessions"
 alias tmuxa="tmux attach-session -t"
 alias vim="nvim"
+alias echopath="echo $PATH |sed -e 's/:/\n/g'"
 
 # wttr.in Weather Aliases
-alias weather="curl wttr.in/$1"
-alias forecast="curl v2.wttr.in/$1"
+#alias weather="curl -s 'wttr.in/$1' |grep -v Follow"
+#alias forecast="curl -s 'v2.wttr.in/$1' |grep -v Follow"
 
 # MPC Aliases
 alias next="mpc next"
