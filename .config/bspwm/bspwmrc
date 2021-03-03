@@ -9,6 +9,10 @@ fi
 xsetroot -cursor_name left_ptr
 feh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/wallpaper
 
+if [ ! -f /etc/xps13 ]; then
+  $HOME/.screenlayout/triptic.sh
+fi
+
 ## Bspwm config
 bspc config border_width        2
 bspc config window_gap          8
