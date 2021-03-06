@@ -55,8 +55,6 @@ source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 . $HOME/.shellrc.load
 
-eval $(thefuck --alias)
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/hilln/downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hilln/downloads/google-cloud-sdk/path.zsh.inc'; fi
 
