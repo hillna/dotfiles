@@ -35,4 +35,3 @@ alias gstatus="git status"
 # Kubectl Aliases
 alias ip2pod='kubectl get pods --all-namespaces -o=custom-columns=NAME:.metadata.name,PODIP:.status.podIP | grep $1'
 
-eval $(thefuck --alias)
