@@ -4,6 +4,7 @@
 .config/gtk-3.0/bookmarks
 .config/termite/config
 .config/alacritty/alacritty.yml
+.DS_Store
 .fonts/.uuid
 .keys
 .ncmpcpp/error.log
