@@ -10,8 +10,14 @@ if [ ! -d $HOME/.zprezto ]; then
 fi
 
 # Powerline & modules
-if [ ! -d $HOME/.local/lib/python3.8/site-packages/powerline ]; then
-    pip install --user powerline-status
+if [ $(uname | grep Darwin) ]: then
+  if [ ! -d /usr/local/lib/python3.9/site-packages/powerline ]; then
+    pip3 install powerline-status
+  fi
+else
+  if [ ! -d $HOME/.local/lib/python3.8/site-packages/powerline ]; then
+    pip3 install --user powerline-status
+  fi
 fi
 
 # Original Powerkube: https://github.com/zcmarine/powerkube
