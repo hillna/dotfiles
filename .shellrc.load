@@ -25,3 +25,7 @@ if [ $(uname |grep Linux) ] ; then
     eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 fi
 
+# work specific shell rc
+if [ -f ~/.shellrc.work ]; then
+    source ~/.shellrc.work
+fi
