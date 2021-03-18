@@ -13,6 +13,7 @@ export WINEDEBUG=-all
 # Paths
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 export GOPATH=$HOME/dev/golang
+export PATH=$GOPATH/bin:$PATH
 export PATH=$PATH:/opt/ec2-api-tools/bin
 
 #export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin

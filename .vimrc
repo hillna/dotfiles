@@ -24,7 +24,8 @@ Plug 'lervag/vimtex'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Konfekt/vim-alias'
-Plug 'zhaocai/GoldenView'
+Plug 'zhaocai/GoldenView.Vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " ncm2
 if has('nvim')
@@ -42,7 +43,7 @@ if has('nvim')
   Plug 'ncm2/ncm2-go'
   Plug 'pbogut/ncm2-alchemist'
   Plug 'ncm2/ncm2-match-highlight'
-  Plug 'ncm2/ncm2-yoink'
+  "Plug 'svermeulen/ncm2-yoink'
 endif
 
 " deoplete

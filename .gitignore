@@ -12,3 +12,4 @@
 .jack/sessions/*
 .jack/snapshots/*
 .jack/qjackctl.log
+.shellrc.work
