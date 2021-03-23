@@ -10,7 +10,7 @@ if [ ! -d $HOME/.zprezto ]; then
 fi
 
 # Powerline & modules
-if [ $(uname | grep Darwin) ]: then
+if [ $(uname | grep Darwin) ]; then
   if [ ! -d /usr/local/lib/python3.9/site-packages/powerline ]; then
     pip3 install powerline-status
   fi

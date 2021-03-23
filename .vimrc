@@ -40,7 +40,7 @@ if has('nvim')
   Plug 'ncm2/ncm2-jedi'
   Plug 'Shougo/neco-vim'
   Plug 'ncm2/ncm2-vim'
-  Plug 'ncm2/ncm2-go'
+  "Plug 'ncm2/ncm2-go'
   Plug 'pbogut/ncm2-alchemist'
   Plug 'ncm2/ncm2-match-highlight'
   "Plug 'svermeulen/ncm2-yoink'
@@ -73,6 +73,10 @@ endif
 
 " deoplete settings
 "let g:deoplete#enable_at_startup = 1
+
+" vim-go settings
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 syntax enable
 let g:solarized_termtrans = 1
