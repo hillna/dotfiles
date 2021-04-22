@@ -6,6 +6,7 @@
 [core]
     excludesfile = /Users/hilln/.gitignore_global
     editor = nvim
+	pager = less -x1,5
 [pull]
     rebase = false
 [push]
