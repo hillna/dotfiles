@@ -1,5 +1,5 @@
 [user]
-    name = Nick Hill
+    name = Nicholas Hill
     signingkey = C3B90971
     email = nick@nickh.info
 
@@ -29,3 +29,5 @@
     tool = meld
 [color]
     ui = auto
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com
