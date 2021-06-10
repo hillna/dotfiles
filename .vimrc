@@ -26,6 +26,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Konfekt/vim-alias'
 Plug 'zhaocai/GoldenView.Vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'hashivim/vim-terraform'
 
 " ncm2
 if has('nvim')
@@ -78,6 +79,13 @@ endif
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_fmt_command='goimports'
+
+" vim-terraform settings
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_remap_spacebar=1
+let g:terraform_fmt_on_save=1
+autocmd FileType terraform setlocal commentstring=#%s
 
 syntax enable
 let g:solarized_termtrans = 1
