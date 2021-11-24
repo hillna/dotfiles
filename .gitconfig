@@ -2,6 +2,7 @@
     name = Nicholas Hill
     signingkey = C3B90971
     email = nick@nickh.info
+    name = hillna
 
 [core]
     excludesfile = /Users/hilln/.gitignore_global
@@ -30,4 +31,4 @@
 [color]
     ui = auto
 [url "git@gitlab.com:"]
-	insteadOf = https://gitlab.com
+    insteadOf = https://gitlab.com

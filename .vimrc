@@ -27,6 +27,7 @@ Plug 'Konfekt/vim-alias'
 Plug 'zhaocai/GoldenView.Vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
+Plug 'saltstack/salt-vim'
 
 " ncm2
 if has('nvim')
