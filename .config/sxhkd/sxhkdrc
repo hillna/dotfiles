@@ -14,11 +14,11 @@ super + shift + Return
 ### screenshots
 # Capture Window
 super + shift + 3
-  maim -i $(xdotool getactivewindow) ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
+  maim ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
 
 # Copy Window
-super + shift + 3
-  maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+super + ctrl + shift + 3
+  maim | xclip -selection clipboard -t image/png
 
 # Capture Selection
 super + shift + 4
