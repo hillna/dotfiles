@@ -11,10 +11,24 @@ super + shift + Return
 #  termite
   alacritty
 
-# screenshot
-super + F2
-#        scrot -s -e 'mv $f ~/shots'
-  scrot -s
+### screenshots
+# Capture Window
+super + shift + 3
+  maim ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
+
+# Copy Window
+super + ctrl + shift + 3
+  maim | xclip -selection clipboard -t image/png
+
+# Capture Selection
+super + shift + 4
+  maim -s ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
+
+# Copy Selection
+super + ctrl + shift + 4
+  maim -s | xclip -selection clipboard -t image/png
+
+###
 
 # program launcher
 super + r
