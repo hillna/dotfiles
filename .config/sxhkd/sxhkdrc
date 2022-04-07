@@ -13,19 +13,19 @@ super + shift + Return
 
 ### screenshots
 # Capture Window
-super + shift + 3
+super + shift + F3
   maim ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
 
 # Copy Window
-super + ctrl + shift + 3
+super + ctrl + shift + F3
   maim | xclip -selection clipboard -t image/png
 
 # Capture Selection
-super + shift + 4
+super + shift + F4
   maim -s ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
 
 # Copy Selection
-super + ctrl + shift + 4
+super + ctrl + shift + F4
   maim -s | xclip -selection clipboard -t image/png
 
 ###
