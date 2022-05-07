@@ -287,8 +287,8 @@ full-at = 98
 battery = BAT0
 adapter = ADP1
 
-format-charging = <animation-charging>
-format-discharging = <ramp-capacity>
+format-charging = <animation-charging><label-charging>
+format-discharging = <ramp-capacity><label-charging>
 format-full = <label-full>
 label-full = 
 
