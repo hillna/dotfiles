@@ -8,7 +8,7 @@ fi
 ## Theme
 xsetroot -cursor_name left_ptr
 #feh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/wallpaper
-feh --no-fehbg --bg-fill $HOME/.config/bspwm/wallpaper/The_First.jpg
+feh --no-fehbg --bg-fill $HOME/.config/bspwm/wallpaper/set-wallpaper
 
 if [ ! -f /etc/xps13 ]; then
   $HOME/.screenlayout/triptic.sh
