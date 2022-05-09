@@ -112,6 +112,18 @@ super + q; r
     $HOME/bin/tabc $tabbed remove $child
 
 #
+# hide/show
+#
+
+# hide window
+super + v
+  bspc node -g hidden
+
+# unhide window
+super + shift + v
+  bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+
+#
 # focus/swap
 #
 
