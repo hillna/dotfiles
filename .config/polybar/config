@@ -219,7 +219,7 @@ type = internal/date
 format-foreground = #8A8A8A
 label = %date%  %time%
 date =  %m-%d
-date-alt = %A
+date-alt =  %A
 time = %H:%M
 time-alt = %H:%M
 interval = 1
@@ -287,8 +287,8 @@ full-at = 98
 battery = BAT0
 adapter = ADP1
 
-format-charging = <animation-charging>
-format-discharging = <ramp-capacity>
+format-charging = <animation-charging><label-charging>
+format-discharging = <ramp-capacity><label-charging>
 format-full = <label-full>
 label-full = 
 
