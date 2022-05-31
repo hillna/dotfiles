@@ -11,7 +11,7 @@
 [pull]
     rebase = false
 [push]
-    default = matching
+    default = simple
 [commit]
     gpgsign = false
 
