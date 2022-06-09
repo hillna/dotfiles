@@ -11,42 +11,44 @@ set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:�
 
 " vim-plug settings
 call plug#begin()
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'rodjek/vim-puppet'
-Plug 'altercation/vim-colors-solarized'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-git'
-Plug 'nvie/vim-flake8'
-Plug 'kovetskiy/sxhkd-vim'
-Plug 'saltstack/salt-vim'
-Plug 'lervag/vimtex'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'jpalardy/vim-slime'
 Plug 'Konfekt/vim-alias'
-Plug 'zhaocai/GoldenView.Vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'altercation/vim-colors-solarized'
+Plug 'b4b4r07/vim-hcl'
+Plug 'bling/vim-airline'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
-Plug 'b4b4r07/vim-hcl'
+Plug 'kovetskiy/sxhkd-vim'
+Plug 'lervag/vimtex'
+Plug 'nvie/vim-flake8'
+Plug 'preservim/nerdtree'
+Plug 'rodjek/vim-puppet'
 Plug 'saltstack/salt-vim'
+Plug 'saltstack/salt-vim'
+Plug 'stevearc/vim-arduino'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'zhaocai/GoldenView.Vim'
 
 " ncm2
 if has('nvim')
-  Plug 'ncm2/ncm2'
-  Plug 'roxma/nvim-yarp'
-  Plug 'ncm2/ncm2-bufword'
-  Plug 'ncm2/ncm2-path'
-  Plug 'ncm2/ncm2-github'
-  Plug 'ncm2/ncm2-tmux'
-  Plug 'Shougo/neco-syntax'
-  Plug 'ncm2/ncm2-syntax'
-  Plug 'ncm2/ncm2-jedi'
-  Plug 'Shougo/neco-vim'
-  Plug 'ncm2/ncm2-vim'
   "Plug 'ncm2/ncm2-go'
-  Plug 'pbogut/ncm2-alchemist'
-  Plug 'ncm2/ncm2-match-highlight'
   "Plug 'svermeulen/ncm2-yoink'
+  Plug 'Shougo/neco-syntax'
+  Plug 'Shougo/neco-vim'
+  Plug 'ncm2/ncm2'
+  Plug 'ncm2/ncm2-bufword'
+  Plug 'ncm2/ncm2-github'
+  Plug 'ncm2/ncm2-jedi'
+  Plug 'ncm2/ncm2-match-highlight'
+  Plug 'ncm2/ncm2-path'
+  Plug 'ncm2/ncm2-syntax'
+  Plug 'ncm2/ncm2-tmux'
+  Plug 'ncm2/ncm2-vim'
+  Plug 'pbogut/ncm2-alchemist'
+  Plug 'roxma/nvim-yarp'
 endif
 
 " deoplete
@@ -88,6 +90,9 @@ let g:terraform_align=1
 " let g:terraform_remap_spacebar=1
 let g:terraform_fmt_on_save=1
 autocmd FileType terraform setlocal commentstring=#%s
+
+" vim-arduino settings
+
 
 syntax enable
 let g:solarized_termtrans = 1
