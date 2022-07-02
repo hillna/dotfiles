@@ -79,3 +79,7 @@ for exec in ${autorun[@]}; do
   fi
 done
 
+if [ i $(pgrep ibus) ]; then
+  ibus-daemon -drxR
+fi
+
