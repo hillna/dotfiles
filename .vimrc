@@ -32,6 +32,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zhaocai/GoldenView.Vim'
+Plug 'APZelos/blamer.nvim'
 
 " ncm2
 if has('nvim')
@@ -52,17 +53,6 @@ if has('nvim')
   Plug 'roxma/nvim-yarp'
 endif
 
-" deoplete
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-"Plug 'fszymanski/deoplete-emoji'
-"Plug 'zchee/deoplete-jedi'
-
 call plug#end()
 
 " ncm2 settings
@@ -77,8 +67,10 @@ if has('nvim')
   let g:ncm2#match_highlight = 'mono-space'
 endif
 
-" deoplete settings
-"let g:deoplete#enable_at_startup = 1
+" Git Blamer settings
+let g:blamer_enabled = 1
+let g:blamer_delay = 1000
+let g:blamer_show_in_visual_modes = 0
 
 " vim-go settings
 let g:go_def_mode='gopls'
