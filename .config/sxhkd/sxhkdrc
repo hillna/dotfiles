@@ -12,6 +12,14 @@ super + shift + Return
   alacritty
 
 ### screenshots
+# Capture Window
+super + shift + F2
+  maim -B -i "$(xdotool getactivewindow)" ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
+
+# Copy window
+super + shift + ctrl + F2
+  maim -B -i "$(xdotool getactivewindow)" | xclip -selection clipboard -t image/png
+
 # Capture All
 super + shift + F3
   maim ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
@@ -19,10 +27,6 @@ super + shift + F3
 # Copy All
 super + ctrl + shift + F3
   maim | xclip -selection clipboard -t image/png
-
-# Capture Window
-
-# Copy window
 
 # Capture Selection
 super + shift + F4
