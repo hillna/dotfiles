@@ -12,13 +12,17 @@ super + shift + Return
   alacritty
 
 ### screenshots
-# Capture Window
+# Capture All
 super + shift + F3
   maim ~/shots/$(date +%Y-%m-%d-%H%M%S)_maim.png
 
-# Copy Window
+# Copy All
 super + ctrl + shift + F3
   maim | xclip -selection clipboard -t image/png
+
+# Capture Window
+
+# Copy window
 
 # Capture Selection
 super + shift + F4
