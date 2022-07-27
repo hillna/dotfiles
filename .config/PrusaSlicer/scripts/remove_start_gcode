@@ -1,4 +1,16 @@
 #!/bin/bash
 
-#sed -i '12,19d' "$1"
-sed -i '21,28d' "$1"
+### Original Prusa slicer code removal
+# M201 X9000 Y9000 Z500 E10000 ; sets maximum accelerations, mm/sec^2
+# M203 X300 Y300 Z12 E120 ; sets maximum feedrates, mm / sec
+# M204 P3000 R3000 T1500 ; sets acceleration (P, T) and retract acceleration (R), mm/sec^2
+# M205 X0.00 Y0.00 Z0.00 E0.00 ; sets the jerk limits, mm/sec
+# M205 S0 T0 ; sets the minimum extruding and travel feed rate, mm/sec
+# M107
+# M190 S55 ; set bed temperature and wait for it to be reached
+# M104 S200 ; set temperature
+
+sed -i '12,19d' "$1"
+
+# Updated at some point? Broken now.
+#sed -i '21,28d' "$1"
