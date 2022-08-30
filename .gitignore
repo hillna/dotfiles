@@ -21,8 +21,16 @@
 
 
 .config/PrusaSlicer
+!.config/PrusaSlicer/PrusaSlicer.ini
 !.config/PrusaSlicer/filament
 !.config/PrusaSlicer/print
 !.config/PrusaSlicer/printer
 !.config/PrusaSlicer/scripts
+
+.config/SuperSlicer
+!.config/SuperSlicer/SuperSlicer.ini
+!.config/SuperSlicer/filament
+!.config/SuperSlicer/print
+!.config/SuperSlicer/printer
+!.config/SuperSlicer/scripts
 
