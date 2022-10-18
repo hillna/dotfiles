@@ -12,6 +12,7 @@ set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:�
 " vim-plug settings
 call plug#begin()
 " Plug 'jpalardy/vim-slime'
+Plug 'APZelos/blamer.nvim'
 Plug 'Konfekt/vim-alias'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'altercation/vim-colors-solarized'
@@ -22,6 +23,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'lervag/vimtex'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvie/vim-flake8'
 Plug 'preservim/nerdtree'
 Plug 'rodjek/vim-puppet'
@@ -32,7 +34,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zhaocai/GoldenView.Vim'
-Plug 'APZelos/blamer.nvim'
 
 " ncm2
 if has('nvim')
@@ -72,6 +73,7 @@ let g:blamer_enabled = 1
 let g:blamer_delay = 1000
 let g:blamer_show_in_visual_modes = 0
 let g:blamer_date_format = '%Y-%m-%dT%H:%M:%S%z'
+let g:blamer_template = '<committer>, <committer-time> • <summary> • <commit-short>'
 
 " vim-go settings
 let g:go_def_mode='gopls'

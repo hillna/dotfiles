@@ -25,7 +25,26 @@ if [ $(uname |grep Linux) ] ; then
     eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 fi
 
+# tab stops config
+tabs 4
+
+## Experiment for automatic tab stops, fails with "max tab stops 20"
+## https://stackoverflow.com/questions/10782699/how-to-set-4-space-tab-in-bash
+#tab_width=4
+#terminal_width=$( stty size | awk '{print $2}' )
+
+#set_tab_stops() {
+#    local tab_width=$1 terminal_width=$2 tab_stops=''
+#    for (( i=1+$tab_width; $i<$terminal_width; i+=$tab_width )); do
+#        tab_stops+=$i','
+#    done
+#    tabs $tab_stops
+#}
+
+#set_tab_stops $tab_width $terminal_width
+
 # work specific shell rc
 if [ -f ~/.shellrc.work ]; then
     source ~/.shellrc.work
 fi
+
