@@ -28,7 +28,6 @@
 !.config/PrusaSlicer/scripts
 
 .config/SuperSlicer/*
-!.config/SuperSlicer/SuperSlicer.ini
 !.config/SuperSlicer/filament
 !.config/SuperSlicer/print
 !.config/SuperSlicer/printer
