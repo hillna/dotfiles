@@ -1,8 +1,8 @@
 . $HOME/.zsh_aliases
 
 # Load Wal colorscheme
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+# (cat ~/.cache/wal/sequences &)
+# source ~/.cache/wal/colors-tty.sh
 
 # ENV Variables
 export AWS_CONFIG_FILE=~/.awsconfig

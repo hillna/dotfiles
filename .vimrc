@@ -93,8 +93,8 @@ autocmd FileType terraform setlocal commentstring=#%s
 
 syntax enable
 let g:solarized_termtrans = 1
-" colorscheme solarized
-colorscheme wal
+colorscheme solarized
+" colorscheme wal
 filetype plugin indent on
 
 let g:tex_flavor = 'latex'

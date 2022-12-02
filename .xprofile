@@ -34,7 +34,7 @@ else
 fi
 
 # Color scheme
-wal -R
+# wal -R
 
 # compositing
 $HOME/bin/compmgr --start
