@@ -33,6 +33,8 @@ else
     ln -s ~/.config/alacritty/alacritty.default ~/.config/alacritty/alacritty.yml
 fi
 
+# Color scheme
+wal -R
 
 # compositing
 $HOME/bin/compmgr --start

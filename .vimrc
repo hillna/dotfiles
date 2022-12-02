@@ -18,6 +18,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'altercation/vim-colors-solarized'
 Plug 'b4b4r07/vim-hcl'
 Plug 'bling/vim-airline'
+Plug 'dylanaraps/wal.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -92,7 +93,8 @@ autocmd FileType terraform setlocal commentstring=#%s
 
 syntax enable
 let g:solarized_termtrans = 1
-colorscheme solarized
+" colorscheme solarized
+colorscheme wal
 filetype plugin indent on
 
 let g:tex_flavor = 'latex'
