@@ -1,36 +1,39 @@
 # . $HOME/.zsh_aliases
 
 # Alises
-#alias batt="upower -i $(upower -e |grep 'BAT')"
+#alias batt='upower -i $(upower -e |grep 'BAT')'
 alias chrome='google-chrome-beta'
 alias grin='grep -rinsI'
-alias ll="ls -l"
-alias py="python"
-alias p="py"
-alias sleepnow="pmset sleepnow"
+alias ll='ls -l'
+alias py='python'
+alias p='py'
+alias sleepnow='pmset sleepnow'
 alias steam-wine='wine ~/.wine/drive_c/steam/Steam.exe -no-cef-sandbox -no-dwrite >/dev/null 2>&1 &'
-alias tisman="wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less"
-alias tmuxs="tmux list-sessions"
-alias tmuxa="tmux attach-session -t"
-alias vim="nvim"
-alias echopath="echo $PATH |sed -e 's/:/\n/g'"
+alias tisman='wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less'
+alias tmuxs='tmux list-sessions'
+alias tmuxa='tmux attach-session -t'
+alias vim='nvim'
+alias echopath='echo $PATH |sed -e 's/:/\n/g''
 
 # wttr.in Weather Aliases
-#alias weather="curl -s 'wttr.in/$1' |grep -v Follow"
-#alias forecast="curl -s 'v2.wttr.in/$1' |grep -v Follow"
+#alias weather='curl -s 'wttr.in/$1' |grep -v Follow'
+#alias forecast='curl -s 'v2.wttr.in/$1' |grep -v Follow'
 
 # MPC Aliases
-alias next="mpc next"
-alias pause="mpc pause"
-alias play="mpc play"
-alias prev="mpc prev"
+alias next='mpc next'
+alias pause='mpc pause'
+alias play='mpc play'
+alias prev='mpc prev'
 
 # Git Aliases
-alias gcommit="git commit -a"
-alias gpullr="git pull --rebase origin master"
-alias gpush="gpullr && git push origin master"
-alias gref="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
-alias gstatus="git status"
+alias gcommit='git commit -a'
+alias gpullr='git pull --rebase origin master'
+alias gpush='gpullr && git push origin master'
+alias gref='git rev-parse HEAD && git rev-parse HEAD | pbcopy'
+alias gstatus='git status'
+
+# Terraform Aliases
+alias terraform-newdoc='terraform-docs markdown table . > README.md.new'
 
 # Kubectl Aliases
 alias ip2pod='kubectl get pods --all-namespaces -o=custom-columns=NAME:.metadata.name,PODIP:.status.podIP | grep $1'
