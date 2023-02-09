@@ -22,6 +22,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'lervag/vimtex'
 Plug 'lukas-reineke/indent-blankline.nvim'
