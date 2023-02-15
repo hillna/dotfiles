@@ -1,8 +1,7 @@
 [user]
-    name = Nicholas Hill
+    name = Nick Hill
     signingkey = C3B90971
     email = nick@nickh.info
-    name = hillna
 
 [core]
     excludesfile = /Users/hilln/.gitignore_global
@@ -40,3 +39,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+
+[includeIf "gitdir:~/dev/openly/"]
+  path = .gitconfig_work
+
