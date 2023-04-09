@@ -22,6 +22,7 @@ fi
 
 # fonts
 xset +fp ~/.fonts
+#xsetroot -cursor_name left_ptr
 
 # set configs
 if [ -f /etc/xps13 ]; then
