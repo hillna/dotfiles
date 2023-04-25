@@ -33,6 +33,7 @@ alias gref='git rev-parse HEAD && git rev-parse HEAD | pbcopy'
 alias gstatus='git status'
 
 # Terraform Aliases
+alias tf='terraform'
 alias terraform-newdoc='terraform-docs markdown table . > README.md.new'
 
 # Kubectl Aliases
