@@ -3,17 +3,18 @@
 # Alises
 #alias batt='upower -i $(upower -e |grep 'BAT')'
 alias chrome='google-chrome-beta'
+alias echopath='echo $PATH |sed -e 's/:/\n/g''
+#alias feh='feh -F -S'
 alias grin='grep -rinsI'
 alias ll='ls -l'
-alias py='python'
 alias p='py'
+alias py='python'
 alias sleepnow='pmset sleepnow'
 alias steam-wine='wine ~/.wine/drive_c/steam/Steam.exe -no-cef-sandbox -no-dwrite >/dev/null 2>&1 &'
 alias tisman='wget -qO- pastebin.com/raw/PT8LbcWA | groff -Tascii -man | less'
-alias tmuxs='tmux list-sessions'
 alias tmuxa='tmux attach-session -t'
+alias tmuxs='tmux list-sessions'
 alias vim='nvim'
-alias echopath='echo $PATH |sed -e 's/:/\n/g''
 
 # wttr.in Weather Aliases
 #alias weather='curl -s 'wttr.in/$1' |grep -v Follow'

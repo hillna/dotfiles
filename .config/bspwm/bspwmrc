@@ -9,6 +9,8 @@ fi
 #feh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/wallpaper
 feh --no-fehbg --bg-fill $HOME/.config/bspwm/wallpaper/set-wallpaper
 
+xsetroot -cursor_name left_ptr
+
 if [ -f /etc/xps13 ]
 then
     $HOME/.screenlayout/xps13_single.sh
