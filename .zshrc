@@ -53,14 +53,4 @@ autoload -Uz ffg
 #source $ZSH/oh-my-zsh.sh
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
-# MacOS Options
-if [ $(uname |grep Darwin) ]; then
-  # Gcloud SDK
-  source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-  source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
-  export ITERM2_SQUELCH_MARK=1
-  source ~/.iterm2_shell_integration.zsh
-fi
-
 . $HOME/.shellrc.load
