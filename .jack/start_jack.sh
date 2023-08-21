@@ -1,5 +1,9 @@
 #!/bin/bash
 
+pacmd suspend true
+
+jack_control start
+
 # Additional ALSA devices
 #alsa_out -j "Modi Playback" -d hw:2,1 &
 #alsa_in -j "Onboard In" -d hw:2,0 &
@@ -26,5 +30,5 @@ a2jmidid -e &
 #ladish_control sload default
 
 # Load default patch snapshot
-aj-snapshot -r .jack/snapshots/default
+aj-snapshot -r $HOME/.jack/snapshots/default
 

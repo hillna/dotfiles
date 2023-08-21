@@ -11,11 +11,14 @@ feh --no-fehbg --bg-fill $HOME/.config/bspwm/wallpaper/set-wallpaper
 
 xsetroot -cursor_name left_ptr
 
-if [ -f /etc/xps13 ]
-then
-    $HOME/.screenlayout/xps13_single.sh
+if [ -e /etc/xps13 ]; then
+  $HOME/.screenlayout/xps13_single.sh
 else
+  if [ -e /tmp/work_mode ]; then
+    $HOME/.screenlayout/single_left.sh
+  else
     $HOME/.screenlayout/triptic.sh
+  fi
 fi
 
 ## Bspwm config
@@ -32,12 +35,16 @@ bspc config remove_disabled_monitors        true
 bspc config remove_unplugged_monitors       true
 
 ## Show connected monitors: `xrandr -q`
-if [ -f /etc/xps13 ]; then
+if [ -e /etc/xps13 ]; then
   bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0
 else
-  bspc monitor DisplayPort-1 -d 1 2 3
-  bspc monitor DisplayPort-0 -d 4 5 6 7
-  bspc monitor HDMI-A-0 -d 8 9 0
+  if [ -e /tmp/work_mode ]; then
+    bspc monitor DisplayPort-1 -d 1 2 3 4 5 6 7 8 9 0
+  else
+    bspc monitor DisplayPort-1 -d 1 2 3
+    bspc monitor DisplayPort-0 -d 4 5 6 7
+    bspc monitor HDMI-A-0 -d 8 9 0
+  fi
 fi
 
 ## Window rules
@@ -71,6 +78,12 @@ if [[ ! $(pgrep -x xscreensaver) ]]; then
   xscreensaver -no-splash &
 fi
 
+if [ ! -e /tmp/work_mode ]; then
+  if [ ! $(pgrep jackdbus) ]; then
+    $HOME/.jack/start_jack.sh
+  fi
+fi
+
 ## Launch autorun
 sleep 2s
 autorun=(qjackctl \
@@ -83,7 +96,7 @@ for exec in ${autorun[@]}; do
   fi
 done
 
-if [ i $(pgrep ibus) ]; then
-  ibus-daemon -drxR
-fi
+#if [ -i $(pgrep ibus) ]; then
+#  ibus-daemon -drxR
+#fi
 

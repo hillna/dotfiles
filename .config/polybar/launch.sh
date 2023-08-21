@@ -9,12 +9,14 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 # Launch bars
 bspc config top_padding 22
 
-if [ -f /etc/xps13 ]; then
-    polybar -r main-xps13 & disown
+if [ -e /etc/xps13 ]; then
+  polybar -r main-xps13 & disown
 else
+  polybar -r left & disown
+  if [ ! -e /tmp/work_mode ]; then
     polybar -r main & disown
-    polybar -r left & disown
     polybar -r right & disown
+  fi
 fi
 
 echo "Bars launched..."
