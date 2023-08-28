@@ -1,4 +1,4 @@
-if [[ -f /etc/xps13 ]]
+if [[ -f /etc/xps13 ]]; then
   setxkbmap -option ctrl:nocaps
 fi
 
