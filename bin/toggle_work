@@ -24,9 +24,8 @@ else
   rm /tmp/work_mode
   $HOME/.config/bspwm/bspwmrc
 
-  if [ $(pgrep input-leap)]; then
-    killall input-leap
-  fi
+  killall input-leap
+  killall input-leapc
 
   echo "Work mode disabled"
 
