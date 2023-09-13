@@ -10,6 +10,8 @@ if [ ! -e /tmp/work_mode ] ; then
   touch /tmp/work_mode
   $HOME/.config/bspwm/bspwmrc
 
+  input-leap > /dev/null 2>&1 &
+
   echo "Work mode enabled"
 
 else
@@ -21,6 +23,10 @@ else
 
   rm /tmp/work_mode
   $HOME/.config/bspwm/bspwmrc
+
+  if [ $(pgrep input-leap)]; then
+    killall input-leap
+  fi
 
   echo "Work mode disabled"
 
