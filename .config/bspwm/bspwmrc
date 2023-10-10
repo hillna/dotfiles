@@ -88,7 +88,7 @@ fi
 sleep 2s
 autorun=(qjackctl \
          blueman-applet \
-         streamdeck)
+        )
 
 for exec in ${autorun[@]}; do
   if [ ! $(pgrep $exec) ]; then
@@ -97,7 +97,8 @@ for exec in ${autorun[@]}; do
   fi
 done
 
-#if [ -i $(pgrep ibus) ]; then
-#  ibus-daemon -drxR
-#fi
+if [ ! $(ps aux | grep -v grep | grep streamdeck) ]; then
+  echo "Launching streamdeck-ui"
+  streamdeck --no-ui &
+fi
 

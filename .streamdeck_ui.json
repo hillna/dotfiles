@@ -15,7 +15,7 @@
                         "text": "Toggle\nWork",
                         "text_vertical_align": "middle",
                         "font_size": 20,
-                        "command": "bash -c $HOME/bin/toggle-work",
+                        "command": "sh -c $HOME/bin/toggle-work",
                         "icon": ""
                     },
                     "8": {},
