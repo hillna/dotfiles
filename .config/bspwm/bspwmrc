@@ -87,7 +87,8 @@ fi
 ## Launch autorun
 sleep 2s
 autorun=(qjackctl \
-         blueman-applet)
+         blueman-applet \
+         streamdeck)
 
 for exec in ${autorun[@]}; do
   if [ ! $(pgrep $exec) ]; then

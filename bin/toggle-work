@@ -4,7 +4,7 @@ if [ ! -e /tmp/work_mode ] ; then
   # Enable work mode
 
   $HOME/.screenlayout/single_left.sh
-  $HOME/bin/toggle_panel
+  $HOME/bin/toggle-panel
   $HOME/.jack/stop_jack.sh
 
   touch /tmp/work_mode
@@ -18,7 +18,7 @@ else
   # Disable work mode
 
   $HOME/.screenlayout/triptic.sh
-  $HOME/bin/toggle_panel
+  $HOME/bin/toggle-panel
   $HOME/.jack/start_jack.sh
 
   rm /tmp/work_mode
