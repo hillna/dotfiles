@@ -14,9 +14,10 @@
                     "7": {
                         "text": "Toggle\nWork",
                         "text_vertical_align": "middle",
-                        "font_size": 20,
+                        "font_size": 14,
                         "command": "sh -c $HOME/bin/toggle-work",
-                        "icon": ""
+                        "icon": "/home/hilln/.local/share/icons/Flat-Remix-Grey-Light/panel/laptopattention.svg",
+                        "font": "Roboto-Bold.ttf"
                     },
                     "8": {},
                     "9": {},
@@ -25,7 +26,9 @@
                     "12": {},
                     "13": {},
                     "14": {},
-                    "15": {},
+                    "15": {
+                        "icon": ""
+                    },
                     "16": {},
                     "17": {},
                     "18": {},
@@ -42,7 +45,8 @@
                     "29": {},
                     "30": {},
                     "31": {
-                        "switch_page": 0
+                        "switch_page": 0,
+                        "brightness_change": 0
                     }
                 },
                 "1": {
