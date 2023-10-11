@@ -102,3 +102,8 @@ if [ ! $(ps aux | grep -v grep | grep streamdeck) ]; then
   streamdeck --no-ui &
 fi
 
+# Hack to reset caps -> ctrl from .xprofile after bspwm reload
+if [[ -f /etc/xps13 ]]; then
+  setxkbmap -option ctrl:nocaps
+fi
+
