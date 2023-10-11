@@ -56,7 +56,7 @@ super + shift + e
   firefox --private-window
 
 super + ctrl + Tab
-  $HOME/bin/toggle_panel
+  $HOME/bin/toggle-panel
 
 super + Escape
   xscreensaver-command --lock
