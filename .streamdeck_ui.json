@@ -4,20 +4,24 @@
         "A00NA318327UFR": {
             "buttons": {
                 "0": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {
+                    "0": {
                         "text": "Toggle\nWork",
                         "text_vertical_align": "middle",
                         "font_size": 14,
                         "command": "sh -c $HOME/bin/toggle-work",
                         "icon": "/home/hilln/.local/share/icons/Flat-Remix-Grey-Light/panel/laptopattention.svg",
                         "font": "Roboto-Bold.ttf"
+                    },
+                    "1": {
+                        "icon": ""
+                    },
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {
+                        "icon": ""
                     },
                     "8": {},
                     "9": {},
@@ -38,11 +42,22 @@
                     "22": {},
                     "23": {},
                     "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
+                    "25": {
+                        "background_color": "#1db954"
+                    },
+                    "26": {
+                        "background_color": "#1db954"
+                    },
+                    "27": {
+                        "background_color": "#1db954",
+                        "icon": "/home/hilln/.local/share/icons/Flat-Remix-Grey-Light/actions/24/milestone.svg"
+                    },
+                    "28": {
+                        "background_color": "#1db954"
+                    },
+                    "29": {
+                        "background_color": "#1db954"
+                    },
                     "30": {},
                     "31": {
                         "switch_page": 0,
