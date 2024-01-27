@@ -61,6 +61,9 @@ super + ctrl + Tab
 super + Escape
   xscreensaver-command --lock
 
+super + ctrl + Escape
+  xscreensaver-command --lock && xset dpms force off
+
 # make sxhkd reload its configuration files:
 super + alt + Escape
   $HOME/.config/bspwm/bspwmrc & pkill -USR1 -x sxhkd
