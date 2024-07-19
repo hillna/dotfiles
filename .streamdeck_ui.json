@@ -1,379 +1,688 @@
 {
-    "streamdeck_ui_version": 1,
     "state": {
         "A00NA318327UFR": {
             "buttons": {
                 "0": {
                     "0": {
-                        "text": "Toggle\nWork",
-                        "text_vertical_align": "middle",
-                        "font_size": 14,
-                        "command": "sh -c $HOME/bin/toggle-work",
-                        "icon": "/home/hilln/.local/share/icons/Flat-Remix-Grey-Light/panel/laptopattention.svg",
-                        "font": "Roboto-Bold.ttf"
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "Toggle Work",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "sh -c $HOME/bin/toggle-work",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "middle",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
                     "1": {
-                        "icon": ""
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
+                    "2": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "3": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "4": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "5": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "6": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
                     "7": {
-                        "icon": ""
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
+                    "8": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "9": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "10": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "11": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "12": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "13": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "14": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
                     "15": {
-                        "icon": ""
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
+                    "16": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "17": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "18": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "19": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "20": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "21": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "22": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "23": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
+                    "24": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
                     "25": {
-                        "background_color": "#1db954"
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
                     "26": {
-                        "background_color": "#1db954"
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
                     "27": {
-                        "background_color": "#1db954",
-                        "icon": "/home/hilln/.local/share/icons/Flat-Remix-Grey-Light/actions/24/milestone.svg"
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
                     "28": {
-                        "background_color": "#1db954"
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
                     "29": {
-                        "background_color": "#1db954"
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     },
-                    "30": {},
+                    "30": {
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
+                    },
                     "31": {
-                        "switch_page": 0,
-                        "brightness_change": 0
+                        "state": 0,
+                        "states": {
+                            "0": {
+                                "text": "",
+                                "icon": "",
+                                "keys": "",
+                                "write": "",
+                                "command": "",
+                                "brightness_change": 0,
+                                "switch_page": 0,
+                                "switch_state": 0,
+                                "text_vertical_align": "",
+                                "text_horizontal_align": "",
+                                "font": "",
+                                "font_color": "",
+                                "font_size": 0,
+                                "background_color": ""
+                            }
+                        }
                     }
-                },
-                "1": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "2": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "3": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "4": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "5": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "6": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "7": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "8": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
-                },
-                "9": {
-                    "0": {},
-                    "1": {},
-                    "2": {},
-                    "3": {},
-                    "4": {},
-                    "5": {},
-                    "6": {},
-                    "7": {},
-                    "8": {},
-                    "9": {},
-                    "10": {},
-                    "11": {},
-                    "12": {},
-                    "13": {},
-                    "14": {},
-                    "15": {},
-                    "16": {},
-                    "17": {},
-                    "18": {},
-                    "19": {},
-                    "20": {},
-                    "21": {},
-                    "22": {},
-                    "23": {},
-                    "24": {},
-                    "25": {},
-                    "26": {},
-                    "27": {},
-                    "28": {},
-                    "29": {},
-                    "30": {},
-                    "31": {}
                 }
             },
-            "brightness": 51,
+            "display_timeout": 1800,
+            "brightness": 99,
             "brightness_dimmed": 0,
+            "rotation": 0,
             "page": 0
         }
-    }
+    },
+    "streamdeck_ui_version": 2
 }
