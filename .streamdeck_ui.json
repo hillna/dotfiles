@@ -7,7 +7,7 @@
                         "state": 0,
                         "states": {
                             "0": {
-                                "text": "Toggle Work",
+                                "text": "Toggle\nWork",
                                 "icon": "",
                                 "keys": "",
                                 "write": "",
@@ -18,8 +18,8 @@
                                 "text_vertical_align": "middle",
                                 "text_horizontal_align": "",
                                 "font": "",
-                                "font_color": "",
-                                "font_size": 0,
+                                "font_color": "#aa00ff",
+                                "font_size": 22,
                                 "background_color": ""
                             }
                         }
@@ -679,7 +679,7 @@
             },
             "display_timeout": 1800,
             "brightness": 99,
-            "brightness_dimmed": 0,
+            "brightness_dimmed": 26,
             "rotation": 0,
             "page": 0
         }
