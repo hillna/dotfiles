@@ -10,6 +10,8 @@ if [ ! -e /tmp/work_mode ] ; then
   touch /tmp/work_mode
   $HOME/.config/bspwm/bspwmrc
 
+  killall streamcontroller
+
   input-leap > /dev/null 2>&1 &
 
   echo "Work mode enabled"

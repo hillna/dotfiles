@@ -13,6 +13,8 @@ xsetroot -cursor_name left_ptr
 
 if [ -e /etc/xps13 ]; then
   $HOME/.screenlayout/xps13_single.sh
+  # Hack to reset caps -> ctrl from .xprofile after bspwm reload
+  setxkbmap -option ctrl:nocaps
 else
   if [ -e /tmp/work_mode ]; then
     $HOME/.screenlayout/single_left.sh
@@ -97,13 +99,8 @@ for exec in ${autorun[@]}; do
   fi
 done
 
-if [ ! $(ps aux | grep -v grep | grep streamdeck) ]; then
-  echo "Launching streamdeck-ui"
-  streamdeck --no-ui &
-fi
-
-# Hack to reset caps -> ctrl from .xprofile after bspwm reload
-if [[ -f /etc/xps13 ]]; then
-  setxkbmap -option ctrl:nocaps
+if [ ! $(pgrep -f streamcontroller) ]; then
+  echo "Launching streamcontroller"
+  streamcontroller -b
 fi
 
