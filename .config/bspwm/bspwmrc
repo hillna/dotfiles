@@ -99,8 +99,8 @@ for exec in ${autorun[@]}; do
   fi
 done
 
-if [ ! $(pgrep -f streamcontroller) ]; then
+if [ ! $(pgrep -f StreamController) ]; then
   echo "Launching streamcontroller"
-  streamcontroller -b
+  streamcontroller -b &
 fi
 
