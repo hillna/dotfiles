@@ -10,7 +10,7 @@ if [ ! -e /tmp/work_mode ] ; then
   touch /tmp/work_mode
   $HOME/.config/bspwm/bspwmrc
 
-  pkill -f StreamController
+  #pkill -f StreamController
 
   input-leap > /dev/null 2>&1 &
 
