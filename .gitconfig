@@ -1,7 +1,7 @@
 [user]
     name = Nick Hill
     signingkey = C3B90971
-    email = nick@nickh.info
+	email = nick.hill@openly.com
 
 [core]
     excludesfile = /Users/hilln/.gitignore_global

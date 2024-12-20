@@ -39,6 +39,7 @@ alias tf-docs='terraform-docs markdown table --output-file README.md --output-mo
 
 # Kubectl Aliases
 alias k8s-ip2pod='kubectl get pods --all-namespaces -o=custom-columns=NAME:.metadata.name,PODIP:.status.podIP | grep $1'
+alias k8s-ns-resources='kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get -o name -n $1'
 
 # Gcloud aliases
 alias gctoken='gcloud auth print-access-token | pbcopy'
