@@ -33,3 +33,4 @@
 !.config/SuperSlicer/printer
 !.config/SuperSlicer/scripts
 
+.config/nvim/lazy-lock.json
