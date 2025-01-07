@@ -30,7 +30,7 @@
     clean = git-media-clean %f
     smudge = git-media-smudge %f
 [merge]
-    tool = meld
+    tool = vimdiff
 [color]
     ui = auto
 [url "git@gitlab.com:"]
