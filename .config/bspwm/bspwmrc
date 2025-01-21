@@ -24,17 +24,17 @@ else
 fi
 
 ## Bspwm config
-bspc config border_width        2
-bspc config window_gap          4
+bspc config border_width 2
+bspc config window_gap 4
 
-bspc config split_ratio           0.52
-bspc config borderless_monocle    false
-bspc config gapless_monocle       true
+bspc config split_ratio 0.52
+bspc config borderless_monocle false
+bspc config gapless_monocle true
 
-bspc config click_to_focus      button1
+bspc config click_to_focus button1
 
-bspc config remove_disabled_monitors        true
-bspc config remove_unplugged_monitors       true
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
 
 ## Show connected monitors: `xrandr -q`
 if [ -e /etc/xps13 ]; then
@@ -63,10 +63,10 @@ bspc rule -a feh state=floating
 bspc rule -a jack_mixer state=floating
 bspc rule -a mplayer state=floating
 bspc rule -a net-minecraft-bootstrap-Bootstrap state=floating
+bspc rule -a Onboard state=floating
 bspc rule -a qjackctl state=floating
 bspc rule -a steam state=tiled
 bspc rule -a vlc state=floating
-
 
 ## Launch panel
 if [[ ! $(pgrep -x polybar) ]]; then
@@ -88,9 +88,10 @@ fi
 
 ## Launch autorun
 sleep 2s
-autorun=(qjackctl \
-         blueman-applet \
-        )
+autorun=(
+  qjackctl
+  blueman-applet
+)
 
 for exec in ${autorun[@]}; do
   if [ ! $(pgrep $exec) ]; then
@@ -103,4 +104,3 @@ if [ ! $(pgrep -f StreamController) ]; then
   echo "Launching streamcontroller"
   streamcontroller -b &
 fi
-

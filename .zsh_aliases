@@ -28,6 +28,7 @@ alias prev='mpc prev'
 
 # Git Aliases
 alias gcommit='git commit -a'
+alias gprune='git branch | egrep -v "([*]|main|master)" | xargs git branch -d'
 alias gpullr='git pull --rebase origin master'
 alias gpush='gpullr && git push origin master'
 alias gref='git rev-parse HEAD && git rev-parse HEAD | pbcopy'
