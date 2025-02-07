@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+
+if [ ! -e /tmp/mac_mode ]; then
+  # Enable mac mode
+
+  $HOME/bin/toggle-panel
+  $HOME/.jack/stop_jack.sh
+  #pkill -f StreamController
+
+  sleep 3s
+  $HOME/.screenlayout/single_left.sh
+
+  touch /tmp/mac_mode
+  $HOME/.config/bspwm/bspwmrc
+
+  input-leap >/dev/null 2>&1 &
+
+  echo "mac mode enabled"
+
+else
+  # Disable mac mode
+  killall input-leap
+  killall input-leapc
+
+  $HOME/.screenlayout/triptic.sh
+
+  $HOME/bin/toggle-panel
+  $HOME/.jack/start_jack.sh
+
+  rm /tmp/mac_mode
+  $HOME/.config/bspwm/bspwmrc
+
+  echo "mac mode disabled"
+
+fi
