@@ -27,7 +27,7 @@ wm-restack = bspwm
 
 
 [bar/main]
-monitor = DisplayPort-0
+monitor = DisplayPort-1
 inherit = bar/base
 
 modules-left = bspwm
@@ -36,7 +36,7 @@ modules-right = updates wifi volume date
 
 
 [bar/left]
-monitor = DisplayPort-1
+monitor = DisplayPort-2
 inherit = bar/base
 
 modules-left = bspwm
