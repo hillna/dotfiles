@@ -7,6 +7,7 @@
 # ENV Variables
 export AWS_CONFIG_FILE=~/.awsconfig
 export EC2_HOME=/opt/ec2-api-tools
+export KUBE_EDITOR=nvim
 
 #if [ -f /usr/libexec/java_home ]; then
 #  export JAVA_HOME=$(/usr/libexec/java_home)
@@ -25,9 +26,9 @@ export PATH=$PATH:/opt/ec2-api-tools/bin
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # ssh-agent config
-if [ $(uname |grep Linux) ] ; then
-    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
-fi
+#if [ $(uname |grep Linux) ] ; then
+#    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+#fi
 
 # tab stops config
 tabs 4
