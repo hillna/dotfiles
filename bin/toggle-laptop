@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-if [ ! -e /tmp/mac_mode ]; then
-  # Enable mac mode
+if [ ! -e /tmp/laptop_mode ]; then
+  # Enable laptop mode
 
   $HOME/bin/toggle-panel
   $HOME/.jack/stop_jack.sh
@@ -10,15 +10,15 @@ if [ ! -e /tmp/mac_mode ]; then
   sleep 3s
   $HOME/.screenlayout/single_left.sh
 
-  touch /tmp/mac_mode
+  touch /tmp/laptop_mode
   $HOME/.config/bspwm/bspwmrc
 
   input-leap >/dev/null 2>&1 &
 
-  echo "mac mode enabled"
+  echo "laptop mode enabled"
 
 else
-  # Disable mac mode
+  # Disable laptop mode
   killall input-leap
   killall input-leapc
 
@@ -27,9 +27,9 @@ else
   $HOME/bin/toggle-panel
   $HOME/.jack/start_jack.sh
 
-  rm /tmp/mac_mode
+  rm /tmp/laptop_mode
   $HOME/.config/bspwm/bspwmrc
 
-  echo "mac mode disabled"
+  echo "laptop mode disabled"
 
 fi
