@@ -2,15 +2,15 @@
 
 if [ ! -e /tmp/laptop_mode ]; then
   # Enable laptop mode
+  touch /tmp/laptop_mode
 
   $HOME/bin/toggle-panel
   $HOME/.jack/stop_jack.sh
   #pkill -f StreamController
 
-  sleep 3s
+  sleep 5s
   $HOME/.screenlayout/single_left.sh
 
-  touch /tmp/laptop_mode
   $HOME/.config/bspwm/bspwmrc
 
   input-leap >/dev/null 2>&1 &

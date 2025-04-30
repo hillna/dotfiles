@@ -16,7 +16,7 @@ if [ -e /etc/xps13 ]; then
   # Hack to reset caps -> ctrl from .xprofile after bspwm reload
   setxkbmap -option ctrl:nocaps
 else
-  if [ -e /tmp/work_mode ]; then
+  if [ -e /tmp/laptop_mode ]; then
     $HOME/.screenlayout/single_left.sh
   else
     $HOME/.screenlayout/triptic.sh
@@ -40,7 +40,7 @@ bspc config remove_unplugged_monitors true
 if [ -e /etc/xps13 ]; then
   bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 0
 else
-  if [ -e /tmp/work_mode ]; then
+  if [ -e /tmp/laptop_mode ]; then
     bspc monitor DisplayPort-1 -d 1 2 3 4 5 6 7 8 9 0
   else
     bspc monitor DisplayPort-2 -d 1 2 3
@@ -80,7 +80,7 @@ if [[ ! $(pgrep -x xscreensaver) ]]; then
   xscreensaver -no-splash &
 fi
 
-if [ ! -e /tmp/work_mode ]; then
+if [ ! -e /tmp/laptop_mode ]; then
   if [ ! $(pgrep jackdbus) ]; then
     $HOME/.jack/start_jack.sh
   fi
