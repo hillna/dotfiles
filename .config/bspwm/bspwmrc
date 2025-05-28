@@ -11,10 +11,11 @@ feh --no-fehbg --bg-fill $HOME/.config/bspwm/wallpaper/set-wallpaper
 
 xsetroot -cursor_name left_ptr
 
+# Hack to reset caps -> ctrl from .xprofile after bspwm reload
+setxkbmap -option ctrl:nocaps
+
 if [ -e /etc/xps13 ]; then
   $HOME/.screenlayout/xps13_single.sh
-  # Hack to reset caps -> ctrl from .xprofile after bspwm reload
-  setxkbmap -option ctrl:nocaps
 else
   if [ -e /tmp/laptop_mode ]; then
     $HOME/.screenlayout/single_left.sh
