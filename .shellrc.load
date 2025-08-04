@@ -28,7 +28,8 @@ export PATH=$PATH:/opt/ec2-api-tools/bin
 # ssh-agent config
 if [ $(uname |grep Linux) ] ; then
     if [ -f $HOME/.ssh/id_rsa ]; then
-      eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+      #eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+      eval $(keychain --eval -Q --quiet id_rsa)
     fi
 fi
 
