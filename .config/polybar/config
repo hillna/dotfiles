@@ -286,12 +286,12 @@ type = internal/battery
 full-at = 98
 
 battery = BAT0
-adapter = ADP1
+adapter = AC
 
-format-charging = <animation-charging><label-charging>
-format-discharging = <ramp-capacity><label-charging>
-format-full = <label-full>
-label-full = 
+#format-charging = <animation-charging><label-charging>
+#format-discharging = <ramp-capacity><label-charging>
+#format-full = <label-full>
+#label-full = 
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
