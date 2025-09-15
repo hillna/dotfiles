@@ -62,3 +62,6 @@ if [ -f ~/.shellrc.work ]; then
     source ~/.shellrc.work
 fi
 
+if [ -f ~/.shellrc.mac ]; then
+    source ~/.shellrc.mac
+fi
