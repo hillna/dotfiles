@@ -101,7 +101,8 @@ for exec in ${autorun[@]}; do
   fi
 done
 
-if [ ! $(pgrep -f opendeck) ]; then
-  echo "Launching Opendeck"
-  opendeck &
-fi
+# streamdeck, streamcontroller, or opendeck ???
+#if [ ! $(pgrep -f streamcontroller) ]; then
+#  echo "Launching Streamcontroller"
+#  streamcontroller -b &
+#fi
