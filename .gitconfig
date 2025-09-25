@@ -23,8 +23,11 @@
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
     path =
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#[mergetool "sourcetree"]
+#    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#    trustExitCode = true
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
     trustExitCode = true
 [filter "media"]
     clean = git-media-clean %f
