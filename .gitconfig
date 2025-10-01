@@ -5,7 +5,6 @@
 
 [includeIf "gitdir: ~/dev/work/"]
 
-
 [core]
     excludesfile = /Users/hilln/.gitignore_global
     editor = nvim
@@ -36,17 +35,19 @@
     tool = vimdiff
 [color]
     ui = auto
+
 [url "git@gitlab.com:"]
     insteadOf = https://gitlab.com
 [url "git@github.com:"]
     insteadOf = https://github.com
+
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 
-[includeIf "gitdir:~/dev/openly/"]
+[includeIf "gitdir:~/dev/foxglove/"]
   path = .gitconfig_work
 
 [init]
