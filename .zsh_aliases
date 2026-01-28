@@ -2,6 +2,7 @@
 
 # Alises
 #alias batt='upower -i $(upower -e |grep 'BAT')'
+alias batt='for BAT_PATH in $(upower -e | grep BAT); do upower -i "$BAT_PATH"; done'
 alias chrome='google-chrome-beta'
 alias echopath='echo $PATH |sed -e 's/:/\n/g''
 #alias feh='feh -F -S'
