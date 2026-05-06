@@ -13,14 +13,16 @@ if [ ! -e /tmp/laptop_mode ]; then
 
   $HOME/.config/bspwm/bspwmrc
 
-  input-leap >/dev/null 2>&1 &
+  #input-leap >/dev/null 2>&1 &
+  deskflow >/dev/null 2>&1 &
 
   echo "laptop mode enabled"
 
 else
   # Disable laptop mode
-  killall input-leap
-  killall input-leapc
+  #killall input-leap
+  #killall input-leapc
+  killall deskflow
 
   $HOME/.screenlayout/triptic.sh
 
