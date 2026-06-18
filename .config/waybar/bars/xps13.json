@@ -1,0 +1,14 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 26,
+  "spacing": 2,
+  "margin-left": 0,
+  "margin-right": 2,
+  "exclusive": true,
+  "fixed-center": true,
+  "output": "eDP-1",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["custom/updates", "network", "pulseaudio#xps13", "backlight", "battery", "clock#date", "tray"]
+}

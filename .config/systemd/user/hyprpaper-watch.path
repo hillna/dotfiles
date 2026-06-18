@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch hyprpaper config and wallpaper for changes
+Documentation=file:%h/.config/hypr/hyprpaper.conf
+
+[Path]
+PathChanged=%h/.config/hypr/hyprpaper.conf
+PathChanged=%h/.config/bspwm/wallpaper/2022-Cyberpunk/blade_runner.jpg
+PathChanged=%h/.config/bspwm/wallpaper/set-wallpaper
+
+# Started from Hyprland autostart with hyprpaper.service

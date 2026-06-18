@@ -1,0 +1,4 @@
+# Append before "exec $@" in /etc/lightdm/Xsession (after .xsession sourcing).
+# Workaround for LightDM Wayland input (issue #63)
+
+[ "$XDG_SESSION_TYPE" = "wayland" ] && sleep 1

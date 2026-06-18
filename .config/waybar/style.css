@@ -1,0 +1,80 @@
+@import "colors.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "NotoMono Nerd Font Mono", "NotoMono Nerd Font", monospace;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: @base;
+  color: @foreground;
+  border-bottom: 1px solid @line;
+}
+
+#workspaces button {
+  padding: 0 4px;
+  margin: 0 1px;
+  color: @foreground;
+  background: transparent;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#workspaces button.active {
+  color: @base2;
+}
+
+#workspaces button.empty {
+  color: @empty;
+}
+
+#workspaces button.urgent {
+  color: @foreground;
+}
+
+#window,
+#hyprland-window,
+#custom-updates,
+#network,
+#pulseaudio,
+#pulseaudio-xps13,
+#cpu,
+#memory,
+#clock,
+#clock-date,
+#clock-time,
+#battery,
+#backlight,
+#tray {
+  padding: 0 6px;
+  margin: 0 2px;
+  color: @foreground;
+}
+
+#custom-updates {
+  padding-left: 2px;
+}
+
+#network.disconnected {
+  color: @muted;
+}
+
+#pulseaudio.muted {
+  color: @foreground;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}

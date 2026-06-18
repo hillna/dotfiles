@@ -1,0 +1,14 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 26,
+  "spacing": 2,
+  "margin-left": 0,
+  "margin-right": 2,
+  "exclusive": true,
+  "fixed-center": true,
+  "output": "HDMI-A-1",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["cpu", "memory", "clock#time"]
+}

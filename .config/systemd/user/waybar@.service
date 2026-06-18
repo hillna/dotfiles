@@ -1,0 +1,13 @@
+[Unit]
+Description=Waybar (%i)
+PartOf=waybar-session.service
+After=dbus.service graphical-session.target
+
+[Service]
+Type=simple
+ExecStartPre=%h/.config/waybar/prestart.sh %i
+ExecStart=/usr/bin/waybar -c %h/.config/waybar/runtime/%i.json -s %h/.config/waybar/style.css -l error
+Restart=no
+
+[Install]
+WantedBy=waybar-session.service

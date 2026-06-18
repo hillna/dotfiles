@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+# Install LightDM scripts and session desktops from dotfiles into /etc and /usr/local.
+# Requires sudo. Backs up existing files with a date suffix.
+
+set -e
+
+REPO="${REPO:-$HOME/.dotfiles}"
+DATE=$(date +%Y-%m-%d)
+
+install_file() {
+  src="$1"
+  dest="$2"
+  mode="${3:-644}"
+
+  if [ -f "$dest" ]; then
+    sudo cp "$dest" "${dest}.bak-${DATE}"
+  fi
+  sudo install -m "$mode" "$src" "$dest"
+}
+
+install_file "$REPO/etc/lightdm/greeter-setup.sh" /etc/lightdm/greeter-setup.sh 755
+install_file "$REPO/etc/lightdm/session-setup.sh" /etc/lightdm/session-setup.sh 755
+install_file "$REPO/etc/usr/local/share/xsessions/bspwm-x11.desktop" \
+  /usr/local/share/xsessions/bspwm-x11.desktop
+install_file "$REPO/etc/usr/local/share/wayland-sessions/hyprland-wayland.desktop" \
+  /usr/local/share/wayland-sessions/hyprland-wayland.desktop
+
+echo "Installed LightDM scripts and session .desktop files."
+echo "Verify [Seat:*] in /etc/lightdm/lightdm.conf matches etc/lightdm/lightdm-seat.conf"
+echo "Verify /etc/lightdm/Xsession includes etc/lightdm/Xsession.wayland-snippet before exec"

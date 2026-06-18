@@ -1,0 +1,7 @@
+[Unit]
+Description=Restart hyprpaper after config or wallpaper change
+Documentation=file:%h/.config/hypr/hyprpaper.conf
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'systemctl --user is-active --quiet hyprpaper.service && systemctl --user restart hyprpaper.service || true'

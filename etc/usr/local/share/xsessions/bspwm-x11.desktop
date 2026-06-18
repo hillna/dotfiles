@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=bspwm (X11)
+Comment=Binary space partitioning window manager on X11
+Exec=bspwm
+Type=Application
+DesktopNames=bspwm
+Keywords=tiling;x11;

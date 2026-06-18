@@ -1,0 +1,13 @@
+[Unit]
+Description=Hyprpaper wallpaper daemon (Hyprland)
+Documentation=file:%h/.config/hypr/hyprpaper.conf
+After=dbus.service graphical-session.target
+
+[Service]
+Type=simple
+ExecStartPre=%h/.config/hypr/hyprpaper-prestart.sh
+ExecStart=/usr/bin/hyprpaper -c %h/.config/hypr/hyprpaper.conf
+Restart=on-failure
+RestartSec=3
+
+# Started from Hyprland autostart only — not WantedBy=default.target

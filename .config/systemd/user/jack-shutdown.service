@@ -1,0 +1,13 @@
+[Unit]
+Description=Gracefully stop jackdbus at logout
+After=dbus.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/true
+ExecStop=/bin/sh -c 'pgrep -x jackdbus >/dev/null 2>&1 && /usr/bin/jack_control exit; exit 0'
+TimeoutStopSec=15s
+
+[Install]
+WantedBy=default.target
