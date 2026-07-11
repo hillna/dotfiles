@@ -1,0 +1,11 @@
+# StreamController runtime artifacts (keep pages/ and settings/)
+Store/
+cache/
+logs/
+backups/
+Assets/
+plugins/
+icons/
+wallpapers/
+*.log
+*.zip
