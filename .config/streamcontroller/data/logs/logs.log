@@ -1,0 +1,112 @@
+2026-07-10 23:55:37.169 | INFO     | src.backend.Migration.MigrationManager:run_migrators:30 - Running migrator to app version 1.5.0-beta.5
+2026-07-10 23:55:37.169 | INFO     | src.backend.Migration.Migrator:create_backup:67 - Creating backup to /home/hilln/.config/streamcontroller/data/backups
+2026-07-10 23:55:37.170 | SUCCESS  | src.backend.Migration.Migrator:create_backup:73 - Saved backup to /home/hilln/.config/streamcontroller/data/backups/before_1.5.0-beta.14_migration.zip
+2026-07-10 23:55:37.185 | SUCCESS  | src.backend.Migration.MigrationManager:run_migrators:33 - Successfully ran migrator to app version 1.5.0-beta.5
+2026-07-10 23:55:37.188 | ERROR    | src.backend.GnomeExtensions:connect_dbus:38 - Failed to connect to D-Bus: org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+2026-07-10 23:55:37.189 | ERROR    | src.backend.WindowGrabber.WindowGrabber:init_integration:61 - Unsupported environment: None with server: None for window grabber.
+2026-07-10 23:55:37.189 | INFO     | autostart:setup_autostart_desktop_entry:88 - Setting up autostart using desktop entry
+2026-07-10 23:55:37.189 | INFO     | autostart:copy_desktop_file:126 - Desktop file copied from: /usr/lib/streamcontroller/flatpak/autostart-native.desktop to: /home/hilln/.config/autostart/StreamController.desktop
+2026-07-10 23:55:37.190 | INFO     | autostart:setup_autostart_desktop_entry:103 - Autostart set up at: /home/hilln/.config/autostart/StreamController.desktop
+2026-07-10 23:55:37.190 | INFO     | __main__:update_assets:193 - Updating store assets
+2026-07-10 23:55:37.190 | INFO     | __main__:load:128 - Loading app
+2026-07-10 23:55:37.209 | INFO     | src.backend.DeckManagement.DeckManager:__init__:78 - Beta resume mode: True
+2026-07-10 23:55:37.264 | INFO     | src.backend.Store.StoreBackend:get_stores:94 - Official store branch: main
+2026-07-10 23:55:37.283 | INFO     | src.backend.Store.StoreBackend:_fetch_official_authors_background:85 - Official authors updated: ['Core447', 'StreamController']
+2026-07-10 23:55:37.314 | WARNING  | src.backend.PluginManager.PluginManager:get_action_holder_from_id:115 - Requested action com_core447_OSPlugin::RunCommand not found, skipping...
+2026-07-10 23:55:37.314 | WARNING  | src.backend.PluginManager.PluginManager:get_action_holder_from_id:115 - Requested action com_core447_DeckPlugin::ChangePage not found, skipping...
+2026-07-10 23:55:37.314 | DEBUG    | src.backend.PageManagement.Page:load:86 - Loaded page Main in 0.00 seconds
+2026-07-10 23:55:37.314 | INFO     | src.backend.DeckManagement.DeckController:load_page:737 - Loading page Main on deck A00NA318327UFR
+2026-07-10 23:55:37.786 | ERROR    | src.backend.Store.StoreBackend:request_from_url:129 - Request to https://raw.githubusercontent.com/StreamController/OBSPlugin/d31805500d9b014588100ee76a77dec89e9ce6bf/attribution.json failed with status code 404
+2026-07-10 23:55:38.317 | INFO     | src.backend.DeckManagement.DeckController:load_brightness:638 - 50
+2026-07-10 23:55:38.317 | INFO     | src.backend.DeckManagement.DeckController:load_background:610 - Loading background in thread: 140161390208704
+2026-07-10 23:55:38.340 | INFO     | src.backend.DeckManagement.DeckController:load_screensaver:648 - Loading screensaver in thread: 140168949955520
+2026-07-10 23:55:38.340 | INFO     | src.backend.DeckManagement.Subclasses.ScreenSaver:set_time:55 - Setting screen saver time delay to 30 minutes
+2026-07-10 23:55:38.340 | INFO     | src.backend.DeckManagement.DeckController:load_page:768 - Loaded page Main on deck A00NA318327UFR
+2026-07-10 23:55:38.358 | INFO     | src.backend.DeckManagement.DeckController:load_all_inputs:673 - Loading all inputs took 0.0021543502807617188 seconds
+2026-07-10 23:55:38.399 | DEBUG    | src.backend.DeckManagement.DeckController:update_all_inputs:468 - Updating all inputs took 0.04070472717285156 seconds
+2026-07-10 23:55:38.415 | TRACE    | src.app:on_activate:89 - running: on_activate
+2026-07-10 23:55:38.416 | TRACE    | src.windows.mainWindow.mainWindow:build:94 - Building main window
+2026-07-10 23:55:38.461 | ERROR    | src.windows.mainWindow.mainWindow:build:162 - An error has been caught in function 'build', process 'MainProcess' (512814), thread 'MainThread' (140168949955520):
+Traceback (most recent call last):
+
+  File "/usr/lib/streamcontroller/main.py", line 577, in <module>
+    main()
+    └ <function main at 0x7f7af52b9640>
+
+  File "/usr/lib/streamcontroller/main.py", line 574, in main
+    load()
+    └ <function load at 0x7f7af52b8250>
+
+  File "/usr/lib/streamcontroller/main.py", line 131, in load
+    gl.main = Main(application_id="com.core447.StreamController", deck_manager=gl.deck_manager)
+    │         │                                                                │  └ <src.backend.DeckManagement.DeckManager.DeckManager object at 0x7f7af5310d70>
+    │         │                                                                └ <module 'globals' from '/usr/lib/streamcontroller/globals.py'>
+    │         └ <class '__main__.Main'>
+    └ <module 'globals' from '/usr/lib/streamcontroller/globals.py'>
+
+  File "/usr/lib/streamcontroller/main.py", line 124, in __init__
+    self.app.run(gl.argparser.parse_args().app_args)
+    │    │   │   │  │         └ <function ArgumentParser.parse_args at 0x7f7b9e285640>
+    │    │   │   │  └ ArgumentParser(prog='main.py', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handl...
+    │    │   │   └ <module 'globals' from '/usr/lib/streamcontroller/globals.py'>
+    │    │   └ <function Application.run at 0x7f7b4921a770>
+    │    └ <app.App object at 0x7f7af43f8b80 (src+app+App at 0x55685ff5ff40)>
+    └ <__main__.Main object at 0x7f7af43fcad0>
+
+  File "/usr/lib/streamcontroller/venv/lib/python3.14/site-packages/gi/overrides/Gio.py", line 138, in run
+    return Gio.Application.run(self, *args, **kwargs)
+           │   │           │   │      │       └ {}
+           │   │           │   │      └ ([],)
+           │   │           │   └ <app.App object at 0x7f7af43f8b80 (src+app+App at 0x55685ff5ff40)>
+           │   │           └ gi.FunctionInfo(run)
+           │   └ <class 'gi.repository.Gio.Application'>
+           └ <IntrospectionModule 'Gio' from '/usr/lib/girepository-1.0/Gio-2.0.typelib'>
+
+  File "/usr/lib/streamcontroller/src/app.py", line 90, in on_activate
+    self.main_win = MainWindow(application=app, deck_manager=self.deck_manager)
+    │    │          │                      │                 │    └ <src.backend.DeckManagement.DeckManager.DeckManager object at 0x7f7af5310d70>
+    │    │          │                      │                 └ <app.App object at 0x7f7af43f8b80 (src+app+App at 0x55685ff5ff40)>
+    │    │          │                      └ <app.App object at 0x7f7af43f8b80 (src+app+App at 0x55685ff5ff40)>
+    │    │          └ <class 'src.windows.mainWindow.mainWindow.MainWindow'>
+    │    └ <mainWindow.MainWindow object at 0x7f7af4149780 (src+windows+mainWindow+mainWindow+MainWindow at 0x556860374310)>
+    └ <app.App object at 0x7f7af43f8b80 (src+app+App at 0x55685ff5ff40)>
+
+  File "/usr/lib/streamcontroller/src/windows/mainWindow/mainWindow.py", line 60, in __init__
+    self.build()
+    │    └ <function MainWindow.build at 0x7f7b040a2820>
+    └ <mainWindow.MainWindow object at 0x7f7af4149780 (src+windows+mainWindow+mainWindow+MainWindow at 0x556860374310)>
+
+> File "/usr/lib/streamcontroller/src/windows/mainWindow/mainWindow.py", line 162, in build
+    gl.tray_icon.initialize(self)
+    │  │         │          └ <mainWindow.MainWindow object at 0x7f7af4149780 (src+windows+mainWindow+mainWindow+MainWindow at 0x556860374310)>
+    │  │         └ <function TrayIcon.initialize at 0x7f7af525bcc0>
+    │  └ <src.tray.TrayIcon object at 0x7f7af52ada90>
+    └ <module 'globals' from '/usr/lib/streamcontroller/globals.py'>
+
+  File "/usr/lib/streamcontroller/src/tray.py", line 45, in initialize
+    self.register()
+    │    └ <function DBusTrayIcon.register at 0x7f7af525b950>
+    └ <src.tray.TrayIcon object at 0x7f7af52ada90>
+
+  File "/usr/lib/streamcontroller/src/backend/trayicon.py", line 429, in register
+    self.sni_service.register()
+    │    │           └ <function StatusNotifierItemService.register at 0x7f7af525b060>
+    │    └ <src.backend.trayicon.StatusNotifierItemService object at 0x7f7af52add30>
+    └ <src.tray.TrayIcon object at 0x7f7af52ada90>
+
+  File "/usr/lib/streamcontroller/src/backend/trayicon.py", line 361, in register
+    watcher.RegisterStatusNotifierItem('(s)', self.dbus_path)
+    │                                         │    └ '/com/core447/StreamController/Menu'
+    │                                         └ <src.backend.trayicon.StatusNotifierItemService object at 0x7f7af52add30>
+    └ <Gio.DBusProxy object at 0x7f7af412d240 (GDBusProxy at 0x5568610b9c80)>
+
+  File "/usr/lib/streamcontroller/venv/lib/python3.14/site-packages/gi/overrides/Gio.py", line 408, in __call__
+    result = self.dbus_proxy.call_sync(
+             │    │          └ gi.FunctionInfo(call_sync)
+             │    └ <Gio.DBusProxy object at 0x7f7af412d240 (GDBusProxy at 0x5568610b9c80)>
+             └ <gi.overrides.Gio._DBusProxyMethodCall object at 0x7f7af43fdbe0>
+
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable (2)
+2026-07-10 23:55:38.464 | SUCCESS  | src.app:on_activate:125 - Finished loading app
+2026-07-10 23:55:38.465 | ERROR    | src.backend.DeckManagement.DeckController:update_ui_on_page_change:700 - 'PageSettingsPage' object has no attribute 'settings_page' -> This is okay if you just activated your first deck.
+2026-07-10 23:55:51.421 | ERROR    | src.backend.Store.StoreBackend:request_from_url:129 - Request to https://raw.githubusercontent.com/StreamController/ControllerPlugin/61c3b02fb816366a281b71d527e9215e0d213335/attribution.json failed with status code 404

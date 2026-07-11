@@ -1,0 +1,13 @@
+{
+    "brightness": {
+        "value": 50
+    },
+    "screensaver": {
+        "enable": true,
+        "time-delay": 30,
+        "brightness": 24,
+        "media-path": null,
+        "loop": false,
+        "fps": 30
+    }
+}

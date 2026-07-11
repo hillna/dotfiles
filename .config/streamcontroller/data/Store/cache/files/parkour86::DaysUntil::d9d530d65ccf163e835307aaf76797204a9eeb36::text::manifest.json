@@ -1,0 +1,25 @@
+{
+  "version": "1.0.1",
+  "thumbnail": "store/Thumbnail.png",
+  "id": "com_codeNinja_DaysUntil",
+  "name": "Days until",
+  "descriptions": {
+    "en_US": "Enter a date and see the number of days until that date. Useful for countdowns to events, deadlines, or reminders.",
+    "de_DE": "Geben Sie ein Datum ein und sehen Sie die Anzahl der Tage bis zu diesem Datum. Nützlich für Countdowns zu Ereignissen, Fristen oder Erinnerungen.",
+    "es_ES": "Introduce una fecha y ve el número de días hasta esa fecha. Útil para cuentas regresivas a eventos, plazos o recordatorios.",
+    "fr_FR": "Entrez une date et voyez le nombre de jours restants jusqu'à cette date. Utile pour les comptes à rebours vers des événements, des échéances ou des rappels.",
+    "ru_RU": "Введите дату и узнайте, сколько дней осталось до этой даты. Полезно для обратного отсчета до событий, дедлайнов или напоминаний."
+  },
+  "short-descriptions": {
+    "en_US": "Countdown to a date",
+    "de_DE": "Countdown bis zu einem Datum",
+    "es_ES": "Cuenta atrás hasta una fecha",
+    "fr_FR": "Compte à rebours jusqu'à une date",
+    "ru_RU": "Обратный отсчет до даты"
+  },
+  "tags": ["Productivity", "Utility"],
+  "minimum-app-version": "1.0.0",
+  "app-version": "1.1.1-alpha",
+  "description": "Enter a date and see the number of days until that date. Useful for countdowns to events, deadlines, or reminders.",
+  "short-description": "Countdown to a date"
+}

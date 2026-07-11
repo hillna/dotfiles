@@ -101,8 +101,7 @@ for exec in ${autorun[@]}; do
   fi
 done
 
-# streamdeck, streamcontroller, or opendeck ???
-#if [ ! $(pgrep -f streamcontroller) ]; then
-#  echo "Launching Streamcontroller"
-#  streamcontroller -b &
-#fi
+if ! systemctl --user is-active --quiet streamcontroller.service; then
+  echo "Launching StreamController"
+  systemctl --user start streamcontroller.service
+fi

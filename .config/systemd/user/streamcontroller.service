@@ -1,0 +1,13 @@
+[Unit]
+Description=StreamController (Elgato Stream Deck)
+After=graphical-session.target dbus.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/bin/streamcontroller-start
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=graphical-session.target
