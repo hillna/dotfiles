@@ -14,4 +14,11 @@ if [ ! -f "$config_dir/bars/$bar.json" ]; then
 fi
 
 mkdir -p "$config_dir/runtime"
-jq -s 'add' "$config_dir/modules.json" "$config_dir/bars/$bar.json" > "$config_dir/runtime/$bar.json"
+
+if [ -e /tmp/laptop_mode ]; then
+  modules="$config_dir/modules-laptop.json"
+else
+  modules="$config_dir/modules.json"
+fi
+
+jq -s 'add' "$modules" "$config_dir/bars/$bar.json" > "$config_dir/runtime/$bar.json"

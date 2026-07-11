@@ -1,9 +1,14 @@
 #!/usr/bin/env sh
 
-if [ $(pgrep -cx polybar) -gt 0 ] ; then
-    pkill polybar
-    bspc config top_padding 0
+if [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]; then
+  if systemctl --user is-active --quiet waybar-session.service; then
+    systemctl --user stop waybar-session.service
+  else
+    systemctl --user start waybar-session.service
+  fi
+elif [ "$(pgrep -cx polybar)" -gt 0 ]; then
+  pkill polybar
+  bspc config top_padding 0
 else
-    $HOME/.config/polybar/launch.sh
+  $HOME/.config/polybar/launch.sh
 fi
-

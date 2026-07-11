@@ -1,37 +1,57 @@
 #!/usr/bin/env sh
 
+is_hyprland() { [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]; }
+
+stop_input_leap() {
+  killall input-leap 2>/dev/null
+  killall input-leapc 2>/dev/null
+}
+
+start_input_leap() {
+  input-leap >/dev/null 2>&1 &
+}
+
 if [ ! -e /tmp/laptop_mode ]; then
-  # Enable laptop mode
   touch /tmp/laptop_mode
 
-  $HOME/bin/toggle-panel
-  $HOME/.jack/stop_jack.sh
-  #pkill -f StreamController
+  if is_hyprland; then
+    $HOME/bin/toggle-panel
+    $HOME/.config/hypr/apply-layout.sh laptop
+    systemctl --user restart waybar-session.service
+    start_input_leap
+    hyprctl dispatch focusmonitor DP-3
+    hyprctl dispatch workspace 1
+  else
+    $HOME/bin/toggle-panel
+    $HOME/.jack/stop_jack.sh
 
-  sleep 5s
-  $HOME/.screenlayout/single_left.sh
+    sleep 5s
+    $HOME/.screenlayout/single_left.sh
 
-  $HOME/.config/bspwm/bspwmrc
+    $HOME/.config/bspwm/bspwmrc
 
-  input-leap >/dev/null 2>&1 &
-  #deskflow >/dev/null 2>&1 &
+    start_input_leap
+  fi
 
   echo "laptop mode enabled"
 
 else
-  # Disable laptop mode
-  killall input-leap
-  killall input-leapc
-  #killall deskflow
-  #killall deskflow-core
+  stop_input_leap
 
-  $HOME/.screenlayout/triptic.sh
+  if is_hyprland; then
+    rm /tmp/laptop_mode
+    $HOME/.config/hypr/apply-layout.sh desktop
+    $HOME/bin/toggle-panel
+    systemctl --user restart waybar-session.service
+  else
+    $HOME/.screenlayout/triptic.sh
 
-  $HOME/bin/toggle-panel
-  $HOME/.jack/start_jack.sh
+    $HOME/bin/toggle-panel
+    $HOME/.jack/start_jack.sh
 
-  rm /tmp/laptop_mode
-  $HOME/.config/bspwm/bspwmrc
+    rm /tmp/laptop_mode
+    $HOME/.config/bspwm/bspwmrc
+  fi
 
   echo "laptop mode disabled"
 

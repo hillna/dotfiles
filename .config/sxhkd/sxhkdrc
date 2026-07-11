@@ -58,6 +58,9 @@ super + shift + e
 super + ctrl + Tab
   $HOME/bin/toggle-panel
 
+super + ctrl + l
+  $HOME/bin/toggle-laptop
+
 super + Escape
   xscreensaver-command --lock
 
