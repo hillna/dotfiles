@@ -29,6 +29,7 @@ if [ ! -e /tmp/laptop_mode ]; then
   touch /tmp/laptop_mode
 
   if is_hyprland; then
+    $HOME/.jack/stop_jack.sh
     $HOME/bin/toggle-panel
     $HOME/.config/hypr/apply-layout.sh laptop
     systemctl --user restart waybar-session.service
@@ -57,6 +58,8 @@ else
   if is_hyprland; then
     rm /tmp/laptop_mode
     $HOME/.config/hypr/apply-layout.sh desktop
+    $HOME/.jack/start_jack.sh
+    pgrep -x qjackctl >/dev/null || qjackctl &
     $HOME/bin/toggle-panel
     systemctl --user restart waybar-session.service
   else
