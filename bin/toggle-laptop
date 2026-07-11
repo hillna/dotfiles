@@ -11,6 +11,20 @@ start_input_leap() {
   input-leap >/dev/null 2>&1 &
 }
 
+stop_streamcontroller() {
+  systemctl --user stop streamcontroller.service 2>/dev/null || true
+}
+
+restart_streamcontroller() {
+  wait="${1:-3}"
+  sleep "$wait"
+  if systemctl --user is-active --quiet streamcontroller.service 2>/dev/null; then
+    systemctl --user restart streamcontroller.service
+  else
+    systemctl --user start streamcontroller.service
+  fi
+}
+
 if [ ! -e /tmp/laptop_mode ]; then
   touch /tmp/laptop_mode
 
@@ -22,7 +36,6 @@ if [ ! -e /tmp/laptop_mode ]; then
     hyprctl dispatch focusmonitor DP-3
     hyprctl dispatch workspace 1
   else
-    $HOME/bin/toggle-panel
     $HOME/.jack/stop_jack.sh
 
     sleep 5s
@@ -32,6 +45,9 @@ if [ ! -e /tmp/laptop_mode ]; then
 
     start_input_leap
   fi
+
+  # Deck USB path leaves this machine; stop to avoid stale handles.
+  stop_streamcontroller
 
   echo "laptop mode enabled"
 
@@ -46,12 +62,14 @@ else
   else
     $HOME/.screenlayout/triptic.sh
 
-    $HOME/bin/toggle-panel
     $HOME/.jack/start_jack.sh
 
     rm /tmp/laptop_mode
     $HOME/.config/bspwm/bspwmrc
   fi
+
+  # Deck USB path returns; restart after I/O settles (native hotplug is unreliable).
+  restart_streamcontroller
 
   echo "laptop mode disabled"
 

@@ -1,5 +1,11 @@
 {
     "general": {
-        "app-launches": 1
+        "app-launches": 3
+    },
+    "store": {
+        "responsibility-notes-agreed": true
+    },
+    "system": {
+        "keep-running": true
     }
 }

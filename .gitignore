@@ -7,10 +7,11 @@ __pycache__/
 .keys
 .shellrc.work
 
+.config/alacritty/alacritty.yml
 .config/bspwm/wallpaper/*
 .config/gtk-3.0/bookmarks
+.config/nwg-displays/active_profile.json
 .config/termite/config
-.config/alacritty/alacritty.yml
 
 .fonts/.uuid
 

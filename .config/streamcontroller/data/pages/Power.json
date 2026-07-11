@@ -220,68 +220,28 @@
         "6x1": {
             "states": {
                 "0": {
-                    "actions": [
-                        {
-                            "id": "com_core447_OSPlugin::RunCommand",
-                            "settings": {
-                                "command": "/usr/bin/systemctl hibernate"
-                            }
-                        }
-                    ],
+                    "actions": [],
                     "image-control-action": 0,
                     "label-control-actions": [
                         0,
                         0,
                         0
                     ],
-                    "background-control-action": 0,
-                    "labels": {
-                        "bottom": {
-                            "text": "Hibernate",
-                            "color": [
-                                255,
-                                255,
-                                255,
-                                255
-                            ],
-                            "font_size": 21,
-                            "font_family": null
-                        }
-                    }
+                    "background-control-action": 0
                 }
             }
         },
         "7x1": {
             "states": {
                 "0": {
-                    "actions": [
-                        {
-                            "id": "com_core447_OSPlugin::RunCommand",
-                            "settings": {
-                                "command": "/usr/bin/systemctl suspend"
-                            }
-                        }
-                    ],
+                    "actions": [],
                     "image-control-action": 0,
                     "label-control-actions": [
                         0,
                         0,
                         0
                     ],
-                    "background-control-action": 0,
-                    "labels": {
-                        "bottom": {
-                            "text": "Suspend",
-                            "color": [
-                                255,
-                                255,
-                                255,
-                                255
-                            ],
-                            "font_size": 21,
-                            "font_family": null
-                        }
-                    }
+                    "background-control-action": 0
                 }
             }
         },
@@ -372,28 +332,68 @@
         "6x2": {
             "states": {
                 "0": {
-                    "actions": [],
+                    "actions": [
+                        {
+                            "id": "com_core447_OSPlugin::RunCommand",
+                            "settings": {
+                                "command": "/usr/bin/systemctl hibernate"
+                            }
+                        }
+                    ],
                     "image-control-action": 0,
                     "label-control-actions": [
                         0,
                         0,
                         0
                     ],
-                    "background-control-action": 0
+                    "background-control-action": 0,
+                    "labels": {
+                        "bottom": {
+                            "text": "Hibernate",
+                            "color": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "font_size": 21,
+                            "font_family": null
+                        }
+                    }
                 }
             }
         },
         "7x2": {
             "states": {
                 "0": {
-                    "actions": [],
+                    "actions": [
+                        {
+                            "id": "com_core447_OSPlugin::RunCommand",
+                            "settings": {
+                                "command": "/usr/bin/systemctl suspend"
+                            }
+                        }
+                    ],
                     "image-control-action": 0,
                     "label-control-actions": [
                         0,
                         0,
                         0
                     ],
-                    "background-control-action": 0
+                    "background-control-action": 0,
+                    "labels": {
+                        "bottom": {
+                            "text": "Suspend",
+                            "color": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "font_size": 21,
+                            "font_family": null
+                        }
+                    }
                 }
             }
         },

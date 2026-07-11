@@ -70,10 +70,8 @@ bspc rule -a steam state=tiled
 bspc rule -a vlc state=floating
 
 ## Launch panel
-if [[ ! $(pgrep -x polybar) ]]; then
-  echo "Launching polybar"
-  $HOME/.config/polybar/launch.sh
-fi
+echo "Launching polybar"
+$HOME/.config/polybar/launch.sh
 
 ## Launch screensaver
 if [[ ! $(pgrep -x xscreensaver) ]]; then

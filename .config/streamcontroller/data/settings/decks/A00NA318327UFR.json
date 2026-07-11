@@ -9,5 +9,11 @@
         "media-path": null,
         "loop": false,
         "fps": 30
+    },
+    "background": {
+        "media-path": "",
+        "enable": false,
+        "loop": true,
+        "fps": 30
     }
 }
