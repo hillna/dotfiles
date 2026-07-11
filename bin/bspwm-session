@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+# LightDM session wrapper: run bspwm, then clean up orphaned X clients.
+
+cleanup() {
+  pkill -x sxhkd 2>/dev/null || true
+  pkill -u "$USER" -x polybar 2>/dev/null || true
+  pkill -u "$USER" -x feh 2>/dev/null || true
+  pkill -u "$USER" -x xscreensaver 2>/dev/null || true
+}
+
+bspwm
+cleanup

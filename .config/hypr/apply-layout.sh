@@ -32,3 +32,4 @@ fi
 echo "apply-layout: no nwg-displays profile for '$layout', using hyprctl fallback"
 cp "$hypr_dir/monitors-$layout.conf" "$hypr_dir/monitors.conf"
 hyprctl reload
+hyprctl dispatch dpms on

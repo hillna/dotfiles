@@ -16,13 +16,13 @@
       "custom_mode": false,
       "mirror": "",
       "ten_bit": false,
-      "active": true
+      "active": false
     },
     {
       "name": "DP-3",
       "description": "GIGA-BYTE TECHNOLOGY CO. LTD. AORUS FI27Q-P 20360B004795",
-      "x": 1116,
-      "y": 560,
+      "x": 0,
+      "y": 0,
       "physical_width": 2560,
       "physical_height": 1440,
       "transform": "normal",
@@ -52,7 +52,7 @@
       "custom_mode": false,
       "mirror": "",
       "ten_bit": false,
-      "active": true
+      "active": false
     }
   ],
   "config": {

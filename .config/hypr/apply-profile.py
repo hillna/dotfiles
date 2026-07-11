@@ -6,7 +6,7 @@ import os
 import sys
 
 from nwg_displays.settings_applier import SettingsApplier
-from nwg_displays.tools import get_config_dir
+from nwg_displays.tools import get_config_dir, hyprctl
 
 HYPR_DIR = os.path.expanduser("~/.config/hypr")
 MONITORS_PATH = os.path.join(HYPR_DIR, "monitors.conf")
@@ -20,6 +20,14 @@ def find_profile(name):
         if os.path.isfile(path):
             return path
     return None
+
+
+def wake_displays(profile_data):
+    """Re-enable DPMS after profile reload; nwg-displays can leave outputs off."""
+    hyprctl("dispatch dpms on")
+    for display in profile_data.get("displays", []):
+        if display.get("active"):
+            hyprctl(f"dispatch dpms on {display['name']}")
 
 
 def main():
@@ -39,6 +47,7 @@ def main():
     SettingsApplier.apply_from_json(
         profile_data, MONITORS_PATH, get_config_dir(), name
     )
+    wake_displays(profile_data)
 
 
 if __name__ == "__main__":

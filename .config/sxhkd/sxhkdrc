@@ -75,9 +75,9 @@ super + alt + Escape
 # bspwm hotkeys
 #
 
-# quit bspwm normally
+# quit bspwm / end session
 super + alt + ctrl + Escape
-  bspc quit
+  if [ -n "$XDG_SESSION_ID" ]; then loginctl terminate-session "$XDG_SESSION_ID"; else pkill -x sxhkd; pkill -u "$USER" -x polybar; bspc quit; fi
 
 # close and kill
 super + {_,ctrl + }w
