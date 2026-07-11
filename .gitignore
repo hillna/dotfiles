@@ -2,6 +2,7 @@
 *.swp
 *.bak
 *.log
+__pycache__/
 
 .keys
 .shellrc.work
