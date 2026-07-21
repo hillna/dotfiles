@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# Prefer dark appearance for GTK3/4, libadwaita, and xdg-desktop-portal.
+
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+gsettings set org.gnome.desktop.interface gtk-theme Equilux-compact
+gsettings set org.gnome.desktop.interface icon-theme Initial

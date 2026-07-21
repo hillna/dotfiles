@@ -24,7 +24,6 @@ __pycache__/
 
 
 .config/PrusaSlicer/*
-!.config/PrusaSlicer/PrusaSlicer.ini
 !.config/PrusaSlicer/filament
 !.config/PrusaSlicer/print
 !.config/PrusaSlicer/printer

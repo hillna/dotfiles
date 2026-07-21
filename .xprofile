@@ -3,6 +3,9 @@
 #fi
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+# Dark appearance for GTK / portals (libadwaita respects color-scheme)
+$HOME/bin/apply-dark-theme
+
 setxkbmap -option ctrl:nocaps
 
 # Screen config

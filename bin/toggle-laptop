@@ -30,6 +30,7 @@ if [ ! -e /tmp/laptop_mode ]; then
 
   if is_hyprland; then
     $HOME/.jack/stop_jack.sh
+    sleep 5s
     $HOME/bin/toggle-panel
     $HOME/.config/hypr/apply-layout.sh laptop
     systemctl --user restart waybar-session.service

@@ -1,0 +1,54 @@
+#!/usr/bin/env sh
+# Lock screen and restore keyboard focus after unlock (Hyprland session-lock bug)
+# Usage: lock-screen [--dpms]
+#
+# Idle timing (saver / lock / dpms) is handled by ~/.config/swayidle/config.
+# --dpms locks immediately and forces displays off; a short-lived swayidle
+# instance wakes them on input (main swayidle only arms resume after timeout).
+
+dpms=false
+case "$1" in
+    --dpms) dpms=true ;;
+    -h|--help)
+        echo "Usage: lock-screen [--dpms]" >&2
+        echo "  --dpms  lock and force displays off; wake on input" >&2
+        exit 0
+        ;;
+    "")
+        ;;
+    *)
+        echo "lock-screen: unknown option: $1" >&2
+        exit 1
+        ;;
+esac
+
+if pgrep -x hyprlock >/dev/null; then
+    exit 0
+fi
+
+hyprsaver --quit 2>/dev/null
+
+cleanup() {
+    if [ -n "${wake_pid:-}" ]; then
+        kill "$wake_pid" 2>/dev/null
+        wait "$wake_pid" 2>/dev/null
+    fi
+    hyprctl dispatch dpms on 2>/dev/null
+    hyprctl dispatch focuscurrentorlast
+    hyprctl dispatch focuscurrentorlast
+}
+
+trap cleanup EXIT INT TERM
+
+if $dpms; then
+    # Arm resume-on-input before forcing dpms off (swayidle resume only runs after timeout)
+    swayidle -w \
+        timeout 1 'hyprctl dispatch dpms off' \
+        resume 'hyprctl dispatch dpms on' \
+        &
+    wake_pid=$!
+    sleep 0.5
+    hyprctl dispatch dpms off
+fi
+
+exec hyprlock
