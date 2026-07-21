@@ -3,16 +3,10 @@
 # Usage: hypr-fix-displays [desktop|laptop]
 
 layout="${1:-desktop}"
-hypr_dir="$HOME/.config/hypr"
 
 if [ -z "$HYPRLAND_INSTANCE_SIGNATURE" ]; then
   echo "hypr-fix-displays: not a Hyprland session" >&2
   exit 1
 fi
 
-"$hypr_dir/apply-layout.sh" "$layout" || {
-  cp "$hypr_dir/monitors-$layout.conf" "$hypr_dir/monitors.conf"
-  cp "$hypr_dir/workspaces-$layout.conf" "$hypr_dir/workspaces.conf"
-  hyprctl reload
-  hyprctl dispatch dpms on
-}
+exec "$HOME/.config/hypr/apply-layout.sh" "$layout"

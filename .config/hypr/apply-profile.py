@@ -13,13 +13,8 @@ MONITORS_PATH = os.path.join(HYPR_DIR, "monitors.conf")
 
 
 def find_profile(name):
-    for path in (
-        os.path.join(get_config_dir(), "profiles", f"{name}.json"),
-        os.path.join(HYPR_DIR, "profiles", f"{name}.json"),
-    ):
-        if os.path.isfile(path):
-            return path
-    return None
+    path = os.path.join(get_config_dir(), "profiles", f"{name}.json")
+    return path if os.path.isfile(path) else None
 
 
 def wake_displays(profile_data):
@@ -38,6 +33,11 @@ def main():
     name = sys.argv[1]
     profile_path = find_profile(name)
     if not profile_path:
+        print(
+            f"apply-profile: no nwg-displays profile '{name}' "
+            f"in {get_config_dir()}/profiles/",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     with open(profile_path, encoding="utf-8") as handle:
