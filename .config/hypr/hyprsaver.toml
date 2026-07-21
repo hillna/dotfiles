@@ -1,0 +1,12 @@
+# hyprsaver — Matrix screensaver (replaces xscreensaver glmatrix on Hyprland)
+# Idle timing is handled by ~/.config/swayidle/config (matches ~/.xscreensaver)
+
+[general]
+shader = "matrix"
+fps = 30
+
+[behavior]
+# xscreensaver had fade/unfade disabled
+fade_in_ms = 0
+fade_out_ms = 0
+dismiss_on = ["key", "mouse_move", "mouse_click", "touch"]

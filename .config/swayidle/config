@@ -1,0 +1,15 @@
+# swayidle — mirrors ~/.xscreensaver timing:
+#   timeout 7:00   (420s) → screensaver (hyprsaver / Matrix) [disabled]
+#   lockTimeout +5:00 (720s total) → lock
+#   dpmsStandby 20:00 (1200s) → turn off displays
+
+# timeout 420 'hyprsaver' resume 'hyprsaver --quit'
+
+timeout 720 '$HOME/bin/lock-screen'
+
+timeout 1200 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+
+# logind / suspend
+lock '$HOME/bin/lock-screen'
+before-sleep 'hyprctl dispatch dpms off'
+after-resume 'hyprctl dispatch dpms on'
