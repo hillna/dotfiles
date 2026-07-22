@@ -20,11 +20,11 @@ __pycache__/
 
 .ncmpcpp/error.log
 
+# Legacy JACK artifacts (kept in ~/jack-backup for revert)
 .jack/patches/*
 .jack/sessions/*
 .jack/snapshots/*
 .jack/qjackctl.log
-
 
 .config/PrusaSlicer/*
 !.config/PrusaSlicer/filament

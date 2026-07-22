@@ -250,7 +250,7 @@ ramp-6 = 
 [module/volume]
 type = internal/pulseaudio
 
-sink = jack_sink1
+; PipeWire default (xr18-aux on desktop, Modi/onboard in laptop mode)
 use-ui-max = true
 interval = 5
 

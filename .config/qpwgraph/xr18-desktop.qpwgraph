@@ -1,0 +1,35 @@
+<!DOCTYPE patchbay>
+<patchbay name="xr18-desktop" version="0.6.3">
+ <output-sockets>
+  <socket client="xr18-aux" exclusive="off" name="XR18 Aux Out" type="pipewire-audio">
+   <plug>monitor_FL</plug>
+   <plug>monitor_FR</plug>
+  </socket>
+  <socket client="xr18-ch15-16" exclusive="off" name="XR18 Ch15-16 Out" type="pipewire-audio">
+   <plug>monitor_FL</plug>
+   <plug>monitor_FR</plug>
+  </socket>
+  <socket client="alsa_input.usb-BEHRINGER_X18_XR18_15567DDE-00.multichannel-input" exclusive="off" name="XR18 Capture Ch1" type="pipewire-audio">
+   <plug>capture_AUX0</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket client="alsa_output.usb-BEHRINGER_X18_XR18_15567DDE-00.multichannel-output" exclusive="off" name="XR18 Playback Aux" type="pipewire-audio">
+   <plug>playback_AUX0</plug>
+   <plug>playback_AUX1</plug>
+  </socket>
+  <socket client="alsa_output.usb-BEHRINGER_X18_XR18_15567DDE-00.multichannel-output" exclusive="off" name="XR18 Playback Ch15-16" type="pipewire-audio">
+   <plug>playback_AUX2</plug>
+   <plug>playback_AUX3</plug>
+  </socket>
+  <socket client="input.xr18-guitar" exclusive="off" name="XR18 Guitar Remap" type="pipewire-audio">
+   <plug>input_AUX0</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable input="XR18 Playback Aux" output="XR18 Aux Out" type="pipewire-audio"/>
+  <cable input="XR18 Playback Ch15-16" output="XR18 Ch15-16 Out" type="pipewire-audio"/>
+  <cable input="XR18 Guitar Remap" output="XR18 Capture Ch1" type="pipewire-audio"/>
+ </cables>
+</patchbay>

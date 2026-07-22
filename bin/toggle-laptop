@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 
+QPW_DESKTOP_SESSION="${QPW_DESKTOP_SESSION:-$HOME/.config/qpwgraph/xr18-desktop.qpwgraph}"
+XR18_SINK_MATCH='alsa_output.usb-BEHRINGER_X18_XR18'
+XR18_SOURCE_MATCH='alsa_input.usb-BEHRINGER_X18_XR18'
+LAPTOP_SINK_MATCH='alsa_output.usb-Schiit_Audio_USB_Modi'
+LAPTOP_SINK_FALLBACK='alsa_output.pci-0000_00_1f.3.analog-stereo'
+XR18_OUT='alsa_output.usb-BEHRINGER_X18_XR18_15567DDE-00.multichannel-output'
+XR18_IN='alsa_input.usb-BEHRINGER_X18_XR18_15567DDE-00.multichannel-input'
+
 is_hyprland() { [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]; }
 
 stop_input_leap() {
@@ -25,11 +33,148 @@ restart_streamcontroller() {
   fi
 }
 
+wait_for_node() {
+  pattern="$1"
+  tries="${2:-20}"
+  i=0
+  while [ "$i" -lt "$tries" ]; do
+    if pw-cli ls Node 2>/dev/null | grep -q "$pattern"; then
+      return 0
+    fi
+    i=$((i + 1))
+    sleep 0.5
+  done
+  return 1
+}
+
+sink_id_by_name() {
+  # Match Pulse/PipeWire sink name substring -> wpctl id
+  name="$1"
+  wpctl status 2>/dev/null | awk -v n="$name" '
+    /Sinks:/ { in_sinks=1; next }
+    /Sources:/ { in_sinks=0 }
+    in_sinks && $0 ~ n {
+      for (i = 1; i <= NF; i++) {
+        if ($i ~ /^[0-9]+\.?$/) {
+          gsub(/\./, "", $i)
+          print $i
+          exit
+        }
+      }
+    }
+  '
+}
+
+source_id_by_name() {
+  name="$1"
+  wpctl status 2>/dev/null | awk -v n="$name" '
+    /Sources:/ { in_sources=1; next }
+    /Filters:/ { in_sources=0 }
+    /Streams:/ { in_sources=0 }
+    in_sources && $0 ~ n {
+      for (i = 1; i <= NF; i++) {
+        if ($i ~ /^[0-9]+\.?$/) {
+          gsub(/\./, "", $i)
+          print $i
+          exit
+        }
+      }
+    }
+  '
+}
+
+ensure_xr18_guitar_remap() {
+  if pactl list short sources 2>/dev/null | grep -q '^[^[:space:]]*[[:space:]]xr18-guitar[[:space:]]'; then
+    return 0
+  fi
+  pactl load-module module-remap-source \
+    source_name=xr18-guitar \
+    master="$XR18_IN" \
+    master_channel_map=aux0,aux0 \
+    channels=2 \
+    channel_map=front-left,front-right \
+    source_properties=device.description='XR18 Guitar Ch1' >/dev/null 2>&1 || true
+}
+
+apply_xr18_links() {
+  # Fallback / headless restore matching xr18-desktop.qpwgraph
+  pw-link xr18-aux:monitor_FL "${XR18_OUT}:playback_AUX0" 2>/dev/null || true
+  pw-link xr18-aux:monitor_FR "${XR18_OUT}:playback_AUX1" 2>/dev/null || true
+  pw-link xr18-ch15-16:monitor_FL "${XR18_OUT}:playback_AUX2" 2>/dev/null || true
+  pw-link xr18-ch15-16:monitor_FR "${XR18_OUT}:playback_AUX3" 2>/dev/null || true
+}
+
+clear_xr18_links() {
+  pw-link -d xr18-aux:monitor_FL "${XR18_OUT}:playback_AUX0" 2>/dev/null || true
+  pw-link -d xr18-aux:monitor_FR "${XR18_OUT}:playback_AUX1" 2>/dev/null || true
+  pw-link -d xr18-ch15-16:monitor_FL "${XR18_OUT}:playback_AUX2" 2>/dev/null || true
+  pw-link -d xr18-ch15-16:monitor_FR "${XR18_OUT}:playback_AUX3" 2>/dev/null || true
+}
+
+audio_desktop() {
+  if ! wait_for_node "$XR18_SINK_MATCH" 20; then
+    echo "audio_desktop: XR18 not found; leaving defaults unchanged" >&2
+    return 1
+  fi
+
+  ensure_xr18_guitar_remap
+  apply_xr18_links
+
+  pactl set-default-sink xr18-aux 2>/dev/null || true
+  pactl set-default-source xr18-guitar 2>/dev/null || true
+
+  aux_id=$(sink_id_by_name 'XR18 Aux')
+  [ -n "$aux_id" ] && wpctl set-default "$aux_id" 2>/dev/null || true
+  guitar_id=$(source_id_by_name 'xr18-guitar')
+  [ -z "$guitar_id" ] && guitar_id=$(source_id_by_name 'XR18 Guitar')
+  [ -n "$guitar_id" ] && wpctl set-default "$guitar_id" 2>/dev/null || true
+
+  if [ -f "$QPW_DESKTOP_SESSION" ]; then
+    if pgrep -x qpwgraph >/dev/null; then
+      # Already running; links applied via pw-link above
+      :
+    else
+      qpwgraph -a -m "$QPW_DESKTOP_SESSION" >/dev/null 2>&1 &
+    fi
+  else
+    pgrep -x qpwgraph >/dev/null || qpwgraph -m >/dev/null 2>&1 &
+  fi
+}
+
+audio_laptop() {
+  clear_xr18_links
+
+  # Prefer Modi USB DAC; fall back to onboard HDA name if Modi missing
+  if pactl list short sinks 2>/dev/null | grep -q "$LAPTOP_SINK_MATCH"; then
+    sink=$(pactl list short sinks | awk -v m="$LAPTOP_SINK_MATCH" '$2 ~ m { print $2; exit }')
+    pactl set-default-sink "$sink" 2>/dev/null || true
+    modi_id=$(sink_id_by_name 'USB Modi')
+    [ -n "$modi_id" ] && wpctl set-default "$modi_id" 2>/dev/null || true
+  elif pactl list short sinks 2>/dev/null | grep -q "$LAPTOP_SINK_FALLBACK"; then
+    pactl set-default-sink "$LAPTOP_SINK_FALLBACK" 2>/dev/null || true
+  fi
+
+  # Stop patchbay UI so it does not re-assert desktop links
+  pkill -x qpwgraph 2>/dev/null || true
+}
+
+# Subcommands for boot / manual use (no mode flip)
+case "${1:-}" in
+  audio-desktop)
+    audio_desktop
+    exit $?
+    ;;
+  audio-laptop)
+    audio_laptop
+    exit $?
+    ;;
+esac
+
 if [ ! -e /tmp/laptop_mode ]; then
   touch /tmp/laptop_mode
 
   if is_hyprland; then
-    $HOME/.jack/stop_jack.sh
+    audio_laptop
     sleep 5s
     $HOME/bin/toggle-panel
     $HOME/.config/hypr/apply-layout.sh laptop
@@ -38,7 +183,7 @@ if [ ! -e /tmp/laptop_mode ]; then
     hyprctl dispatch focusmonitor DP-3
     hyprctl dispatch workspace 1
   else
-    $HOME/.jack/stop_jack.sh
+    audio_laptop
 
     sleep 5s
     $HOME/.screenlayout/single_left.sh
@@ -59,14 +204,13 @@ else
   if is_hyprland; then
     rm /tmp/laptop_mode
     $HOME/.config/hypr/apply-layout.sh desktop
-    $HOME/.jack/start_jack.sh
-    pgrep -x qjackctl >/dev/null || qjackctl &
+    audio_desktop
     $HOME/bin/toggle-panel
     systemctl --user restart waybar-session.service
   else
     $HOME/.screenlayout/triptic.sh
 
-    $HOME/.jack/start_jack.sh
+    audio_desktop
 
     rm /tmp/laptop_mode
     $HOME/.config/bspwm/bspwmrc
