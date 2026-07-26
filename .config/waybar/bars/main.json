@@ -7,7 +7,7 @@
   "margin-right": 2,
   "exclusive": true,
   "fixed-center": true,
-  "output": "DP-2",
+  "output": "DP-1",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["custom/updates", "network", "pulseaudio", "clock#date"]

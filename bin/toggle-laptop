@@ -180,7 +180,7 @@ if [ ! -e /tmp/laptop_mode ]; then
     $HOME/.config/hypr/apply-layout.sh laptop
     systemctl --user restart waybar-session.service
     start_input_leap
-    hyprctl dispatch focusmonitor DP-3
+    hyprctl dispatch focusmonitor DP-2
     hyprctl dispatch workspace 1
   else
     audio_laptop

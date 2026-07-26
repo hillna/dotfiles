@@ -7,7 +7,7 @@
   "margin-right": 2,
   "exclusive": true,
   "fixed-center": true,
-  "output": "HDMI-A-1",
+  "output": "DP-3",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": [],
   "modules-right": ["cpu", "memory", "clock#time"]

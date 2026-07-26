@@ -1,7 +1,7 @@
 {
   "displays": [
     {
-      "name": "DP-2",
+      "name": "DP-1",
       "description": "Microstep MPG271QX OLED 0x01010101",
       "x": 3676,
       "y": 560,
@@ -19,7 +19,7 @@
       "active": false
     },
     {
-      "name": "DP-3",
+      "name": "DP-2",
       "description": "GIGA-BYTE TECHNOLOGY CO. LTD. AORUS FI27Q-P 20360B004795",
       "x": 0,
       "y": 0,
@@ -37,7 +37,7 @@
       "active": true
     },
     {
-      "name": "HDMI-A-1",
+      "name": "DP-3",
       "description": "GIGA-BYTE TECHNOLOGY CO. LTD. AORUS FI27Q-P 20360B004788",
       "x": 6236,
       "y": 0,
