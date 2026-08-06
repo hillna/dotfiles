@@ -28,6 +28,7 @@ __pycache__/
 
 .config/PrusaSlicer/*
 !.config/PrusaSlicer/filament
+!.config/PrusaSlicer/physical_printer
 !.config/PrusaSlicer/print
 !.config/PrusaSlicer/printer
 !.config/PrusaSlicer/scripts
