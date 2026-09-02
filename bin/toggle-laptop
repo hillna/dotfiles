@@ -10,13 +10,19 @@ XR18_IN='alsa_input.usb-BEHRINGER_X18_XR18_15567DDE-00.multichannel-input'
 
 is_hyprland() { [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ]; }
 
-stop_input_leap() {
-  killall input-leap 2>/dev/null
-  killall input-leapc 2>/dev/null
+stop_deskflow() {
+  systemctl --user stop deskflow-client.service 2>/dev/null || true
+  killall deskflow 2>/dev/null
+  killall deskflow-core 2>/dev/null
 }
 
-start_input_leap() {
-  input-leap >/dev/null 2>&1 &
+start_deskflow() {
+  if systemctl --user is-active --quiet deskflow-client.service; then
+    return 0
+  fi
+  systemctl --user reset-failed deskflow-client.service 2>/dev/null || true
+  systemd-run --user --collect --unit=deskflow-client \
+    /usr/bin/deskflow-core client >/dev/null 2>&1
 }
 
 stop_streamcontroller() {
@@ -179,7 +185,7 @@ if [ ! -e /tmp/laptop_mode ]; then
     $HOME/bin/toggle-panel
     $HOME/.config/hypr/apply-layout.sh laptop
     systemctl --user restart waybar-session.service
-    start_input_leap
+    start_deskflow
     hyprctl dispatch focusmonitor DP-2
     hyprctl dispatch workspace 1
   else
@@ -190,7 +196,7 @@ if [ ! -e /tmp/laptop_mode ]; then
 
     $HOME/.config/bspwm/bspwmrc
 
-    start_input_leap
+    start_deskflow
   fi
 
   # Deck USB path leaves this machine; stop to avoid stale handles.
@@ -199,7 +205,7 @@ if [ ! -e /tmp/laptop_mode ]; then
   echo "laptop mode enabled"
 
 else
-  stop_input_leap
+  stop_deskflow
 
   if is_hyprland; then
     rm /tmp/laptop_mode
