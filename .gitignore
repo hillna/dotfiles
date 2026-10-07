@@ -13,6 +13,8 @@ __pycache__/
 .config/nwg-displays/active_profile.json
 .config/hypr/monitors.conf
 .config/hypr/monitors.lua
+.config/hypr/workspaces.conf
+.config/hypr/hyprland.conf
 .config/streamcontroller/data/settings/settings.json
 .config/termite/config
 

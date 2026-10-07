@@ -36,6 +36,7 @@ cleanup() {
     hyprctl dispatch dpms on 2>/dev/null
     hyprctl dispatch focuscurrentorlast
     hyprctl dispatch focuscurrentorlast
+    $HOME/bin/deskflow-unstick
 }
 
 trap cleanup EXIT INT TERM
@@ -51,4 +52,4 @@ if $dpms; then
     hyprctl dispatch dpms off
 fi
 
-exec hyprlock
+hyprlock

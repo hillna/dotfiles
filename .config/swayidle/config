@@ -12,4 +12,4 @@ timeout 1200 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
 # logind / suspend
 lock '$HOME/bin/lock-screen'
 before-sleep 'hyprctl dispatch dpms off'
-after-resume 'hyprctl dispatch dpms on'
+after-resume 'hyprctl dispatch dpms on; $HOME/bin/deskflow-unstick'

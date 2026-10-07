@@ -115,5 +115,12 @@
   "tray": {
     "icon-size": 19,
     "spacing": 4
+  },
+  "custom/deskflow": {
+    "format": "",
+    "tooltip-format": "Unstick Deskflow modifiers",
+    "tooltip-format": "Unstick Deskflow modifiers (right-click restarts client)",
+    "on-click": "$HOME/bin/deskflow-unstick",
+    "on-click-right": "$HOME/bin/deskflow-unstick --restart"
   }
 }

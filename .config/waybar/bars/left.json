@@ -10,5 +10,5 @@
   "output": "DP-2",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": [],
-  "modules-right": ["clock#time", "tray"]
+  "modules-right": ["custom/deskflow", "clock#time", "tray"]
 }

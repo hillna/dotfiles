@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+# After Deskflow enters this screen it may inject modifiers the Mac still
+# thinks are held. Release XTEST keys once those events have landed.
+set -eu
+
+DISPLAY="${DISPLAY:-:0}"
+export DISPLAY
+
+unstick="$HOME/bin/deskflow-unstick"
+
+journalctl --user -u deskflow-client.service -n 0 -o cat -f |
+  while IFS= read -r line; do
+    case "$line" in
+      *entering\ screen*|*leaving\ screen*|*connected\ to\ server*)
+        sleep 0.15
+        "$unstick" || true
+        ;;
+    esac
+  done

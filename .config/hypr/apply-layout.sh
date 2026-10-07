@@ -22,5 +22,5 @@ case "$layout" in
     ;;
 esac
 
-cp "$hypr_dir/workspaces-$layout.conf" "$hypr_dir/workspaces.conf"
+cp "$hypr_dir/workspaces-$layout.lua" "$hypr_dir/workspaces.lua"
 "$hypr_dir/apply-profile.py" "$layout"

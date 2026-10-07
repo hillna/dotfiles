@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Hyprland (Wayland)
 Comment=Hyprland tiling Wayland compositor
-Exec=/usr/bin/start-hyprland
+Exec=sh -c '$HOME/bin/hyprland-session'
 Type=Application
 DesktopNames=Hyprland
 Keywords=tiling;wayland;compositor;

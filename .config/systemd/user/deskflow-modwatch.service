@@ -1,0 +1,11 @@
+[Unit]
+Description=Clear Deskflow XTEST modifiers on screen enter
+BindsTo=deskflow-client.service
+After=deskflow-client.service
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+ExecStart=%h/bin/deskflow-modwatch
+Restart=on-failure
+RestartSec=1

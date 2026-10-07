@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# LightDM session wrapper: always start Hyprland on the Lua config.
+# Format (lua vs hyprlang) is chosen at compositor start, not on hyprctl reload.
+
+exec /usr/bin/start-hyprland -- --config "${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hyprland.lua" "$@"

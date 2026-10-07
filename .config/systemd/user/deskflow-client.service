@@ -1,0 +1,17 @@
+[Unit]
+Description=Deskflow client
+After=graphical-session.target
+PartOf=graphical-session.target
+Wants=deskflow-modwatch.service
+
+[Service]
+Type=simple
+# Native libei client needs org.freedesktop.portal.RemoteDesktop. Hyprland's
+# portal only has InputCapture, so ei mode exits immediately. XWayland works.
+Environment=XDG_SESSION_TYPE=x11
+Environment=DISPLAY=:0
+ExecStartPre=-%h/bin/deskflow-unstick
+ExecStart=/usr/bin/deskflow-core client
+ExecStopPost=-%h/bin/deskflow-unstick
+Restart=on-failure
+RestartSec=2

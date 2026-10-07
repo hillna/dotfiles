@@ -1,0 +1,172 @@
+#!/usr/bin/env sh
+# Clear stuck modifier keys left behind by Deskflow.
+#
+# Deskflow injects keys via XTEST. With ctrl:nocaps, Caps Lock is keycode 66
+# (Control_L). xdotool "keyup Control_L" only releases keycode 37, so 66 stays
+# down. Restarting the client is also the wrong fix: on the next "entering
+# screen" the Mac server re-sends its held-modifier state.
+#
+# Usage:
+#   deskflow-unstick                  # release XTEST modifiers (default)
+#   deskflow-unstick --restart        # bounce client, then release after enter
+#   deskflow-unstick --restart-if-running
+
+set -eu
+
+restart=false
+restart_if_running=false
+case "${1:-}" in
+  --restart) restart=true ;;
+  --restart-if-running) restart_if_running=true ;;
+  "" ) ;;
+  -h|--help)
+    echo "Usage: deskflow-unstick [--restart|--restart-if-running]" >&2
+    exit 0
+    ;;
+  *)
+    echo "deskflow-unstick: unknown option: $1" >&2
+    exit 1
+    ;;
+esac
+
+runtime_dir="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+display="${DISPLAY:-:0}"
+export DISPLAY="$display"
+
+ensure_hyprland_env() {
+  # Leftover $XDG_RUNTIME_DIR/hypr dirs persist after a Hyprland session.
+  pgrep -x Hyprland >/dev/null 2>&1 || return 1
+  if [ -z "${HYPRLAND_INSTANCE_SIGNATURE:-}" ]; then
+    [ -d "$runtime_dir/hypr" ] || return 1
+    HYPRLAND_INSTANCE_SIGNATURE=$(ls -1t "$runtime_dir/hypr" 2>/dev/null | head -1)
+    [ -n "$HYPRLAND_INSTANCE_SIGNATURE" ] || return 1
+    export HYPRLAND_INSTANCE_SIGNATURE
+  fi
+  hyprctl version >/dev/null 2>&1
+}
+
+deskflow_is_running() {
+  systemctl --user is-active --quiet deskflow-client.service 2>/dev/null && return 0
+  pgrep -x deskflow-core >/dev/null 2>&1
+}
+
+stop_deskflow() {
+  systemctl --user stop deskflow-client.service 2>/dev/null || true
+  killall deskflow-core 2>/dev/null || true
+}
+
+start_deskflow() {
+  systemctl --user reset-failed deskflow-client.service 2>/dev/null || true
+  if systemctl --user cat deskflow-client.service >/dev/null 2>&1; then
+    systemctl --user start deskflow-client.service
+    return 0
+  fi
+  systemd-run --user --collect --unit=deskflow-client \
+    --setenv=XDG_SESSION_TYPE=x11 \
+    --setenv=DISPLAY="$display" \
+    /usr/bin/deskflow-core client >/dev/null 2>&1
+}
+
+release_hyprland() {
+  ensure_hyprland_env || return 1
+
+  current=$(hyprctl getoption input:kb_options -j 2>/dev/null | jq -r '.str // empty' 2>/dev/null || true)
+  [ -n "$current" ] || current="ctrl:nocaps"
+
+  hyprctl keyword input:kb_options 'caps:none' >/dev/null 2>&1 || true
+  hyprctl keyword input:kb_options "$current" >/dev/null 2>&1 || true
+
+  for key in Shift_L Shift_R Control_L Control_R Alt_L Alt_R Super_L Super_R Meta_L Meta_R Caps_Lock ISO_Level3_Shift; do
+    hyprctl dispatch sendkeystate ",$key,up," >/dev/null 2>&1 || true
+  done
+}
+
+# Release by X11 keycode (not keysym). CapsLock-as-Ctrl is 66, not 37.
+release_x11() {
+  DISPLAY="$display"
+  export DISPLAY
+  python3 - "$display" <<'PY'
+import os, subprocess, sys
+from Xlib import X, display as xdisplay
+from Xlib.ext import xtest
+
+os.environ["DISPLAY"] = sys.argv[1]
+# pc105 / evdev modifiers, including Caps_Lock (66) which ctrl:nocaps turns into Control
+MODS = {37, 50, 62, 64, 66, 92, 105, 108, 133, 134, 135, 203}
+
+def xtest_down_keycodes():
+    codes = set()
+    try:
+        out = subprocess.check_output(
+            ["xinput", "query-state", "Virtual core XTEST keyboard"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return codes
+    for line in out.splitlines():
+        line = line.strip()
+        if line.startswith("key[") and line.endswith("=down"):
+            inner = line[4 : line.index("]")]
+            try:
+                codes.add(int(inner))
+            except ValueError:
+                pass
+    return codes
+
+def keymap_down(dpy):
+    codes = set()
+    km = dpy.query_keymap()
+    for i, byte in enumerate(km):
+        for bit in range(8):
+            if byte & (1 << bit):
+                codes.add(i * 8 + bit)
+    return codes
+
+dpy = xdisplay.Display()
+to_release = set(MODS)
+to_release |= xtest_down_keycodes()
+# Core keymap includes XTEST slaves; only release known modifiers from it
+to_release |= keymap_down(dpy) & MODS
+
+for kc in sorted(to_release):
+    xtest.fake_input(dpy, X.KeyRelease, kc)
+dpy.sync()
+if to_release:
+    print("deskflow-unstick: released keycodes", ",".join(str(c) for c in sorted(to_release)), flush=True)
+PY
+}
+
+release_all() {
+  if ensure_hyprland_env; then
+    release_hyprland || release_x11
+  else
+    release_x11
+  fi
+}
+
+was_running=false
+if deskflow_is_running; then
+  was_running=true
+fi
+
+should_restart=false
+if $restart; then
+  should_restart=true
+elif $restart_if_running && $was_running; then
+  should_restart=true
+fi
+
+release_all
+
+if $should_restart; then
+  stop_deskflow
+  sleep 0.15
+  release_all
+  start_deskflow
+  # Mac re-injects held modifiers on the next "entering screen".
+  sleep 0.6
+  release_all
+fi
+
+exit 0

@@ -1,0 +1,12 @@
+-- Workspace layout (laptop): all workspaces on DP-2 (DisplayPort-1 / left AORUS)
+
+hl.workspace_rule({ workspace = "1", monitor = "DP-2", default = true })
+hl.workspace_rule({ workspace = "2", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "3", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "4", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "5", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "6", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "7", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "8", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "9", monitor = "DP-2" })
+hl.workspace_rule({ workspace = "10", monitor = "DP-2" })

@@ -21,8 +21,7 @@ start_deskflow() {
     return 0
   fi
   systemctl --user reset-failed deskflow-client.service 2>/dev/null || true
-  systemd-run --user --collect --unit=deskflow-client \
-    /usr/bin/deskflow-core client >/dev/null 2>&1
+  systemctl --user start deskflow-client.service
 }
 
 stop_streamcontroller() {

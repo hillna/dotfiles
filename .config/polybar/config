@@ -41,7 +41,7 @@ inherit = bar/base
 
 modules-left = bspwm
 #modules-center = mpd
-modules-right = time
+modules-right = deskflow time
 
 tray-position = right
 tray-background = ${root.background}
@@ -355,6 +355,14 @@ bar-progress-empty-font = 2
 
 label-time-foreground = #8A8A8A
 
+
+[module/deskflow]
+type = custom/text
+content = 
+; Left click releases XTEST keys. Do not restart: the Mac then re-sends held mods.
+click-left = $HOME/bin/deskflow-unstick
+click-middle = $HOME/bin/deskflow-unstick
+click-right = $HOME/bin/deskflow-unstick --restart
 
 [module/updates]
 type = custom/script
