@@ -58,7 +58,7 @@ super + shift + e
 super + ctrl + Tab
   $HOME/bin/toggle-panel
 
-super + ctrl + l
+super + alt + ctrl + l
   $HOME/bin/toggle-laptop
 
 # Deskflow stuck modifiers: F13/Pause, including while mods are already down

@@ -14,7 +14,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("firefox --private-window"))
 hl.bind(mainMod .. " + ALT + CTRL + Escape", hl.dsp.exit())
 hl.bind(mainMod .. " + CTRL + Tab", hl.dsp.exec_cmd(home .. "/bin/toggle-panel"))
-hl.bind(mainMod .. " + CTRL + L", hl.dsp.exec_cmd(home .. "/bin/toggle-laptop"))
+hl.bind(mainMod .. " + ALT + CTRL + L", hl.dsp.exec_cmd(home .. "/bin/toggle-laptop"))
 
 -- Deskflow can leave Shift/Ctrl/Alt/Super held on this Wayland client.
 -- ignore_mods so this still fires when a modifier is already stuck.
